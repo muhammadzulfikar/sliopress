@@ -1,0 +1,119 @@
+/*
++----------------------------------------------------------------+
+|																							|
+|	WordPress Plugin: Polls										|
+|	Copyright (c) 2012 Lester "GaMerZ" Chan									|
+|																							|
+|	File Written By:																	|
+|	- Lester "GaMerZ" Chan															|
+|	- http://lesterchan.net															|
+|																							|
+|	File Information:																	|
+|	- Polls CSS File																	|
+|	- content/plugins/polls/polls-css.css								|
+|																							|
++----------------------------------------------------------------+
+*/
+
+
+.polls-archive {
+	/* background-color: #ffffff; */
+}
+.polls, .polls-form {
+	/* background-color: #ffffff; */
+}
+.polls ul li, .polls-ul li, .polls-ans ul li {
+	text-align: left;
+	background-image: none;
+	display: block;
+}
+.polls ul, .polls-ul, .polls-ans ul  {
+	text-align: left;
+	list-style: none;
+	float: none;
+}
+.polls ul li:before, .polls-ans ul li:before, #sidebar ul ul li:before {
+	content: '';
+}
+.polls IMG, .polls LABEL , .polls INPUT, .polls-loading IMG, .polls-image IMG {
+	display: inline;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+.polls-ul {
+	padding: 0px;
+	margin: 0px 0px 10px 10px;
+}
+.polls-ans {
+	width:100%;
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	opacity: 1;
+	/* background-color: #ffffff; */
+}
+.polls-loading {
+	display: none;
+	text-align: center;
+	height: 16px;
+	line-height: 16px;
+}
+.polls-image {
+	border: 0px;
+}
+.polls .Buttons {
+	border:1px solid #c8c8c8;
+	background-color: #f3f6f8;
+}
+/* Polls Archive Paging */
+.polls-paging a, .polls-paging a:link {
+	padding: 2px 4px 2px 4px; 
+	margin: 2px;
+	text-decoration: none;
+	border: 1px solid #0066cc;
+	color: #0066cc;
+	background-color: #FFFFFF;	
+}
+.polls-paging a:visited {
+	padding: 2px 4px 2px 4px; 
+	margin: 2px;
+	text-decoration: none;
+	border: 1px solid #0066cc;
+	color: #0066cc;
+	background-color: #FFFFFF;	
+}
+.polls-paging a:hover {	
+	border: 1px solid #000000;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.polls-paging a:active {
+	padding: 2px 4px 2px 4px; 
+	margin: 2px;
+	text-decoration: none;
+	border: 1px solid #0066cc;
+	color: #0066cc;
+	background-color: #FFFFFF;	
+}
+.polls-paging span.pages {
+	padding: 2px 4px 2px 4px; 
+	margin: 2px 2px 2px 2px;
+	color: #000000;
+	border: 1px solid #000000;
+	background-color: #FFFFFF;
+}
+.polls-paging span.current {
+	padding: 2px 4px 2px 4px; 
+	margin: 2px;
+	font-weight: bold;
+	border: 1px solid #000000;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.polls-paging span.extend {
+	padding: 2px 4px 2px 4px; 
+	margin: 2px;	
+	border: 1px solid #000000;
+	color: #000000;
+	background-color: #FFFFFF;
+}

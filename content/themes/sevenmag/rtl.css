@@ -1,0 +1,98 @@
+body {overflow-x: hidden;direction: rtl}
+.owl-carousel {text-align: right;direction: ltr}
+.logo, .sf-menu li, .sf-menu, .counter i, .freq_out, .share_post span, .counter li, .ads_widget a, .T20-tabs-nav li,
+.copyright, .newsticker li, .pagenavi a, .pagenavi .current, .pagenavi .extend, .commentlist .comment-author, .commentlist .comment-meta, .commentlist .comment-awaiting-moderation {float: right}
+.right_bar, .banner, .sec_head .right_bar .social, #header .search, .pagenavi .pages {float: left}
+#footer .sf-menu, .r_post .more_meta {float: left !important}
+.sf-menu li {border-right: 0;border-left: 1px solid #2B2B2B}
+.sf-menu li:hover ul, .sf-menu li.sfHover ul {left: auto;right: 0px}
+ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul {left: auto;right: 172px}
+.s_form {right: auto;left: 0}
+#header .search button {right: auto;left: 12px}
+.s_form:after {right: auto;left: 22px}
+.sf-menu li li i {margin-left: 8px;margin-right: auto}
+.fll { float: left; margin: 0 0 10px 20px !important }
+.flr { float: right; margin: 0 20px 10px 0 !important }
+.mi { margin-right: 0 !important; margin-left: 4px !important }
+.mid { margin-right: 0 !important; margin-left: 8px !important }
+.mii { margin-left: 0 !important; margin-right: 4px !important }
+.miid { margin-left: 0 !important; margin-right: 8px !important }
+.small_posts .s_thumb {float: right;margin: 0 0 20px 20px}
+.blockquote {border-right: 5px solid #E6E6E6;border-left: 0}
+li li a .sf-sub-indicator {right: auto;left: 7%;-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-o-transform: rotate(180deg);}
+.sf-menu li li {border-right: 0;border-left: 0;}
+.b_title {padding: 0 0 0 20px}
+.b_title h4, .b_title h3 {margin: 0 -1px 0 0;padding: 0 2px 0 10px}
+.ads_widget span {left: auto;right: 10px}
+.social a {float: right;margin: 4px 4px 4px 0}
+.widget_social .social a {margin: 4px 4px 0 0}
+.widget_social .social {margin: -4px -4px 0 0}
+#toTop i {padding: 4px 9px 0 0}
+.item_small .featured_thumb {float: right;margin: 0 0 0 15px}
+.widget_archive li span, .widget_pages li span, .widget_meta li span, .widget_nav_menu li span, .widget_categories li span {right: auto;left: 0}
+.featured_thumb .thumb-icon i {left: auto;right: 20px}
+.wgr .more_meta {right: auto;left: 20px}
+.wgr .s_category {padding: 0 20px 0 0}
+.wgr .s_category a {margin: 0 0 0 12px}
+#footer .widget_T20_posts_slideshow .owl-controls {right: auto;left: -14px}
+.widget_T20_posts_slideshow .owl-controls {right: auto;left: -24px}
+.sf-menu li:last-child {border: 0}
+.sec_head .right_bar {right: auto;left: 0}
+.search_icon {margin: 4px 4px 4px 0}
+.post-edit-link {right: auto;left: 0}
+.more_posts .featured_thumb .thumb-icon i {left: auto;right: auto}
+.wgr h3 {left: auto;right: 0}
+.today_weather .big_icon {float: left !important}
+.today_weather .details_w {float: right !important}
+.newsticker a {margin: 0 0 0 60px}
+.newsticker {left: auto;right: 1000px}
+.newsticker span {margin: 0 0 0 10px}
+.sec_head .breaking {float: right;padding: 9px 18px 9px 10px;margin: 0 -30px 0 0}
+.sec_head .breaking:after {left: -18px;right: auto;border-right: 15px solid #E75757;border-left: 4px solid rgba(0, 0, 0, 0)}
+.logo h1 {margin: 0 0 0 10px}
+.author_avatar {float: right;margin: 0 0 0 15px}
+.post_nav li.previous {text-align: left}
+.commentlist .avatar {left: auto;right: -96px}
+.commentlist li {list-style: none;padding-left: 0;padding-right: 96px}
+.commentlist li.bypostauthor > .comment-body:after, .commentlist li.comment-author-admin > .comment-body:after {left: auto;right: -36px}
+#cancel-comment-reply-link {right: auto;left: 0}
+.commentlist li li {padding-left: 0}
+.review-star {right: auto !important;left: 10px !important}
+.review-total-star.allowed-to-rate, .review-total-wrapper {float: left !important}
+.user-total-wrapper, .review-desc {float: right !important}
+.review-result {left: auto;right: 0}
+.image-container .caption, .gallery_item .caption {left: auto;right: 20px}
+.owl-theme .owl-controls {right: auto;left: 20px}
+.big_carousel .owl-theme .owl-controls {right: auto;left: 30px}
+.big_carousel .owl-buttons, .slideshow_b5 .owl-buttons {margin: 0 10px 0 0;float: left}
+.slideshow_b5 .owl-controls {right: auto;left: 0 !important}
+#block_carousel .owl-controls {right: auto;left: -26px}
+ol li {margin: 0 20px 0 0}
+.post-edit-link {left: auto;right: 0}
+.tt_review .tt_star {float: left;text-align: left}
+.tt_review {right: auto;left: 0}
+.b_4 .tt_review {right: auto;left: 3%}
+#mobilepro {float: right;margin: 34px 10px 32px 0}
+.medium_thumb .post_thumbnail {margin: 0 0 4px 20px;float: right}
+.medium_thumb .more_meta {float: left}
+.medium_thumb .s_category a {margin-right: 0;margin-left: 10px}
+.wgr .details {direction: rtl}
+.sf-menu li li:hover > a, .sf-menu li li > a:hover, .sf-menu li li.current_page_item > a, .sf-menu li li.current-menu-item > a {padding-left: 20px;padding-right: 30px}
+.sf-menu li li a:before {left: auto;right: 0;-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);transform: rotate(180deg);-ms-transform: rotate(180deg);}
+.sf-menu li li:hover > a:before, .sf-menu li li > a:hover:before, .sf-menu li li.current_page_item > a:before, .sf-menu li li.current-menu-item > a:before {left: auto;right: 16px}
+.readmore {right: auto;left: -1px}
+blockquote, .blockquote {border-left: 0;border-right: 5px solid #E6E6E6}
+.comment-author cite {margin: 0}
+.wpcf7-submit {float: right}
+div.wpcf7 img.ajax-loader {margin: 5px 12px 0 0}
+.symple-skillbar-title {left: auto;right: 0}
+.symple-skill-bar-percent {right: auto;left: 10px}
+.symple-tabs ul.ui-tabs-nav li {float: right !important}
+.symple-tabs ul.ui-tabs-nav li a {border-width: 1px 0 0 1px}
+
+
+@media only screen and (max-width: 1177px) and (min-width: 100px) {
+	.subarrow {right: auto !important;left: 0 !important}
+	.sf-menu a.sf-with-ul, .sf-menu a {margin-right: 20px !important;margin-left: 50px !important}
+	.sf-menu {right: 0 !important;left: auto !important}
+}
