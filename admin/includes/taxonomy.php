@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Taxonomy Administration API.
+ * SlioPress Taxonomy Administration API.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 

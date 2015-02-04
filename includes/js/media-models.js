@@ -98,7 +98,7 @@ window.wp = window.wp || {};
 		/**
 		 * media.post( [action], [data] )
 		 *
-		 * Sends a POST request to WordPress.
+		 * Sends a POST request to SlioPress.
 		 * See wp.ajax.post() in `includes/js/util.js`.
 		 *
 		 * @borrows wp.ajax.post as post
@@ -108,7 +108,7 @@ window.wp = window.wp || {};
 		/**
 		 * media.ajax( [action], [options] )
 		 *
-		 * Sends an XHR request to WordPress.
+		 * Sends an XHR request to SlioPress.
 		 * See wp.ajax.send() in `includes/js/util.js`.
 		 *
 		 * @borrows wp.ajax.send as ajax

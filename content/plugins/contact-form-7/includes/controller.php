@@ -189,7 +189,7 @@ function wpcf7_do_enqueue_scripts() {
 }
 
 function wpcf7_enqueue_scripts() {
-	// jquery.form.js originally bundled with WordPress is out of date and deprecated
+	// jquery.form.js originally bundled with SlioPress is out of date and deprecated
 	// so we need to deregister it and re-register the latest one
 	wp_deregister_script( 'jquery-form' );
 	wp_register_script( 'jquery-form',

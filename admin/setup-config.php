@@ -7,7 +7,7 @@
  *
  * @internal This file must be parsable by PHP4.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
@@ -32,10 +32,10 @@ define( 'ABSPATH', dirname( dirname( __FILE__ ) ) . '/' );
 
 require( ABSPATH . 'settings.php' );
 
-/** Load WordPress Administration Upgrade API */
+/** Load SlioPress Administration Upgrade API */
 require_once( ABSPATH . 'admin/includes/upgrade.php' );
 
-/** Load WordPress Translation Install API */
+/** Load SlioPress Translation Install API */
 require_once( ABSPATH . 'admin/includes/translation-install.php' );
 
 nocache_headers();
@@ -46,7 +46,7 @@ if ( file_exists( ABSPATH . 'config-sample.php' ) )
 elseif ( file_exists( dirname( ABSPATH ) . '/config-sample.php' ) )
 	$config_file = file( dirname( ABSPATH ) . '/config-sample.php' );
 else
-	wp_die( __( 'Sorry, I need a config-sample.php file to work from. Please re-upload this file from your WordPress installation.' ) );
+	wp_die( __( 'Sorry, I need a config-sample.php file to work from. Please re-upload this file from your SlioPress installation.' ) );
 
 // Check if config.php has been created
 if ( file_exists( ABSPATH . 'config.php' ) )
@@ -54,7 +54,7 @@ if ( file_exists( ABSPATH . 'config.php' ) )
 
 // Check if config.php exists above the root directory but is not part of another install
 if ( file_exists(ABSPATH . '../config.php' ) && ! file_exists( ABSPATH . '../settings.php' ) )
-	wp_die( '<p>' . sprintf( __( "The file 'config.php' already exists one level above your WordPress installation. If you need to reset any of the configuration items in this file, please delete it first. You may try <a href='install.php'>installing now</a>."), 'install.php' ) . '</p>' );
+	wp_die( '<p>' . sprintf( __( "The file 'config.php' already exists one level above your SlioPress installation. If you need to reset any of the configuration items in this file, please delete it first. You may try <a href='install.php'>installing now</a>."), 'install.php' ) . '</p>' );
 
 $step = isset( $_GET['step'] ) ? (int) $_GET['step'] : -1;
 
@@ -79,11 +79,11 @@ function setup_config_display_header( $body_classes = array() ) {
 <head>
 	<meta name="viewport" content="width=device-width" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title><?php _e( 'WordPress &rsaquo; Setup Configuration File' ); ?></title>
+	<title><?php _e( 'SlioPress &rsaquo; Setup Configuration File' ); ?></title>
 	<?php wp_admin_css( 'install', true ); ?>
 </head>
 <body class="<?php echo implode( ' ', $body_classes ); ?>">
-<h1 id="logo"><a href="<?php esc_attr_e( 'https://wordpress.org/' ); ?>" tabindex="-1"><?php _e( 'WordPress' ); ?></a></h1>
+<h1 id="logo"><a href="<?php esc_attr_e( 'https://wordpress.org/' ); ?>" tabindex="-1"><?php _e( 'SlioPress' ); ?></a></h1>
 <?php
 } // end function setup_config_display_header();
 
@@ -125,13 +125,13 @@ switch($step) {
 		}
 ?>
 
-<p><?php _e( 'Welcome to WordPress. Before getting started, we need some information on the database. You will need to know the following items before proceeding.' ) ?></p>
+<p><?php _e( 'Welcome to SlioPress. Before getting started, we need some information on the database. You will need to know the following items before proceeding.' ) ?></p>
 <ol>
 	<li><?php _e( 'Database name' ); ?></li>
 	<li><?php _e( 'Database username' ); ?></li>
 	<li><?php _e( 'Database password' ); ?></li>
 	<li><?php _e( 'Database host' ); ?></li>
-	<li><?php _e( 'Table prefix (if you want to run more than one WordPress in a single database)' ); ?></li>
+	<li><?php _e( 'Table prefix (if you want to run more than one SlioPress in a single database)' ); ?></li>
 </ol>
 <p>
 	<?php _e( 'We&#8217;re going to use this information to create a <code>config.php</code> file.' ); ?>
@@ -176,7 +176,7 @@ switch($step) {
 		<tr>
 			<th scope="row"><label for="prefix"><?php _e( 'Table Prefix' ); ?></label></th>
 			<td><input name="prefix" id="prefix" type="text" value="wp_" size="25" /></td>
-			<td><?php _e( 'If you want to run multiple WordPress installations in a single database, change this.' ); ?></td>
+			<td><?php _e( 'If you want to run multiple SlioPress installations in a single database, change this.' ); ?></td>
 		</tr>
 	</table>
 	<?php if ( isset( $_GET['noapi'] ) ) { ?><input name="noapi" type="hidden" value="1" /><?php } ?>
@@ -334,7 +334,7 @@ if ( ! /iPad|iPod|iPhone/.test( navigator.userAgent ) ) {
 		chmod( $path_to_wp_config, 0666 );
 		setup_config_display_header();
 ?>
-<p><?php _e( "All right, sparky! You&#8217;ve made it through this part of the installation. WordPress can now communicate with your database. If you are ready, time now to&hellip;" ); ?></p>
+<p><?php _e( "All right, sparky! You&#8217;ve made it through this part of the installation. SlioPress can now communicate with your database. If you are ready, time now to&hellip;" ); ?></p>
 
 <p class="step"><a href="<?php echo $install; ?>" class="button button-large"><?php _e( 'Run the install' ); ?></a></p>
 <?php

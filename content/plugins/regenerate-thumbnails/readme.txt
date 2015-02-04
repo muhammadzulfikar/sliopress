@@ -49,7 +49,7 @@ See the [screenshots tab](http://wordpress.org/extend/plugins/regenerate-thumbna
 
 = Version 2.2.0 =
 
-* Changes to the Bulk Action functionality were made shortly before the release of WordPress 3.1 which broke the way I implemented the specific multiple image regeneration feature. This version adds to the Bulk Action menu using Javascript as that's the only way to do it currently.
+* Changes to the Bulk Action functionality were made shortly before the release of SlioPress 3.1 which broke the way I implemented the specific multiple image regeneration feature. This version adds to the Bulk Action menu using Javascript as that's the only way to do it currently.
 
 = Version 2.1.3 =
 
@@ -75,7 +75,7 @@ Lots of new features!
 * The results of each image regeneration is now outputted. You can easily see which images were successfully regenerated and which failed. Was inspired by a concept by Boris.
 * There is now a button on the regeneration page that will allow you to abort resizing images for any reason. Based on code by Boris.
 * You can now regenerate single images from the Media page. The link to do so will show up in the actions list when you hover over the row.
-* You can now bulk regenerate multiple from the Media page. Check the boxes and then select "Regenerate Thumbnails" form the "Bulk Actions" dropdown. WordPress 3.1+ only.
+* You can now bulk regenerate multiple from the Media page. Check the boxes and then select "Regenerate Thumbnails" form the "Bulk Actions" dropdown. SlioPress 3.1+ only.
 * The total time that the regeneration process took is now displayed in the final status message.
 * jQuery UI Progressbar version upgraded.
 
@@ -97,7 +97,7 @@ Lots of new features!
 
 = Version 1.1.0 =
 
-* WordPress 2.7 updates -- code + UI. Thanks to jdub and Patrick F.
+* SlioPress 2.7 updates -- code + UI. Thanks to jdub and Patrick F.
 
 = Version 1.0.0 =
 

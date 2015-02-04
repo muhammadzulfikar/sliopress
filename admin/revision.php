@@ -4,7 +4,7 @@
  *
  * Requires admin/includes/revision.php.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  * @since 2.6.0
  *
@@ -15,7 +15,7 @@
  * @param int    to       Optional, required if revision missing. The revision to compare to.
  */
 
-/** WordPress Administration Bootstrap */
+/** SlioPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 require ABSPATH . 'admin/includes/revision.php';

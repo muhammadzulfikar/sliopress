@@ -4,7 +4,7 @@
  *
  * A UI container for sections, managed by the WP_Customize_Manager.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Customize
  * @since 4.0.0
  */

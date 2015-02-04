@@ -2,11 +2,11 @@
 /**
  * Credits administration panel.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** SlioPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 $title = __( 'Credits' );
@@ -14,7 +14,7 @@ $title = __( 'Credits' );
 /**
  * Retrieve the contributor credits.
  *
- * @global string $wp_version The current WordPress version.
+ * @global string $wp_version The current SlioPress version.
  *
  * @since 3.2.0
  *
@@ -47,22 +47,22 @@ function wp_credits() {
 }
 
 /**
- * Retrieve the link to a contributor's WordPress.org profile page.
+ * Retrieve the link to a contributor's SlioPress.org profile page.
  *
  * @access private
  * @since 3.2.0
  *
  * @param string &$display_name The contributor's display name, passed by reference.
  * @param string $username      The contributor's username.
- * @param string $profiles      URL to the contributor's WordPress.org profile page.
- * @return string A contributor's display name, hyperlinked to a WordPress.org profile page.
+ * @param string $profiles      URL to the contributor's SlioPress.org profile page.
+ * @return string A contributor's display name, hyperlinked to a SlioPress.org profile page.
  */
 function _wp_credits_add_profile_link( &$display_name, $username, $profiles ) {
 	$display_name = '<a href="' . esc_url( sprintf( $profiles, $username ) ) . '">' . esc_html( $display_name ) . '</a>';
 }
 
 /**
- * Retrieve the link to an external library used in WordPress.
+ * Retrieve the link to an external library used in SlioPress.
  *
  * @access private
  * @since 3.2.0
@@ -80,9 +80,9 @@ include( ABSPATH . 'admin/admin-header.php' );
 ?>
 <div class="wrap about-wrap">
 
-<h1><?php printf( __( 'Welcome to WordPress %s' ), $display_version ); ?></h1>
+<h1><?php printf( __( 'Welcome to SlioPress %s' ), $display_version ); ?></h1>
 
-<div class="about-text"><?php printf( __( 'Thank you for updating! WordPress %s helps you focus on your writing, and the new default theme lets you show it off in style.' ), $display_version ); ?></div>
+<div class="about-text"><?php printf( __( 'Thank you for updating! SlioPress %s helps you focus on your writing, and the new default theme lets you show it off in style.' ), $display_version ); ?></div>
 
 <div class="badge"><?php printf( __( 'Version %s' ), $display_version ); ?></div>
 
@@ -101,15 +101,15 @@ include( ABSPATH . 'admin/admin-header.php' );
 $credits = wp_credits();
 
 if ( ! $credits ) {
-	echo '<p class="about-description">' . sprintf( __( 'WordPress is created by a <a href="%1$s">worldwide team</a> of passionate individuals. <a href="%2$s">Get involved in WordPress</a>.' ),
+	echo '<p class="about-description">' . sprintf( __( 'SlioPress is created by a <a href="%1$s">worldwide team</a> of passionate individuals. <a href="%2$s">Get involved in SlioPress</a>.' ),
 		'https://wordpress.org/about/',
-		/* translators: Url to the codex documentation on contributing to WordPress used on the credits page */
-		__( 'http://codex.wordpress.org/Contributing_to_WordPress' ) ) . '</p>';
+		/* translators: Url to the codex documentation on contributing to SlioPress used on the credits page */
+		__( 'http://codex.wordpress.org/Contributing_to_SlioPress' ) ) . '</p>';
 	include( ABSPATH . 'admin/admin-footer.php' );
 	exit;
 }
 
-echo '<p class="about-description">' . __( 'WordPress is created by a worldwide team of passionate individuals.' ) . "</p>\n";
+echo '<p class="about-description">' . __( 'SlioPress is created by a worldwide team of passionate individuals.' ) . "</p>\n";
 
 $gravatar = is_ssl() ? 'https://secure.gravatar.com/avatar/' : 'http://0.gravatar.com/avatar/';
 
@@ -159,8 +159,8 @@ foreach ( $credits['groups'] as $group_slug => $group_data ) {
 }
 
 ?>
-<p class="clear"><?php printf( __( 'Want to see your name in lights on this page? <a href="%s">Get involved in WordPress</a>.' ),
-	/* translators: URL to the Make WordPress 'Get Involved' landing page used on the credits page */
+<p class="clear"><?php printf( __( 'Want to see your name in lights on this page? <a href="%s">Get involved in SlioPress</a>.' ),
+	/* translators: URL to the Make SlioPress 'Get Involved' landing page used on the credits page */
 	__( 'https://make.wordpress.org/' ) ); ?></p>
 
 </div>
@@ -175,7 +175,7 @@ __( 'Project Leaders' );
 __( 'Extended Core Team' );
 __( 'Core Developers' );
 __( 'Recent Rockstars' );
-__( 'Core Contributors to WordPress %s' );
+__( 'Core Contributors to SlioPress %s' );
 __( 'Contributing Developers' );
 __( 'Cofounder, Project Lead' );
 __( 'Lead Developer' );

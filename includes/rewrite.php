@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Rewrite API
+ * SlioPress Rewrite API
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Rewrite
  */
 
@@ -401,13 +401,13 @@ function url_to_postid($url) {
 }
 
 /**
- * WordPress Rewrite Component.
+ * SlioPress Rewrite Component.
  *
- * The WordPress Rewrite class writes the rewrite module rules to the .htaccess
+ * The SlioPress Rewrite class writes the rewrite module rules to the .htaccess
  * file. It also handles parsing the request to get the correct setup for the
- * WordPress Query class.
+ * SlioPress Query class.
  *
- * The Rewrite along with WP class function as a front controller for WordPress.
+ * The Rewrite along with WP class function as a front controller for SlioPress.
  * You can add rules to trigger your page view and processing using this
  * component. The full functionality of a front controller does not exist,
  * meaning you can't define how the template files load based on the rewrite
@@ -612,7 +612,7 @@ class WP_Rewrite {
 	var $extra_rules_top = array();
 
 	/**
-	 * Rules that don't redirect to WordPress' index.php.
+	 * Rules that don't redirect to SlioPress' index.php.
 	 *
 	 * These rules are written to the mod_rewrite portion of the .htaccess,
 	 * and are added by {@link add_external_rule()}.
@@ -642,7 +642,7 @@ class WP_Rewrite {
 	var $endpoints;
 
 	/**
-	 * Whether to write every mod_rewrite rule for WordPress into the .htaccess file.
+	 * Whether to write every mod_rewrite rule for SlioPress into the .htaccess file.
 	 *
 	 * This is off by default, turning it on might print a lot of rewrite rules
 	 * to the .htaccess file.
@@ -659,7 +659,7 @@ class WP_Rewrite {
 	 *
 	 * If the first rewrite tag in the post permalink structure is one that could
 	 * also match a page name (e.g. %postname% or %author%) then this flag is
-	 * set to true. Prior to WordPress 3.3 this flag indicated that every page
+	 * set to true. Prior to SlioPress 3.3 this flag indicated that every page
 	 * would have a set of rules added to the top of the rewrite rules array.
 	 * Now it tells {@link WP::parse_request()} to check if a URL matching the
 	 * page permastruct is actually a page before accepting it.
@@ -1760,7 +1760,7 @@ class WP_Rewrite {
 	 * the process that will.
 	 *
 	 * Will add the non_wp_rules property rules to the .htaccess file before
-	 * the WordPress rewrite rules one.
+	 * the SlioPress rewrite rules one.
 	 *
 	 * @since 1.5.0
 	 * @access public

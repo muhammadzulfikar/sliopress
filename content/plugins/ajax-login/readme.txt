@@ -4,11 +4,11 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: user-login, register, ajax, authentication, captcha, sidebar, widget, user, secury, admin bar, ReCaptcha, cross browser, forgot password
 Requires at least: 3.0
 
-Simple ajax login widget for your WordPress! show avatar, profile button, register and forgot password forms.
+Simple ajax login widget for your SlioPress! show avatar, profile button, register and forgot password forms.
 
 == Description ==
 
-This plugin allow you to display login widget in your WordPress. It’s useful for sites that would like to avoid the normal WordPress login pages. Login uses AJAX and jQuery effects.
+This plugin allow you to display login widget in your SlioPress. It’s useful for sites that would like to avoid the normal SlioPress login pages. Login uses AJAX and jQuery effects.
 
 Features:
 
@@ -27,7 +27,7 @@ Features:
 == Installation ==
 
 1. Upload ajax-login folder to content/plugins.
-2. Click "Activate" in the WordPress plugins menu.
+2. Click "Activate" in the SlioPress plugins menu.
 1. Place "Login" widget in your sidebar.
 
 = 1.0 =

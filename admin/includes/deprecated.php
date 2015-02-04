@@ -1,10 +1,10 @@
 <?php
 /**
- * Deprecated admin functions from past WordPress versions. You shouldn't use these
+ * Deprecated admin functions from past SlioPress versions. You shouldn't use these
  * functions and look for the alternatives instead. The functions will be removed
  * in a later version.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Deprecated
  */
 
@@ -322,7 +322,7 @@ function get_nonauthor_user_ids() {
 
 if ( !class_exists('WP_User_Search') ) :
 /**
- * WordPress User Search class.
+ * SlioPress User Search class.
  *
  * @since 2.1.0
  * @deprecated 3.1.0
@@ -1136,14 +1136,14 @@ function the_attachment_links( $id = false ) {
  * Displays a screen icon.
  *
  * @since 2.7.0
- * @since 3.8.0 Screen icons are no longer used in WordPress. This function no longer produces output.
+ * @since 3.8.0 Screen icons are no longer used in SlioPress. This function no longer produces output.
  * @deprecated 3.8.0
  */
 function screen_icon() {
 	echo get_screen_icon();
 }
 function get_screen_icon() {
-	return '<!-- Screen icons are no longer used as of WordPress 3.8. -->';
+	return '<!-- Screen icons are no longer used as of SlioPress 3.8. -->';
 }
 /**#@-*/
 

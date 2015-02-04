@@ -168,8 +168,8 @@ msgstr ""
 #: contact-form-7/admin/admin.php:381
 #, php-format
 msgid ""
-"<strong>Contact Form 7 %1$s requires WordPress %2$s or higher.</strong> "
-"Please <a href=\"%3$s\">update WordPress</a> first."
+"<strong>Contact Form 7 %1$s requires SlioPress %2$s or higher.</strong> "
+"Please <a href=\"%3$s\">update SlioPress</a> first."
 msgstr ""
 
 #: contact-form-7/admin/admin.php:407
@@ -382,7 +382,7 @@ msgstr ""
 #: contact-form-7/admin/includes/help-tabs.php:61
 msgid ""
 "You can add a new contact form on this screen. You can create a contact form "
-"in your language, which is set WordPress local settings, or in a language "
+"in your language, which is set SlioPress local settings, or in a language "
 "that you select from available options."
 msgstr ""
 

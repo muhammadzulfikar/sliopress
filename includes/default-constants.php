@@ -2,11 +2,11 @@
 /**
  * Defines constants and global variables that can be overridden, generally in config.php.
  *
- * @package WordPress
+ * @package SlioPress
  */
 
 /**
- * Defines initial WordPress constants
+ * Defines initial SlioPress constants
  *
  * @see wp_debug_mode()
  *
@@ -30,7 +30,7 @@ function wp_initial_constants() {
 
 	/**
 	 * The $blog_id global, which you can change in the config allows you to create a simple
-	 * multiple blog installation using just one WordPress and changing $blog_id around.
+	 * multiple blog installation using just one SlioPress and changing $blog_id around.
 	 *
 	 * @global int $blog_id
 	 * @since 2.0.0
@@ -90,7 +90,7 @@ function wp_initial_constants() {
 }
 
 /**
- * Defines plugin directory WordPress constants
+ * Defines plugin directory SlioPress constants
  *
  * Defines must-use plugin directory constants, which may be overridden in the sunrise.php drop-in
  *
@@ -152,7 +152,7 @@ function wp_plugin_directory_constants() {
 }
 
 /**
- * Defines cookie related WordPress constants
+ * Defines cookie related SlioPress constants
  *
  * Defines constants after multisite is loaded. Cookie-related constants may be overridden in ms_network_cookies().
  * @since 3.0.0
@@ -239,7 +239,7 @@ function wp_cookie_constants() {
 }
 
 /**
- * Defines cookie related WordPress constants
+ * Defines cookie related SlioPress constants
  *
  * @since 3.0.0
  */
@@ -266,7 +266,7 @@ function wp_ssl_constants() {
 }
 
 /**
- * Defines functionality related WordPress constants
+ * Defines functionality related SlioPress constants
  *
  * @since 3.0.0
  */
@@ -294,7 +294,7 @@ function wp_functionality_constants() {
 }
 
 /**
- * Defines templating related WordPress constants
+ * Defines templating related SlioPress constants
  *
  * @since 3.0.0
  */
@@ -318,6 +318,6 @@ function wp_templating_constants() {
 	 * @since 3.0.0
 	 */
 	if ( !defined('WP_DEFAULT_THEME') )
-		define( 'WP_DEFAULT_THEME', 'sevenmag' );
+		define( 'WP_DEFAULT_THEME', 'sliopress' );
 
 }

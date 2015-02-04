@@ -1,10 +1,10 @@
 <?php
 /**
- * These functions are needed to load WordPress.
+ * These functions are needed to load SlioPress.
  *
  * @internal This file must be parsable by PHP4.
  *
- * @package WordPress
+ * @package SlioPress
  */
 
 /**
@@ -105,7 +105,7 @@ function wp_fix_server_vars() {
  * @access private
  *
  * @global string $required_php_version The required PHP version string.
- * @global string $wp_version           The WordPress version string.
+ * @global string $wp_version           The SlioPress version string.
  */
 function wp_check_php_mysql_versions() {
 	global $required_php_version, $wp_version;
@@ -114,18 +114,18 @@ function wp_check_php_mysql_versions() {
 	if ( version_compare( $required_php_version, $php_version, '>' ) ) {
 		wp_load_translations_early();
 		header( 'Content-Type: text/html; charset=utf-8' );
-		die( sprintf( __( 'Your server is running PHP version %1$s but WordPress %2$s requires at least %3$s.' ), $php_version, $wp_version, $required_php_version ) );
+		die( sprintf( __( 'Your server is running PHP version %1$s but SlioPress %2$s requires at least %3$s.' ), $php_version, $wp_version, $required_php_version ) );
 	}
 
 	if ( ! extension_loaded( 'mysql' ) && ! extension_loaded( 'mysqli' ) && ! file_exists( WP_CONTENT_DIR . '/db.php' ) ) {
 		wp_load_translations_early();
 		 header( 'Content-Type: text/html; charset=utf-8' );
-		die( __( 'Your PHP installation appears to be missing the MySQL extension which is required by WordPress.' ) );
+		die( __( 'Your PHP installation appears to be missing the MySQL extension which is required by SlioPress.' ) );
 	}
 }
 
 /**
- * Don't load all of WordPress when handling a favicon.ico request.
+ * Don't load all of SlioPress when handling a favicon.ico request.
  *
  * Instead, send the headers for a zero-length favicon and bail.
  *
@@ -142,9 +142,9 @@ function wp_favicon_request() {
 /**
  * Die with a maintenance message when conditions are met.
  *
- * Checks for a file in the WordPress root directory named ".maintenance".
+ * Checks for a file in the SlioPress root directory named ".maintenance".
  * This file will contain the variable $upgrading, set to the time the file
- * was created. If the file was created less than 10 minutes ago, WordPress
+ * was created. If the file was created less than 10 minutes ago, SlioPress
  * enters maintenance mode and displays a message.
  *
  * The default message can be replaced by using a drop-in (maintenance.php in
@@ -153,7 +153,7 @@ function wp_favicon_request() {
  * @since 3.0.0
  * @access private
  *
- * @global int $upgrading the unix timestamp marking when upgrading WordPress began.
+ * @global int $upgrading the unix timestamp marking when upgrading SlioPress began.
  */
 function wp_maintenance() {
 	if ( !file_exists( ABSPATH . '.maintenance' ) || defined( 'WP_INSTALLING' ) )
@@ -196,7 +196,7 @@ function wp_maintenance() {
 }
 
 /**
- * Start the WordPress micro-timer.
+ * Start the SlioPress micro-timer.
  *
  * @since 0.71
  * @access private
@@ -238,13 +238,13 @@ function timer_stop( $display = 0, $precision = 3 ) {
 }
 
 /**
- * Set PHP error reporting based on WordPress debug settings.
+ * Set PHP error reporting based on SlioPress debug settings.
  *
  * Uses three constants: `WP_DEBUG`, `WP_DEBUG_DISPLAY`, and `WP_DEBUG_LOG`.
  * All three can be defined in config.php, and by default are set to false.
  *
- * When `WP_DEBUG` is true, all PHP notices are reported. WordPress will also
- * display internal notices: when a deprecated WordPress function, function
+ * When `WP_DEBUG` is true, all PHP notices are reported. SlioPress will also
+ * display internal notices: when a deprecated SlioPress function, function
  * argument, or file is used. Deprecated code may be removed from a later
  * version.
  *
@@ -254,8 +254,8 @@ function timer_stop( $display = 0, $precision = 3 ) {
  * `WP_DEBUG_DISPLAY` and `WP_DEBUG_LOG` perform no function unless `WP_DEBUG`
  * is true.
  *
- * When `WP_DEBUG_DISPLAY` is true, WordPress will force errors to be displayed.
- * `WP_DEBUG_DISPLAY` defaults to true. Defining it as null prevents WordPress
+ * When `WP_DEBUG_DISPLAY` is true, SlioPress will force errors to be displayed.
+ * `WP_DEBUG_DISPLAY` defaults to true. Defining it as null prevents SlioPress
  * from changing the global configuration setting. Defining `WP_DEBUG_DISPLAY`
  * as false will force errors to be hidden.
  *
@@ -337,7 +337,7 @@ function wp_set_lang_dir() {
  *
  * @since 2.5.0
  *
- * @global wpdb $wpdb The WordPress database class.
+ * @global wpdb $wpdb The SlioPress database class.
  */
 function require_wp_db() {
 	global $wpdb;
@@ -361,7 +361,7 @@ function require_wp_db() {
  * @since 3.0.0
  * @access private
  *
- * @global wpdb   $wpdb         The WordPress database class.
+ * @global wpdb   $wpdb         The SlioPress database class.
  * @global string $table_prefix The database table prefix.
  */
 function wp_set_wpdb_vars() {
@@ -405,7 +405,7 @@ function wp_using_ext_object_cache( $using = null ) {
 }
 
 /**
- * Start the WordPress object cache.
+ * Start the SlioPress object cache.
  *
  * If an object-cache.php file exists in the content directory,
  * it uses that drop-in as an external object cache.
@@ -457,7 +457,7 @@ function wp_start_object_cache() {
 }
 
 /**
- * Redirect to the installer if WordPress is not installed.
+ * Redirect to the installer if SlioPress is not installed.
  *
  * Dies with an error message when Multisite is enabled.
  *
@@ -516,7 +516,7 @@ function wp_get_mu_plugins() {
 /**
  * Retrieve an array of active and valid plugin files.
  *
- * While upgrading or installing WordPress, no plugins are returned.
+ * While upgrading or installing SlioPress, no plugins are returned.
  *
  * The default directory is content/plugins. To change the default
  * directory manually, define `WP_PLUGIN_DIR` and `WP_PLUGIN_URL`
@@ -637,7 +637,7 @@ function wp_clone( $object ) {
  *
  * @since 1.5.1
  *
- * @return bool True if inside WordPress administration interface, false otherwise.
+ * @return bool True if inside SlioPress administration interface, false otherwise.
  */
 function is_admin() {
 	if ( isset( $GLOBALS['current_screen'] ) )
@@ -658,7 +658,7 @@ function is_admin() {
  *
  * @since 3.1.0
  *
- * @return bool True if inside WordPress blog administration pages.
+ * @return bool True if inside SlioPress blog administration pages.
  */
 function is_blog_admin() {
 	if ( isset( $GLOBALS['current_screen'] ) )
@@ -679,7 +679,7 @@ function is_blog_admin() {
  *
  * @since 3.1.0
  *
- * @return bool True if inside WordPress network administration pages.
+ * @return bool True if inside SlioPress network administration pages.
  */
 function is_network_admin() {
 	if ( isset( $GLOBALS['current_screen'] ) )
@@ -701,7 +701,7 @@ function is_network_admin() {
  *
  * @since 3.1.0
  *
- * @return bool True if inside WordPress user administration pages.
+ * @return bool True if inside SlioPress user administration pages.
  */
 function is_user_admin() {
 	if ( isset( $GLOBALS['current_screen'] ) )
@@ -754,7 +754,7 @@ function get_current_blog_id() {
  * @since 3.4.0
  * @access private
  *
- * @global $wp_locale The WordPress date and time locale object.
+ * @global $wp_locale The SlioPress date and time locale object.
  */
 function wp_load_translations_early() {
 	global $text_direction, $wp_locale;

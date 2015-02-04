@@ -2,26 +2,26 @@
 /**
  * Simple and uniform HTTP request API.
  *
- * Standardizes the HTTP requests for WordPress. Handles cookies, gzip encoding and decoding, chunk
+ * Standardizes the HTTP requests for SlioPress. Handles cookies, gzip encoding and decoding, chunk
  * decoding, if HTTP 1.1 and various other difficult HTTP protocol implementations.
  *
  * @link https://core.trac.wordpress.org/ticket/4779 HTTP API Proposal
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage HTTP
  * @since 2.7.0
  */
 
 /**
- * WordPress HTTP Class for managing HTTP Transports and making HTTP requests.
+ * SlioPress HTTP Class for managing HTTP Transports and making HTTP requests.
  *
  * This class is used to consistently make outgoing HTTP requests easy for developers
  * while still being compatible with the many PHP configurations under which
- * WordPress runs.
+ * SlioPress runs.
  *
  * Debugging includes several actions, which pass different variables for debugging the HTTP API.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage HTTP
  * @since 2.7.0
  */
@@ -49,7 +49,7 @@ class WP_Http {
 	 *     @type string       $httpversion         Version of the HTTP protocol to use. Accepts '1.0' and '1.1'.
 	 *                                             Default '1.0'.
 	 *     @type string       $user-agent          User-agent value sent.
-	 *                                             Default WordPress/' . $wp_version . '; ' . get_bloginfo( 'url' ).
+	 *                                             Default SlioPress/' . $wp_version . '; ' . get_bloginfo( 'url' ).
 	 *     @type bool         $reject_unsafe_urls  Whether to pass URLs through {@see wp_http_validate_url()}.
 	 *                                             Default false.
 	 *     @type bool         $blocking            Whether the calling code requires the result of the request.
@@ -116,9 +116,9 @@ class WP_Http {
 			 *
 			 * @since 2.7.0
 			 *
-			 * @param string $user_agent WordPress user agent string.
+			 * @param string $user_agent SlioPress user agent string.
 			 */
-			'user-agent' => apply_filters( 'http_headers_useragent', 'WordPress/' . $wp_version . '; ' . get_bloginfo( 'url' ) ),
+			'user-agent' => apply_filters( 'http_headers_useragent', 'SlioPress/' . $wp_version . '; ' . get_bloginfo( 'url' ) ),
 			/**
 			 * Filter whether to pass URLs through wp_http_validate_url() in an HTTP request.
 			 *
@@ -199,7 +199,7 @@ class WP_Http {
 		 */
 		$r['ssl'] = $arrURL['scheme'] == 'https' || $arrURL['scheme'] == 'ssl';
 
-		// Determine if this request is to OUR install of WordPress.
+		// Determine if this request is to OUR install of SlioPress.
 		$homeURL = parse_url( get_bloginfo( 'url' ) );
 		$r['local'] = 'localhost' == $arrURL['host'] || ( isset( $homeURL['host'] ) && $homeURL['host'] == $arrURL['host'] );
 		unset( $homeURL );
@@ -1287,7 +1287,7 @@ class WP_HTTP_Fsockopen extends WP_HTTP_Streams {
  *
  * Requires the Curl extension to be installed.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage HTTP
  * @since 2.7.0
  */
@@ -1641,7 +1641,7 @@ class WP_Http_Curl {
 }
 
 /**
- * Adds Proxy support to the WordPress HTTP API.
+ * Adds Proxy support to the SlioPress HTTP API.
  *
  * There are caveats to proxy support. It requires that defines be made in the config.php file to
  * enable proxy support. There are also a few filters that plugins can hook into for some of the
@@ -1667,7 +1667,7 @@ class WP_Http_Curl {
  *     define('WP_PROXY_PORT', '8080');
  *     define('WP_PROXY_BYPASS_HOSTS', 'localhost, www.example.com, *.wordpress.org');
  *
- * @link https://core.trac.wordpress.org/ticket/4011 Proxy support ticket in WordPress.
+ * @link https://core.trac.wordpress.org/ticket/4011 Proxy support ticket in SlioPress.
  * @link https://core.trac.wordpress.org/ticket/14636 Allow wildcard domains in WP_PROXY_BYPASS_HOSTS
  * @since 2.8.0
  */
@@ -1852,10 +1852,10 @@ class WP_HTTP_Proxy {
  * Returned cookies are represented using this class, and when cookies are set, if they are not
  * already a WP_Http_Cookie() object, then they are turned into one.
  *
- * @todo The WordPress convention is to use underscores instead of camelCase for function and method
+ * @todo The SlioPress convention is to use underscores instead of camelCase for function and method
  * names. Need to switch to use underscores instead for the methods.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage HTTP
  * @since 2.8.0
  */
@@ -2047,7 +2047,7 @@ class WP_Http_Cookie {
 	}
 
 	/**
-	 * Retrieve cookie header for usage in the rest of the WordPress HTTP API.
+	 * Retrieve cookie header for usage in the rest of the SlioPress HTTP API.
 	 *
 	 * @access public
 	 * @since 2.8.0
@@ -2065,7 +2065,7 @@ class WP_Http_Cookie {
  * Includes RFC 1950, RFC 1951, and RFC 1952.
  *
  * @since 2.8.0
- * @package WordPress
+ * @package SlioPress
  * @subpackage HTTP
  */
 class WP_Http_Encoding {

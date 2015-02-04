@@ -1,15 +1,15 @@
 <?php
 /**
  * API for creating dynamic sidebar without hardcoding functionality into
- * themes. Includes both internal WordPress routines and theme use routines.
+ * themes. Includes both internal SlioPress routines and theme use routines.
  *
- * This functionality was found in a plugin before WordPress 2.2 release which
+ * This functionality was found in a plugin before SlioPress 2.2 release which
  * included it in the core from that point on.
  *
- * @link http://codex.wordpress.org/Plugins/WordPress_Widgets WordPress Widgets
- * @link http://codex.wordpress.org/Plugins/WordPress_Widgets_Api Widgets API
+ * @link http://codex.wordpress.org/Plugins/SlioPress_Widgets SlioPress Widgets
+ * @link http://codex.wordpress.org/Plugins/SlioPress_Widgets_Api Widgets API
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Widgets
  */
 
@@ -17,7 +17,7 @@
  * This class must be extended for each widget and WP_Widget::widget(), WP_Widget::update()
  * and WP_Widget::form() need to be over-ridden.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Widgets
  * @since 2.8.0
  */
@@ -537,7 +537,7 @@ class WP_Widget {
 /**
  * Singleton that registers and instantiates WP_Widget classes.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Widgets
  * @since 2.8.0
  */
@@ -761,7 +761,7 @@ function register_sidebars( $number = 1, $args = array() ) {
  * Builds the definition for a single sidebar and returns the ID.
  *
  * Accepts either a string or an array and then parses that against a set
- * of default arguments for the new sidebar. WordPress will automatically
+ * of default arguments for the new sidebar. SlioPress will automatically
  * generate a sidebar ID and name based on the current number of registered
  * sidebars if those arguments are not included.
  *

@@ -2,11 +2,11 @@
 /**
  * New Post Administration Screen.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load SlioPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( !isset($_GET['post_type']) )

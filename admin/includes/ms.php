@@ -2,7 +2,7 @@
 /**
  * Multisite administration functions.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Multisite
  * @since 3.0.0
  */
@@ -300,7 +300,7 @@ add_action( 'add_option_new_admin_email', 'update_option_new_admin_email', 10, 2
  * @since 3.0.0
  *
  * @global object $errors WP_Error object.
- * @global object $wpdb   WordPress database object.
+ * @global object $wpdb   SlioPress database object.
  */
 function send_confirmation_on_profile_email() {
 	global $errors, $wpdb;
@@ -692,7 +692,7 @@ function mu_dropdown_languages( $lang_files = array(), $current = '' ) {
 
 	}
 
-	if ( $flag === false ) // WordPress english
+	if ( $flag === false ) // SlioPress english
 		$output[] = '<option value=""' . selected( $current, '', false ) . '>' . __( 'English' ) . "</option>";
 
 	// Order by name

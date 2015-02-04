@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Administration Update API
+ * SlioPress Administration Update API
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
@@ -61,7 +61,7 @@ function get_core_updates( $options = array() ) {
 }
 
 /**
- * Gets the best available (and enabled) Auto-Update for WordPress Core.
+ * Gets the best available (and enabled) Auto-Update for SlioPress Core.
  *
  * If there's 1.2.3 and 1.3 on offer, it'll choose 1.3 if the install allows it, else, 1.2.3
  *
@@ -92,7 +92,7 @@ function find_core_auto_update() {
 }
 
 /**
- * Gets and caches the checksums for the given version of WordPress.
+ * Gets and caches the checksums for the given version of SlioPress.
  *
  * @since 3.7.0
  *
@@ -112,7 +112,7 @@ function get_core_checksums( $version, $locale ) {
 
 	$response = wp_remote_get( $url, $options );
 	if ( $ssl && is_wp_error( $response ) ) {
-		trigger_error( __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
+		trigger_error( __( 'An unexpected error occurred. Something may be wrong with SlioPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ) . ' ' . __( '(SlioPress could not establish a secure connection to SlioPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
 		$response = wp_remote_get( $http_url, $options );
 	}
 
@@ -205,9 +205,9 @@ function update_nag() {
 		return false;
 
 	if ( current_user_can('update_core') ) {
-		$msg = sprintf( __('<a href="http://codex.wordpress.org/Version_%1$s">WordPress %1$s</a> is available! <a href="%2$s">Please update now</a>.'), $cur->current, network_admin_url( 'update-core.php' ) );
+		$msg = sprintf( __('<a href="http://codex.wordpress.org/Version_%1$s">SlioPress %1$s</a> is available! <a href="%2$s">Please update now</a>.'), $cur->current, network_admin_url( 'update-core.php' ) );
 	} else {
-		$msg = sprintf( __('<a href="http://codex.wordpress.org/Version_%1$s">WordPress %1$s</a> is available! Please notify the site administrator.'), $cur->current );
+		$msg = sprintf( __('<a href="http://codex.wordpress.org/Version_%1$s">SlioPress %1$s</a> is available! Please notify the site administrator.'), $cur->current );
 	}
 	echo "<div class='update-nag'>$msg</div>";
 }
@@ -221,7 +221,7 @@ function update_right_now_message() {
 		$theme_name = sprintf( '<a href="themes.php">%1$s</a>', $theme_name );
 	}
 
-	$msg = sprintf( __( 'WordPress %1$s running %2$s theme.' ), get_bloginfo( 'version', 'display' ), $theme_name );
+	$msg = sprintf( __( 'SlioPress %1$s running %2$s theme.' ), get_bloginfo( 'version', 'display' ), $theme_name );
 
 	if ( current_user_can('update_core') ) {
 		$cur = get_preferred_from_update_core();
@@ -379,7 +379,7 @@ function wp_theme_update_row( $theme_key, $theme ) {
 	 * row of the themes list table.
 	 *
 	 * The dynamic portion of the hook name, `$theme_key`, refers to
-	 * the theme slug as found in the WordPress.org themes repository.
+	 * the theme slug as found in the SlioPress.org themes repository.
 	 *
 	 * @since 3.1.0
 	 *
@@ -422,9 +422,9 @@ function maintenance_nag() {
 		return false;
 
 	if ( current_user_can('update_core') )
-		$msg = sprintf( __('An automated WordPress update has failed to complete - <a href="%s">please attempt the update again now</a>.'), 'update-core.php' );
+		$msg = sprintf( __('An automated SlioPress update has failed to complete - <a href="%s">please attempt the update again now</a>.'), 'update-core.php' );
 	else
-		$msg = __('An automated WordPress update has failed to complete! Please notify the site administrator.');
+		$msg = __('An automated SlioPress update has failed to complete! Please notify the site administrator.');
 
 	echo "<div class='update-nag'>$msg</div>";
 }

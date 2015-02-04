@@ -1,19 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: SevenMag 1.7\n"
-"POT-Creation-Date: 2014-04-02 20:06+0400\n"
-"PO-Revision-Date: 2014-04-02 20:06+0400\n"
-"Last-Translator: T20 <sevenpsd@gmail.com>\n"
-"Language-Team: T20 <sevenpsd@gmail.com>\n"
-"Language: English\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
-"X-Poedit-KeywordsList: __;_e\n"
-"X-Poedit-Basepath: .\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-SearchPath-0: .\n"
+"Project-Id-Version: SlioPress 1.1\n"
 
 #: 404.php:25
 msgid "Error 404 !"
@@ -130,7 +117,7 @@ msgstr ""
 msgid ""
 "Export your Theme Options data by highlighting this text and doing a copy/"
 "paste into a blank .txt file. Then save the file for importing into another "
-"install of WordPress later. Alternatively, you could just paste it into the "
+"install of SlioPress later. Alternatively, you could just paste it into the "
 "<code>OptionTree->Settings->Import</code> <strong>Theme Options</strong> "
 "textarea on another web site."
 msgstr ""
@@ -633,7 +620,7 @@ msgstr ""
 #: admin/theme-options.php:107
 msgid ""
 "Enter your full FeedBurner URL (or any other preferred feed URL) if you wish "
-"to use FeedBurner over the standard WordPress feed e.g. http://feeds."
+"to use FeedBurner over the standard SlioPress feed e.g. http://feeds."
 "feedburner.com/yoururlhere"
 msgstr ""
 
@@ -685,7 +672,7 @@ msgid "WP Pagenavi"
 msgstr ""
 
 #: admin/theme-options.php:159
-msgid "Adds a more advanced paging navigation to your WordPress blog."
+msgid "Adds a more advanced paging navigation to your SlioPress blog."
 msgstr ""
 
 #: admin/theme-options.php:167

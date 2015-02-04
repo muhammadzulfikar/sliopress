@@ -12,8 +12,8 @@ msgstr ""
 
 #. translators: 1: a filename like .htaccess. 2: a file path.
 #: admin/network.php:479 admin/network.php:516
-msgid "Add the following to your %1$s file in %2$s, <strong>replacing</strong> other WordPress rules:"
-msgstr "Tambahkan berikut ini ke berkas %1$s Anda di %2$s, <strong>menggantikan</strong> aturan WordPress lainnya:"
+msgid "Add the following to your %1$s file in %2$s, <strong>replacing</strong> other SlioPress rules:"
+msgstr "Tambahkan berikut ini ke berkas %1$s Anda di %2$s, <strong>menggantikan</strong> aturan SlioPress lainnya:"
 
 #: admin/network/users.php:48
 msgid "What should be done with content owned by %s?"
@@ -113,16 +113,16 @@ msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Updates_Screen\" targe
 msgstr "<a href=\"http://codex.wordpress.org/Network_Admin_Updates_Screen\" target=\"_blank\">Documentation on Upgrade Network</a>"
 
 #: admin/network/upgrade.php:25
-msgid "Only use this screen once you have updated to a new version of WordPress through Updates/Available Updates (via the Network Administration navigation menu or the Toolbar). Clicking the Upgrade Network button will step through each site in the network, five at a time, and make sure any database updates are applied."
-msgstr "Hanya gunakan halaman ini ketika ingin memperbarui WordPress ke versi terbaru melalui Pembaruan/Pembaruan Tersedia (via menu navigasi Administrasi Jaringan atau dari Baris Perkakas). Klik tombol Tingkatkan Jaringan akan berjalan satu per satu melalui setiap situs pada jaringan, sekaligus lima sekali jalan, dan memastikan pembaruan basis data diterapkan."
+msgid "Only use this screen once you have updated to a new version of SlioPress through Updates/Available Updates (via the Network Administration navigation menu or the Toolbar). Clicking the Upgrade Network button will step through each site in the network, five at a time, and make sure any database updates are applied."
+msgstr "Hanya gunakan halaman ini ketika ingin memperbarui SlioPress ke versi terbaru melalui Pembaruan/Pembaruan Tersedia (via menu navigasi Administrasi Jaringan atau dari Baris Perkakas). Klik tombol Tingkatkan Jaringan akan berjalan satu per satu melalui setiap situs pada jaringan, sekaligus lima sekali jalan, dan memastikan pembaruan basis data diterapkan."
 
 #: admin/network/upgrade.php:102
 msgid "Database Upgrade Required"
 msgstr "Peningkatan Basis Data Dibutuhkan"
 
 #: admin/network/upgrade.php:103
-msgid "WordPress has been updated! Before we send you on your way, we need to individually upgrade the sites in your network."
-msgstr "WordPress berhasil diperbarui! Sebelum kami meninggalkan Anda, kami perlu meningkatkan situs-situs pada jaringan Anda satu per satu."
+msgid "SlioPress has been updated! Before we send you on your way, we need to individually upgrade the sites in your network."
+msgstr "SlioPress berhasil diperbarui! Sebelum kami meninggalkan Anda, kami perlu meningkatkan situs-situs pada jaringan Anda satu per satu."
 
 #: admin/network/site-new.php:91
 msgid ""
@@ -137,8 +137,8 @@ msgstr ""
 "Nama: %3$s"
 
 #: admin/network.php:119
-msgid "Add the designated lines of code to config.php (just before <code>/*...stop editing...*/</code>) and <code>.htaccess</code> (replacing the existing WordPress rules)."
-msgstr "Menambahkan baris kode berikut dalam config.php (tepat sebelum <code>/*...stop editing...*/</code>) dan <code>.htaccess</code> (menimpa aturan WordPress yang telah ada)."
+msgid "Add the designated lines of code to config.php (just before <code>/*...stop editing...*/</code>) and <code>.htaccess</code> (replacing the existing SlioPress rules)."
+msgstr "Menambahkan baris kode berikut dalam config.php (tepat sebelum <code>/*...stop editing...*/</code>) dan <code>.htaccess</code> (menimpa aturan SlioPress yang telah ada)."
 
 #: admin/network.php:238 admin/network.php:483 admin/network.php:520
 msgid "Subdirectory networks may not be fully compatible with custom content directories."
@@ -420,8 +420,8 @@ msgstr "<strong>Tema</strong> - Area ini menunjukkan tema-tema yang belum diakti
 
 #: admin/network/site-info.php:27 admin/network/site-settings.php:27
 #: admin/network/site-themes.php:27 admin/network/site-users.php:30
-msgid "<strong>Settings</strong> - This page shows a list of all settings associated with this site. Some are created by WordPress and others are created by plugins you activate. Note that some fields are grayed out and say Serialized Data. You cannot modify these values due to the way the setting is stored in the database."
-msgstr "<strong>Pengaturan</strong> - Halaman ini menunjukkan sebuah daftar dari seluruh pengaturan yang berhubungan dengan situs ini. Beberapa diciptakan oleh WordPress dan sisanya diciptakan oleh plugin yang Anda aktifkan. Harap dicatat bahwa beberapa ruas yang diwarnai abu-abu dan bertuliskan Data Terserial. Anda tidak dapat mengubah nilai tersebut karena caranya disimpan di dalam basis data."
+msgid "<strong>Settings</strong> - This page shows a list of all settings associated with this site. Some are created by SlioPress and others are created by plugins you activate. Note that some fields are grayed out and say Serialized Data. You cannot modify these values due to the way the setting is stored in the database."
+msgstr "<strong>Pengaturan</strong> - Halaman ini menunjukkan sebuah daftar dari seluruh pengaturan yang berhubungan dengan situs ini. Beberapa diciptakan oleh SlioPress dan sisanya diciptakan oleh plugin yang Anda aktifkan. Harap dicatat bahwa beberapa ruas yang diwarnai abu-abu dan bertuliskan Data Terserial. Anda tidak dapat mengubah nilai tersebut karena caranya disimpan di dalam basis data."
 
 #: admin/network/site-info.php:24 admin/network/site-settings.php:24
 #: admin/network/site-themes.php:24 admin/network/site-users.php:27
@@ -531,8 +531,8 @@ msgid "Network Title"
 msgstr "Judul Jaringan"
 
 #: admin/network.php:112
-msgid "Create a Network of WordPress Sites"
-msgstr "Ciptakan sebuah Jaringan Situs WordPress"
+msgid "Create a Network of SlioPress Sites"
+msgstr "Ciptakan sebuah Jaringan Situs SlioPress"
 
 #: admin/network.php:124 admin/network.php:135
 msgid "<a href=\"http://codex.wordpress.org/Tools_Network_Screen\" target=\"_blank\">Documentation on the Network Screen</a>"
@@ -555,12 +555,12 @@ msgid "This screen allows you to configure a network as having subdomains (<code
 msgstr "Layar ini memungkinkan Anda untuk mengkonfigurasi sebuah jaringan untuk menggunakan subdomain (<code>situs1.contoh.com</code>) atau subdirektori (<code>contoh.com/situs1</code>). Subdomain membutuhkan subdomain dengan wildcard yang harus diaktifkan pada Apache dan catatan DNS, jika diizinkan oleh host Anda."
 
 #: admin/network.php:27
-msgid "The Network creation panel is not for WordPress MU networks."
-msgstr "Panel penciptaan Jaringan tidak diperuntukkan untuk jaringan WordPress MU."
+msgid "The Network creation panel is not for SlioPress MU networks."
+msgstr "Panel penciptaan Jaringan tidak diperuntukkan untuk jaringan SlioPress MU."
 
 #: admin/network.php:220
-msgid "Please choose whether you would like sites in your WordPress network to use sub-domains or sub-directories. <strong>You cannot change this later.</strong>"
-msgstr "Silahkan pilih apakah Anda ingin situs-situs di dalam jaringan WordPress Anda untuk menggunakan sub-domain atau sub-directorie. <strong>Anda tidak dapat mengubah ini di lain waktu.</strong>"
+msgid "Please choose whether you would like sites in your SlioPress network to use sub-domains or sub-directories. <strong>You cannot change this later.</strong>"
+msgstr "Silahkan pilih apakah Anda ingin situs-situs di dalam jaringan SlioPress Anda untuk menggunakan sub-domain atau sub-directorie. <strong>Anda tidak dapat mengubah ini di lain waktu.</strong>"
 
 #: admin/network.php:106
 msgid "You must define the <code>WP_ALLOW_MULTISITE</code> constant as true in your config.php file to allow creation of a Network."
@@ -634,8 +634,8 @@ msgid "What would you like to call your network?"
 msgstr "Akan Anda namai apa jaringan Anda ini?"
 
 #: admin/network.php:359
-msgid "An existing WordPress network was detected."
-msgstr "Terdeteksi sebuah jaringan WordPress yang telah ada."
+msgid "An existing SlioPress network was detected."
+msgstr "Terdeteksi sebuah jaringan SlioPress yang telah ada."
 
 #: admin/network.php:360
 msgid "Please complete the configuration steps. To create a new network, you will need to empty or remove the network database tables."
@@ -658,24 +658,24 @@ msgid "The main site in a sub-directory install will need to use a modified perm
 msgstr "Situs utama yang berada di instalasi sub-direktori akan membutuhkan struktur permalink termodifikasi, yang berpotensi merusak taut-taut yang telah ada."
 
 #: admin/network.php:271
-msgid "Because your install is in a directory, the sites in your WordPress network must use sub-directories."
-msgstr "Karena instalasi Anda ada di dalam sebuah direktori, situs-situs dalam jaringan WordPress Anda haruslah menggunakan sub-direktori."
+msgid "Because your install is in a directory, the sites in your SlioPress network must use sub-directories."
+msgstr "Karena instalasi Anda ada di dalam sebuah direktori, situs-situs dalam jaringan SlioPress Anda haruslah menggunakan sub-direktori."
 
 #: admin/network.php:280
-msgid "Because your install is not new, the sites in your WordPress network must use sub-domains."
-msgstr "Karena instalasi Anda bukanlah baru, situs-situs dalam jaringan WordPress Anda haruslah menggunakan sub-domain."
+msgid "Because your install is not new, the sites in your SlioPress network must use sub-domains."
+msgstr "Karena instalasi Anda bukanlah baru, situs-situs dalam jaringan SlioPress Anda haruslah menggunakan sub-domain."
 
 #: admin/network.php:354
 msgid "The original configuration steps are shown here for reference."
 msgstr "Langkah-langkah konfigurasi asli akan ditampilkan di sini sebagai referensi."
 
 #: admin/network.php:261
-msgid "Because you are using <code>localhost</code>, the sites in your WordPress network must use sub-directories. Consider using <code>localhost.localdomain</code> if you wish to use sub-domains."
-msgstr "Karena Anda menggunakan <code>localhost</code>, situs-situs pada jaringan WordPress Anda haruslah menggunakan sub-direktor. Pertimbangkan menggunakan <code>localhost.localdomain</code> bila Anda ingin menggunakan sub-domain."
+msgid "Because you are using <code>localhost</code>, the sites in your SlioPress network must use sub-directories. Consider using <code>localhost.localdomain</code> if you wish to use sub-domains."
+msgstr "Karena Anda menggunakan <code>localhost</code>, situs-situs pada jaringan SlioPress Anda haruslah menggunakan sub-direktor. Pertimbangkan menggunakan <code>localhost.localdomain</code> bila Anda ingin menggunakan sub-domain."
 
 #: admin/network.php:199
-msgid "Fill in the information below and you&#8217;ll be on your way to creating a network of WordPress sites. We will create configuration files in the next step."
-msgstr "Lengkapi informasi di bawah ini dan Anda sudah dapat memulai menciptakan sebuah jaringan situs WordPress. Kami akan menciptakan berkas konfigurasi pada langkah berikut."
+msgid "Fill in the information below and you&#8217;ll be on your way to creating a network of SlioPress sites. We will create configuration files in the next step."
+msgstr "Lengkapi informasi di bawah ini dan Anda sudah dapat memulai menciptakan sebuah jaringan situs SlioPress. Kami akan menciptakan berkas konfigurasi pada langkah berikut."
 
 #: admin/network.php:117
 msgid "Choose subdomains or subdirectories; this can only be switched afterwards by reconfiguring your install. Fill out the network details, and click install. If this does not work, you may have to add a wildcard DNS record (for subdomains) or change to another setting in Permalinks (for subdirectories)."
@@ -783,8 +783,8 @@ msgid "If a version update to core has not happened, clicking this button won&#8
 msgstr "Jika versi pembaruan untuk inti belum terjadi, mengklik tombol ini tidak akan berpengaruh apa-apa."
 
 #: admin/network/site-new.php:49
-msgid "The following words are reserved for use by WordPress functions and cannot be used as blog names: <code>%s</code>"
-msgstr "Kata-kata berikut disediakan untuk digunakan oleh fungsi WordPress dan tidak dapat digunakan sebagai nama blog: <code>%s</code>"
+msgid "The following words are reserved for use by SlioPress functions and cannot be used as blog names: <code>%s</code>"
+msgstr "Kata-kata berikut disediakan untuk digunakan oleh fungsi SlioPress dan tidak dapat digunakan sebagai nama blog: <code>%s</code>"
 
 #: admin/network/upgrade.php:69
 msgid "Warning! Problem updating %1$s. Your server may not be able to connect to sites running on it. Error message: <em>%2$s</em>"

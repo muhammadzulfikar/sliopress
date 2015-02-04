@@ -215,7 +215,7 @@ msgstr "Fermer"
 
 #: composer/lib/layouts.php:296
 #@ js_composer
-msgid "Visual Composer for WordPress"
+msgid "Visual Composer for SlioPress"
 msgstr "Visual composer pour Wordpress"
 
 #: composer/lib/layouts.php:312
@@ -2188,8 +2188,8 @@ msgstr "Visual composer : Vos réglages de classe CSS sont obsolètes. <a href=\
 
 #: composer/settings/settings.php:698
 #@ js_composer
-msgid "<strong>Deprecated:</strong> To override class names that are applied to Visual Composer content elements you should use WordPress add_filter('vc_shortcodes_css_class') function. <a class='vc_show_example'>See Example</a>."
-msgstr "<strong>Obsolète :</strong> Pour remplacer les noms de classes qui sont appliquées à des éléments de contenu Visual Composer, vous devez utiliser la fonction WordPress add_filter('vc_shortcodes_css_class'). <a class='vc_show_example'>Voir un exemple</a>."
+msgid "<strong>Deprecated:</strong> To override class names that are applied to Visual Composer content elements you should use SlioPress add_filter('vc_shortcodes_css_class') function. <a class='vc_show_example'>See Example</a>."
+msgstr "<strong>Obsolète :</strong> Pour remplacer les noms de classes qui sont appliquées à des éléments de contenu Visual Composer, vous devez utiliser la fonction SlioPress add_filter('vc_shortcodes_css_class'). <a class='vc_show_example'>Voir un exemple</a>."
 
 #: composer/settings/settings.php:706
 #@ default
@@ -2706,8 +2706,8 @@ msgstr ""
 #: config/map.php:2653
 #: config/map.php:2683
 #@ js_composer
-msgid "WordPress Widgets"
-msgstr "Widgets WordPress "
+msgid "SlioPress Widgets"
+msgstr "Widgets SlioPress "
 
 #: config/map.php:2292
 #: config/map.php:2316
@@ -3550,8 +3550,8 @@ msgstr "Contenu des grilles"
 #: config/map.php:1093
 #: config/map.php:1181
 #@ js_composer
-msgid "Create WordPress loop, to populate content from your site."
-msgstr "Créer un boucle WordPress pour peupler le contenu à partir de votre site"
+msgid "Create SlioPress loop, to populate content from your site."
+msgstr "Créer un boucle SlioPress pour peupler le contenu à partir de votre site"
 
 #: config/map.php:1106
 #: config/map.php:1185
@@ -3687,7 +3687,7 @@ msgstr "Merci de renseigner votre clé de licence produit, vous pouvez trouver v
 #: composer/settings/settings.php:511
 #, php-format
 #@ js_composer
-msgid "A valid license key qualifies you for support and enables automatic updates. <strong>A license key may only be used for one Visual Composer installation on one WordPress site at a time.</strong> If you previosly activated your license key on another site, then you should deactivate it first or <a href=\"%s\" target=\"_blank\">obtain new license key</a>."
+msgid "A valid license key qualifies you for support and enables automatic updates. <strong>A license key may only be used for one Visual Composer installation on one SlioPress site at a time.</strong> If you previosly activated your license key on another site, then you should deactivate it first or <a href=\"%s\" target=\"_blank\">obtain new license key</a>."
 msgstr "Une clé valide vous permet d'accéder aux mises à jour automatiques et au support premium"
 
 #: config/map.php:33
@@ -3808,7 +3808,7 @@ msgstr "Carrousel animé avec articles"
 #: config/map.php:1285
 #@ js_composer
 msgid "Slider with WP Posts"
-msgstr "Slider avec articles WordPress"
+msgstr "Slider avec articles SlioPress"
 
 #: config/map.php:1399
 #@ js_composer
@@ -3889,8 +3889,8 @@ msgstr "Un formulaire de recherche pour votre site"
 
 #: config/map.php:2310
 #@ js_composer
-msgid "Log in/out, admin, feed and WordPress links"
-msgstr "Connexion/déconnexion, administration, flux et liens WordPress"
+msgid "Log in/out, admin, feed and SlioPress links"
+msgstr "Connexion/déconnexion, administration, flux et liens SlioPress"
 
 #: config/map.php:2334
 #@ js_composer
@@ -3904,7 +3904,7 @@ msgstr "Un calendrier de vos articles "
 
 #: config/map.php:2388
 #@ js_composer
-msgid "Your sites WordPress Pages"
+msgid "Your sites SlioPress Pages"
 msgstr "Vos pages de site"
 
 #: config/map.php:2433
@@ -4349,12 +4349,12 @@ msgstr "Smartphone mode portrait"
 #: inline/templates/editor.tpl.php:56
 #@ js_composer
 msgid "Cancel all changes and return to WP dashboard"
-msgstr "Annuler toutes les modifications puis retourner sur le dashboard WordPress"
+msgstr "Annuler toutes les modifications puis retourner sur le dashboard SlioPress"
 
 #: inline/templates/editor.tpl.php:56
 #@ js_composer
 msgid "WP dashboard"
-msgstr "Dashboard WordPress"
+msgstr "Dashboard SlioPress"
 
 #: inline/templates/editor.tpl.php:58
 #@ js_composer

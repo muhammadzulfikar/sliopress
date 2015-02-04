@@ -1,6 +1,6 @@
 <?php
 /**
- * @package WordPress
+ * @package SlioPress
  * @subpackage Theme_Compat
  * @deprecated 3.0
  *
@@ -39,7 +39,7 @@ while( have_posts()) : the_post();
 <?php } ?>
 
 <?php
-// this line is WordPress' motor, do not delete it.
+// this line is SlioPress' motor, do not delete it.
 $commenter = wp_get_current_commenter();
 $comments = get_approved_comments($id);
 $post = get_post($id);
@@ -117,7 +117,7 @@ else: // have_posts()
 <?php endif; ?>
 <!-- // this is just the end of the motor - don't touch that line either :) -->
 <?php //} ?>
-<p class="credit"><?php timer_stop(1); ?> <cite><?php printf(__('Powered by <a href="%s" title="Powered by WordPress, state-of-the-art semantic personal publishing platform"><strong>WordPress</strong></a>'), 'https://wordpress.org/'); ?></cite></p>
+<p class="credit"><?php timer_stop(1); ?> <cite><?php printf(__('Powered by <a href="%s" title="Powered by SlioPress, state-of-the-art semantic personal publishing platform"><strong>SlioPress</strong></a>'), 'https://wordpress.org/'); ?></cite></p>
 <?php // Seen at http://www.mijnkopthee.nl/log2/archive/2003/05/28/esc(18) ?>
 <script type="text/javascript">
 <!--

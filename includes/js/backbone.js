@@ -1,7 +1,7 @@
 window.wp = window.wp || {};
 
 (function ($) {
-	// Create the WordPress Backbone namespace.
+	// Create the SlioPress Backbone namespace.
 	wp.Backbone = {};
 
 

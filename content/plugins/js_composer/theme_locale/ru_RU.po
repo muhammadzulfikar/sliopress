@@ -219,8 +219,8 @@ msgid "Cancel"
 msgstr "Отменить"
 
 #: composer/lib/layouts.php:254 composer/./lib/layouts.php:254
-msgid "Visual Composer for WordPress"
-msgstr "Visual Composer для WordPress"
+msgid "Visual Composer for SlioPress"
+msgstr "Visual Composer для SlioPress"
 
 #: composer/lib/layouts.php:259 composer/./lib/layouts.php:259
 msgid "Update"
@@ -911,12 +911,12 @@ msgstr "Настройки Visual Composer от WPBakery"
 #: composer/settings/settings.php:609 composer/./settings/settings.php:609
 msgid ""
 "<strong>Deprecated:</strong> To override class names that are applied to "
-"Visual Composer content elements you should use WordPress add_filter"
+"Visual Composer content elements you should use SlioPress add_filter"
 "('vc_shortcodes_css_class') function. <a class='vc_show_example'>See "
 "Example</a>."
 msgstr ""
 "<strong>Внимание:</strong> Чтобы изменить классы которые используются в "
-"блоках Visual Composer, вы должны использовать WordPress функцию add_filter"
+"блоках Visual Composer, вы должны использовать SlioPress функцию add_filter"
 "('vc_shortcodes_css_class'); <a class='vc_show_example'>Пример</a>."
 
 #: composer/settings/settings.php:617 composer/./settings/settings.php:617
@@ -2411,8 +2411,8 @@ msgstr "Поиск"
 #: config/map.php:1719 config/map.php:1750 config/map.php:1784
 #: config/map.php:1824 config/map.php:1865 config/map.php:1894
 #: config/map.php:1922
-msgid "WordPress Widgets"
-msgstr "Виджеты WordPress"
+msgid "SlioPress Widgets"
+msgstr "Виджеты SlioPress"
 
 #: config/map.php:1554 config/map.php:1576 config/map.php:1598
 #: config/map.php:1626 config/map.php:1648 config/map.php:1691

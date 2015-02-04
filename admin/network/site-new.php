@@ -2,12 +2,12 @@
 /**
  * Add Site Administration Screen
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Multisite
  * @since 3.1.0
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load SlioPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( ! is_multisite() )
@@ -46,7 +46,7 @@ if ( isset($_REQUEST['action']) && 'add-site' == $_REQUEST['action'] ) {
 		/** This filter is documented in includes/ms-functions.php */
 		$subdirectory_reserved_names = apply_filters( 'subdirectory_reserved_names', array( 'page', 'comments', 'blog', 'files', 'feed' ) );
 		if ( in_array( $domain, $subdirectory_reserved_names ) )
-			wp_die( sprintf( __('The following words are reserved for use by WordPress functions and cannot be used as blog names: <code>%s</code>' ), implode( '</code>, <code>', $subdirectory_reserved_names ) ) );
+			wp_die( sprintf( __('The following words are reserved for use by SlioPress functions and cannot be used as blog names: <code>%s</code>' ), implode( '</code>, <code>', $subdirectory_reserved_names ) ) );
 	}
 
 	$title = $blog['title'];

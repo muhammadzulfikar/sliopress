@@ -146,7 +146,7 @@ function custom_theme_options() {
       array(
         'id'          => 'demo_custom_post_type_checkbox',
         'label'       => __( 'Custom Post Type Checkbox', 'theme-text-domain' ),
-        'desc'        => sprintf( __( 'The Custom Post Type Select option type displays a list of IDs from any available WordPress post type or custom post type. It allows the user to check multiple post IDs for use in a custom function or loop. Requires at least one valid %1$s in the %1$s field.', 'theme-text-domain' ), '<code>post_type</code>' ),
+        'desc'        => sprintf( __( 'The Custom Post Type Select option type displays a list of IDs from any available SlioPress post type or custom post type. It allows the user to check multiple post IDs for use in a custom function or loop. Requires at least one valid %1$s in the %1$s field.', 'theme-text-domain' ), '<code>post_type</code>' ),
         'std'         => '',
         'type'        => 'custom-post-type-checkbox',
         'section'     => 'option_types',
@@ -161,7 +161,7 @@ function custom_theme_options() {
       array(
         'id'          => 'demo_custom_post_type_select',
         'label'       => __( 'Custom Post Type Select', 'theme-text-domain' ),
-        'desc'        => sprintf( __( 'The Custom Post Type Select option type displays a list of IDs from any available WordPress post type or custom post type. It will return a single post ID for use in a custom function or loop. Requires at least one valid %1$s in the %1$s field.', 'theme-text-domain' ), '<code>post_type</code>' ),
+        'desc'        => sprintf( __( 'The Custom Post Type Select option type displays a list of IDs from any available SlioPress post type or custom post type. It will return a single post ID for use in a custom function or loop. Requires at least one valid %1$s in the %1$s field.', 'theme-text-domain' ), '<code>post_type</code>' ),
         'std'         => '',
         'type'        => 'custom-post-type-select',
         'section'     => 'option_types',
@@ -441,7 +441,7 @@ function custom_theme_options() {
       array(
         'id'          => 'demo_sidebar_select',
         'label'       => __( 'Sidebar Select', 'theme-text-domain' ),
-        'desc'        => '<p>' . sprintf(  __( 'This option type makes it possible for users to select a WordPress registered sidebar to use on a specific area. By using the two provided filters, %s, and %s we can be selective about which sidebars are available on a specific content area.', 'theme-text-domain' ), '<code>ot_recognized_sidebars</code>', '<code>ot_recognized_sidebars_{$field_id}</code>' ) . '</p><p>' . sprintf( __( 'For example, if we create a WordPress theme that provides the ability to change the Blog Sidebar and we don\'t want to have the footer sidebars available on this area, we can unset those sidebars either manually or by using a regular expression if we have a common name like %s.', 'theme-text-domain' ), '<code>footer-sidebar-$i</code>' ) . '</p>',
+        'desc'        => '<p>' . sprintf(  __( 'This option type makes it possible for users to select a SlioPress registered sidebar to use on a specific area. By using the two provided filters, %s, and %s we can be selective about which sidebars are available on a specific content area.', 'theme-text-domain' ), '<code>ot_recognized_sidebars</code>', '<code>ot_recognized_sidebars_{$field_id}</code>' ) . '</p><p>' . sprintf( __( 'For example, if we create a SlioPress theme that provides the ability to change the Blog Sidebar and we don\'t want to have the footer sidebars available on this area, we can unset those sidebars either manually or by using a regular expression if we have a common name like %s.', 'theme-text-domain' ), '<code>footer-sidebar-$i</code>' ) . '</p>',
         'std'         => '',
         'type'        => 'sidebar-select',
         'section'     => 'option_types',
@@ -606,7 +606,7 @@ function custom_theme_options() {
       array(
         'id'          => 'demo_upload',
         'label'       => __( 'Upload', 'theme-text-domain' ),
-        'desc'        => sprintf( __( 'The Upload option type is used to upload any WordPress supported media. After uploading, users are required to press the "%s" button in order to populate the input with the URI of that media. There is one caveat of this feature. If you import the theme options and have uploaded media on one site the old URI will not reflect the URI of your new site. You will have to re-upload or %s any media to your new server and change the URIs if necessary.', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),
+        'desc'        => sprintf( __( 'The Upload option type is used to upload any SlioPress supported media. After uploading, users are required to press the "%s" button in order to populate the input with the URI of that media. There is one caveat of this feature. If you import the theme options and have uploaded media on one site the old URI will not reflect the URI of your new site. You will have to re-upload or %s any media to your new server and change the URIs if necessary.', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),
         'std'         => '',
         'type'        => 'upload',
         'section'     => 'option_types',

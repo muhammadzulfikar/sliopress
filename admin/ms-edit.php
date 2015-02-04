@@ -2,7 +2,7 @@
 /**
  * Action handler for Multisite administration panels.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Multisite
  * @since 3.0.0
  */

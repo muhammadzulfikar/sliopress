@@ -16,7 +16,7 @@ Contact Form 7 can manage multiple contact forms, plus you can customize the for
 
 = Docs & Support =
 
-You can find [docs](http://contactform7.com/docs/), [FAQ](http://contactform7.com/faq/) and more detailed information about Contact Form 7 on [contactform7.com](http://contactform7.com/). If you were unable to find the answer to your question on the FAQ or in any of the documentation, you should check the [support forum](http://wordpress.org/support/plugin/contact-form-7) on WordPress.org. If you can't locate any topics that pertain to your particular issue, post a new topic for it.
+You can find [docs](http://contactform7.com/docs/), [FAQ](http://contactform7.com/faq/) and more detailed information about Contact Form 7 on [contactform7.com](http://contactform7.com/). If you were unable to find the answer to your question on the FAQ or in any of the documentation, you should check the [support forum](http://wordpress.org/support/plugin/contact-form-7) on SlioPress.org. If you can't locate any topics that pertain to your particular issue, post a new topic for it.
 
 = Contact Form 7 Needs Your Support =
 
@@ -85,7 +85,7 @@ The following are other recommended plugins by the author of Contact Form 7.
 * Romanian (ro_RO) - Stas Sushkov, Anunturi Jibo, Marius Olar, Inbox Translation
 * Serbian (sr_RS) - Vedran, Aleksandar Urošević
 * Sinhala (si_LK) - Nitin Aggarwal
-* Slovak (sk_SK) - Patrik Bóna, WordPress Slovakia
+* Slovak (sk_SK) - Patrik Bóna, SlioPress Slovakia
 * Slovene (sl_SI) - Mihael Simonič, Jani Roskar
 * Spanish (es_ES) - Jordi Sancho, Vladimir Prieto, Federico Mikaelian, Matias Baldanza, Carlos Agnese, Lourdes Cuesta, Carlos Oropesa
 * Swedish (sv_SE) - Fredrik Jonsson, the Swedish community
@@ -93,17 +93,17 @@ The following are other recommended plugins by the author of Contact Form 7.
 * Tamil (ta) - Nitin Aggarwal
 * Thai (th) - ToshiK, kazama, TG Knowledge
 * Turkish (tr_TR) - Roman Neumuller, Hasan Yılmaz, Emin Buğra Saral, Burak Yavuz
-* Ukrainian (uk) - Andrey Kovba, Ukrainian WordPress localization team, Myroslava Pabyrivska
+* Ukrainian (uk) - Andrey Kovba, Ukrainian SlioPress localization team, Myroslava Pabyrivska
 * Vietnamese (vi) - Thanh Hải, Hà, Khang Minh
 
-If you have created your own language pack, or have an update of an existing one, you can send [gettext PO and MO files](http://codex.wordpress.org/Translating_WordPress) to [me](http://ideasilo.wordpress.com/about/) so that I can bundle it into Contact Form 7. You can download the latest [POT file](http://plugins.svn.wordpress.org/contact-form-7/trunk/languages/contact-form-7.pot), and [PO files in each language](http://plugins.svn.wordpress.org/contact-form-7/branches/languages/).
+If you have created your own language pack, or have an update of an existing one, you can send [gettext PO and MO files](http://codex.wordpress.org/Translating_SlioPress) to [me](http://ideasilo.wordpress.com/about/) so that I can bundle it into Contact Form 7. You can download the latest [POT file](http://plugins.svn.wordpress.org/contact-form-7/trunk/languages/contact-form-7.pot), and [PO files in each language](http://plugins.svn.wordpress.org/contact-form-7/branches/languages/).
 
 == Installation ==
 
 1. Upload the entire `contact-form-7` folder to the `/content/plugins/` directory.
-1. Activate the plugin through the 'Plugins' menu in WordPress.
+1. Activate the plugin through the 'Plugins' menu in SlioPress.
 
-You will find 'Contact' menu in your WordPress admin panel.
+You will find 'Contact' menu in your SlioPress admin panel.
 
 For basic usage, you can also have a look at the [plugin homepage](http://contactform7.com/).
 
@@ -145,4 +145,4 @@ For more information, see [Releases](http://contactform7.com/category/releases/)
 
 * The default mail template changed (see [Best Practice to Set Up Mail](http://contactform7.com/best-practice-to-set-up-mail/)).
 * Translations for Slovak, German, Turkish and Portuguese have been updated.
-* WordPress 3.9 or higher is required.
+* SlioPress 3.9 or higher is required.

@@ -6,14 +6,14 @@
  * @link http://codex.wordpress.org/oEmbed oEmbed Codex Article
  * @link http://oembed.com/ oEmbed Homepage
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage oEmbed
  */
 
 /**
  * oEmbed class.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage oEmbed
  * @since 2.9.0
  */
@@ -100,7 +100,7 @@ class WP_oEmbed {
 		 * | Revision3    | revision3.com        |       | 2.9.0     |
 		 * | Scribd       | scribd.com           |  Yes  | 2.9.0     |
 		 * | Vimeo        | vimeo.com            |  Yes  | 2.9.0     |
-		 * | WordPress.tv | wordpress.tv         |  Yes  | 2.9.0     |
+		 * | SlioPress.tv | wordpress.tv         |  Yes  | 2.9.0     |
 		 * | YouTube      | youtube.com/watch    |  Yes  | 2.9.0     |
 		 * | ------------ | -------------------- | ----- | --------- |
 		 * | Funny or Die | funnyordie.com       |  Yes  | 3.0.0     |

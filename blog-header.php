@@ -1,8 +1,8 @@
 <?php
 /**
- * Loads the WordPress environment and template.
+ * Loads the SlioPress environment and template.
  *
- * @package WordPress
+ * @package SlioPress
  */
 
 if ( !isset($wp_did_header) ) {

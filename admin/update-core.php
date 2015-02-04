@@ -2,11 +2,11 @@
 /**
  * Update Core administration panel.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** SlioPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 wp_enqueue_style( 'plugin-install' );
@@ -43,7 +43,7 @@ function list_core_update( $update ) {
 	$mysql_version  = $wpdb->db_version();
 	$show_buttons = true;
 	if ( 'development' == $update->response ) {
-		$message = __('You are using a development version of WordPress. You can update to the latest nightly build automatically or download the nightly build and install it manually:');
+		$message = __('You are using a development version of SlioPress. You can update to the latest nightly build automatically or download the nightly build and install it manually:');
 		$download = __('Download nightly build');
 	} else {
 		if ( $current ) {
@@ -58,13 +58,13 @@ function list_core_update( $update ) {
 				$mysql_compat = version_compare( $mysql_version, $update->mysql_version, '>=' );
 
 			if ( !$mysql_compat && !$php_compat )
-				$message = sprintf( __('You cannot update because <a href="http://codex.wordpress.org/Version_%1$s">WordPress %1$s</a> requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s.'), $update->current, $update->php_version, $update->mysql_version, $php_version, $mysql_version );
+				$message = sprintf( __('You cannot update because <a href="http://codex.wordpress.org/Version_%1$s">SlioPress %1$s</a> requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s.'), $update->current, $update->php_version, $update->mysql_version, $php_version, $mysql_version );
 			elseif ( !$php_compat )
-				$message = sprintf( __('You cannot update because <a href="http://codex.wordpress.org/Version_%1$s">WordPress %1$s</a> requires PHP version %2$s or higher. You are running version %3$s.'), $update->current, $update->php_version, $php_version );
+				$message = sprintf( __('You cannot update because <a href="http://codex.wordpress.org/Version_%1$s">SlioPress %1$s</a> requires PHP version %2$s or higher. You are running version %3$s.'), $update->current, $update->php_version, $php_version );
 			elseif ( !$mysql_compat )
-				$message = sprintf( __('You cannot update because <a href="http://codex.wordpress.org/Version_%1$s">WordPress %1$s</a> requires MySQL version %2$s or higher. You are running version %3$s.'), $update->current, $update->mysql_version, $mysql_version );
+				$message = sprintf( __('You cannot update because <a href="http://codex.wordpress.org/Version_%1$s">SlioPress %1$s</a> requires MySQL version %2$s or higher. You are running version %3$s.'), $update->current, $update->mysql_version, $mysql_version );
 			else
-				$message = 	sprintf(__('You can update to <a href="http://codex.wordpress.org/Version_%1$s">WordPress %2$s</a> automatically or download the package and install it manually:'), $update->current, $version_string);
+				$message = 	sprintf(__('You can update to <a href="http://codex.wordpress.org/Version_%1$s">SlioPress %2$s</a> automatically or download the package and install it manually:'), $update->current, $version_string);
 			if ( !$mysql_compat || !$php_compat )
 				$show_buttons = false;
 		}
@@ -98,7 +98,7 @@ function list_core_update( $update ) {
 	    echo '<p class="hint">'.__('This localized version contains both the translation and various other localization fixes. You can skip upgrading if you want to keep your current translation.').'</p>';
 	// Partial builds don't need language-specific warnings.
 	elseif ( 'en_US' == $update->locale && get_locale() != 'en_US' && ( ! $update->packages->partial && $wp_version == $update->partial_version ) ) {
-	    echo '<p class="hint">'.sprintf( __('You are about to install WordPress %s <strong>in English (US).</strong> There is a chance this update will break your translation. You may prefer to wait for the localized version to be released.'), $update->response != 'development' ? $update->current : '' ).'</p>';
+	    echo '<p class="hint">'.sprintf( __('You are about to install SlioPress %s <strong>in English (US).</strong> There is a chance this update will break your translation. You may prefer to wait for the localized version to be released.'), $update->response != 'development' ? $update->current : '' ).'</p>';
 	}
 	echo '</form>';
 
@@ -132,7 +132,7 @@ function dismissed_updates() {
 }
 
 /**
- * Display upgrade WordPress for downloading latest or upgrading automatically form.
+ * Display upgrade SlioPress for downloading latest or upgrading automatically form.
  *
  * @since 2.7.0
  *
@@ -145,7 +145,7 @@ function core_upgrade_preamble() {
 
 	if ( !isset($updates[0]->response) || 'latest' == $updates[0]->response ) {
 		echo '<h3>';
-		_e('You have the latest version of WordPress.');
+		_e('You have the latest version of SlioPress.');
 
 		if ( wp_http_supports( array( 'ssl' ) ) ) {
 			require_once ABSPATH . 'admin/includes/class-upgrader.php';
@@ -163,11 +163,11 @@ function core_upgrade_preamble() {
 		echo '</h3>';
 	} else {
 		echo '<div class="updated inline"><p>';
-		_e('<strong>Important:</strong> before updating, please <a href="http://codex.wordpress.org/WordPress_Backups">back up your database and files</a>. For help with updates, visit the <a href="http://codex.wordpress.org/Updating_WordPress">Updating WordPress</a> Codex page.');
+		_e('<strong>Important:</strong> before updating, please <a href="http://codex.wordpress.org/SlioPress_Backups">back up your database and files</a>. For help with updates, visit the <a href="http://codex.wordpress.org/Updating_SlioPress">Updating SlioPress</a> Codex page.');
 		echo '</p></div>';
 
 		echo '<h3 class="response">';
-		_e( 'An updated version of WordPress is available.' );
+		_e( 'An updated version of SlioPress is available.' );
 		echo '</h3>';
 	}
 
@@ -193,7 +193,7 @@ function core_upgrade_preamble() {
 		echo '<p>' . __( 'While your site is being updated, it will be in maintenance mode. As soon as your updates are complete, your site will return to normal.' ) . '</p>';
 	} elseif ( ! $updates ) {
 		list( $normalized_version ) = explode( '-', $wp_version );
-		echo '<p>' . sprintf( __( '<a href="%s">Learn more about WordPress %s</a>.' ), esc_url( self_admin_url( 'about.php' ) ), $normalized_version ) . '</p>';
+		echo '<p>' . sprintf( __( '<a href="%s">Learn more about SlioPress %s</a>.' ), esc_url( self_admin_url( 'about.php' ) ), $normalized_version ) . '</p>';
 	}
 	dismissed_updates();
 }
@@ -245,22 +245,22 @@ function list_plugin_updates() {
 			continue;
 		}
 
-		// Get plugin compat for running version of WordPress.
+		// Get plugin compat for running version of SlioPress.
 		if ( isset($info->tested) && version_compare($info->tested, $cur_wp_version, '>=') ) {
-			$compat = '<br />' . sprintf(__('Compatibility with WordPress %1$s: 100%% (according to its author)'), $cur_wp_version);
+			$compat = '<br />' . sprintf(__('Compatibility with SlioPress %1$s: 100%% (according to its author)'), $cur_wp_version);
 		} elseif ( isset($info->compatibility[$cur_wp_version][$plugin_data->update->new_version]) ) {
 			$compat = $info->compatibility[$cur_wp_version][$plugin_data->update->new_version];
-			$compat = '<br />' . sprintf(__('Compatibility with WordPress %1$s: %2$d%% (%3$d "works" votes out of %4$d total)'), $cur_wp_version, $compat[0], $compat[2], $compat[1]);
+			$compat = '<br />' . sprintf(__('Compatibility with SlioPress %1$s: %2$d%% (%3$d "works" votes out of %4$d total)'), $cur_wp_version, $compat[0], $compat[2], $compat[1]);
 		} else {
-			$compat = '<br />' . sprintf(__('Compatibility with WordPress %1$s: Unknown'), $cur_wp_version);
+			$compat = '<br />' . sprintf(__('Compatibility with SlioPress %1$s: Unknown'), $cur_wp_version);
 		}
-		// Get plugin compat for updated version of WordPress.
+		// Get plugin compat for updated version of SlioPress.
 		if ( $core_update_version ) {
 			if ( isset($info->compatibility[$core_update_version][$plugin_data->update->new_version]) ) {
 				$update_compat = $info->compatibility[$core_update_version][$plugin_data->update->new_version];
-				$compat .= '<br />' . sprintf(__('Compatibility with WordPress %1$s: %2$d%% (%3$d "works" votes out of %4$d total)'), $core_update_version, $update_compat[0], $update_compat[2], $update_compat[1]);
+				$compat .= '<br />' . sprintf(__('Compatibility with SlioPress %1$s: %2$d%% (%3$d "works" votes out of %4$d total)'), $core_update_version, $update_compat[0], $update_compat[2], $update_compat[1]);
 			} else {
-				$compat .= '<br />' . sprintf(__('Compatibility with WordPress %1$s: Unknown'), $core_update_version);
+				$compat .= '<br />' . sprintf(__('Compatibility with SlioPress %1$s: Unknown'), $core_update_version);
 			}
 		}
 		// Get the upgrade notice for the new plugin version.
@@ -358,7 +358,7 @@ function list_translation_updates() {
 }
 
 /**
- * Upgrade WordPress core display.
+ * Upgrade SlioPress core display.
  *
  * @since 2.7.0
  *
@@ -387,7 +387,7 @@ function do_core_upgrade( $reinstall = false ) {
 
 ?>
 	<div class="wrap">
-	<h2><?php _e('Update WordPress'); ?></h2>
+	<h2><?php _e('Update SlioPress'); ?></h2>
 <?php
 
 	if ( false === ( $credentials = request_filesystem_credentials( $url, '', false, ABSPATH, array(), $allow_relaxed_file_ownership ) ) ) {
@@ -427,9 +427,9 @@ function do_core_upgrade( $reinstall = false ) {
 		return;
 	}
 
-	show_message( __('WordPress updated successfully') );
-	show_message( '<span class="hide-if-no-js">' . sprintf( __( 'Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href="%2$s">here</a>.' ), $result, esc_url( self_admin_url( 'about.php?updated' ) ) ) . '</span>' );
-	show_message( '<span class="hide-if-js">' . sprintf( __( 'Welcome to WordPress %1$s. <a href="%2$s">Learn more</a>.' ), $result, esc_url( self_admin_url( 'about.php?updated' ) ) ) . '</span>' );
+	show_message( __('SlioPress updated successfully') );
+	show_message( '<span class="hide-if-no-js">' . sprintf( __( 'Welcome to SlioPress %1$s. You will be redirected to the About SlioPress screen. If not, click <a href="%2$s">here</a>.' ), $result, esc_url( self_admin_url( 'about.php?updated' ) ) ) . '</span>' );
+	show_message( '<span class="hide-if-js">' . sprintf( __( 'Welcome to SlioPress %1$s. <a href="%2$s">Learn more</a>.' ), $result, esc_url( self_admin_url( 'about.php?updated' ) ) ) . '</span>' );
 	?>
 	</div>
 	<script type="text/javascript">
@@ -469,10 +469,10 @@ if ( ( 'do-theme-upgrade' == $action || ( 'do-plugin-upgrade' == $action && ! is
 	$action = 'upgrade-core';
 }
 
-$title = __('WordPress Updates');
+$title = __('SlioPress Updates');
 $parent_file = 'index.php';
 
-$updates_overview  = '<p>' . __( 'On this screen, you can update to the latest version of WordPress, as well as update your themes and plugins from the WordPress.org repositories.' ) . '</p>';
+$updates_overview  = '<p>' . __( 'On this screen, you can update to the latest version of SlioPress, as well as update your themes and plugins from the SlioPress.org repositories.' ) . '</p>';
 $updates_overview .= '<p>' . __( 'If an update is available, you&#8127;ll see a notification appear in the Toolbar and navigation menu.' ) . ' ' . __( 'Keeping your site updated is important for security. It also makes the internet a safer place for you and your readers.' ) . '</p>';
 
 get_current_screen()->add_help_tab( array(
@@ -481,11 +481,11 @@ get_current_screen()->add_help_tab( array(
 	'content' => $updates_overview
 ) );
 
-$updates_howto  = '<p>' . __( '<strong>WordPress</strong> &mdash; Updating your WordPress installation is a simple one-click procedure: just <strong>click on the &#8220;Update Now&#8221; button</strong> when you are notified that a new version is available.' ) . ' ' . __( 'In most cases, WordPress will automatically apply maintenance and security updates in the background for you.' ) . '</p>';
+$updates_howto  = '<p>' . __( '<strong>SlioPress</strong> &mdash; Updating your SlioPress installation is a simple one-click procedure: just <strong>click on the &#8220;Update Now&#8221; button</strong> when you are notified that a new version is available.' ) . ' ' . __( 'In most cases, SlioPress will automatically apply maintenance and security updates in the background for you.' ) . '</p>';
 $updates_howto .= '<p>' . __( '<strong>Themes and Plugins</strong> &mdash; To update individual themes or plugins from this screen, use the checkboxes to make your selection, then <strong>click on the appropriate &#8220;Update&#8221; button</strong>. To update all of your themes or plugins at once, you can check the box at the top of the section to select all before clicking the update button.' ) . '</p>';
 
 if ( 'en_US' != get_locale() ) {
-	$updates_howto .= '<p>' . __( '<strong>Translations</strong> &mdash; The files translating WordPress into your language are updated for you whenever any other updates occur. But if these files are out of date, you can <strong>click the &#8220;Update Translations&#8221;</strong> button.' ) . '</p>';
+	$updates_howto .= '<p>' . __( '<strong>Translations</strong> &mdash; The files translating SlioPress into your language are updated for you whenever any other updates occur. But if these files are out of date, you can <strong>click the &#8220;Update Translations&#8221;</strong> button.' ) . '</p>';
 }
 
 get_current_screen()->add_help_tab( array(
@@ -496,7 +496,7 @@ get_current_screen()->add_help_tab( array(
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __('For more information:') . '</strong></p>' .
-	'<p>' . __( '<a href="http://codex.wordpress.org/Dashboard_Updates_Screen" target="_blank">Documentation on Updating WordPress</a>' ) . '</p>' .
+	'<p>' . __( '<a href="http://codex.wordpress.org/Dashboard_Updates_Screen" target="_blank">Documentation on Updating SlioPress</a>' ) . '</p>' .
 	'<p>' . __( '<a href="https://wordpress.org/support/" target="_blank">Support Forums</a>' ) . '</p>'
 );
 
@@ -508,7 +508,7 @@ if ( 'upgrade-core' == $action ) {
 	require_once(ABSPATH . 'admin/admin-header.php');
 	?>
 	<div class="wrap">
-	<h2><?php _e('WordPress Updates'); ?></h2>
+	<h2><?php _e('SlioPress Updates'); ?></h2>
 	<?php
 	if ( $upgrade_error ) {
 		echo '<div class="error"><p>';
@@ -647,7 +647,7 @@ if ( 'upgrade-core' == $action ) {
 
 } else {
 	/**
-	 * Fires for each custom update action on the WordPress Updates screen.
+	 * Fires for each custom update action on the SlioPress Updates screen.
 	 *
 	 * The dynamic portion of the hook name, `$action`, refers to the
 	 * passed update action. The hook fires in lieu of all available

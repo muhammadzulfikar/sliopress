@@ -313,8 +313,8 @@ msgid ""
 msgstr ""
 
 #: composer/lib/layouts.php:293 composer/./lib/layouts.php:293
-msgid "Visual Composer for WordPress"
-msgstr "Visual Composer для WordPress"
+msgid "Visual Composer for SlioPress"
+msgstr "Visual Composer для SlioPress"
 
 #: composer/lib/layouts.php:309 inline/templates/editor.tpl.php:81
 #: inline/templates/editor.tpl.php:354 composer/./lib/layouts.php:309
@@ -1210,7 +1210,7 @@ msgstr ""
 msgid ""
 "A valid license key qualifies you for support and enables automatic updates. "
 "<strong>A license key may only be used for one Visual Composer installation "
-"on one WordPress site at a time.</strong> If you previosly activated your "
+"on one SlioPress site at a time.</strong> If you previosly activated your "
 "license key on another site, then you should deactivate it first or <a href="
 "\"%s\" target=\"_blank\">obtain new license key</a>."
 msgstr ""
@@ -1239,12 +1239,12 @@ msgstr ""
 #: composer/settings/settings.php:697 composer/./settings/settings.php:697
 msgid ""
 "<strong>Deprecated:</strong> To override class names that are applied to "
-"Visual Composer content elements you should use WordPress add_filter"
+"Visual Composer content elements you should use SlioPress add_filter"
 "('vc_shortcodes_css_class') function. <a class='vc_show_example'>See "
 "Example</a>."
 msgstr ""
 "<strong>Внимание:</strong> Чтобы изменить классы которые используются в "
-"блоках Visual Composer, вы должны использовать WordPress функцию add_filter"
+"блоках Visual Composer, вы должны использовать SlioPress функцию add_filter"
 "('vc_shortcodes_css_class'); <a class='vc_show_example'>Пример</a>."
 
 #: composer/settings/settings.php:705 composer/./settings/settings.php:705
@@ -2536,7 +2536,7 @@ msgid "Grids content"
 msgstr "Число слайдов"
 
 #: config/map.php:1083 config/map.php:1170
-msgid "Create WordPress loop, to populate content from your site."
+msgid "Create SlioPress loop, to populate content from your site."
 msgstr ""
 
 #: config/map.php:1095 config/map.php:1174
@@ -3273,8 +3273,8 @@ msgstr "Поиск"
 #: config/map.php:2278 config/map.php:2310 config/map.php:2346
 #: config/map.php:2390 config/map.php:2432 config/map.php:2463
 #: config/map.php:2493
-msgid "WordPress Widgets"
-msgstr "Виджеты WordPress"
+msgid "SlioPress Widgets"
+msgstr "Виджеты SlioPress"
 
 #: config/map.php:2096
 msgid "A search form for your site"
@@ -3291,7 +3291,7 @@ msgstr ""
 "использовать значение по умолчанию."
 
 #: config/map.php:2120
-msgid "Log in/out, admin, feed and WordPress links"
+msgid "Log in/out, admin, feed and SlioPress links"
 msgstr ""
 
 #: config/map.php:2144
@@ -3313,8 +3313,8 @@ msgstr ""
 
 #: config/map.php:2198
 #, fuzzy
-msgid "Your sites WordPress Pages"
-msgstr "Виджеты WordPress"
+msgid "Your sites SlioPress Pages"
+msgstr "Виджеты SlioPress"
 
 #: config/map.php:2208 config/map.php:2404
 msgid "Sort by"
@@ -3630,7 +3630,7 @@ msgstr ""
 #: inline/templates/editor.tpl.php:66
 #, fuzzy
 msgid "Exit Visual Composer edit mode"
-msgstr "Visual Composer для WordPress"
+msgstr "Visual Composer для SlioPress"
 
 #: inline/templates/editor.tpl.php:114 inline/templates/editor.tpl.php:126
 #: inline/templates/editor.tpl.php:136 inline/templates/editor.tpl.php:153

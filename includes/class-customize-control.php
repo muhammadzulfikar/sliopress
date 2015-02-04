@@ -2,7 +2,7 @@
 /**
  * Customize Control Class
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Customize
  * @since 3.4.0
  */
@@ -539,7 +539,7 @@ class WP_Customize_Control {
 /**
  * Customize Color Control Class
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Customize
  * @since 3.4.0
  */
@@ -634,7 +634,7 @@ class WP_Customize_Color_Control extends WP_Customize_Control {
 /**
  * Customize Upload Control Class
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Customize
  * @since 3.4.0
  */
@@ -805,7 +805,7 @@ class WP_Customize_Upload_Control extends WP_Customize_Control {
 /**
  * Customize Image Control Class
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Customize
  * @since 3.4.0
  */
@@ -874,7 +874,7 @@ class WP_Customize_Image_Control extends WP_Customize_Upload_Control {
 /**
  * Customize Background Image Control Class
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Customize
  * @since 3.4.0
  */

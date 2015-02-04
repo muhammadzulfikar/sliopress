@@ -409,7 +409,7 @@ if (!class_exists('WPBakeryVisualComposer')) {
         public function customizeControlsFooterScripts() {
         }
         public function addMetaData() {
-            echo '<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>'."\n";
+            echo '<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for SlioPress."/>'."\n";
         }
         public function activateLicense() {
             $params = array();

@@ -1,7 +1,7 @@
 /* global tinymce */
 
 /**
- * WordPress View plugin.
+ * SlioPress View plugin.
  */
 tinymce.PluginManager.add( 'wpview', function( editor ) {
 	var selected,

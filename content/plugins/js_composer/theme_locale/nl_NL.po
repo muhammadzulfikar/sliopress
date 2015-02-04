@@ -310,8 +310,8 @@ msgstr ""
 
 # @ js_composer
 #: JS_Composer/js_composer/composer/lib/layouts.php:288
-msgid "Visual Composer for WordPress"
-msgstr "Visual Composer voor WordPress"
+msgid "Visual Composer for SlioPress"
+msgstr "Visual Composer voor SlioPress"
 
 # @ js_composer
 #: JS_Composer/js_composer/composer/lib/layouts.php:304
@@ -1339,13 +1339,13 @@ msgstr ""
 msgid ""
 "A valid license key qualifies you for support and enables automatic updates. "
 "<strong>A license key may only be used for one Visual Composer installation "
-"on one WordPress site at a time.</strong> If you previosly activated your "
+"on one SlioPress site at a time.</strong> If you previosly activated your "
 "license key on another site, then you should deactivate it first or <a href="
 "\"%s\" target=\"_blank\">obtain new license key</a>."
 msgstr ""
 "Met een geldige licentie sleutel kwalificeert u zich voor ondersteuning en "
 "automatische updates. <strong>Een licentie sleutel mag enkel gebruikt worden "
-"voor één WordPress website.</strong> Indien u eerder uw licentie sleutel op "
+"voor één SlioPress website.</strong> Indien u eerder uw licentie sleutel op "
 "een andere website heeft geactiveerd, dient u deze uit te schakelen of <a "
 "href=\"%s\" target=\"_blank\">een nieuwe licentie aan te schaffen</a>"
 
@@ -1378,12 +1378,12 @@ msgstr ""
 #: JS_Composer/js_composer/composer/settings/settings.php:697
 msgid ""
 "<strong>Deprecated:</strong> To override class names that are applied to "
-"Visual Composer content elements you should use WordPress add_filter"
+"Visual Composer content elements you should use SlioPress add_filter"
 "('vc_shortcodes_css_class') function. <a class='vc_show_example'>See "
 "Example</a>."
 msgstr ""
 "<strong>Verouderd:</ strong> Om class namen die worden toegepast op Visual "
-"Composer content elementen te overschrijven moet je WordPress add_filter "
+"Composer content elementen te overschrijven moet je SlioPress add_filter "
 "gebruiken('vc_shortcodes_css_class')<a class='vc_show_example'>zie "
 "voorbeeld</ a>."
 
@@ -2970,8 +2970,8 @@ msgstr "Raster inhoud"
 
 #: JS_Composer/js_composer/config/map.php:1002
 #: JS_Composer/js_composer/config/map.php:1089
-msgid "Create WordPress loop, to populate content from your site."
-msgstr "Maak een WordPress loop, om uw website te vullen met inhoud."
+msgid "Create SlioPress loop, to populate content from your site."
+msgstr "Maak een SlioPress loop, om uw website te vullen met inhoud."
 
 # @ js_composer
 #: JS_Composer/js_composer/config/map.php:1014
@@ -3871,7 +3871,7 @@ msgstr "Zoeken"
 #: JS_Composer/js_composer/config/map.php:2351
 #: JS_Composer/js_composer/config/map.php:2382
 #: JS_Composer/js_composer/config/map.php:2412
-msgid "WordPress Widgets"
+msgid "SlioPress Widgets"
 msgstr "Wordpress Widgets"
 
 #: JS_Composer/js_composer/config/map.php:2015
@@ -3898,8 +3898,8 @@ msgstr ""
 "titel te gebruiken."
 
 #: JS_Composer/js_composer/config/map.php:2039
-msgid "Log in/out, admin, feed and WordPress links"
-msgstr "Log in/uit, admin, feed en WordPress links"
+msgid "Log in/out, admin, feed and SlioPress links"
+msgstr "Log in/uit, admin, feed en SlioPress links"
 
 # @ default
 #: JS_Composer/js_composer/config/map.php:2063
@@ -3922,7 +3922,7 @@ msgstr "Een kalender van uw websites berichten"
 
 # @ js_composer
 #: JS_Composer/js_composer/config/map.php:2117
-msgid "Your sites WordPress Pages"
+msgid "Your sites SlioPress Pages"
 msgstr "Uw Wordpress Widgets Paginas"
 
 # @ js_composer

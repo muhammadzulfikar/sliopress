@@ -1,13 +1,13 @@
 <?php
 /**
- * WordPress Roles and Capabilities.
+ * SlioPress Roles and Capabilities.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage User
  */
 
 /**
- * WordPress User Roles.
+ * SlioPress User Roles.
  *
  * The role option is simple, the structure is organized by role name that store
  * the name in value of the 'name' key. The capabilities are stored as an array
@@ -21,7 +21,7 @@
  *     )
  *
  * @since 2.0.0
- * @package WordPress
+ * @package SlioPress
  * @subpackage User
  */
 class WP_Roles {
@@ -103,7 +103,7 @@ class WP_Roles {
 	 * @since 2.1.0
 	 * @access protected
 	 *
-	 * @global wpdb  $wpdb          WordPress database abstraction object.
+	 * @global wpdb  $wpdb          SlioPress database abstraction object.
 	 * @global array $wp_user_roles Used to set the 'roles' property value.
 	 */
 	protected function _init() {
@@ -291,10 +291,10 @@ class WP_Roles {
 }
 
 /**
- * WordPress Role class.
+ * SlioPress Role class.
  *
  * @since 2.0.0
- * @package WordPress
+ * @package SlioPress
  * @subpackage User
  */
 class WP_Role {
@@ -410,10 +410,10 @@ class WP_Role {
 }
 
 /**
- * WordPress User class.
+ * SlioPress User class.
  *
  * @since 2.0.0
- * @package WordPress
+ * @package SlioPress
  * @subpackage User
  */
 class WP_User {

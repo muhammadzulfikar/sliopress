@@ -1,8 +1,8 @@
 <?php
 /**
- * Manages WordPress comments
+ * Manages SlioPress comments
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Comment
  */
 
@@ -24,7 +24,7 @@
  *
  * @since 1.2.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @param string $author       Comment author name.
  * @param string $email        Comment author email.
@@ -161,7 +161,7 @@ function get_approved_comments( $post_id, $args = array() ) {
  *
  * @since 2.0.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @param object|string|int $comment Comment to retrieve.
  * @param string $output Optional. OBJECT or ARRAY_A or ARRAY_N constants.
@@ -218,7 +218,7 @@ function get_comment(&$comment, $output = OBJECT) {
  *
  * @since 2.7.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @param string|array $args Optional. Array or string of arguments. See {@see WP_Comment_Query::query()}
  *                           for information on accepted arguments. Default empty.
@@ -230,7 +230,7 @@ function get_comments( $args = '' ) {
 }
 
 /**
- * WordPress Comment Query class.
+ * SlioPress Comment Query class.
  *
  * See {@see WP_Comment_Query::query()} for accepted arguments.
  *
@@ -807,7 +807,7 @@ class WP_Comment_Query {
 }
 
 /**
- * Retrieve all of the WordPress supported comment statuses.
+ * Retrieve all of the SlioPress supported comment statuses.
  *
  * Comments have a limited set of valid status values, this provides the comment
  * status values and descriptions.
@@ -833,7 +833,7 @@ function get_comment_statuses() {
  *
  * @since 1.5.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @param string $timezone Which timezone to use in reference to 'gmt', 'blog',
  *		or 'server' locations.
@@ -874,7 +874,7 @@ function get_lastcommentmodified($timezone = 'server') {
  *
  * @since 2.0.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @param int $post_id Optional. Comment amount in post if > 0, else total comments blog wide.
  * @return array The amount of spam, approved, awaiting moderation, and total comments.
@@ -1093,7 +1093,7 @@ function sanitize_comment_cookies() {
  *
  * @since 2.0.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @param array $commentdata Contains information on the comment
  * @return mixed Signifies the approval status (0|1|'spam')
@@ -1211,7 +1211,7 @@ function wp_allow_comment( $commentdata ) {
  *
  * @since 2.3.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @param string $ip Comment IP.
  * @param string $email Comment author email address.
@@ -1515,7 +1515,7 @@ function wp_count_comments( $post_id = 0 ) {
  *
  * @since 2.0.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @param int $comment_id Comment ID
  * @param bool $force_delete Whether to bypass trash and force deletion. Default is false.
@@ -1891,7 +1891,7 @@ function wp_get_current_commenter() {
  *
  * @since 2.0.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @param array $commentdata Contains information on the comment.
  * @return int|bool The new comment's ID on success, false on failure.
@@ -2032,7 +2032,7 @@ function wp_throttle_comment_flood($block, $time_lastcomment, $time_newcomment) 
  *
  * Filters new comment to ensure that the fields are sanitized and valid before
  * inserting comment into database. Calls 'comment_post' action with comment ID
- * and whether comment is approved by WordPress. Also has 'preprocess_comment'
+ * and whether comment is approved by SlioPress. Also has 'preprocess_comment'
  * filter for processing the comment data before the function handles it.
  *
  * We use REMOTE_ADDR here directly. If you are behind a proxy, you should ensure
@@ -2187,7 +2187,7 @@ function wp_set_comment_status($comment_id, $comment_status, $wp_error = false) 
  *
  * @since 2.0.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @param array $commentarr Contains information on the comment.
  * @return int Comment was updated if value is 1, or was not updated if value is 0.
@@ -2326,7 +2326,7 @@ function wp_update_comment_count($post_id, $do_deferred=false) {
  *
  * @since 2.5.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @param int $post_id Post ID
  * @return bool True on success, false on '0' $post_id or if post with ID does not exist.
@@ -2441,7 +2441,7 @@ function discover_pingback_server_uri( $url, $deprecated = '' ) {
  *
  * @since 2.1.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  */
 function do_all_pings() {
 	global $wpdb;
@@ -2473,7 +2473,7 @@ function do_all_pings() {
  *
  * @since 1.5.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @param int $post_id Post ID to do trackbacks on.
  */
@@ -2609,14 +2609,14 @@ function pingback($content, $post_ID) {
 			 *
 			 * @since 2.9.0
 			 *
-			 * @param string $concat_useragent    The user agent concatenated with ' -- WordPress/'
-			 *                                    and the WordPress version.
+			 * @param string $concat_useragent    The user agent concatenated with ' -- SlioPress/'
+			 *                                    and the SlioPress version.
 			 * @param string $useragent           The useragent.
 			 * @param string $pingback_server_url The server URL being linked to.
 			 * @param string $pagelinkedto        URL of page linked to.
 			 * @param string $pagelinkedfrom      URL of page linked from.
 			 */
-			$client->useragent = apply_filters( 'pingback_useragent', $client->useragent . ' -- WordPress/' . $wp_version, $client->useragent, $pingback_server_url, $pagelinkedto, $pagelinkedfrom );
+			$client->useragent = apply_filters( 'pingback_useragent', $client->useragent . ' -- SlioPress/' . $wp_version, $client->useragent, $pingback_server_url, $pagelinkedto, $pagelinkedfrom );
 			// when set to true, this outputs debug messages by itself
 			$client->debug = false;
 
@@ -2648,7 +2648,7 @@ function privacy_ping_filter($sites) {
  *
  * @since 0.71
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @param string $trackback_url URL to send trackbacks.
  * @param string $title Title of post.
@@ -2697,7 +2697,7 @@ function weblog_ping($server = '', $path = '') {
 	// using a timeout of 3 seconds should be enough to cover slow servers
 	$client = new WP_HTTP_IXR_Client($server, ((!strlen(trim($path)) || ('/' == $path)) ? false : $path));
 	$client->timeout = 3;
-	$client->useragent .= ' -- WordPress/'.$wp_version;
+	$client->useragent .= ' -- SlioPress/'.$wp_version;
 
 	// when set to true, this outputs debug messages by itself
 	$client->debug = false;

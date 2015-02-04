@@ -41,7 +41,7 @@ if ( ! class_exists( 'OT_Settings' ) ) {
     }
     
     /**
-     * Execute the WordPress Hooks
+     * Execute the SlioPress Hooks
      *
      * @return    void
      *

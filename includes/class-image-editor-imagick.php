@@ -1,16 +1,16 @@
 <?php
 /**
- * WordPress Imagick Image Editor
+ * SlioPress Imagick Image Editor
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Image_Editor
  */
 
 /**
- * WordPress Image Editor Class for Image Manipulation through Imagick PHP Module
+ * SlioPress Image Editor Class for Image Manipulation through Imagick PHP Module
  *
  * @since 3.5.0
- * @package WordPress
+ * @package SlioPress
  * @subpackage Image_Editor
  * @uses WP_Image_Editor Extends class
  */

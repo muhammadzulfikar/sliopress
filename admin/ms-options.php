@@ -2,7 +2,7 @@
 /**
  * Multisite network settings administration panel.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Multisite
  * @since 3.0.0
  */

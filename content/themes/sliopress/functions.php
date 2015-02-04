@@ -965,7 +965,7 @@ if ( ! function_exists( 'ot_type_export_data' ) ) {
 	function ot_type_export_data() {
 		echo '<div class="format-setting type-textarea simple has-desc">';
 		echo '<div class="description">';
-		echo '<p>' . __( 'Export your Theme Options data by highlighting this text and doing a copy/paste into a blank .txt file. Then save the file for importing into another install of WordPress later. Alternatively, you could just paste it into the <code>OptionTree->Settings->Import</code> <strong>Theme Options</strong> textarea on another web site.', 'option-tree' ) . '</p>';
+		echo '<p>' . __( 'Export your Theme Options data by highlighting this text and doing a copy/paste into a blank .txt file. Then save the file for importing into another install of SlioPress later. Alternatively, you could just paste it into the <code>OptionTree->Settings->Import</code> <strong>Theme Options</strong> textarea on another web site.', 'option-tree' ) . '</p>';
 		echo '</div>';
 
 		$data = get_option( 'option_tree' );

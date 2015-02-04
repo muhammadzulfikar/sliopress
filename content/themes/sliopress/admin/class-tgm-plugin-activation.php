@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin installation and activation for WordPress themes.
+ * Plugin installation and activation for SlioPress themes.
  *
  * @package   TGM-Plugin-Activation
  * @version   2.3.6
@@ -33,7 +33,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
  	 * Automatic plugin installation and activation library.
  	 *
  	 * Creates a way to automatically install and activate plugins from within themes.
- 	 * The plugins can be either pre-packaged, downloaded from the WordPress
+ 	 * The plugins can be either pre-packaged, downloaded from the SlioPress
  	 * Plugin Repository or downloaded from a private repository.
  	 *
  	 * @since 1.0.0
@@ -183,7 +183,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		}
 
 		/**
-		 * Initialise the interactions between this class and WordPress.
+		 * Initialise the interactions between this class and SlioPress.
 		 *
 		 * Hooks in three new methods for the class: admin_menu, notices and styles.
 		 *
@@ -439,7 +439,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				require_once ABSPATH . 'admin/includes/plugin-install.php'; // Need for plugins_api
 				require_once ABSPATH . 'admin/includes/class-upgrader.php'; // Need for upgrade classes
 
-				/** Set plugin source to WordPress API link if available */
+				/** Set plugin source to SlioPress API link if available */
 				if ( isset( $plugin['source'] ) && 'repo' == $plugin['source'] ) {
 					$api = plugins_api( 'plugin_information', array( 'slug' => $plugin['slug'], 'fields' => array( 'sections' => false ) ) );
 
@@ -1092,9 +1092,9 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 					else
 						$table_data[$i]['source'] = __( 'Pre-Packaged', 'tgmpa' );
 				}
-				/** The plugin is from the WordPress repository */
+				/** The plugin is from the SlioPress repository */
 				else {
-					$table_data[$i]['source'] = __( 'WordPress Repository', 'tgmpa' );
+					$table_data[$i]['source'] = __( 'SlioPress Repository', 'tgmpa' );
 				}
 
 				$table_data[$i]['type'] = $plugin['required'] ? __( 'Required', 'tgmpa' ) : __( 'Recommended', 'tgmpa' );
@@ -1460,7 +1460,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 				$c = 0; // Incremental variable
 
-				/** Loop through each plugin to install and try to grab information from WordPress API, if not create 'tgmpa-empty' scalar */
+				/** Loop through each plugin to install and try to grab information from SlioPress API, if not create 'tgmpa-empty' scalar */
 				foreach ( $plugin_installs as $plugin ) {
 					$api[$c] = plugins_api( 'plugin_information', array( 'slug' => $plugin, 'fields' => array( 'sections' => false ) ) ) ? plugins_api( 'plugin_information', array( 'slug' => $plugin, 'fields' => array( 'sections' => false ) ) ) : (object) $api[$c] = 'tgmpa-empty';
 					$c++;
@@ -1578,7 +1578,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
  * The WP_Upgrader file isn't always available. If it isn't available,
  * we load it here.
  *
- * We check to make sure no action or activation keys are set so that WordPress
+ * We check to make sure no action or activation keys are set so that SlioPress
  * doesn't try to re-include the class when processing upgrades or installs outside
  * of the class.
  *

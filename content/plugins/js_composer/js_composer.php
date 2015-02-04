@@ -2,7 +2,7 @@
 /*
 Plugin Name: WPBakery Visual Composer
 Plugin URI: http://vc.wpbakery.com
-Description: Drag and drop page builder for WordPress. Take full control over your WordPress site, build any layout you can imagine – no programming knowledge required.
+Description: Drag and drop page builder for SlioPress. Take full control over your SlioPress site, build any layout you can imagine – no programming knowledge required.
 Version: 4.0.4
 Author: Michael M - WPBakery.com
 Author URI: http://wpbakery.com

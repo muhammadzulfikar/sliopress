@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Installer
+ * SlioPress Installer
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
@@ -16,29 +16,29 @@ if ( false ) {
 	<title>Error: PHP is not running</title>
 </head>
 <body class="core-ui">
-	<h1 id="logo"><a href="https://wordpress.org/">WordPress</a></h1>
+	<h1 id="logo"><a href="https://wordpress.org/">SlioPress</a></h1>
 	<h2>Error: PHP is not running</h2>
-	<p>WordPress requires that your web server is running PHP. Your server does not have PHP installed, or PHP is turned off.</p>
+	<p>SlioPress requires that your web server is running PHP. Your server does not have PHP installed, or PHP is turned off.</p>
 </body>
 </html>
 <?php
 }
 
 /**
- * We are installing WordPress.
+ * We are installing SlioPress.
  *
  * @since 1.5.1
  * @var bool
  */
 define( 'WP_INSTALLING', true );
 
-/** Load WordPress Bootstrap */
+/** Load SlioPress Bootstrap */
 require_once( dirname( dirname( __FILE__ ) ) . '/load.php' );
 
-/** Load WordPress Administration Upgrade API */
+/** Load SlioPress Administration Upgrade API */
 require_once( ABSPATH . 'admin/includes/upgrade.php' );
 
-/** Load WordPress Translation Install API */
+/** Load SlioPress Translation Install API */
 require_once( ABSPATH . 'admin/includes/translation-install.php' );
 
 /** Load wpdb */
@@ -67,13 +67,13 @@ function display_header( $body_classes = '' ) {
 <head>
 	<meta name="viewport" content="width=device-width" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title><?php _e( 'WordPress &rsaquo; Installation' ); ?></title>
+	<title><?php _e( 'SlioPress &rsaquo; Installation' ); ?></title>
 	<?php
 	wp_admin_css( 'install', true );
 	?>
 </head>
 <body class="core-ui<?php echo $body_classes ?>">
-<h1 id="logo"><a href="<?php echo esc_url( __( 'https://wordpress.org/' ) ); ?>" tabindex="-1"><?php _e( 'WordPress' ); ?></a></h1>
+<h1 id="logo"><a href="<?php echo esc_url( __( 'https://wordpress.org/' ) ); ?>" tabindex="-1"><?php _e( 'SlioPress' ); ?></a></h1>
 
 <?php
 } // end display_header()
@@ -147,7 +147,7 @@ function display_setup_form( $error = null ) {
 			<td colspan="2"><label><input type="checkbox" name="blog_public" id="blog_public" value="1" <?php checked( $blog_public ); ?> /> <?php _e( 'Allow search engines to index this site.' ); ?></label></td>
 		</tr>
 	</table>
-	<p class="step"><input type="submit" name="Submit" value="<?php esc_attr_e( 'Install WordPress' ); ?>" class="button button-large" /></p>
+	<p class="step"><input type="submit" name="Submit" value="<?php esc_attr_e( 'Install SlioPress' ); ?>" class="button button-large" /></p>
 	<input type="hidden" name="language" value="<?php echo isset( $_REQUEST['language'] ) ? esc_attr( $_REQUEST['language'] ) : ''; ?>" />
 </form>
 <?php
@@ -156,7 +156,7 @@ function display_setup_form( $error = null ) {
 // Let's check to make sure WP isn't already installed.
 if ( is_blog_installed() ) {
 	display_header();
-	die( '<h1>' . __( 'Already Installed' ) . '</h1><p>' . __( 'You appear to have already installed WordPress. To reinstall please clear your old database tables first.' ) . '</p><p class="step"><a href="../login.php" class="button button-large">' . __( 'Log In' ) . '</a></p></body></html>' );
+	die( '<h1>' . __( 'Already Installed' ) . '</h1><p>' . __( 'You appear to have already installed SlioPress. To reinstall please clear your old database tables first.' ) . '</p><p class="step"><a href="../login.php" class="button button-large">' . __( 'Log In' ) . '</a></p></body></html>' );
 }
 
 $php_version    = phpversion();
@@ -165,11 +165,11 @@ $php_compat     = version_compare( $php_version, $required_php_version, '>=' );
 $mysql_compat   = version_compare( $mysql_version, $required_mysql_version, '>=' ) || file_exists( WP_CONTENT_DIR . '/db.php' );
 
 if ( !$mysql_compat && !$php_compat )
-	$compat = sprintf( __( 'You cannot install because <a href="http://codex.wordpress.org/Version_%1$s">WordPress %1$s</a> requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s.' ), $wp_version, $required_php_version, $required_mysql_version, $php_version, $mysql_version );
+	$compat = sprintf( __( 'You cannot install because <a href="http://codex.wordpress.org/Version_%1$s">SlioPress %1$s</a> requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s.' ), $wp_version, $required_php_version, $required_mysql_version, $php_version, $mysql_version );
 elseif ( !$php_compat )
-	$compat = sprintf( __( 'You cannot install because <a href="http://codex.wordpress.org/Version_%1$s">WordPress %1$s</a> requires PHP version %2$s or higher. You are running version %3$s.' ), $wp_version, $required_php_version, $php_version );
+	$compat = sprintf( __( 'You cannot install because <a href="http://codex.wordpress.org/Version_%1$s">SlioPress %1$s</a> requires PHP version %2$s or higher. You are running version %3$s.' ), $wp_version, $required_php_version, $php_version );
 elseif ( !$mysql_compat )
-	$compat = sprintf( __( 'You cannot install because <a href="http://codex.wordpress.org/Version_%1$s">WordPress %1$s</a> requires MySQL version %2$s or higher. You are running version %3$s.' ), $wp_version, $required_mysql_version, $mysql_version );
+	$compat = sprintf( __( 'You cannot install because <a href="http://codex.wordpress.org/Version_%1$s">SlioPress %1$s</a> requires MySQL version %2$s or higher. You are running version %3$s.' ), $wp_version, $required_mysql_version, $mysql_version );
 
 if ( !$mysql_compat || !$php_compat ) {
 	display_header();
@@ -213,7 +213,7 @@ switch($step) {
 		display_header();
 ?>
 <h1><?php _ex( 'Welcome', 'Howdy' ); ?></h1>
-<p><?php _e( 'Welcome to the famous five-minute WordPress installation process! Just fill in the information below and you&#8217;ll be on your way to using the most extendable and powerful personal publishing platform in the world.' ); ?></p>
+<p><?php _e( 'Welcome to the famous five-minute SlioPress installation process! Just fill in the information below and you&#8217;ll be on your way to using the most extendable and powerful personal publishing platform in the world.' ); ?></p>
 
 <h1><?php _e( 'Information needed' ); ?></h1>
 <p><?php _e( 'Please provide the following information. Don&#8217;t worry, you can always change these settings later.' ); ?></p>
@@ -271,7 +271,7 @@ switch($step) {
 
 <h1><?php _e( 'Success!' ); ?></h1>
 
-<p><?php _e( 'WordPress has been installed. Were you expecting more steps? Sorry to disappoint.' ); ?></p>
+<p><?php _e( 'SlioPress has been installed. Were you expecting more steps? Sorry to disappoint.' ); ?></p>
 
 <table class="form-table install-success">
 	<tr>

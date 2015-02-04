@@ -1045,14 +1045,14 @@ vc_map( array(
       "heading" => __("Order by", "js_composer"),
       "param_name" => "orderby",
       "value" => array( "", __("Date", "js_composer") => "date", __("ID", "js_composer") => "ID", __("Author", "js_composer") => "author", __("Title", "js_composer") => "title", __("Modified", "js_composer") => "modified", __("Random", "js_composer") => "rand", __("Comment count", "js_composer") => "comment_count", __("Menu order", "js_composer") => "menu_order" ),
-      "description" => sprintf(__('Select how to sort retrieved posts. More at %s.', 'js_composer'), '<a href="http://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters" target="_blank">WordPress codex page</a>')
+      "description" => sprintf(__('Select how to sort retrieved posts. More at %s.', 'js_composer'), '<a href="http://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters" target="_blank">SlioPress codex page</a>')
     ),
     array(
       "type" => "dropdown",
       "heading" => __("Order way", "js_composer"),
       "param_name" => "order",
       "value" => array( __("Descending", "js_composer") => "DESC", __("Ascending", "js_composer") => "ASC" ),
-      "description" => sprintf(__('Designates the ascending or descending order. More at %s.', 'js_composer'), '<a href="http://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters" target="_blank">WordPress codex page</a>')
+      "description" => sprintf(__('Designates the ascending or descending order. More at %s.', 'js_composer'), '<a href="http://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters" target="_blank">SlioPress codex page</a>')
     ),
     array(
       "type" => "textfield",
@@ -1090,7 +1090,7 @@ vc_map( array(
                 'size' => array('hidden' => false, 'value' => 10),
                 'order_by' => array('value' => 'date'),
             ),
-            "description" => __("Create WordPress loop, to populate content from your site.", "js_composer")
+            "description" => __("Create SlioPress loop, to populate content from your site.", "js_composer")
         ),
         array(
             "type" => "dropdown",
@@ -1178,7 +1178,7 @@ vc_map( array(
                 'size' => array('hidden' => false, 'value' => 10),
                 'order_by' => array('value' => 'date')
             ),
-            "description" => __("Create WordPress loop, to populate content from your site.", "js_composer")
+            "description" => __("Create SlioPress loop, to populate content from your site.", "js_composer")
         ),
         array(
             "type" => "sorted_list",
@@ -1370,14 +1370,14 @@ vc_map( array(
       "heading" => __("Order by", "js_composer"),
       "param_name" => "orderby",
       "value" => array( "", __("Date", "js_composer") => "date", __("ID", "js_composer") => "ID", __("Author", "js_composer") => "author", __("Title", "js_composer") => "title", __("Modified", "js_composer") => "modified", __("Random", "js_composer") => "rand", __("Comment count", "js_composer") => "comment_count", __("Menu order", "js_composer") => "menu_order" ),
-      "description" => sprintf(__('Select how to sort retrieved posts. More at %s.', 'js_composer'), '<a href="http://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters" target="_blank">WordPress codex page</a>')
+      "description" => sprintf(__('Select how to sort retrieved posts. More at %s.', 'js_composer'), '<a href="http://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters" target="_blank">SlioPress codex page</a>')
     ),
     array(
       "type" => "dropdown",
       "heading" => __("Order by", "js_composer"),
       "param_name" => "order",
       "value" => array( __("Descending", "js_composer") => "DESC", __("Ascending", "js_composer") => "ASC" ),
-      "description" => sprintf(__('Designates the ascending or descending order. More at %s.', 'js_composer'), '<a href="http://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters" target="_blank">WordPress codex page</a>')
+      "description" => sprintf(__('Designates the ascending or descending order. More at %s.', 'js_composer'), '<a href="http://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters" target="_blank">SlioPress codex page</a>')
     ),
     array(
       "type" => "textfield",
@@ -1791,7 +1791,7 @@ vc_map( array(
       "heading" => __("Video link", "js_composer"),
       "param_name" => "link",
       "admin_label" => true,
-      "description" => sprintf(__('Link to the video. More about supported formats at %s.', "js_composer"), '<a href="http://codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F" target="_blank">WordPress codex page</a>')
+      "description" => sprintf(__('Link to the video. More about supported formats at %s.', "js_composer"), '<a href="http://codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F" target="_blank">SlioPress codex page</a>')
     ),
     array(
       "type" => "textfield",
@@ -2273,13 +2273,13 @@ if (is_plugin_active('gravityforms/gravityforms.php')) {
   ) );
 } // if gravityforms active
 
-/* WordPress default Widgets (Appearance->Widgets)
+/* SlioPress default Widgets (Appearance->Widgets)
 ---------------------------------------------------------- */
 vc_map( array(
   "name" => 'WP ' . __("Search"),
   "base" => "vc_wp_search",
   "icon" => "icon-wpb-wp",
-  "category" => __("WordPress Widgets", "js_composer"),
+  "category" => __("SlioPress Widgets", "js_composer"),
   "class" => "wpb_vc_wp_widget",
   "weight" => -50,
   "description" => __('A search form for your site', 'js_composer'),
@@ -2303,10 +2303,10 @@ vc_map( array(
   "name" => 'WP ' . __("Meta"),
   "base" => "vc_wp_meta",
   "icon" => "icon-wpb-wp",
-  "category" => __("WordPress Widgets", "js_composer"),
+  "category" => __("SlioPress Widgets", "js_composer"),
   "class" => "wpb_vc_wp_widget",
   "weight" => -50,
-  "description" => __('Log in/out, admin, feed and WordPress links', 'js_composer'),
+  "description" => __('Log in/out, admin, feed and SlioPress links', 'js_composer'),
   "params" => array(
     array(
       "type" => "textfield",
@@ -2327,7 +2327,7 @@ vc_map( array(
   "name" => 'WP ' . __("Recent Comments"),
   "base" => "vc_wp_recentcomments",
   "icon" => "icon-wpb-wp",
-  "category" => __("WordPress Widgets", "js_composer"),
+  "category" => __("SlioPress Widgets", "js_composer"),
   "class" => "wpb_vc_wp_widget",
   "weight" => -50,
   "description" => __('The most recent comments', 'js_composer'),
@@ -2357,7 +2357,7 @@ vc_map( array(
   "name" => 'WP ' . __("Calendar"),
   "base" => "vc_wp_calendar",
   "icon" => "icon-wpb-wp",
-  "category" => __("WordPress Widgets", "js_composer"),
+  "category" => __("SlioPress Widgets", "js_composer"),
   "class" => "wpb_vc_wp_widget",
   "weight" => -50,
   "description" => __('A calendar of your sites posts', 'js_composer'),
@@ -2381,10 +2381,10 @@ vc_map( array(
   "name" => 'WP ' . __("Pages"),
   "base" => "vc_wp_pages",
   "icon" => "icon-wpb-wp",
-  "category" => __("WordPress Widgets", "js_composer"),
+  "category" => __("SlioPress Widgets", "js_composer"),
   "class" => "wpb_vc_wp_widget",
   "weight" => -50,
-  "description" => __('Your sites WordPress Pages', 'js_composer'),
+  "description" => __('Your sites SlioPress Pages', 'js_composer'),
   "params" => array(
     array(
       "type" => "textfield",
@@ -2426,7 +2426,7 @@ vc_map( array(
   "name" => 'WP ' . __("Tag Cloud"),
   "base" => "vc_wp_tagcloud",
   "icon" => "icon-wpb-wp",
-  "category" => __("WordPress Widgets", "js_composer"),
+  "category" => __("SlioPress Widgets", "js_composer"),
   "class" => "wpb_vc_wp_widget",
   "weight" => -50,
   "description" => __('Your most used tags in cloud format', 'js_composer'),
@@ -2464,7 +2464,7 @@ vc_map( array(
 "name" => 'WP ' . __("Custom Menu"),
 "base" => "vc_wp_custommenu",
 "icon" => "icon-wpb-wp",
-"category" => __("WordPress Widgets", "js_composer"),
+"category" => __("SlioPress Widgets", "js_composer"),
 "class" => "wpb_vc_wp_widget",
 "weight" => -50,
 "description" => __('Use this widget to add one of your custom menus as a widget', 'js_composer'),
@@ -2496,7 +2496,7 @@ vc_map( array(
   "name" => 'WP ' . __("Text"),
   "base" => "vc_wp_text",
   "icon" => "icon-wpb-wp",
-  "category" => __("WordPress Widgets", "js_composer"),
+  "category" => __("SlioPress Widgets", "js_composer"),
   "class" => "wpb_vc_wp_widget",
   "weight" => -50,
   "description" => __('Arbitrary text or HTML', 'js_composer'),
@@ -2532,7 +2532,7 @@ vc_map( array(
   "name" => 'WP ' . __("Recent Posts"),
   "base" => "vc_wp_posts",
   "icon" => "icon-wpb-wp",
-  "category" => __("WordPress Widgets", "js_composer"),
+  "category" => __("SlioPress Widgets", "js_composer"),
   "class" => "wpb_vc_wp_widget",
   "weight" => -50,
   "description" => __('The most recent posts on your site', 'js_composer'),
@@ -2576,7 +2576,7 @@ if ( is_array($link_cats) ) {
     "name" => 'WP ' . __("Links"),
     "base" => "vc_wp_links",
     "icon" => "icon-wpb-wp",
-    "category" => __("WordPress Widgets", "js_composer"),
+    "category" => __("SlioPress Widgets", "js_composer"),
     "class" => "wpb_vc_wp_widget",
     "weight" => -50,
     "description" => __('Your blogroll', 'js_composer'),
@@ -2618,7 +2618,7 @@ vc_map( array(
   "name" => 'WP ' . __("Categories"),
   "base" => "vc_wp_categories",
   "icon" => "icon-wpb-wp",
-  "category" => __("WordPress Widgets", "js_composer"),
+  "category" => __("SlioPress Widgets", "js_composer"),
   "class" => "wpb_vc_wp_widget",
   "weight" => -50,
   "description" => __('A list or dropdown of categories', 'js_composer'),
@@ -2649,7 +2649,7 @@ vc_map( array(
   "name" => 'WP ' . __("Archives"),
   "base" => "vc_wp_archives",
   "icon" => "icon-wpb-wp",
-  "category" => __("WordPress Widgets", "js_composer"),
+  "category" => __("SlioPress Widgets", "js_composer"),
   "class" => "wpb_vc_wp_widget",
   "weight" => -50,
   "description" => __('A monthly archive of your sites posts', 'js_composer'),
@@ -2679,7 +2679,7 @@ vc_map( array(
   "name" => 'WP ' . __("RSS"),
   "base" => "vc_wp_rss",
   "icon" => "icon-wpb-wp",
-  "category" => __("WordPress Widgets", "js_composer"),
+  "category" => __("SlioPress Widgets", "js_composer"),
   "class" => "wpb_vc_wp_widget",
   "weight" => -50,
   "description" => __('Entries from any RSS or Atom feed', 'js_composer'),

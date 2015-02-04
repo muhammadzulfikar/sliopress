@@ -48,7 +48,7 @@
 
 13.12.2013 - ver. 3.7.3
    - TinyMCE "Text" mode buttons size fixed
-   - Small WordPress 3.8 adjustments
+   - Small SlioPress 3.8 adjustments
 
 08.12.2013 - ver 3.7.2
    - "Add Element" window received a "facelift"
@@ -144,7 +144,7 @@
    - New: Link param type
    - New: Updates notifier now "hooks" into the WP Updates system
    - New helper function added for easier param adding to existing content elements wpb_add_param($shortcode, $param)
-   - Colorpicker param type now is using WordPress default color picker
+   - Colorpicker param type now is using SlioPress default color picker
    - Modal window fix for Avada theme
    - Google maps: New setting to hide info balloon 
    - TinyMCE editor works correct now, for users with non US locale

@@ -2,11 +2,11 @@
 /**
  * Media management action handler.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load SlioPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 $parent_file = 'upload.php';

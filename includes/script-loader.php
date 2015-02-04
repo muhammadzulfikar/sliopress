@@ -1,9 +1,9 @@
 <?php
 /**
- * WordPress scripts and styles default loader.
+ * SlioPress scripts and styles default loader.
  *
  * Most of the functionality that existed here was moved to
- * {@link http://backpress.automattic.com/ BackPress}. WordPress themes and
+ * {@link http://backpress.automattic.com/ BackPress}. SlioPress themes and
  * plugins will only be concerned about the filters and actions set in this
  * file.
  *
@@ -18,26 +18,26 @@
  * to temporarily override the above settings. Also a compression test is run once and the result is saved
  * as option 'can_compress_scripts' (0/1). The test will run again if that option is deleted.
  *
- * @package WordPress
+ * @package SlioPress
  */
 
-/** BackPress: WordPress Dependencies Class */
+/** BackPress: SlioPress Dependencies Class */
 require( ABSPATH . WPINC . '/class.dependencies.php' );
 
-/** BackPress: WordPress Scripts Class */
+/** BackPress: SlioPress Scripts Class */
 require( ABSPATH . WPINC . '/class.scripts.php' );
 
-/** BackPress: WordPress Scripts Functions */
+/** BackPress: SlioPress Scripts Functions */
 require( ABSPATH . WPINC . '/functions.scripts.php' );
 
-/** BackPress: WordPress Styles Class */
+/** BackPress: SlioPress Styles Class */
 require( ABSPATH . WPINC . '/class.styles.php' );
 
-/** BackPress: WordPress Styles Functions */
+/** BackPress: SlioPress Styles Functions */
 require( ABSPATH . WPINC . '/functions.styles.php' );
 
 /**
- * Register all WordPress scripts.
+ * Register all SlioPress scripts.
  *
  * Localizes some of them.
  * args order: $scripts->add( 'handle', 'url', 'dependencies', 'query-string', 1 );
@@ -146,7 +146,7 @@ function wp_default_scripts( &$scripts ) {
 
 	$scripts->add( 'lists', "/includes/js/lists$suffix.js", array( 'ajax-response', 'jquery-color' ), false, 1 );
 
-	// WordPress no longer uses or bundles Prototype or script.aculo.us. These are now pulled from an external source.
+	// SlioPress no longer uses or bundles Prototype or script.aculo.us. These are now pulled from an external source.
 	$scripts->add( 'prototype', '//ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js', array(), '1.7.1');
 	$scripts->add( 'scriptaculous-root', '//ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js', array('prototype'), '1.9.0');
 	$scripts->add( 'scriptaculous-builder', '//ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/builder.js', array('scriptaculous-root'), '1.9.0');

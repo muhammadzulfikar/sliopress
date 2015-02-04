@@ -2,14 +2,14 @@
 /**
  * Widgets administration panel.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** SlioPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
-/** WordPress Administration Widgets API */
+/** SlioPress Administration Widgets API */
 require_once(ABSPATH . 'admin/includes/widgets.php');
 
 if ( ! current_user_can('edit_theme_options') )

@@ -2,7 +2,7 @@
 /**
  * Post revision functions.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Post_Revisions
  */
 

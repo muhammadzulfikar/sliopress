@@ -2,7 +2,7 @@
 /**
  * Default Widgets
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Widgets
  */
 
@@ -368,7 +368,7 @@ class WP_Widget_Archives extends WP_Widget {
 class WP_Widget_Meta extends WP_Widget {
 
 	public function __construct() {
-		$widget_ops = array('classname' => 'widget_meta', 'description' => __( "Login, RSS, &amp; WordPress.org links.") );
+		$widget_ops = array('classname' => 'widget_meta', 'description' => __( "Login, RSS, &amp; SlioPress.org links.") );
 		parent::__construct('meta', __('Meta'), $widget_ops);
 	}
 
@@ -389,16 +389,16 @@ class WP_Widget_Meta extends WP_Widget {
 			<li><a href="<?php bloginfo('comments_rss2_url'); ?>"><?php _e('Comments <abbr title="Really Simple Syndication">RSS</abbr>'); ?></a></li>
 <?php
 			/**
-			 * Filter the "Powered by WordPress" text in the Meta widget.
+			 * Filter the "Powered by SlioPress" text in the Meta widget.
 			 *
 			 * @since 3.6.0
 			 *
-			 * @param string $title_text Default title text for the WordPress.org link.
+			 * @param string $title_text Default title text for the SlioPress.org link.
 			 */
 			echo apply_filters( 'widget_meta_poweredby', sprintf( '<li><a href="%s" title="%s">%s</a></li>',
 				esc_url( __( 'https://wordpress.org/' ) ),
-				esc_attr__( 'Powered by WordPress, state-of-the-art semantic personal publishing platform.' ),
-				_x( 'WordPress.org', 'meta widget link text' )
+				esc_attr__( 'Powered by SlioPress, state-of-the-art semantic personal publishing platform.' ),
+				_x( 'SlioPress.org', 'meta widget link text' )
 			) );
 
 			wp_meta();
@@ -1374,9 +1374,9 @@ class WP_Widget_Tag_Cloud extends WP_Widget {
 }
 
 /**
- * Register all of the default WordPress widgets on startup.
+ * Register all of the default SlioPress widgets on startup.
  *
- * Calls 'widgets_init' action after all of the WordPress widgets have been
+ * Calls 'widgets_init' action after all of the SlioPress widgets have been
  * registered.
  *
  * @since 2.2.0
@@ -1413,7 +1413,7 @@ function wp_widgets_init() {
 	register_widget('WP_Nav_Menu_Widget');
 
 	/**
-	 * Fires after all default WordPress widgets have been registered.
+	 * Fires after all default SlioPress widgets have been registered.
 	 *
 	 * @since 2.2.0
 	 */

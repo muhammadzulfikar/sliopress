@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress user administration API.
+ * SlioPress user administration API.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 

@@ -2,7 +2,7 @@
 /**
  * Navigation Menu functions
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Nav_Menus
  * @since 3.0.0
  */

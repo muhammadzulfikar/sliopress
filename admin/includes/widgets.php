@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Widgets Administration API
+ * SlioPress Widgets Administration API
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 

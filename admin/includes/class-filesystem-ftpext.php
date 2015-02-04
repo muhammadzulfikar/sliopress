@@ -1,16 +1,16 @@
 <?php
 /**
- * WordPress FTP Filesystem.
+ * SlioPress FTP Filesystem.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Filesystem
  */
 
 /**
- * WordPress Filesystem Class for implementing FTP.
+ * SlioPress Filesystem Class for implementing FTP.
  *
  * @since 2.5.0
- * @package WordPress
+ * @package SlioPress
  * @subpackage Filesystem
  * @uses WP_Filesystem_Base Extends class
  */

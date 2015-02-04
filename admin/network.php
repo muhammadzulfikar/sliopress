@@ -2,17 +2,17 @@
 /**
  * Network installation administration panel.
  *
- * A multi-step process allowing the user to enable a network of WordPress sites.
+ * A multi-step process allowing the user to enable a network of SlioPress sites.
  *
  * @since 3.0.0
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
 define( 'WP_INSTALLING_NETWORK', true );
 
-/** WordPress Administration Bootstrap */
+/** SlioPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( ! is_super_admin() )
@@ -24,7 +24,7 @@ if ( is_multisite() ) {
 		exit;
 	}
 	if ( ! defined( 'MULTISITE' ) )
-		wp_die( __( 'The Network creation panel is not for WordPress MU networks.' ) );
+		wp_die( __( 'The Network creation panel is not for SlioPress MU networks.' ) );
 }
 
 // We need to create references to ms global tables to enable Network.
@@ -109,14 +109,14 @@ if ( is_network_admin() ) {
 	$title = __( 'Network Setup' );
 	$parent_file = 'settings.php';
 } else {
-	$title = __( 'Create a Network of WordPress Sites' );
+	$title = __( 'Create a Network of SlioPress Sites' );
 	$parent_file = 'tools.php';
 }
 
 $network_help = '<p>' . __('This screen allows you to configure a network as having subdomains (<code>site1.example.com</code>) or subdirectories (<code>example.com/site1</code>). Subdomains require wildcard subdomains to be enabled in Apache and DNS records, if your host allows it.') . '</p>' .
 	'<p>' . __('Choose subdomains or subdirectories; this can only be switched afterwards by reconfiguring your install. Fill out the network details, and click install. If this does not work, you may have to add a wildcard DNS record (for subdomains) or change to another setting in Permalinks (for subdirectories).') . '</p>' .
 	'<p>' . __('The next screen for Network Setup will give you individually-generated lines of code to add to your config.php and .htaccess files. Make sure the settings of your FTP client make files starting with a dot visible, so that you can find .htaccess; you may have to create this file if it really is not there. Make backup copies of those two files.') . '</p>' .
-	'<p>' . __('Add the designated lines of code to config.php (just before <code>/*...stop editing...*/</code>) and <code>.htaccess</code> (replacing the existing WordPress rules).') . '</p>' .
+	'<p>' . __('Add the designated lines of code to config.php (just before <code>/*...stop editing...*/</code>) and <code>.htaccess</code> (replacing the existing SlioPress rules).') . '</p>' .
 	'<p>' . __('Once you add this code and refresh your browser, multisite should be enabled. This screen, now in the Network Admin navigation menu, will keep an archive of the added code. You can toggle between Network Admin and Site Admin by clicking on the Network Admin or an individual site name under the My Sites dropdown in the Toolbar.') . '</p>' .
 	'<p>' . __('The choice of subdirectory sites is disabled if this setup is more than a month old because of permalink problems with &#8220;/blog/&#8221; from the main site. This disabling will be addressed in a future version.') . '</p>' .
 	'<p><strong>' . __('For more information:') . '</strong></p>' .
@@ -196,7 +196,7 @@ function network_step1( $errors = false ) {
 	$admin_email = ( ! empty( $_POST['email'] ) && ! in_array( 'invalid_email', $error_codes ) ) ? $_POST['email'] : get_option( 'admin_email' );
 	?>
 	<p><?php _e( 'Welcome to the Network installation process!' ); ?></p>
-	<p><?php _e( 'Fill in the information below and you&#8217;ll be on your way to creating a network of WordPress sites. We will create configuration files in the next step.' ); ?></p>
+	<p><?php _e( 'Fill in the information below and you&#8217;ll be on your way to creating a network of SlioPress sites. We will create configuration files in the next step.' ); ?></p>
 	<?php
 
 	if ( isset( $_POST['subdomain_install'] ) ) {
@@ -217,7 +217,7 @@ function network_step1( $errors = false ) {
 
 	if ( allow_subdomain_install() && allow_subdirectory_install() ) : ?>
 		<h3><?php esc_html_e( 'Addresses of Sites in your Network' ); ?></h3>
-		<p><?php _e( 'Please choose whether you would like sites in your WordPress network to use sub-domains or sub-directories. <strong>You cannot change this later.</strong>' ); ?></p>
+		<p><?php _e( 'Please choose whether you would like sites in your SlioPress network to use sub-domains or sub-directories. <strong>You cannot change this later.</strong>' ); ?></p>
 		<p><?php _e( 'You will need a wildcard DNS record if you are going to use the virtual host (sub-domain) functionality.' ); ?></p>
 		<?php // @todo: Link to an MS readme? ?>
 		<table class="form-table">
@@ -258,7 +258,7 @@ function network_step1( $errors = false ) {
 			<tr>
 				<th scope="row"><?php esc_html_e( 'Sub-directory Install' ); ?></th>
 				<td><?php
-					_e( 'Because you are using <code>localhost</code>, the sites in your WordPress network must use sub-directories. Consider using <code>localhost.localdomain</code> if you wish to use sub-domains.' );
+					_e( 'Because you are using <code>localhost</code>, the sites in your SlioPress network must use sub-directories. Consider using <code>localhost.localdomain</code> if you wish to use sub-domains.' );
 					// Uh oh:
 					if ( !allow_subdirectory_install() )
 						echo ' <strong>' . __( 'Warning!' ) . ' ' . __( 'The main site in a sub-directory install will need to use a modified permalink structure, potentially breaking existing links.' ) . '</strong>';
@@ -268,7 +268,7 @@ function network_step1( $errors = false ) {
 			<tr>
 				<th scope="row"><?php esc_html_e( 'Sub-directory Install' ); ?></th>
 				<td><?php
-					_e( 'Because your install is in a directory, the sites in your WordPress network must use sub-directories.' );
+					_e( 'Because your install is in a directory, the sites in your SlioPress network must use sub-directories.' );
 					// Uh oh:
 					if ( !allow_subdirectory_install() )
 						echo ' <strong>' . __( 'Warning!' ) . ' ' . __( 'The main site in a sub-directory install will need to use a modified permalink structure, potentially breaking existing links.' ) . '</strong>';
@@ -277,7 +277,7 @@ function network_step1( $errors = false ) {
 		<?php elseif ( !allow_subdirectory_install() ) : ?>
 			<tr>
 				<th scope="row"><?php esc_html_e( 'Sub-domain Install' ); ?></th>
-				<td><?php _e( 'Because your install is not new, the sites in your WordPress network must use sub-domains.' );
+				<td><?php _e( 'Because your install is not new, the sites in your SlioPress network must use sub-domains.' );
 					echo ' <strong>' . __( 'The main site in a sub-directory install will need to use a modified permalink structure, potentially breaking existing links.' ) . '</strong>';
 				?></td>
 			</tr>
@@ -356,7 +356,7 @@ function network_step2( $errors = false ) {
 		} else {
 			$subdomain_install = (bool) $wpdb->get_var( "SELECT meta_value FROM $wpdb->sitemeta WHERE site_id = 1 AND meta_key = 'subdomain_install'" );
 ?>
-	<div class="error"><p><strong><?php _e('Warning:'); ?></strong> <?php _e( 'An existing WordPress network was detected.' ); ?></p></div>
+	<div class="error"><p><strong><?php _e('Warning:'); ?></strong> <?php _e( 'An existing SlioPress network was detected.' ); ?></p></div>
 	<p><?php _e( 'Please complete the configuration steps. To create a new network, you will need to empty or remove the network database tables.' ); ?></p>
 <?php
 		}
@@ -432,23 +432,23 @@ define('BLOG_ID_CURRENT_SITE', 1);
     <system.webServer>
         <rewrite>
             <rules>
-                <rule name="WordPress Rule 1" stopProcessing="true">
+                <rule name="SlioPress Rule 1" stopProcessing="true">
                     <match url="^index\.php$" ignoreCase="false" />
                     <action type="None" />
                 </rule>';
 				if ( is_multisite() && get_site_option( 'ms_files_rewriting' ) ) {
 					$web_config_file .= '
-                <rule name="WordPress Rule for Files" stopProcessing="true">
+                <rule name="SlioPress Rule for Files" stopProcessing="true">
                     <match url="^' . $iis_subdir_match . 'files/(.+)" ignoreCase="false" />
                     <action type="Rewrite" url="' . $iis_rewrite_base . WPINC . '/ms-files.php?file={R:1}" appendQueryString="false" />
                 </rule>';
                 }
                 $web_config_file .= '
-                <rule name="WordPress Rule 2" stopProcessing="true">
+                <rule name="SlioPress Rule 2" stopProcessing="true">
                     <match url="^' . $iis_subdir_match . 'admin$" ignoreCase="false" />
                     <action type="Redirect" url="' . $iis_subdir_replacement . 'admin/" redirectType="Permanent" />
                 </rule>
-                <rule name="WordPress Rule 3" stopProcessing="true">
+                <rule name="SlioPress Rule 3" stopProcessing="true">
                     <match url="^" ignoreCase="false" />
                     <conditions logicalGrouping="MatchAny">
                         <add input="{REQUEST_FILENAME}" matchType="IsFile" ignoreCase="false" />
@@ -456,15 +456,15 @@ define('BLOG_ID_CURRENT_SITE', 1);
                     </conditions>
                     <action type="None" />
                 </rule>
-                <rule name="WordPress Rule 4" stopProcessing="true">
+                <rule name="SlioPress Rule 4" stopProcessing="true">
                     <match url="^' . $iis_subdir_match . '((content|admin|includes).*)" ignoreCase="false" />
                     <action type="Rewrite" url="' . $iis_rewrite_base . '{R:1}" />
                 </rule>
-                <rule name="WordPress Rule 5" stopProcessing="true">
+                <rule name="SlioPress Rule 5" stopProcessing="true">
                     <match url="^' . $iis_subdir_match . '([_0-9a-zA-Z-]+/)?(.*\.php)$" ignoreCase="false" />
                     <action type="Rewrite" url="' . $iis_rewrite_base . '{R:2}" />
                 </rule>
-                <rule name="WordPress Rule 6" stopProcessing="true">
+                <rule name="SlioPress Rule 6" stopProcessing="true">
                     <match url="." ignoreCase="false" />
                     <action type="Rewrite" url="index.php" />
                 </rule>
@@ -476,7 +476,7 @@ define('BLOG_ID_CURRENT_SITE', 1);
 
 		echo '<li><p>';
 		/* translators: 1: a filename like .htaccess. 2: a file path. */
-		printf( __( 'Add the following to your %1$s file in %2$s, <strong>replacing</strong> other WordPress rules:' ),
+		printf( __( 'Add the following to your %1$s file in %2$s, <strong>replacing</strong> other SlioPress rules:' ),
 			'<code>web.config</code>', '<code>' . $home_path . '</code>' );
 		echo '</p>';
 		if ( ! $subdomain_install && WP_CONTENT_DIR != ABSPATH . 'content' )
@@ -513,7 +513,7 @@ EOF;
 
 		echo '<li><p>';
 		/* translators: 1: a filename like .htaccess. 2: a file path. */
-		printf( __( 'Add the following to your %1$s file in %2$s, <strong>replacing</strong> other WordPress rules:' ),
+		printf( __( 'Add the following to your %1$s file in %2$s, <strong>replacing</strong> other SlioPress rules:' ),
 			'<code>.htaccess</code>', '<code>' . $home_path . '</code>' );
 		echo '</p>';
 		if ( ! $subdomain_install && WP_CONTENT_DIR != ABSPATH . 'content' )

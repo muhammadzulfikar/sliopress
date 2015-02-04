@@ -1145,19 +1145,19 @@ msgstr ""
 #: polls-uninstall.php:94
 msgid ""
 "Once uninstalled, this cannot be undone. You should use a Database Backup "
-"plugin of WordPress to back up all the data first."
+"plugin of SlioPress to back up all the data first."
 msgstr ""
 
 #: polls-uninstall.php:97
-msgid "The following WordPress Options/Tables will be DELETED:"
+msgid "The following SlioPress Options/Tables will be DELETED:"
 msgstr ""
 
 #: polls-uninstall.php:102
-msgid "WordPress Options"
+msgid "SlioPress Options"
 msgstr ""
 
 #: polls-uninstall.php:103
-msgid "WordPress Tables"
+msgid "SlioPress Tables"
 msgstr ""
 
 #: polls-uninstall.php:128
@@ -1166,7 +1166,7 @@ msgstr ""
 
 #: polls-uninstall.php:130
 msgid ""
-"You Are About To Uninstall Polls From WordPress.\\nThis Action Is Not "
+"You Are About To Uninstall Polls From SlioPress.\\nThis Action Is Not "
 "Reversible.\\n\\n Choose [Cancel] To Stop, [OK] To Uninstall."
 msgstr ""
 
@@ -1388,8 +1388,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Adds an AJAX poll system to your WordPress blog. You can easily include a "
-"poll into your WordPress's blog post/page. Polls is extremely "
+"Adds an AJAX poll system to your SlioPress blog. You can easily include a "
+"poll into your SlioPress's blog post/page. Polls is extremely "
 "customizable via templates and css styles and there are tons of options for "
 "you to choose to ensure that Polls runs the way you wanted. It now "
 "supports multiple selection of answers."

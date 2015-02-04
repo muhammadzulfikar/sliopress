@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress User API
+ * SlioPress User API
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Users
  */
 
@@ -157,7 +157,7 @@ function wp_authenticate_username_password($user, $username, $password) {
 }
 
 /**
- * Authenticate the user using the WordPress auth cookie.
+ * Authenticate the user using the SlioPress auth cookie.
  *
  * @since 2.8.0
  *
@@ -252,7 +252,7 @@ function wp_validate_logged_in_cookie( $user_id ) {
  * @since 3.0.0
  * @since 4.1.0 Added `$post_type` argument.
  *
- * @global wpdb $wpdb WordPress database object for queries.
+ * @global wpdb $wpdb SlioPress database object for queries.
  *
  * @param int    $userid    User ID.
  * @param string $post_type Optional. Post type to count the number of posts for. Default 'post'.
@@ -341,7 +341,7 @@ function get_current_user_id() {
  *
  * @since 2.0.0
  *
- * @global wpdb $wpdb WordPress database object for queries.
+ * @global wpdb $wpdb SlioPress database object for queries.
  *
  * @param string $option     User option name.
  * @param int    $user       Optional. User ID.
@@ -387,13 +387,13 @@ function get_user_option( $option, $user = 0, $deprecated = '' ) {
  *
  * User options are just like user metadata except that they have support for
  * global blog options. If the 'global' parameter is false, which it is by default
- * it will prepend the WordPress table prefix to the option name.
+ * it will prepend the SlioPress table prefix to the option name.
  *
  * Deletes the user option if $newvalue is empty.
  *
  * @since 2.0.0
  *
- * @global wpdb $wpdb WordPress database object for queries.
+ * @global wpdb $wpdb SlioPress database object for queries.
  *
  * @param int    $user_id     User ID.
  * @param string $option_name User option name.
@@ -417,11 +417,11 @@ function update_user_option( $user_id, $option_name, $newvalue, $global = false 
  *
  * User options are just like user metadata except that they have support for
  * global blog options. If the 'global' parameter is false, which it is by default
- * it will prepend the WordPress table prefix to the option name.
+ * it will prepend the SlioPress table prefix to the option name.
  *
  * @since 3.0.0
  *
- * @global wpdb $wpdb WordPress database object for queries.
+ * @global wpdb $wpdb SlioPress database object for queries.
  *
  * @param int    $user_id     User ID
  * @param string $option_name User option name.
@@ -438,7 +438,7 @@ function delete_user_option( $user_id, $option_name, $global = false ) {
 }
 
 /**
- * WordPress User Query class.
+ * SlioPress User Query class.
  *
  * @since 3.1.0
  *
@@ -790,7 +790,7 @@ class WP_User_Query {
 	 *
 	 * @since 3.1.0
 	 *
-	 * @global wpdb $wpdb WordPress database object for queries.
+	 * @global wpdb $wpdb SlioPress database object for queries.
 	 */
 	public function query() {
 		global $wpdb;
@@ -810,7 +810,7 @@ class WP_User_Query {
 		 *
 		 * @since 3.2.0
 		 *
-		 * @global wpdb $wpdb WordPress database abstraction object.
+		 * @global wpdb $wpdb SlioPress database abstraction object.
 		 *
 		 * @param string $sql The SELECT FOUND_ROWS() query for the current WP_User_Query.
 		 */
@@ -1012,7 +1012,7 @@ function get_users( $args = array() ) {
  *
  * @since 3.0.0
  *
- * @global wpdb $wpdb WordPress database object for queries.
+ * @global wpdb $wpdb SlioPress database object for queries.
  *
  * @param int  $user_id User ID
  * @param bool $all     Whether to retrieve all blogs, or only blogs that are not
@@ -1340,7 +1340,7 @@ function setup_userdata($for_user_id = '') {
  *
  * @since 2.3.0
  *
- * @global wpdb $wpdb WordPress database object for queries.
+ * @global wpdb $wpdb SlioPress database object for queries.
  *
  * @param array|string $args {
  *     Optional. Array or string of arguments to generate a drop-down of users.
@@ -1665,7 +1665,7 @@ function validate_username( $username ) {
  *
  * @since 2.0.0
  *
- * @global wpdb $wpdb WordPress database object for queries.
+ * @global wpdb $wpdb SlioPress database object for queries.
  *
  * @param array $userdata {
  *     An array, object, or WP_User object of user data arguments.
@@ -2117,7 +2117,7 @@ function wp_get_password_hint() {
  * hashing process. This field is now hashed; old values are no longer accepted
  * but have a different WP_Error code so good user feedback can be provided.
  *
- * @global wpdb $wpdb WordPress database object for queries.
+ * @global wpdb $wpdb SlioPress database object for queries.
  *
  * @param string $key       Hash to validate sending user's password.
  * @param string $login     The user login.

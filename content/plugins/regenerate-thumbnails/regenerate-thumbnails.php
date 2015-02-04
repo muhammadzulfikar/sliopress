@@ -33,7 +33,7 @@ class RegenerateThumbnails {
 
 	// Plugin initialization
 	function RegenerateThumbnails() {
-		// Load up the localization file if we're using WordPress in a different language
+		// Load up the localization file if we're using SlioPress in a different language
 		// Place it in this plugin's "localization" folder and name it "regenerate-thumbnails-[value in config].mo"
 		load_plugin_textdomain( 'regenerate-thumbnails', false, '/regenerate-thumbnails/localization' );
 
@@ -62,7 +62,7 @@ class RegenerateThumbnails {
 		if ( $hook_suffix != $this->menu_id )
 			return;
 
-		// WordPress 3.1 vs older version compatibility
+		// SlioPress 3.1 vs older version compatibility
 		if ( wp_script_is( 'jquery-ui-widget', 'registered' ) )
 			wp_enqueue_script( 'jquery-ui-progressbar', plugins_url( 'jquery-ui/jquery.ui.progressbar.min.js', __FILE__ ), array( 'jquery-ui-core', 'jquery-ui-widget' ), '1.8.6' );
 		else
@@ -327,7 +327,7 @@ class RegenerateThumbnails {
 
 	<p><?php printf( __( "Use this tool to regenerate thumbnails for all images that you have uploaded to your blog. This is useful if you've changed any of the thumbnail dimensions on the <a href='%s'>media settings page</a>. Old thumbnails will be kept to avoid any broken images due to hard-coded URLs.", 'regenerate-thumbnails' ), admin_url( 'options-media.php' ) ); ?></p>
 
-	<p><?php printf( __( "You can regenerate specific images (rather than all images) from the <a href='%s'>Media</a> page. Hover over an image's row and click the link to resize just that one image or use the checkboxes and the &quot;Bulk Actions&quot; dropdown to resize multiple images (WordPress 3.1+ only).", 'regenerate-thumbnails '), admin_url( 'upload.php' ) ); ?></p>
+	<p><?php printf( __( "You can regenerate specific images (rather than all images) from the <a href='%s'>Media</a> page. Hover over an image's row and click the link to resize just that one image or use the checkboxes and the &quot;Bulk Actions&quot; dropdown to resize multiple images (SlioPress 3.1+ only).", 'regenerate-thumbnails '), admin_url( 'upload.php' ) ); ?></p>
 
 	<p><?php _e( "Thumbnail regeneration is not reversible, but you can just change your thumbnail dimensions back to the old values and click the button again if you don't like the results.", 'regenerate-thumbnails' ); ?></p>
 

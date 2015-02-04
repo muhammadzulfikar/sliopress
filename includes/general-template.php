@@ -2,7 +2,7 @@
 /**
  * General template tags that can go anywhere in a template.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Template
  */
 
@@ -181,7 +181,7 @@ function get_template_part( $slug, $name = null ) {
  * it. The filter is 'get_search_form'.
  *
  * This function is primarily used by themes which want to hardcode the search
- * form into the sidebar and also by the search widget in WordPress.
+ * form into the sidebar and also by the search widget in SlioPress.
  *
  * There is also an action that is called whenever the function is run called,
  * 'pre_get_search_form'. This can be useful for outputting JavaScript that the
@@ -374,7 +374,7 @@ function wp_registration_url() {
 }
 
 /**
- * Provides a simple login form for use anywhere within WordPress. By default, it echoes
+ * Provides a simple login form for use anywhere within SlioPress. By default, it echoes
  * the HTML immediately. Pass array('echo'=>false) to return the string instead.
  *
  * @since 3.0.0
@@ -588,7 +588,7 @@ function bloginfo( $show='' ) {
  * The possible values for the 'show' parameter are listed below.
  *
  * 1. url - Blog URI to homepage.
- * 2. wpurl - Blog URI path to WordPress.
+ * 2. wpurl - Blog URI path to SlioPress.
  * 3. description - Secondary title
  *
  * The feed URL options can be retrieved from 'rdf_url' (RSS 0.91),
@@ -2452,7 +2452,7 @@ function wp_editor( $content, $editor_id, $settings = array() ) {
 }
 
 /**
- * Retrieve the contents of the search WordPress query variable.
+ * Retrieve the contents of the search SlioPress query variable.
  *
  * The search query string is passed through {@link esc_attr()}
  * to ensure that it is safe for placing in an html attribute.
@@ -2804,7 +2804,7 @@ function register_admin_color_schemes() {
 }
 
 /**
- * Display the URL of a WordPress admin CSS file.
+ * Display the URL of a SlioPress admin CSS file.
  *
  * @see WP_Styles::_css_href and its style_loader_src filter.
  *
@@ -2821,7 +2821,7 @@ function wp_admin_css_uri( $file = 'admin' ) {
 	$_file = add_query_arg( 'version', get_bloginfo( 'version' ),  $_file );
 
 	/**
-	 * Filter the URI of a WordPress admin CSS file.
+	 * Filter the URI of a SlioPress admin CSS file.
 	 *
 	 * @since 2.3.0
 	 *
@@ -2840,13 +2840,13 @@ function wp_admin_css_uri( $file = 'admin' ) {
  * be printed. Printing may be forced by passing true as the $force_echo
  * (second) parameter.
  *
- * For backward compatibility with WordPress 2.3 calling method: If the $file
+ * For backward compatibility with SlioPress 2.3 calling method: If the $file
  * (first) parameter does not correspond to a registered CSS file, we assume
  * $file is a file relative to admin/ without its ".css" extension. A
  * stylesheet link to that generated URL is printed.
  *
  * @since 2.3.0
- * @uses $wp_styles WordPress Styles Object
+ * @uses $wp_styles SlioPress Styles Object
  *
  * @param string $file Optional. Style handle name or file name (without ".css" extension) relative
  * 	 to admin/. Defaults to 'admin'.
@@ -2984,13 +2984,13 @@ function get_the_generator( $type = '' ) {
 
 	switch ( $type ) {
 		case 'html':
-			$gen = '<meta name="generator" content="WordPress ' . get_bloginfo( 'version' ) . '">';
+			$gen = '<meta name="generator" content="SlioPress ' . get_bloginfo( 'version' ) . '">';
 			break;
 		case 'xhtml':
-			$gen = '<meta name="generator" content="WordPress ' . get_bloginfo( 'version' ) . '" />';
+			$gen = '<meta name="generator" content="SlioPress ' . get_bloginfo( 'version' ) . '" />';
 			break;
 		case 'atom':
-			$gen = '<generator uri="http://wordpress.org/" version="' . get_bloginfo_rss( 'version' ) . '">WordPress</generator>';
+			$gen = '<generator uri="http://wordpress.org/" version="' . get_bloginfo_rss( 'version' ) . '">SlioPress</generator>';
 			break;
 		case 'rss2':
 			$gen = '<generator>http://wordpress.org/?v=' . get_bloginfo_rss( 'version' ) . '</generator>';
@@ -2999,10 +2999,10 @@ function get_the_generator( $type = '' ) {
 			$gen = '<admin:generatorAgent rdf:resource="http://wordpress.org/?v=' . get_bloginfo_rss( 'version' ) . '" />';
 			break;
 		case 'comment':
-			$gen = '<!-- generator="WordPress/' . get_bloginfo( 'version' ) . '" -->';
+			$gen = '<!-- generator="SlioPress/' . get_bloginfo( 'version' ) . '" -->';
 			break;
 		case 'export':
-			$gen = '<!-- generator="WordPress/' . get_bloginfo_rss('version') . '" created="'. date('Y-m-d H:i') . '" -->';
+			$gen = '<!-- generator="SlioPress/' . get_bloginfo_rss('version') . '" created="'. date('Y-m-d H:i') . '" -->';
 			break;
 	}
 

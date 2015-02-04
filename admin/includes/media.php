@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Administration Media API.
+ * SlioPress Administration Media API.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
@@ -437,7 +437,7 @@ function media_handle_sideload($file_array, $post_id, $desc = null, $post_data =
 function wp_iframe($content_func /* ... */) {
 	_wp_admin_html_begin();
 ?>
-<title><?php bloginfo('name') ?> &rsaquo; <?php _e('Uploads'); ?> &#8212; <?php _e('WordPress'); ?></title>
+<title><?php bloginfo('name') ?> &rsaquo; <?php _e('Uploads'); ?> &#8212; <?php _e('SlioPress'); ?></title>
 <?php
 
 wp_enqueue_style( 'colors' );
@@ -2578,7 +2578,7 @@ add_action('post-plupload-upload-ui', 'media_upload_flash_bypass');
 function media_upload_html_bypass() {
 	?>
 	<p class="upload-html-bypass hide-if-no-js">
-	   <?php _e('You are using the browser&#8217;s built-in file uploader. The WordPress uploader includes multiple file selection and drag and drop capability. <a href="#">Switch to the multi-file uploader</a>.'); ?>
+	   <?php _e('You are using the browser&#8217;s built-in file uploader. The SlioPress uploader includes multiple file selection and drag and drop capability. <a href="#">Switch to the multi-file uploader</a>.'); ?>
 	</p>
 	<?php
 }

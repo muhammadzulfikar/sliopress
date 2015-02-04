@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Theme Install Administration API
+ * SlioPress Theme Install Administration API
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
@@ -20,7 +20,7 @@ $theme_field_defaults = array( 'description' => true, 'sections' => false, 'test
 );
 
 /**
- * Retrieve list of WordPress theme features (aka theme tags)
+ * Retrieve list of SlioPress theme features (aka theme tags)
  *
  * @since 2.8.0
  *

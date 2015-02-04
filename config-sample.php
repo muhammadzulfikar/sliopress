@@ -1,9 +1,9 @@
 <?php
 /**
- * Konfigurasi dasar WordPress.
+ * Konfigurasi dasar SlioPress.
  *
  * Berkas ini berisi konfigurasi-konfigurasi berikut: Pengaturan MySQL, Awalan Tabel,
- * Kunci Rahasia, Bahasa WordPress, dan ABSPATH. Anda dapat menemukan informasi lebih
+ * Kunci Rahasia, Bahasa SlioPress, dan ABSPATH. Anda dapat menemukan informasi lebih
  * lanjut dengan mengunjungi Halaman Codex {@link http://codex.wordpress.org/Editing_config.php
  * Menyunting config.php}. Anda dapat memperoleh pengaturan MySQL dari web host Anda.
  *
@@ -11,11 +11,11 @@
  * Anda tidak perlu menggunakan situs web, Anda dapat langsung menyalin berkas ini ke
  * "config.php" dan mengisi nilai-nilainya.
  *
- * @package WordPress
+ * @package SlioPress
  */
 
 // ** Pengaturan MySQL - Anda dapat memperoleh informasi ini dari web host Anda ** //
-/** Nama basis data untuk WordPress */
+/** Nama basis data untuk SlioPress */
 define('DB_NAME', 'nama_basis_data_di_sini');
 
 /** Nama pengguna basis data MySQL */
@@ -37,7 +37,7 @@ define('DB_COLLATE', '');
  * Kunci Otentifikasi Unik dan Garam.
  *
  * Ubah baris berikut menjadi frase unik!
- * Anda dapat menciptakan frase-frase ini menggunakan {@link https://api.wordpress.org/secret-key/1.1/salt/ Layanan kunci-rahasia WordPress.org}
+ * Anda dapat menciptakan frase-frase ini menggunakan {@link https://api.wordpress.org/secret-key/1.1/salt/ Layanan kunci-rahasia SlioPress.org}
  * Anda dapat mengubah baris-baris berikut kapanpun untuk mencabut validasi seluruh cookies. Hal ini akan memaksa seluruh pengguna untuk masuk log ulang.
  *
  * @since 2.6.0
@@ -54,7 +54,7 @@ define('NONCE_SALT',       'letakkan frase unik Anda di sini');
 /**#@-*/
 
 /**
- * Awalan Tabel Basis Data WordPress.
+ * Awalan Tabel Basis Data SlioPress.
  *
  * Anda dapat memiliki beberapa instalasi di dalam satu basis data jika Anda memberikan awalan unik
  * kepada masing-masing tabel. Harap hanya masukkan angka, huruf, dan garis bawah!
@@ -62,7 +62,7 @@ define('NONCE_SALT',       'letakkan frase unik Anda di sini');
 $table_prefix  = 'wp_';
 
 /**
- * Untuk pengembang: Moda pengawakutuan WordPress.
+ * Untuk pengembang: Moda pengawakutuan SlioPress.
  *
  * Ubah ini menjadi "true" untuk mengaktifkan tampilan peringatan selama pengembangan.
  * Sangat disarankan agar pengembang plugin dan tema menggunakan WP_DEBUG
@@ -72,9 +72,9 @@ define('WP_DEBUG', false);
 
 /* Cukup, berhenti menyunting! Selamat ngeblog. */
 
-/** Lokasi absolut direktori WordPress. */
+/** Lokasi absolut direktori SlioPress. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
-/** Menentukan variabel-variabel WordPress berkas-berkas yang disertakan. */
+/** Menentukan variabel-variabel SlioPress berkas-berkas yang disertakan. */
 require_once(ABSPATH . 'settings.php');

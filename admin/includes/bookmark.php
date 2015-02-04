@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Bookmark Administration API
+ * SlioPress Bookmark Administration API
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 

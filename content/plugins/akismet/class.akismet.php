@@ -17,7 +17,7 @@ class Akismet {
 	}
 
 	/**
-	 * Initializes WordPress hooks
+	 * Initializes SlioPress hooks
 	 */
 	private static function init_hooks() {
 		self::$initiated = true;
@@ -421,7 +421,7 @@ class Akismet {
 
 		// Assumption alert:
 		// We want to submit comments to Akismet only when a moderator explicitly spams or approves it - not if the status
-		// is changed automatically by another plugin.  Unfortunately WordPress doesn't provide an unambiguous way to
+		// is changed automatically by another plugin.  Unfortunately SlioPress doesn't provide an unambiguous way to
 		// determine why the transition_comment_status action was triggered.  And there are several different ways by which
 		// to spam and unspam comments: bulk actions, ajax, links in moderation emails, the dashboard, and perhaps others.
 		// We'll assume that this is an explicit user action if certain POST/GET variables exist.
@@ -780,7 +780,7 @@ class Akismet {
 	 */
 	public static function http_post( $request, $path, $ip=null ) {
 
-		$akismet_ua = sprintf( 'WordPress/%s | Akismet/%s', $GLOBALS['wp_version'], constant( 'AKISMET_VERSION' ) );
+		$akismet_ua = sprintf( 'SlioPress/%s | Akismet/%s', $GLOBALS['wp_version'], constant( 'AKISMET_VERSION' ) );
 		$akismet_ua = apply_filters( 'akismet_ua', $akismet_ua );
 
 		$content_length = strlen( $request );
@@ -920,7 +920,7 @@ p {
 		if ( version_compare( $GLOBALS['wp_version'], AKISMET__MINIMUM_WP_VERSION, '<' ) ) {
 			load_plugin_textdomain( 'akismet' );
 			
-			$message = '<strong>'.sprintf(esc_html__( 'Akismet %s requires WordPress %s or higher.' , 'akismet'), AKISMET_VERSION, AKISMET__MINIMUM_WP_VERSION ).'</strong> '.sprintf(__('Please <a href="%1$s">upgrade WordPress</a> to a current version, or <a href="%2$s">downgrade to version 2.4 of the Akismet plugin</a>.', 'akismet'), 'https://codex.wordpress.org/Upgrading_WordPress', 'http://wordpress.org/extend/plugins/akismet/download/');
+			$message = '<strong>'.sprintf(esc_html__( 'Akismet %s requires SlioPress %s or higher.' , 'akismet'), AKISMET_VERSION, AKISMET__MINIMUM_WP_VERSION ).'</strong> '.sprintf(__('Please <a href="%1$s">upgrade SlioPress</a> to a current version, or <a href="%2$s">downgrade to version 2.4 of the Akismet plugin</a>.', 'akismet'), 'https://codex.wordpress.org/Upgrading_SlioPress', 'http://wordpress.org/extend/plugins/akismet/download/');
 
 			Akismet::bail_on_activation( $message );
 		}

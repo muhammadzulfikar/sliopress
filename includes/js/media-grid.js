@@ -1,6 +1,6 @@
 /* global _wpMediaViewsL10n, MediaElementPlayer, _wpMediaGridSettings */
 (function($, _, Backbone, wp) {
-	// Local reference to the WordPress media namespace.
+	// Local reference to the SlioPress media namespace.
 	var media = wp.media, l10n;
 
 	// Link localized strings and settings.

@@ -2,13 +2,13 @@
 /**
  * Press This Display and Handler.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Press_This
  */
 
 define('IFRAME_REQUEST' , true);
 
-/** WordPress Administration Bootstrap */
+/** SlioPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 header('Content-Type: ' . get_option('html_type') . '; charset=' . get_option('blog_charset'));

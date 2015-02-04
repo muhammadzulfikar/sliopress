@@ -316,7 +316,7 @@ msgid ""
 msgstr ""
 
 #: composer/lib/layouts.php:296 composer/./lib/layouts.php:296
-msgid "Visual Composer for WordPress"
+msgid "Visual Composer for SlioPress"
 msgstr ""
 
 #: composer/lib/layouts.php:312 inline/templates/editor.tpl.php:102
@@ -1166,7 +1166,7 @@ msgstr ""
 msgid ""
 "A valid license key qualifies you for support and enables automatic updates. "
 "<strong>A license key may only be used for one Visual Composer installation "
-"on one WordPress site at a time.</strong> If you previosly activated your "
+"on one SlioPress site at a time.</strong> If you previosly activated your "
 "license key on another site, then you should deactivate it first or <a href="
 "\"%s\" target=\"_blank\">obtain new license key</a>."
 msgstr ""
@@ -1193,7 +1193,7 @@ msgstr ""
 #: composer/settings/settings.php:698 composer/./settings/settings.php:698
 msgid ""
 "<strong>Deprecated:</strong> To override class names that are applied to "
-"Visual Composer content elements you should use WordPress add_filter"
+"Visual Composer content elements you should use SlioPress add_filter"
 "('vc_shortcodes_css_class') function. <a class='vc_show_example'>See "
 "Example</a>."
 msgstr ""
@@ -2416,7 +2416,7 @@ msgid "Grids content"
 msgstr ""
 
 #: config/map.php:1093 config/map.php:1181
-msgid "Create WordPress loop, to populate content from your site."
+msgid "Create SlioPress loop, to populate content from your site."
 msgstr ""
 
 #: config/map.php:1106 config/map.php:1185
@@ -3156,7 +3156,7 @@ msgstr ""
 #: config/map.php:2468 config/map.php:2500 config/map.php:2536
 #: config/map.php:2580 config/map.php:2622 config/map.php:2653
 #: config/map.php:2683
-msgid "WordPress Widgets"
+msgid "SlioPress Widgets"
 msgstr ""
 
 #: config/map.php:2286
@@ -3172,7 +3172,7 @@ msgid ""
 msgstr ""
 
 #: config/map.php:2310
-msgid "Log in/out, admin, feed and WordPress links"
+msgid "Log in/out, admin, feed and SlioPress links"
 msgstr ""
 
 #: config/map.php:2334
@@ -3192,7 +3192,7 @@ msgid "A calendar of your sites posts"
 msgstr ""
 
 #: config/map.php:2388
-msgid "Your sites WordPress Pages"
+msgid "Your sites SlioPress Pages"
 msgstr ""
 
 #: config/map.php:2398 config/map.php:2594

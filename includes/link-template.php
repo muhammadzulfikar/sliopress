@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Link Template Functions
+ * SlioPress Link Template Functions
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Template
  */
 
@@ -382,7 +382,7 @@ function _get_page_link( $post = false, $leavename = false, $sample = false ) {
 /**
  * Retrieve permalink for attachment.
  *
- * This can be used in the WordPress Loop or outside of it.
+ * This can be used in the SlioPress Loop or outside of it.
  *
  * @since 2.0.0
  *
@@ -1153,7 +1153,7 @@ function get_post_type_archive_feed_link( $post_type, $feed = '' ) {
 /**
  * Retrieve edit posts link for post.
  *
- * Can be used within the WordPress loop or outside of it. Can be used with
+ * Can be used within the SlioPress loop or outside of it. Can be used with
  * pages, posts, attachments, and revisions.
  *
  * @since 2.3.0
@@ -1233,7 +1233,7 @@ function edit_post_link( $text = null, $before = '', $after = '', $id = 0 ) {
 /**
  * Retrieve delete posts link for post.
  *
- * Can be used within the WordPress loop or outside of it, with any post type.
+ * Can be used within the SlioPress loop or outside of it, with any post type.
  *
  * @since 2.9.0
  *
@@ -2235,7 +2235,7 @@ function the_post_navigation( $args = array() ) {
  *
  * @since 4.1.0
  *
- * @global WP_Query $wp_query WordPress Query object.
+ * @global WP_Query $wp_query SlioPress Query object.
  *
  * @param array $args {
  *     Optional. Default posts navigation arguments. Default empty array.

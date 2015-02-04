@@ -2,7 +2,7 @@
 /**
  * Theme Installer List Table class.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage List_Table
  * @since 3.1.0
  * @access private
@@ -189,9 +189,9 @@ class WP_Theme_Install_List_Table extends WP_Themes_List_Table {
 	}
 
 	/**
-	 * Prints a theme from the WordPress.org API.
+	 * Prints a theme from the SlioPress.org API.
 	 *
-	 * @param object $theme An object that contains theme data returned by the WordPress.org API.
+	 * @param object $theme An object that contains theme data returned by the SlioPress.org API.
 	 *
 	 * Example theme data:
 	 *   object(stdClass)[59]
@@ -314,7 +314,7 @@ class WP_Theme_Install_List_Table extends WP_Themes_List_Table {
 	 * Prints the wrapper for the theme installer with a provided theme's data.
 	 * Used to make the theme installer work for no-js.
 	 *
-	 * @param object $theme - A WordPress.org Theme API object.
+	 * @param object $theme - A SlioPress.org Theme API object.
 	 */
 	public function theme_installer_single( $theme ) {
 		?>
@@ -332,7 +332,7 @@ class WP_Theme_Install_List_Table extends WP_Themes_List_Table {
 	/**
 	 * Prints the info for a theme (to be used in the theme installer modal).
 	 *
-	 * @param object $theme - A WordPress.org Theme API object.
+	 * @param object $theme - A SlioPress.org Theme API object.
 	 */
 	public function install_theme_info( $theme ) {
 		global $themes_allowedtags;
@@ -410,7 +410,7 @@ class WP_Theme_Install_List_Table extends WP_Themes_List_Table {
 	 * @since 3.4.0
 	 * @access private
 	 *
-	 * @param object $theme - A WordPress.org Theme API object.
+	 * @param object $theme - A SlioPress.org Theme API object.
 	 * @return string Theme status.
 	 */
 	private function _get_theme_status( $theme ) {

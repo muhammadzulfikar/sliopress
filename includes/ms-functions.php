@@ -1,8 +1,8 @@
 <?php
 /**
- * Multisite WordPress API
+ * Multisite SlioPress API
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Multisite
  * @since 3.0.0
  */
@@ -568,7 +568,7 @@ function wpmu_validate_user_signup($user_name, $user_email) {
  * effectively an override of this limitation.
  *
  * Filter 'wpmu_validate_blog_signup' if you want to modify
- * the way that WordPress validates new site signups.
+ * the way that SlioPress validates new site signups.
  *
  * @since MU
  *
@@ -817,7 +817,7 @@ function wpmu_signup_blog_notification( $domain, $path, $title, $user, $user_ema
 	$admin_email = get_site_option( 'admin_email' );
 	if ( $admin_email == '' )
 		$admin_email = 'support@' . $_SERVER['SERVER_NAME'];
-	$from_name = get_site_option( 'site_name' ) == '' ? 'WordPress' : esc_html( get_site_option( 'site_name' ) );
+	$from_name = get_site_option( 'site_name' ) == '' ? 'SlioPress' : esc_html( get_site_option( 'site_name' ) );
 	$message_headers = "From: \"{$from_name}\" <{$admin_email}>\n" . "Content-Type: text/plain; charset=\"" . get_option('blog_charset') . "\"\n";
 	$message = sprintf(
 		/**
@@ -910,7 +910,7 @@ function wpmu_signup_user_notification( $user, $user_email, $key, $meta = array(
 	$admin_email = get_site_option( 'admin_email' );
 	if ( $admin_email == '' )
 		$admin_email = 'support@' . $_SERVER['SERVER_NAME'];
-	$from_name = get_site_option( 'site_name' ) == '' ? 'WordPress' : esc_html( get_site_option( 'site_name' ) );
+	$from_name = get_site_option( 'site_name' ) == '' ? 'SlioPress' : esc_html( get_site_option( 'site_name' ) );
 	$message_headers = "From: \"{$from_name}\" <{$admin_email}>\n" . "Content-Type: text/plain; charset=\"" . get_option('blog_charset') . "\"\n";
 	$message = sprintf(
 		/**
@@ -1343,7 +1343,7 @@ function install_blog( $blog_id, $blog_title = '' ) {
 
 	$suppress = $wpdb->suppress_errors();
 	if ( $wpdb->get_results( "DESCRIBE {$wpdb->posts}" ) )
-		die( '<h1>' . __( 'Already Installed' ) . '</h1><p>' . __( 'You appear to have already installed WordPress. To reinstall please clear your old database tables first.' ) . '</p></body></html>' );
+		die( '<h1>' . __( 'Already Installed' ) . '</h1><p>' . __( 'You appear to have already installed SlioPress. To reinstall please clear your old database tables first.' ) . '</p></body></html>' );
 	$wpdb->suppress_errors( $suppress );
 
 	$url = get_blogaddress_by_id( $blog_id );
@@ -1481,12 +1481,12 @@ We hope you enjoy your new site. Thanks!
 	if ( $admin_email == '' )
 		$admin_email = 'support@' . $_SERVER['SERVER_NAME'];
 
-	$from_name = get_site_option( 'site_name' ) == '' ? 'WordPress' : esc_html( get_site_option( 'site_name' ) );
+	$from_name = get_site_option( 'site_name' ) == '' ? 'SlioPress' : esc_html( get_site_option( 'site_name' ) );
 	$message_headers = "From: \"{$from_name}\" <{$admin_email}>\n" . "Content-Type: text/plain; charset=\"" . get_option('blog_charset') . "\"\n";
 	$message = $welcome_email;
 
 	if ( empty( $current_site->site_name ) )
-		$current_site->site_name = 'WordPress';
+		$current_site->site_name = 'SlioPress';
 
 	/**
 	 * Filter the subject of the welcome email after site activation.
@@ -1559,12 +1559,12 @@ function wpmu_welcome_user_notification( $user_id, $password, $meta = array() ) 
 	if ( $admin_email == '' )
 		$admin_email = 'support@' . $_SERVER['SERVER_NAME'];
 
-	$from_name = get_site_option( 'site_name' ) == '' ? 'WordPress' : esc_html( get_site_option( 'site_name' ) );
+	$from_name = get_site_option( 'site_name' ) == '' ? 'SlioPress' : esc_html( get_site_option( 'site_name' ) );
 	$message_headers = "From: \"{$from_name}\" <{$admin_email}>\n" . "Content-Type: text/plain; charset=\"" . get_option('blog_charset') . "\"\n";
 	$message = $welcome_email;
 
 	if ( empty( $current_site->site_name ) )
-		$current_site->site_name = 'WordPress';
+		$current_site->site_name = 'SlioPress';
 
 	/**
 	 * Filter the subject of the welcome email after user activation.
@@ -1706,7 +1706,7 @@ function recurse_dirsize( $directory ) {
 /**
  * Check an array of MIME types against a whitelist.
  *
- * WordPress ships with a set of allowed upload filetypes,
+ * SlioPress ships with a set of allowed upload filetypes,
  * which is defined in includes/functions.php in
  * get_allowed_mime_types(). This function is used to filter
  * that list against the filetype whitelist provided by Multisite
@@ -1732,7 +1732,7 @@ function check_upload_mimes( $mimes ) {
 /**
  * Update a blog's post count.
  *
- * WordPress MS stores a blog's post count as an option so as
+ * SlioPress MS stores a blog's post count as an option so as
  * to avoid extraneous COUNTs when a blog's details are fetched
  * with get_blog_details(). This function is called when posts
  * are published or unpublished to make sure the count stays current.
@@ -1935,7 +1935,7 @@ function maybe_add_existing_user_to_blog() {
 	if ( empty( $details ) || is_wp_error( add_existing_user_to_blog( $details ) ) )
 		wp_die( sprintf(__('An error occurred adding you to this site. Back to the <a href="%s">homepage</a>.'), home_url() ) );
 
-	wp_die( sprintf( __( 'You have been added to this site. Please visit the <a href="%s">homepage</a> or <a href="%s">log in</a> using your username and password.' ), home_url(), admin_url() ), __( 'WordPress &rsaquo; Success' ) );
+	wp_die( sprintf( __( 'You have been added to this site. Please visit the <a href="%s">homepage</a> or <a href="%s">log in</a> using your username and password.' ), home_url(), admin_url() ), __( 'SlioPress &rsaquo; Success' ) );
 }
 
 /**

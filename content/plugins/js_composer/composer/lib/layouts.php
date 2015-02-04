@@ -293,7 +293,7 @@ class WPBakeryVisualComposerNavBar implements WPBakeryVisualComposerTemplateInte
                     <!--<div class="container">-->
                         <ul class="vc_nav">
                           <li>
-                            <a title="'.__('Visual Composer for WordPress', "js_composer").'" href="http://vc.wpbakery.com/" class="vc_logo" target="_blank"></a>
+                            <a title="'.__('Visual Composer for SlioPress', "js_composer").'" href="http://vc.wpbakery.com/" class="vc_logo" target="_blank"></a>
                           </li>
                         </ul>
                         '.$buttons.'

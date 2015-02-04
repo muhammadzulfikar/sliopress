@@ -2,7 +2,7 @@
 /*
 Plugin Name: Polls
 Plugin URI: http://lesterchan.net/portfolio/programming/php/
-Description: Adds an AJAX poll system to your WordPress blog. You can easily include a poll into your WordPress's blog post/page. Polls is extremely customizable via templates and css styles and there are tons of options for you to choose to ensure that Polls runs the way you wanted. It now supports multiple selection of answers.
+Description: Adds an AJAX poll system to your SlioPress blog. You can easily include a poll into your SlioPress's blog post/page. Polls is extremely customizable via templates and css styles and there are tons of options for you to choose to ensure that Polls runs the way you wanted. It now supports multiple selection of answers.
 Version: 2.68
 Author: Lester 'GaMerZ' Chan
 Author URI: http://lesterchan.net
@@ -270,7 +270,7 @@ function poll_footer_admin() {
 <?php
 }
 
-### Function: Add Quick Tag For Poll In TinyMCE >= WordPress 2.5
+### Function: Add Quick Tag For Poll In TinyMCE >= SlioPress 2.5
 add_action('init', 'poll_tinymce_addbuttons');
 function poll_tinymce_addbuttons() {
 	if(!current_user_can('edit_posts') && ! current_user_can('edit_pages')) {

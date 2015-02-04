@@ -4,7 +4,7 @@
  *
  * @since 2.6.0
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage BackPress
  */
 
@@ -60,12 +60,12 @@ function wp_print_scripts( $handles = false ) {
  * @since 2.6.0
  *
  * @param string      $handle    Name of the script. Should be unique.
- * @param string      $src       Path to the script from the WordPress root directory. Example: '/js/myscript.js'.
+ * @param string      $src       Path to the script from the SlioPress root directory. Example: '/js/myscript.js'.
  * @param array       $deps      Optional. An array of registered script handles this script depends on. Set to false if there
  *                               are no dependencies. Default empty array.
  * @param string|bool $ver       Optional. String specifying script version number, if it has one, which is concatenated
  *                               to end of path as a query string. If no version is specified or set to false, a version
- *                               number is automatically added equal to current installed WordPress version.
+ *                               number is automatically added equal to current installed SlioPress version.
  *                               If set to null, no version is added. Default 'false'. Accepts 'false', 'null', or 'string'.
  * @param bool        $in_footer Optional. Whether to enqueue the script before </head> or before </body>.
  *                               Default 'false'. Accepts 'false' or 'true'.
@@ -186,7 +186,7 @@ function wp_deregister_script( $handle ) {
  * @since 2.6.0
 
  * @param string      $handle    Name of the script.
- * @param string|bool $src       Path to the script from the root directory of WordPress. Example: '/js/myscript.js'.
+ * @param string|bool $src       Path to the script from the root directory of SlioPress. Example: '/js/myscript.js'.
  * @param array       $deps      An array of registered handles this script depends on. Default empty array.
  * @param string|bool $ver       Optional. String specifying the script version number, if it has one. This parameter
  *                               is used to ensure that the correct version is sent to the client regardless of caching,

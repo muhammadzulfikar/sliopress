@@ -2,7 +2,7 @@
 /*
 +----------------------------------------------------------------+
 |																							|
-|	WordPress Plugin: Polls										|
+|	SlioPress Plugin: Polls										|
 |	Copyright (c) 2012 Lester "GaMerZ" Chan									|
 |																							|
 |	File Written By:																	|

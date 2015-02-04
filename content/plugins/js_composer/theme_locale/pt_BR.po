@@ -215,7 +215,7 @@ msgid "Cancel"
 msgstr "Cancelar"
 
 #: composer/lib/layouts.php:272
-msgid "Visual Composer for WordPress"
+msgid "Visual Composer for SlioPress"
 msgstr "Visual Composer para Wordpress"
 
 #: composer/lib/layouts.php:277
@@ -944,7 +944,7 @@ msgstr "Configurações do Visual Composer"
 #: composer/settings/settings.php:651
 msgid ""
 "<strong>Deprecated:</strong> To override class names that are applied to "
-"Visual Composer content elements you should use WordPress add_filter"
+"Visual Composer content elements you should use SlioPress add_filter"
 "('vc_shortcodes_css_class') function. <a class='vc_show_example'>See "
 "Example</a>."
 msgstr ""
@@ -2420,7 +2420,7 @@ msgstr "Pesquisar"
 #: config/map.php:1718 config/map.php:1749 config/map.php:1783
 #: config/map.php:1825 config/map.php:1865 config/map.php:1894
 #: config/map.php:1922
-msgid "WordPress Widgets"
+msgid "SlioPress Widgets"
 msgstr "Widgets Wordpress"
 
 #: config/map.php:1553 config/map.php:1575 config/map.php:1597
@@ -2738,21 +2738,21 @@ msgstr "Mostrar data do item?"
 #~ msgid ""
 #~ "Select how to sort retrieved posts. More at <a href=\"http://codex."
 #~ "wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters\" "
-#~ "target=\"_blank\">WordPress codex page</a>."
+#~ "target=\"_blank\">SlioPress codex page</a>."
 #~ msgstr ""
 #~ "Escolha como ordenar as mensagens recuperadas. Mais sobre isso em <a href="
 #~ "\"http://codex.wordpress.org/Class_Reference/"
-#~ "WP_Query#Order_.26_Orderby_Parameters\" target=\"_blank\">WordPress codex "
+#~ "WP_Query#Order_.26_Orderby_Parameters\" target=\"_blank\">SlioPress codex "
 #~ "page</a>."
 
 #~ msgid ""
 #~ "Designates the ascending or descending order. More at <a href=\"http://"
 #~ "codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters"
-#~ "\" target=\"_blank\">WordPress codex page</a>."
+#~ "\" target=\"_blank\">SlioPress codex page</a>."
 #~ msgstr ""
 #~ "Designa a ordem ascendente ou descendente. Mais sobre isso em <a href="
 #~ "\"http://codex.wordpress.org/Class_Reference/"
-#~ "WP_Query#Order_.26_Orderby_Parameters\" target=\"_blank\">WordPress codex "
+#~ "WP_Query#Order_.26_Orderby_Parameters\" target=\"_blank\">SlioPress codex "
 #~ "page</a>."
 
 #~ msgid "Select slider type. Note: Nivo slider is not fully responsive."
@@ -2762,11 +2762,11 @@ msgstr "Mostrar data do item?"
 #~ msgid ""
 #~ "Link to the video. More about supported formats at <a href=\"http://codex."
 #~ "wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F\" target="
-#~ "\"_blank\">WordPress codex page</a>."
+#~ "\"_blank\">SlioPress codex page</a>."
 #~ msgstr ""
 #~ "Link para vídeo. Mais sobre formatos suportados em <a href=\"http://codex."
 #~ "wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F\" target="
-#~ "\"_blank\">WordPress codex page</a>."
+#~ "\"_blank\">SlioPress codex page</a>."
 
 #~ msgid "Raw html"
 #~ msgstr "Html simples"

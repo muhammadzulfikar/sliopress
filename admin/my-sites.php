@@ -2,7 +2,7 @@
 /**
  * My Sites dashboard.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Multisite
  * @since 3.0.0
  */
@@ -40,7 +40,7 @@ get_current_screen()->add_help_tab( array(
 	'title'   => __('Overview'),
 	'content' =>
 		'<p>' . __('This screen shows an individual user all of their sites in this network, and also allows that user to set a primary site. They can use the links under each site to visit either the frontend or the dashboard for that site.') . '</p>' .
-		'<p>' . __('Up until WordPress version 3.0, what is now called a Multisite Network had to be installed separately as WordPress MU (multi-user).') . '</p>'
+		'<p>' . __('Up until SlioPress version 3.0, what is now called a Multisite Network had to be installed separately as SlioPress MU (multi-user).') . '</p>'
 ) );
 
 get_current_screen()->set_help_sidebar(

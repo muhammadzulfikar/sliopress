@@ -2,7 +2,7 @@
 /**
  * BackPress Scripts enqueue
  *
- * Classes were refactored from the WP_Scripts and WordPress script enqueue API.
+ * Classes were refactored from the WP_Scripts and SlioPress script enqueue API.
  *
  * @since BackPress r74
  *

@@ -1,6 +1,6 @@
 <?php
 
-/** Sets up the WordPress Environment. */
+/** Sets up the SlioPress Environment. */
 require( dirname(__FILE__) . '/load.php' );
 
 add_action( 'wp_head', 'wp_no_robots' );

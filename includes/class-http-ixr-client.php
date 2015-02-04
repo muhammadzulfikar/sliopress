@@ -2,7 +2,7 @@
 /**
  * WP_HTTP_IXR_Client
  *
- * @package WordPress
+ * @package SlioPress
  * @since 3.1.0
  *
  */

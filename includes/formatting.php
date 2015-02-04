@@ -1,10 +1,10 @@
 <?php
 /**
- * Main WordPress Formatting API.
+ * Main SlioPress Formatting API.
  *
  * Handles many functions for formatting output.
  *
- * @package WordPress
+ * @package SlioPress
  */
 
 /**
@@ -3357,7 +3357,7 @@ function sanitize_option($option, $value) {
 			} else {
 				$value = get_option( $option ); // Resets option to stored value in the case of failed sanitization
 				if ( function_exists('add_settings_error') )
-					add_settings_error('siteurl', 'invalid_siteurl', __('The WordPress address you entered did not appear to be a valid URL. Please enter a valid URL.'));
+					add_settings_error('siteurl', 'invalid_siteurl', __('The SlioPress address you entered did not appear to be a valid URL. Please enter a valid URL.'));
 			}
 			break;
 
@@ -3504,7 +3504,7 @@ function wp_pre_kses_less_than_callback( $matches ) {
 }
 
 /**
- * WordPress implementation of PHP sprintf() with filters.
+ * SlioPress implementation of PHP sprintf() with filters.
  *
  * @since 2.5.0
  * @link http://www.php.net/sprintf
@@ -3846,14 +3846,14 @@ function capital_P_dangit( $text ) {
 	// Simple replacement for titles
 	$current_filter = current_filter();
 	if ( 'the_title' === $current_filter || 'wp_title' === $current_filter )
-		return str_replace( 'Wordpress', 'WordPress', $text );
+		return str_replace( 'Wordpress', 'SlioPress', $text );
 	// Still here? Use the more judicious replacement
 	static $dblq = false;
 	if ( false === $dblq )
 		$dblq = _x( '&#8220;', 'opening curly double quote' );
 	return str_replace(
 		array( ' Wordpress', '&#8216;Wordpress', $dblq . 'Wordpress', '>Wordpress', '(Wordpress' ),
-		array( ' WordPress', '&#8216;WordPress', $dblq . 'WordPress', '>WordPress', '(WordPress' ),
+		array( ' SlioPress', '&#8216;SlioPress', $dblq . 'SlioPress', '>SlioPress', '(SlioPress' ),
 	$text );
 
 }

@@ -2,7 +2,7 @@
 /**
  * Database Repair and Optimization Script.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Database
  */
 define('WP_REPAIRING', true);
@@ -16,13 +16,13 @@ header( 'Content-Type: text/html; charset=utf-8' );
 <head>
 	<meta name="viewport" content="width=device-width" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title><?php _e( 'WordPress &rsaquo; Database Repair' ); ?></title>
+	<title><?php _e( 'SlioPress &rsaquo; Database Repair' ); ?></title>
 	<?php
 	wp_admin_css( 'install', true );
 	?>
 </head>
 <body class="core-ui">
-<h1 id="logo"><a href="<?php echo esc_url( __( 'https://wordpress.org/' ) ); ?>" tabindex="-1"><?php _e( 'WordPress' ); ?></a></h1>
+<h1 id="logo"><a href="<?php echo esc_url( __( 'https://wordpress.org/' ) ); ?>" tabindex="-1"><?php _e( 'SlioPress' ); ?></a></h1>
 
 <?php
 
@@ -60,7 +60,7 @@ if ( ! defined( 'WP_ALLOW_REPAIR' ) ) {
 			printf( __( 'The %s table is okay.' ), "<code>$table</code>" );
 		} else {
 			/* translators: 1: table name, 2: error message, */
-			printf( __( 'The %1$s table is not okay. It is reporting the following error: %2$s. WordPress will attempt to repair this table&hellip;' ) , "<code>$table</code>", "<code>$check->Msg_text</code>" );
+			printf( __( 'The %1$s table is not okay. It is reporting the following error: %2$s. SlioPress will attempt to repair this table&hellip;' ) , "<code>$table</code>", "<code>$check->Msg_text</code>" );
 
 			$repair = $wpdb->get_row( "REPAIR TABLE $table" );
 
@@ -100,7 +100,7 @@ if ( ! defined( 'WP_ALLOW_REPAIR' ) ) {
 	}
 
 	if ( $problems ) {
-		printf( '<p>' . __('Some database problems could not be repaired. Please copy-and-paste the following list of errors to the <a href="%s">WordPress support forums</a> to get additional assistance.') . '</p>', __( 'https://wordpress.org/support/forum/how-to-and-troubleshooting' ) );
+		printf( '<p>' . __('Some database problems could not be repaired. Please copy-and-paste the following list of errors to the <a href="%s">SlioPress support forums</a> to get additional assistance.') . '</p>', __( 'https://wordpress.org/support/forum/how-to-and-troubleshooting' ) );
 		$problem_output = '';
 		foreach ( $problems as $table => $problem )
 			$problem_output .= "$table: $problem\n";
@@ -110,12 +110,12 @@ if ( ! defined( 'WP_ALLOW_REPAIR' ) ) {
 	}
 } else {
 	if ( isset( $_GET['referrer'] ) && 'is_blog_installed' == $_GET['referrer'] )
-		echo '<p>' . __( 'One or more database tables are unavailable. To allow WordPress to attempt to repair these tables, press the &#8220;Repair Database&#8221; button. Repairing can take a while, so please be patient.' ) . '</p>';
+		echo '<p>' . __( 'One or more database tables are unavailable. To allow SlioPress to attempt to repair these tables, press the &#8220;Repair Database&#8221; button. Repairing can take a while, so please be patient.' ) . '</p>';
 	else
-		echo '<p>' . __( 'WordPress can automatically look for some common database problems and repair them. Repairing can take a while, so please be patient.' ) . '</p>';
+		echo '<p>' . __( 'SlioPress can automatically look for some common database problems and repair them. Repairing can take a while, so please be patient.' ) . '</p>';
 ?>
 	<p class="step"><a class="button button-large" href="repair.php?repair=1"><?php _e( 'Repair Database' ); ?></a></p>
-	<p><?php _e( 'WordPress can also attempt to optimize the database. This improves performance in some situations. Repairing and optimizing the database can take a long time and the database will be locked while optimizing.' ); ?></p>
+	<p><?php _e( 'SlioPress can also attempt to optimize the database. This improves performance in some situations. Repairing and optimizing the database can take a long time and the database will be locked while optimizing.' ); ?></p>
 	<p class="step"><a class="button button-large" href="repair.php?repair=2"><?php _e( 'Repair and Optimize Database' ); ?></a></p>
 <?php
 }

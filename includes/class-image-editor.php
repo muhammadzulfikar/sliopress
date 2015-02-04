@@ -1,8 +1,8 @@
 <?php
 /**
- * Base WordPress Image Editor
+ * Base SlioPress Image Editor
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Image_Editor
  */
 

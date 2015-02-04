@@ -2,7 +2,7 @@
 /**
  * Theme, template, and stylesheet functions.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Theme
  */
 
@@ -238,7 +238,7 @@ function get_stylesheet_uri() {
  * The theme may change the location of the stylesheet directory by either using
  * the 'stylesheet_directory_uri' filter or the 'locale_stylesheet_uri' filter.
  * If you want to change the location of the stylesheet files for the entire
- * WordPress workflow, then change the former. If you just have the locale in a
+ * SlioPress workflow, then change the former. If you just have the locale in a
  * separate folder, then change the latter.
  *
  * @since 2.1.0
@@ -585,7 +585,7 @@ function get_theme_root_uri( $stylesheet_or_template = false, $theme_root = fals
 	 * @since 1.5.0
 	 *
 	 * @param string $theme_root_uri         The URI for themes directory.
-	 * @param string $siteurl                WordPress web address which is set in General Options.
+	 * @param string $siteurl                SlioPress web address which is set in General Options.
 	 * @param string $stylesheet_or_template Stylesheet or template name of the theme.
 	 */
 	return apply_filters( 'theme_root_uri', $theme_root_uri, get_option( 'siteurl' ), $stylesheet_or_template );

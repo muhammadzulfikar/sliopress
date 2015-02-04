@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Translation API
+ * SlioPress Translation API
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage i18n
  */
 
@@ -28,7 +28,7 @@ function get_locale() {
 
 	if ( isset( $locale ) ) {
 		/**
-		 * Filter WordPress install's locale ID.
+		 * Filter SlioPress install's locale ID.
 		 *
 		 * @since 1.5.0
 		 *
@@ -530,7 +530,7 @@ function unload_textdomain( $domain ) {
 /**
  * Load default translated strings based on locale.
  *
- * Loads the .mo file in WP_LANG_DIR constant path from WordPress root.
+ * Loads the .mo file in WP_LANG_DIR constant path from SlioPress root.
  * The translated (.mo) file is named based on the locale.
  *
  * @see load_textdomain()

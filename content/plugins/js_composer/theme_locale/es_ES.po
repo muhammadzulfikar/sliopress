@@ -226,7 +226,7 @@ msgstr "Cancelar"
 
 #: composer/lib/layouts.php:254 composer/./lib/layouts.php:254
 #, fuzzy
-msgid "Visual Composer for WordPress"
+msgid "Visual Composer for SlioPress"
 msgstr "Maquetador Visual"
 
 #: composer/lib/layouts.php:259 composer/./lib/layouts.php:259
@@ -890,13 +890,13 @@ msgstr "Configuración del Maquetador Visual"
 #: composer/settings/settings.php:575 composer/./settings/settings.php:575
 msgid ""
 "<strong>Deprecated:</strong> To override class names that are applied to "
-"Visual Composer content elements you should use WordPress add_filter"
+"Visual Composer content elements you should use SlioPress add_filter"
 "('vc_shortcodes_css_class') function. <a class='vc_show_example'>See "
 "Example</a>."
 msgstr ""
 "<strong>Desaprovado:</strong> Para reemplazar nombres de clases aplicadas a "
 "los elementos de contenido del Visual Composer debes usar la función "
-"add_filter('vc_shortcodes_css_class') de WordPress. <a "
+"add_filter('vc_shortcodes_css_class') de SlioPress. <a "
 "class='vc_show_example'>Ver Ejemplo</a>"
 
 #: composer/settings/settings.php:583 composer/./settings/settings.php:583
@@ -2342,8 +2342,8 @@ msgstr "Buscar"
 #: config/map.php:1693 config/map.php:1724 config/map.php:1758
 #: config/map.php:1798 config/map.php:1839 config/map.php:1868
 #: config/map.php:1896
-msgid "WordPress Widgets"
-msgstr "Widget de WordPress"
+msgid "SlioPress Widgets"
+msgstr "Widget de SlioPress"
 
 #: config/map.php:1528 config/map.php:1550 config/map.php:1572
 #: config/map.php:1600 config/map.php:1622 config/map.php:1665
@@ -2600,20 +2600,20 @@ msgstr "¿Mostrar la fecha del ítem?"
 #~ msgid ""
 #~ "Select how to sort retrieved posts. More at <a href=\"http://codex."
 #~ "wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters\" "
-#~ "target=\"_blank\">WordPress codex page</a>."
+#~ "target=\"_blank\">SlioPress codex page</a>."
 #~ msgstr ""
 #~ "Indica cómo ordenar las entradas a mostrar. Más en la <a href=\"http://"
 #~ "codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters"
-#~ "\" target=\"_blank\">página de codex de WordPress</a>."
+#~ "\" target=\"_blank\">página de codex de SlioPress</a>."
 
 #~ msgid ""
 #~ "Designates the ascending or descending order. More at <a href=\"http://"
 #~ "codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters"
-#~ "\" target=\"_blank\">WordPress codex page</a>."
+#~ "\" target=\"_blank\">SlioPress codex page</a>."
 #~ msgstr ""
 #~ "Designa el orden ascendiente o descendiente. Más en la <a href=\"http://"
 #~ "codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters"
-#~ "\" target=\"_blank\">página de codex de WordPress</a>."
+#~ "\" target=\"_blank\">página de codex de SlioPress</a>."
 
 #~ msgid "Select slider type. Note: Nivo slider is not fully responsive."
 #~ msgstr ""
@@ -2623,12 +2623,12 @@ msgstr "¿Mostrar la fecha del ítem?"
 #~ msgid ""
 #~ "Link to the video. More about supported formats at <a href=\"http://codex."
 #~ "wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F\" target="
-#~ "\"_blank\">WordPress codex page</a>."
+#~ "\"_blank\">SlioPress codex page</a>."
 #~ msgstr ""
 #~ "Link al vídeo. Más acerca de los formatos permitidos en la <a href="
 #~ "\"http://codex.wordpress.org/"
 #~ "Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F\" target=\"_blank"
-#~ "\">página de codex de WordPress</a>."
+#~ "\">página de codex de SlioPress</a>."
 
 #~ msgid "Video size"
 #~ msgstr "Tamaño del vídeo"

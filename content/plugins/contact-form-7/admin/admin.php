@@ -376,7 +376,7 @@ function wpcf7_old_wp_version_error() {
 
 ?>
 <div class="error">
-<p><?php echo sprintf( __( '<strong>Contact Form 7 %1$s requires WordPress %2$s or higher.</strong> Please <a href="%3$s">update WordPress</a> first.', 'contact-form-7' ), WPCF7_VERSION, WPCF7_REQUIRED_WP_VERSION, admin_url( 'update-core.php' ) ); ?></p>
+<p><?php echo sprintf( __( '<strong>Contact Form 7 %1$s requires SlioPress %2$s or higher.</strong> Please <a href="%3$s">update SlioPress</a> first.', 'contact-form-7' ), WPCF7_VERSION, WPCF7_REQUIRED_WP_VERSION, admin_url( 'update-core.php' ) ); ?></p>
 </div>
 <?php
 }

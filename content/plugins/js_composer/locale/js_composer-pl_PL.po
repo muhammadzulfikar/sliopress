@@ -1185,7 +1185,7 @@ msgstr "Kolejności w menu"
 
 #: ../config/map.php:699
 #: ../config/map.php:805
-msgid "Select how to sort retrieved posts. More at <a href=\"http://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters\" target=\"_blank\">WordPress codex page</a>."
+msgid "Select how to sort retrieved posts. More at <a href=\"http://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters\" target=\"_blank\">SlioPress codex page</a>."
 msgstr "Zaznacz jak chcesz posortować wpisy."
 
 #: ../config/map.php:703
@@ -1204,7 +1204,7 @@ msgstr "Rosnąco"
 
 #: ../config/map.php:706
 #: ../config/map.php:812
-msgid "Designates the ascending or descending order. More at <a href=\"http://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters\" target=\"_blank\">WordPress codex page</a>."
+msgid "Designates the ascending or descending order. More at <a href=\"http://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters\" target=\"_blank\">SlioPress codex page</a>."
 msgstr "Określa rosnący lub malejący kierunek sortowania. "
 
 #: ../config/map.php:721
@@ -1466,7 +1466,7 @@ msgid "Video link"
 msgstr "Link do pliku video"
 
 #: ../config/map.php:1051
-msgid "Link to the video. More about supported formats at <a href=\"http://codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F\" target=\"_blank\">WordPress codex page</a>."
+msgid "Link to the video. More about supported formats at <a href=\"http://codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F\" target=\"_blank\">SlioPress codex page</a>."
 msgstr "Link do pliku video."
 
 #: ../config/map.php:1055

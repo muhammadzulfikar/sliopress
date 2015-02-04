@@ -1,10 +1,10 @@
 <?php
 /**
- * The WordPress Toolbar
+ * The SlioPress Toolbar
  *
  * @since 3.1.0
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Toolbar
  */
 class WP_Admin_Bar {
@@ -46,7 +46,7 @@ class WP_Admin_Bar {
 
 		if ( current_theme_supports( 'admin-bar' ) ) {
 			/**
-			 * To remove the default padding styles from WordPress for the Toolbar, use the following code:
+			 * To remove the default padding styles from SlioPress for the Toolbar, use the following code:
 			 * add_theme_support( 'admin-bar', array( 'callback' => '__return_false' ) );
 			 */
 			$admin_bar_args = get_theme_support( 'admin-bar' );

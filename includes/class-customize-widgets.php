@@ -4,7 +4,7 @@
  *
  * Implements widget management in the Customizer.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Customize
  * @since 3.9.0
  */
@@ -373,7 +373,7 @@ final class WP_Customize_Widgets {
 	 * Ensure widgets are available for all types of previews.
 	 *
 	 * When in preview, hook to 'customize_register' for settings
-	 * after WordPress is loaded so that all filters have been
+	 * after SlioPress is loaded so that all filters have been
 	 * initialized (e.g. Widget Visibility).
 	 *
 	 * @since 3.9.0

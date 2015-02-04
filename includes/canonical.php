@@ -1,11 +1,11 @@
 <?php
 /**
- * Canonical API to handle WordPress Redirecting
+ * Canonical API to handle SlioPress Redirecting
  *
  * Based on "Permalink Redirect" from Scott Yang and "Enforce www. Preference"
  * by Mark Jaquith
  *
- * @package WordPress
+ * @package SlioPress
  * @since 2.3.0
  */
 
@@ -23,7 +23,7 @@
  * requests.
  *
  * Will also attempt to find the correct link when a user enters a URL that does
- * not exist based on exact WordPress query. Will instead try to parse the URL
+ * not exist based on exact SlioPress query. Will instead try to parse the URL
  * or query in an attempt to figure the correct page to go to.
  *
  * @since 2.3.0
@@ -516,7 +516,7 @@ function _remove_qs_args_if_not_in_url( $query_string, Array $args_to_check, $ur
  *
  * @since 2.3.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @return bool|string The correct URL if one is found. False on failure.
  */

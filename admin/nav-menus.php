@@ -1,15 +1,15 @@
 <?php
 /**
- * WordPress Administration for Navigation Menus
+ * SlioPress Administration for Navigation Menus
  * Interface functions
  *
  * @version 2.0.0
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load SlioPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 // Load all the nav menu interface functions

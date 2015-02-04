@@ -2,11 +2,11 @@
 /**
  * Author Template functions for use in themes.
  *
- * These functions must be used within the WordPress Loop.
+ * These functions must be used within the SlioPress Loop.
  *
  * @link http://codex.wordpress.org/Author_Templates
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Template
  */
 

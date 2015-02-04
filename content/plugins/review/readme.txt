@@ -12,7 +12,7 @@ Create reviews! Choose from Stars, Percentages or Points for review scores. Supp
 
 == Description ==
 
-Did you always want to increase the user interaction on your website by rating products/services/anything? We at <a href="http://mythemeshop.com/">MyThemeShop</a> understand your need, & created a premium Review plugin. We are now distributing it for FREE to give back to the WordPress community. We have been given so much by the WordPress community, it's time to give back.
+Did you always want to increase the user interaction on your website by rating products/services/anything? We at <a href="http://mythemeshop.com/">MyThemeShop</a> understand your need, & created a premium Review plugin. We are now distributing it for FREE to give back to the SlioPress community. We have been given so much by the SlioPress community, it's time to give back.
 
 **WP Review plugin** is an easy yet powerful way to review content easily, without affecting the speed of your site. If you're a blogger, you probably occasionally review or rank products, services, tools, recipes, or other content on your site. WP Review plugin is a customizable and lightweight way to create reviews, using stars, percentage or point rating, and it includes support for translation, WPMU, Google rich snippets and unlimited colors. Just install it and follow the simple configuration instructions to place it in your desired location.
 
@@ -31,7 +31,7 @@ See WP Review in action on our demo pages:
 * Option to change Global Colors.
 * Option to change individual review Colors and Positions.
 * Included tabbed widget to show recent reviews and popular reviews.
-* WP Multisite and Multiuser (WPMU / WPMS / WordPress MU) compatible.
+* WP Multisite and Multiuser (WPMU / WPMS / SlioPress MU) compatible.
 * Design it as you want, unlimited color options.
 * Translation Ready.
 * Reviews are displayed to visitors in a friendly format.
@@ -46,7 +46,7 @@ See WP Review in action on our demo pages:
 * Developer friendly - Useful filters are included! So you can use it in your themes.
 
 = Support =
-We will do our best to provide support through the WordPress forums. However, all plugin support is provided in our forum. If you have not registered yet, you can do so here: <a href="https://mythemeshop.com/go/signup/index/c/free">https://mythemeshop.com/go/signup/index/c/free</a>. After searching the knowledge base and forum if you are still stuck, feel free to open a new thread, and a member of our support team will be happy to help. Cheers!<br>
+We will do our best to provide support through the SlioPress forums. However, all plugin support is provided in our forum. If you have not registered yet, you can do so here: <a href="https://mythemeshop.com/go/signup/index/c/free">https://mythemeshop.com/go/signup/index/c/free</a>. After searching the knowledge base and forum if you are still stuck, feel free to open a new thread, and a member of our support team will be happy to help. Cheers!<br>
 Support link: <a href="http://community.mythemeshop.com/forum/free/plugin-support">http://community.mythemeshop.com/forum/free/plugin-support</a>
 
 = Developer Zone =
@@ -67,7 +67,7 @@ If you like this plugin, then please leave us a good rating and review.<br> Cons
 This section describes how to install the plugin and get it working.
 
 1. Upload the `review` folder to the to the `/content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
+2. Activate the plugin through the 'Plugins' menu in SlioPress
 3. You can see rating options on single post editor.
 4. Configure the available rating options as you want.
 
@@ -151,8 +151,8 @@ Please disable all plugins and check if rating is working properly. Then you can
 * Added a nonce (a security token) to ensure that the user actually voted from the review
 * More developer possibilities
 * Added filters for developers. Using a filter is much better than a function for setting the default colors.
-* Compatible with WordPress 3.9 Beta
-* Plugin will support the widget customizer coming up in WordPress 3.9
+* Compatible with SlioPress 3.9 Beta
+* Plugin will support the widget customizer coming up in SlioPress 3.9
 
 = 2.0 =
 * Fixed the, `'` switching in to `/` issue (<a href="http://bit.ly/PFMGAq">http://bit.ly/PFMGAq</a>)

@@ -216,8 +216,8 @@ msgid "Cancel"
 msgstr "Abbrechen"
 
 #: composer/lib/layouts.php:254 composer/./lib/layouts.php:254
-msgid "Visual Composer for WordPress"
-msgstr "Visual Composer für WordPress"
+msgid "Visual Composer for SlioPress"
+msgstr "Visual Composer für SlioPress"
 
 #: composer/lib/layouts.php:259 composer/./lib/layouts.php:259
 msgid "Add element"
@@ -857,12 +857,12 @@ msgstr "Visual Composer Einstellungen"
 #: composer/settings/settings.php:576 composer/./settings/settings.php:576
 msgid ""
 "<strong>Deprecated:</strong> To override class names that are applied to "
-"Visual Composer content elements you should use WordPress add_filter"
+"Visual Composer content elements you should use SlioPress add_filter"
 "('vc_shortcodes_css_class') function. <a class='vc_show_example'>See "
 "Example</a>."
 msgstr ""
 "<strong>Veraltet:</strong> Möchten Sie die CSS Klassennamen für "
-"Inhaltselemente überschreiben, sollten Sie die WordPress add_filter"
+"Inhaltselemente überschreiben, sollten Sie die SlioPress add_filter"
 "('vc_shortcodes_css_class') Funktion nutzen. <a "
 "class='vc_show_example'>Sehen Sie sich ein Beispiel an</a>."
 
@@ -2252,8 +2252,8 @@ msgstr "Suche"
 #: config/map.php:1693 config/map.php:1724 config/map.php:1758
 #: config/map.php:1798 config/map.php:1839 config/map.php:1868
 #: config/map.php:1896
-msgid "WordPress Widgets"
-msgstr "WordPress Widgets"
+msgid "SlioPress Widgets"
+msgstr "SlioPress Widgets"
 
 #: config/map.php:1528 config/map.php:1550 config/map.php:1572
 #: config/map.php:1600 config/map.php:1622 config/map.php:1665

@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Category API
+ * SlioPress Category API
  *
- * @package WordPress
+ * @package SlioPress
  */
 
 /**
@@ -67,7 +67,7 @@ function get_categories( $args = '' ) {
  *
  * @param int|object $category Category ID or Category row object
  * @param string $output Optional. Constant OBJECT, ARRAY_A, or ARRAY_N
- * @param string $filter Optional. Default is raw or no WordPress defined filter will applied.
+ * @param string $filter Optional. Default is raw or no SlioPress defined filter will applied.
  * @return object|array|WP_Error|null Category data in type defined by $output parameter. WP_Error if $category is empty, null if it does not exist.
  */
 function get_category( $category, $output = OBJECT, $filter = 'raw' ) {
@@ -281,7 +281,7 @@ function get_tags( $args = '' ) {
  *
  * @param int|object $tag
  * @param string $output Optional. Constant OBJECT, ARRAY_A, or ARRAY_N
- * @param string $filter Optional. Default is raw or no WordPress defined filter will applied.
+ * @param string $filter Optional. Default is raw or no SlioPress defined filter will applied.
  * @return object|array|WP_Error|null Tag data in type defined by $output parameter. WP_Error if $tag is empty, null if it does not exist.
  */
 function get_tag( $tag, $output = OBJECT, $filter = 'raw' ) {

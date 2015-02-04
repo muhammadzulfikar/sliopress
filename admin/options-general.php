@@ -2,14 +2,14 @@
 /**
  * General settings administration panel.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** SlioPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
-/** WordPress Translation Install API */
+/** SlioPress Translation Install API */
 require_once( ABSPATH . 'admin/includes/translation-install.php' );
 
 if ( ! current_user_can( 'manage_options' ) )
@@ -87,7 +87,7 @@ $options_help = '<p>' . __('The fields on this screen determine some of the basi
 	'<p>' . __('Most themes display the site title at the top of every page, in the title bar of the browser, and as the identifying name for syndicated feeds. The tagline is also displayed by many themes.') . '</p>';
 
 if ( ! is_multisite() ) {
-	$options_help .= '<p>' . __('The WordPress URL and the Site URL can be the same (example.com) or different; for example, having the WordPress core files (example.com/wordpress) in a subdirectory instead of the root directory.') . '</p>' .
+	$options_help .= '<p>' . __('The SlioPress URL and the Site URL can be the same (example.com) or different; for example, having the SlioPress core files (example.com/wordpress) in a subdirectory instead of the root directory.') . '</p>' .
 		'<p>' . __('If you want site visitors to be able to register themselves, as opposed to by the site administrator, check the membership box. A default user role can be set for all new users, whether self-registered or registered by the site admin.') . '</p>';
 }
 
@@ -128,13 +128,13 @@ include( ABSPATH . 'admin/admin-header.php' );
 </tr>
 <?php if ( !is_multisite() ) { ?>
 <tr>
-<th scope="row"><label for="siteurl"><?php _e('WordPress Address (URL)') ?></label></th>
+<th scope="row"><label for="siteurl"><?php _e('SlioPress Address (URL)') ?></label></th>
 <td><input name="siteurl" type="url" id="siteurl" value="<?php form_option( 'siteurl' ); ?>"<?php disabled( defined( 'WP_SITEURL' ) ); ?> class="regular-text code<?php if ( defined( 'WP_SITEURL' ) ) echo ' disabled' ?>" /></td>
 </tr>
 <tr>
 <th scope="row"><label for="home"><?php _e('Site Address (URL)') ?></label></th>
 <td><input name="home" type="url" id="home" value="<?php form_option( 'home' ); ?>"<?php disabled( defined( 'WP_HOME' ) ); ?> class="regular-text code<?php if ( defined( 'WP_HOME' ) ) echo ' disabled' ?>" />
-<p class="description"><?php _e('Enter the address here if you want your site homepage <a href="http://codex.wordpress.org/Giving_WordPress_Its_Own_Directory">to be different from the directory</a> you installed WordPress.'); ?></p></td>
+<p class="description"><?php _e('Enter the address here if you want your site homepage <a href="http://codex.wordpress.org/Giving_SlioPress_Its_Own_Directory">to be different from the directory</a> you installed SlioPress.'); ?></p></td>
 </tr>
 <tr>
 <th scope="row"><label for="admin_email"><?php _e('E-mail Address') ?> </label></th>

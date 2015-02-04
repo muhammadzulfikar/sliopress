@@ -1,13 +1,13 @@
 <?php
 /**
- * WordPress Administration Bootstrap
+ * SlioPress Administration Bootstrap
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
 /**
- * In WordPress Administration Screens
+ * In SlioPress Administration Screens
  *
  * @since 2.3.2
  */
@@ -127,7 +127,7 @@ if ( current_user_can( 'manage_options' ) ) {
 	 *
 	 * @since 3.0.0
 	 *
-	 * @param string 'WP_MAX_MEMORY_LIMIT' The maximum WordPress memory limit. Default 256M.
+	 * @param string 'WP_MAX_MEMORY_LIMIT' The maximum SlioPress memory limit. Default 256M.
 	 */
 	@ini_set( 'memory_limit', apply_filters( 'admin_memory_limit', WP_MAX_MEMORY_LIMIT ) );
 }

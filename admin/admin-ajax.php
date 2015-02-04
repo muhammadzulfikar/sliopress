@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress AJAX Process Execution.
+ * SlioPress AJAX Process Execution.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  *
  * @link http://codex.wordpress.org/AJAX_in_Plugins
@@ -18,7 +18,7 @@ if ( ! defined( 'WP_ADMIN' ) ) {
 	define( 'WP_ADMIN', true );
 }
 
-/** Load WordPress Bootstrap */
+/** Load SlioPress Bootstrap */
 require_once( dirname( dirname( __FILE__ ) ) . '/load.php' );
 
 /** Allow for cross-domain requests (from the frontend). */
@@ -28,10 +28,10 @@ send_origin_headers();
 if ( empty( $_REQUEST['action'] ) )
 	die( '0' );
 
-/** Load WordPress Administration APIs */
+/** Load SlioPress Administration APIs */
 require_once( ABSPATH . 'admin/includes/admin.php' );
 
-/** Load Ajax Handlers for WordPress Core */
+/** Load Ajax Handlers for SlioPress Core */
 require_once( ABSPATH . 'admin/includes/ajax-actions.php' );
 
 @header( 'Content-Type: text/html; charset=' . get_option( 'blog_charset' ) );

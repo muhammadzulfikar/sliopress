@@ -1,10 +1,10 @@
 <?php
 /**
- * WordPress DB Class
+ * SlioPress DB Class
  *
  * Original code from {@link http://php.justinvincent.com Justin Vincent (justin@visunet.ie)}
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Database
  * @since 0.71
  */
@@ -36,7 +36,7 @@ define( 'ARRAY_A', 'ARRAY_A' );
 define( 'ARRAY_N', 'ARRAY_N' );
 
 /**
- * WordPress Database Access Abstraction Object
+ * SlioPress Database Access Abstraction Object
  *
  * It is possible to replace this class with your own
  * by setting the $wpdb global variable in content/db.php
@@ -45,7 +45,7 @@ define( 'ARRAY_N', 'ARRAY_N' );
  *
  * @link http://codex.wordpress.org/Function_Reference/wpdb_Class
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Database
  * @since 0.71
  */
@@ -172,9 +172,9 @@ class wpdb {
 	protected $reconnect_retries = 5;
 
 	/**
-	 * WordPress table prefix
+	 * SlioPress table prefix
 	 *
-	 * You can set this to have multiple WordPress installations
+	 * You can set this to have multiple SlioPress installations
 	 * in a single database. The second reason is for possible
 	 * security precautions.
 	 *
@@ -185,7 +185,7 @@ class wpdb {
 	var $prefix = '';
 
 	/**
-	 * WordPress base table prefix.
+	 * SlioPress base table prefix.
 	 *
 	 * @since 3.0.0
 	 * @access public
@@ -221,7 +221,7 @@ class wpdb {
 	public $siteid = 0;
 
 	/**
-	 * List of WordPress per-blog tables
+	 * List of SlioPress per-blog tables
 	 *
 	 * @since 2.5.0
 	 * @access private
@@ -232,7 +232,7 @@ class wpdb {
 		'terms', 'term_taxonomy', 'term_relationships', 'commentmeta' );
 
 	/**
-	 * List of deprecated WordPress tables
+	 * List of deprecated SlioPress tables
 	 *
 	 * categories, post2cat, and link2cat were deprecated in 2.3.0, db version 5539
 	 *
@@ -244,7 +244,7 @@ class wpdb {
 	var $old_tables = array( 'categories', 'post2cat', 'link2cat' );
 
 	/**
-	 * List of WordPress global tables
+	 * List of SlioPress global tables
 	 *
 	 * @since 3.0.0
 	 * @access private
@@ -265,7 +265,7 @@ class wpdb {
 		'sitecategories', 'registration_log', 'blog_versions' );
 
 	/**
-	 * WordPress Comments table
+	 * SlioPress Comments table
 	 *
 	 * @since 1.5.0
 	 * @access public
@@ -274,7 +274,7 @@ class wpdb {
 	public $comments;
 
 	/**
-	 * WordPress Comment Metadata table
+	 * SlioPress Comment Metadata table
 	 *
 	 * @since 2.9.0
 	 * @access public
@@ -283,7 +283,7 @@ class wpdb {
 	public $commentmeta;
 
 	/**
-	 * WordPress Links table
+	 * SlioPress Links table
 	 *
 	 * @since 1.5.0
 	 * @access public
@@ -292,7 +292,7 @@ class wpdb {
 	public $links;
 
 	/**
-	 * WordPress Options table
+	 * SlioPress Options table
 	 *
 	 * @since 1.5.0
 	 * @access public
@@ -301,7 +301,7 @@ class wpdb {
 	public $options;
 
 	/**
-	 * WordPress Post Metadata table
+	 * SlioPress Post Metadata table
 	 *
 	 * @since 1.5.0
 	 * @access public
@@ -310,7 +310,7 @@ class wpdb {
 	public $postmeta;
 
 	/**
-	 * WordPress Posts table
+	 * SlioPress Posts table
 	 *
 	 * @since 1.5.0
 	 * @access public
@@ -319,7 +319,7 @@ class wpdb {
 	public $posts;
 
 	/**
-	 * WordPress Terms table
+	 * SlioPress Terms table
 	 *
 	 * @since 2.3.0
 	 * @access public
@@ -328,7 +328,7 @@ class wpdb {
 	public $terms;
 
 	/**
-	 * WordPress Term Relationships table
+	 * SlioPress Term Relationships table
 	 *
 	 * @since 2.3.0
 	 * @access public
@@ -337,7 +337,7 @@ class wpdb {
 	public $term_relationships;
 
 	/**
-	 * WordPress Term Taxonomy table
+	 * SlioPress Term Taxonomy table
 	 *
 	 * @since 2.3.0
 	 * @access public
@@ -350,7 +350,7 @@ class wpdb {
 	 */
 
 	/**
-	 * WordPress User Metadata table
+	 * SlioPress User Metadata table
 	 *
 	 * @since 2.3.0
 	 * @access public
@@ -359,7 +359,7 @@ class wpdb {
 	public $usermeta;
 
 	/**
-	 * WordPress Users table
+	 * SlioPress Users table
 	 *
 	 * @since 1.5.0
 	 * @access public
@@ -522,7 +522,7 @@ class wpdb {
 	 * Whether MySQL is used as the database engine.
 	 *
 	 * Set in WPDB::db_connect() to true, by default. This is used when checking
-	 * against the required MySQL version for WordPress. Normally, a replacement
+	 * against the required MySQL version for SlioPress. Normally, a replacement
 	 * database drop-in (db.php) will skip these checks, but setting this to true
 	 * will force the checks to occur.
 	 *
@@ -583,7 +583,7 @@ class wpdb {
 
 		/* Use ext/mysqli if it exists and:
 		 *  - WP_USE_EXT_MYSQL is defined as false, or
-		 *  - We are a development version of WordPress, or
+		 *  - We are a development version of SlioPress, or
 		 *  - We are running PHP 5.5 or greater, or
 		 *  - ext/mysql is not loaded.
 		 */
@@ -732,7 +732,7 @@ class wpdb {
 	}
 
 	/**
-	 * Change the current SQL mode, and ensure its WordPress compatibility.
+	 * Change the current SQL mode, and ensure its SlioPress compatibility.
 	 *
 	 * If no modes are passed, it will ensure the current MySQL server
 	 * modes are compatible.
@@ -797,7 +797,7 @@ class wpdb {
 	}
 
 	/**
-	 * Sets the table prefix for the WordPress tables.
+	 * Sets the table prefix for the SlioPress tables.
 	 *
 	 * @since 2.5.0
 	 *
@@ -884,10 +884,10 @@ class wpdb {
 	}
 
 	/**
-	 * Returns an array of WordPress tables.
+	 * Returns an array of SlioPress tables.
 	 *
 	 * Also allows for the CUSTOM_USER_TABLE and CUSTOM_USER_META_TABLE to
-	 * override the WordPress users and usermeta tables that would otherwise
+	 * override the SlioPress users and usermeta tables that would otherwise
 	 * be determined by the prefix.
 	 *
 	 * The scope argument can take one of the following:
@@ -991,7 +991,7 @@ class wpdb {
 <li>Does the user <code>%2$s</code> have permission to use the <code>%1$s</code> database?</li>
 <li>On some systems the name of your database is prefixed with your username, so it would be like <code>username_%1$s</code>. Could that be the problem?</li>
 </ul>
-<p>If you don\'t know how to set up a database you should <strong>contact your host</strong>. If all else fails you may find help at the <a href="https://wordpress.org/support/">WordPress Support Forums</a>.</p>' ), htmlspecialchars( $db, ENT_QUOTES ), htmlspecialchars( $this->dbuser, ENT_QUOTES ) ), 'db_select_fail' );
+<p>If you don\'t know how to set up a database you should <strong>contact your host</strong>. If all else fails you may find help at the <a href="https://wordpress.org/support/">SlioPress Support Forums</a>.</p>' ), htmlspecialchars( $db, ENT_QUOTES ), htmlspecialchars( $this->dbuser, ENT_QUOTES ) ), 'db_select_fail' );
 			}
 			return;
 		}
@@ -1224,9 +1224,9 @@ class wpdb {
 		wp_load_translations_early();
 
 		if ( $caller = $this->get_caller() )
-			$error_str = sprintf( __( 'WordPress database error %1$s for query %2$s made by %3$s' ), $str, $this->last_query, $caller );
+			$error_str = sprintf( __( 'SlioPress database error %1$s for query %2$s made by %3$s' ), $str, $this->last_query, $caller );
 		else
-			$error_str = sprintf( __( 'WordPress database error %1$s for query %2$s' ), $str, $this->last_query );
+			$error_str = sprintf( __( 'SlioPress database error %1$s for query %2$s' ), $str, $this->last_query );
 
 		error_log( $error_str );
 
@@ -1236,7 +1236,7 @@ class wpdb {
 
 		// If there is an error then take note of it
 		if ( is_multisite() ) {
-			$msg = "WordPress database error: [$str]\n{$this->last_query}\n";
+			$msg = "SlioPress database error: [$str]\n{$this->last_query}\n";
 			if ( defined( 'ERRORLOGFILE' ) )
 				error_log( $msg, 3, ERRORLOGFILE );
 			if ( defined( 'DIEONDBERROR' ) )
@@ -1246,7 +1246,7 @@ class wpdb {
 			$query = htmlspecialchars( $this->last_query, ENT_QUOTES );
 
 			print "<div id='error'>
-			<p class='wpdberror'><strong>WordPress database error:</strong> [$str]<br />
+			<p class='wpdberror'><strong>SlioPress database error:</strong> [$str]<br />
 			<code>$query</code></p>
 			</div>";
 		}
@@ -1436,7 +1436,7 @@ class wpdb {
 	<li>Are you sure that you have typed the correct hostname?</li>
 	<li>Are you sure that the database server is running?</li>
 </ul>
-<p>If you're unsure what these terms mean you should probably contact your host. If you still need help you can always visit the <a href='https://wordpress.org/support/'>WordPress Support Forums</a>.</p>
+<p>If you're unsure what these terms mean you should probably contact your host. If you still need help you can always visit the <a href='https://wordpress.org/support/'>SlioPress Support Forums</a>.</p>
 " ), htmlspecialchars( $this->dbhost, ENT_QUOTES ) ), 'db_connect_fail' );
 
 			return false;
@@ -1522,7 +1522,7 @@ class wpdb {
 	<li>Are you sure that the database server is running?</li>
 	<li>Are you sure that the database server is not under particularly heavy load?</li>
 </ul>
-<p>If you're unsure what these terms mean you should probably contact your host. If you still need help you can always visit the <a href='https://wordpress.org/support/'>WordPress Support Forums</a>.</p>
+<p>If you're unsure what these terms mean you should probably contact your host. If you still need help you can always visit the <a href='https://wordpress.org/support/'>SlioPress Support Forums</a>.</p>
 " ), htmlspecialchars( $this->dbhost, ENT_QUOTES ) ), 'db_connect_fail' );
 
 		// Call dead_db() if bail didn't die, because this database is no more. It has ceased to be (at least temporarily).
@@ -2097,13 +2097,13 @@ class wpdb {
 		global $wp_version, $required_mysql_version;
 		// Make sure the server has the required MySQL version
 		if ( version_compare($this->db_version(), $required_mysql_version, '<') )
-			return new WP_Error('database_version', sprintf( __( '<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher' ), $wp_version, $required_mysql_version ));
+			return new WP_Error('database_version', sprintf( __( '<strong>ERROR</strong>: SlioPress %1$s requires MySQL %2$s or higher' ), $wp_version, $required_mysql_version ));
 	}
 
 	/**
 	 * Whether the database supports collation.
 	 *
-	 * Called when WordPress is generating the table scheme.
+	 * Called when SlioPress is generating the table scheme.
 	 *
 	 * @since 2.5.0
 	 * @deprecated 3.5.0

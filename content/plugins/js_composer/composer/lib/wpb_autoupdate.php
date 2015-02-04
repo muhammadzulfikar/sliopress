@@ -27,7 +27,7 @@ class WpbAutoUpdate
     public $slug;
 
     /**
-     * Initialize a new instance of the WordPress Auto-Update class
+     * Initialize a new instance of the SlioPress Auto-Update class
      * @param string $current_version
      * @param string $update_path
      * @param string $plugin_slug

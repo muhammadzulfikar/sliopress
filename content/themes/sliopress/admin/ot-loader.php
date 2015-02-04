@@ -2,7 +2,7 @@
 /**
  * Plugin Name: OptionTree
  * Plugin URI:  http://wp.envato.com
- * Description: Theme Options UI Builder for WordPress. A simple way to create & save Theme Options and Meta Boxes for free or premium themes.
+ * Description: Theme Options UI Builder for SlioPress. A simple way to create & save Theme Options and Meta Boxes for free or premium themes.
  * Version:     2.3.0
  * Author:      Derek Herman
  * Author URI:  http://valendesigns.com
@@ -121,7 +121,7 @@ if ( ! class_exists( 'OT_Loader' ) ) {
       /* include the required files */
       $this->includes();
       
-      /* hook into WordPress */
+      /* hook into SlioPress */
       $this->hooks();
       
     }
@@ -172,7 +172,7 @@ if ( ! class_exists( 'OT_Loader' ) ) {
        * For developers: Show Pages.
        *
        * Run a filter and set to false if you don't want to load the
-       * settings & documentation pages in the admin area of WordPress.
+       * settings & documentation pages in the admin area of SlioPress.
        *
        * @since     2.0
        */
@@ -182,7 +182,7 @@ if ( ! class_exists( 'OT_Loader' ) ) {
        * For developers: Show Theme Options UI Builder
        *
        * Run a filter and set to false if you want to hide the
-       * Theme Options UI page in the admin area of WordPress.
+       * Theme Options UI page in the admin area of SlioPress.
        *
        * @since     2.1
        */
@@ -372,7 +372,7 @@ if ( ! class_exists( 'OT_Loader' ) ) {
     }
     
     /**
-     * Execute the WordPress Hooks
+     * Execute the SlioPress Hooks
      *
      * @return    void
      *

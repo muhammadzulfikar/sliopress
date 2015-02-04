@@ -1,10 +1,10 @@
 <?php
 /**
- * Deprecated functions from past WordPress versions. You shouldn't use these
+ * Deprecated functions from past SlioPress versions. You shouldn't use these
  * functions and look for the alternatives instead. The functions will be
  * removed in a later version.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Deprecated
  */
 
@@ -50,16 +50,16 @@ function get_postdata($postid) {
 }
 
 /**
- * Sets up the WordPress Loop.
+ * Sets up the SlioPress Loop.
  *
  * @since 1.0.1
  * @deprecated 1.5.0
- * @deprecated Use The Loop - {@link http://codex.wordpress.org/The_Loop Use new WordPress Loop}
+ * @deprecated Use The Loop - {@link http://codex.wordpress.org/The_Loop Use new SlioPress Loop}
  */
 function start_wp() {
 	global $wp_query;
 
-	_deprecated_function( __FUNCTION__, '1.5', __('new WordPress Loop') );
+	_deprecated_function( __FUNCTION__, '1.5', __('new SlioPress Loop') );
 
 	// Since the old style loop is being used, advance the query iterator here.
 	$wp_query->next_post();
@@ -2421,7 +2421,7 @@ function update_usermeta( $user_id, $meta_key, $meta_value ) {
  * @since 2.2.0
  * @deprecated 3.1.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  * @uses $blog_id The Blog id of the blog for those that use more than one blog
  *
  * @param int $id Blog ID.
@@ -3243,7 +3243,7 @@ function wp_load_image( $file ) {
  * be PNG. The only supported image types are PNG, GIF, and JPEG.
  *
  * Some functionality requires API to exist, so some PHP version may lose out
- * support. This is not the fault of WordPress (where functionality is
+ * support. This is not the fault of SlioPress (where functionality is
  * downgraded, not actual defects), but of your PHP version.
  *
  * @since 2.5.0
@@ -3407,7 +3407,7 @@ function _search_terms_tidy( $t ) {
  * Determine if TinyMCE is available.
  *
  * Checks to see if the user has deleted the tinymce files to slim down
- * their WordPress install.
+ * their SlioPress install.
  *
  * @since 2.1.0
  * @deprecated 3.9.0
@@ -3469,7 +3469,7 @@ function like_escape($text) {
 /**
  * Determines if the URL can be accessed over SSL.
  *
- * Determines if the URL can be accessed over SSL by using the WordPress HTTP API to access
+ * Determines if the URL can be accessed over SSL by using the SlioPress HTTP API to access
  * the URL using https as the scheme.
  *
  * @since 2.5.0

@@ -1,22 +1,22 @@
 <?php
 /**
- * XML-RPC protocol support for WordPress
+ * XML-RPC protocol support for SlioPress
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Publishing
  */
 
 /**
- * WordPress XMLRPC server implementation.
+ * SlioPress XMLRPC server implementation.
  *
  * Implements compatibility for Blogger API, MetaWeblog API, MovableType, and
- * pingback. Additional WordPress API for managing comments, pages, posts,
+ * pingback. Additional SlioPress API for managing comments, pages, posts,
  * options, etc.
  *
- * As of WordPress 3.5.0, XML-RPC is enabled by default. It can be disabled
+ * As of SlioPress 3.5.0, XML-RPC is enabled by default. It can be disabled
  * via the xmlrpc_enabled filter found in wp_xmlrpc_server::login().
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Publishing
  * @since 1.5.0
  */
@@ -46,7 +46,7 @@ class wp_xmlrpc_server extends IXR_Server {
 	 */
 	public function __construct() {
 		$this->methods = array(
-			// WordPress API
+			// SlioPress API
 			'wp.getUsersBlogs'		=> 'this:wp_getUsersBlogs',
 			'wp.newPost'			=> 'this:wp_newPost',
 			'wp.editPost'			=> 'this:wp_editPost',
@@ -362,7 +362,7 @@ class wp_xmlrpc_server extends IXR_Server {
 			'software_name'     => array(
 				'desc'          => __( 'Software Name' ),
 				'readonly'      => true,
-				'value'         => 'WordPress'
+				'value'         => 'SlioPress'
 			),
 			'software_version'  => array(
 				'desc'          => __( 'Software Version' ),
@@ -370,7 +370,7 @@ class wp_xmlrpc_server extends IXR_Server {
 				'value'         => $wp_version
 			),
 			'blog_url'          => array(
-				'desc'          => __( 'WordPress Address (URL)' ),
+				'desc'          => __( 'SlioPress Address (URL)' ),
 				'readonly'      => true,
 				'option'        => 'siteurl'
 			),
@@ -674,7 +674,7 @@ class wp_xmlrpc_server extends IXR_Server {
 	}
 
 	/**
-	 * Convert a WordPress date string to an IXR_Date object.
+	 * Convert a SlioPress date string to an IXR_Date object.
 	 *
 	 * @access protected
 	 *
@@ -689,7 +689,7 @@ class wp_xmlrpc_server extends IXR_Server {
 	}
 
 	/**
-	 * Convert a WordPress GMT date string to an IXR_Date object.
+	 * Convert a SlioPress GMT date string to an IXR_Date object.
 	 *
 	 * @access protected
 	 *
@@ -2813,7 +2813,7 @@ class wp_xmlrpc_server extends IXR_Server {
 			return new IXR_Error(401, __('Sorry, you do not have the right to add a category.'));
 
 		// If no slug was provided make it empty so that
-		// WordPress will generate one.
+		// SlioPress will generate one.
 		if ( empty($category['slug']) )
 			$category['slug'] = '';
 
@@ -4415,7 +4415,7 @@ class wp_xmlrpc_server extends IXR_Server {
 			}
 		}
 
-		// Let WordPress generate the post_name (slug) unless
+		// Let SlioPress generate the post_name (slug) unless
 		// one has been provided.
 		$post_name = "";
 		if ( isset($content_struct['wp_slug']) )
@@ -4735,7 +4735,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		$post_type = $postdata['post_type'];
 		$menu_order = $postdata['menu_order'];
 
-		// Let WordPress manage slug if none was provided.
+		// Let SlioPress manage slug if none was provided.
 		$post_name = "";
 		$post_name = $postdata['post_name'];
 		if ( isset($content_struct['wp_slug']) )
@@ -5766,7 +5766,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		$remote_ip = preg_replace( '/[^0-9a-fA-F:., ]/', '', $_SERVER['REMOTE_ADDR'] );
 
 		/** This filter is documented in includes/class-http.php */
-		$user_agent = apply_filters( 'http_headers_useragent', 'WordPress/' . $GLOBALS['wp_version'] . '; ' . get_bloginfo( 'url' ) );
+		$user_agent = apply_filters( 'http_headers_useragent', 'SlioPress/' . $GLOBALS['wp_version'] . '; ' . get_bloginfo( 'url' ) );
 
 		// Let's check the remote site
 		$http_api_args = array(

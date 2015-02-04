@@ -2,11 +2,11 @@
 /**
  * Tools Administration Screen.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** SlioPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 $title = __('Tools');

@@ -2,7 +2,7 @@
 /**
  * WP_Theme Class
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Theme
  */
 
@@ -37,8 +37,8 @@ final class WP_Theme implements ArrayAccess {
 	 * @var array
 	 */
 	private static $default_themes = array(
-		'classic'        => 'WordPress Classic',
-		'default'        => 'WordPress Default',
+		'classic'        => 'SlioPress Classic',
+		'default'        => 'SlioPress Default',
 		'twentyten'      => 'Twenty Ten',
 		'twentyeleven'   => 'Twenty Eleven',
 		'twentytwelve'   => 'Twenty Twelve',
@@ -529,7 +529,7 @@ final class WP_Theme implements ArrayAccess {
 	 *
 	 * Use the get_template() method, not the 'Template' header, for finding the template.
 	 * The 'Template' header is only good for what was written in the style.css, while
-	 * get_template() takes into account where WordPress actually located the theme and
+	 * get_template() takes into account where SlioPress actually located the theme and
 	 * whether it is actually valid.
 	 *
 	 * @access public

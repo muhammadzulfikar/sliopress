@@ -2,11 +2,11 @@
 /**
  * Comment Management Screen
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
-/** Load WordPress Bootstrap */
+/** Load SlioPress Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 $parent_file = 'edit-comments.php';

@@ -2,7 +2,7 @@
 /**
  * Comments and Post Comments List Table classes.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage List_Table
  * @since 3.1.0
  */
@@ -10,7 +10,7 @@
 /**
  * Comments List Table class.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage List_Table
  * @since 3.1.0
  * @access private
@@ -586,7 +586,7 @@ class WP_Comments_List_Table extends WP_List_Table {
 /**
  * Post Comments List Table class.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage List_Table
  * @since 3.1.0
  * @access private

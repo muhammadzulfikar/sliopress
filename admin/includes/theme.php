@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Theme Administration API
+ * SlioPress Theme Administration API
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
@@ -58,7 +58,7 @@ function delete_theme($stylesheet, $redirect = '') {
 	// Get the base plugin folder.
 	$themes_dir = $wp_filesystem->wp_themes_dir();
 	if ( empty( $themes_dir ) ) {
-		return new WP_Error( 'fs_no_themes_dir', __( 'Unable to locate WordPress theme directory.' ) );
+		return new WP_Error( 'fs_no_themes_dir', __( 'Unable to locate SlioPress theme directory.' ) );
 	}
 
 	$themes_dir = trailingslashit( $themes_dir );
@@ -181,7 +181,7 @@ function get_theme_update_available( $theme ) {
 }
 
 /**
- * Retrieve list of WordPress theme features (aka theme tags)
+ * Retrieve list of SlioPress theme features (aka theme tags)
  *
  * @since 3.1.0
  *
@@ -294,7 +294,7 @@ function get_theme_feature_list( $api = true ) {
 }
 
 /**
- * Retrieve theme installer pages from WordPress Themes API.
+ * Retrieve theme installer pages from SlioPress Themes API.
  *
  * It is possible for a theme to override the Themes API result with three
  * filters. Assume this is for themes, which can extend on the Theme Info to
@@ -329,27 +329,27 @@ function themes_api( $action, $args = null ) {
 	}
 
 	/**
-	 * Filter arguments used to query for installer pages from the WordPress.org Themes API.
+	 * Filter arguments used to query for installer pages from the SlioPress.org Themes API.
 	 *
 	 * Important: An object MUST be returned to this filter.
 	 *
 	 * @since 2.8.0
 	 *
-	 * @param object $args   Arguments used to query for installer pages from the WordPress.org Themes API.
+	 * @param object $args   Arguments used to query for installer pages from the SlioPress.org Themes API.
 	 * @param string $action Requested action. Likely values are 'theme_information',
 	 *                       'feature_list', or 'query_themes'.
 	 */
 	$args = apply_filters( 'themes_api_args', $args, $action );
 
 	/**
-	 * Filter whether to override the WordPress.org Themes API.
+	 * Filter whether to override the SlioPress.org Themes API.
 	 *
 	 * Returning a value of true to this filter allows a theme to completely
-	 * override the built-in WordPress.org API.
+	 * override the built-in SlioPress.org API.
 	 *
 	 * @since 2.8.0
 	 *
-	 * @param bool   $bool   Whether to override the WordPress.org Themes API. Default false.
+	 * @param bool   $bool   Whether to override the SlioPress.org Themes API. Default false.
 	 * @param string $action Requested action. Likely values are 'theme_information',
 	 *                       'feature_list', or 'query_themes'.
 	 * @param object $args   Arguments used to query for installer pages from the Themes API.
@@ -371,29 +371,29 @@ function themes_api( $action, $args = null ) {
 
 		if ( $ssl && is_wp_error( $request ) ) {
 			if ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX ) {
-				trigger_error( __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
+				trigger_error( __( 'An unexpected error occurred. Something may be wrong with SlioPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ) . ' ' . __( '(SlioPress could not establish a secure connection to SlioPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
 			}
 			$request = wp_remote_post( $http_url, $args );
 		}
 
 		if ( is_wp_error($request) ) {
-			$res = new WP_Error('themes_api_failed', __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ), $request->get_error_message() );
+			$res = new WP_Error('themes_api_failed', __( 'An unexpected error occurred. Something may be wrong with SlioPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ), $request->get_error_message() );
 		} else {
 			$res = maybe_unserialize( wp_remote_retrieve_body( $request ) );
 			if ( ! is_object( $res ) && ! is_array( $res ) )
-				$res = new WP_Error('themes_api_failed', __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ), wp_remote_retrieve_body( $request ) );
+				$res = new WP_Error('themes_api_failed', __( 'An unexpected error occurred. Something may be wrong with SlioPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ), wp_remote_retrieve_body( $request ) );
 		}
 	}
 
 	/**
-	 * Filter the returned WordPress.org Themes API response.
+	 * Filter the returned SlioPress.org Themes API response.
 	 *
 	 * @since 2.8.0
 	 *
-	 * @param array|object $res    WordPress.org Themes API response.
+	 * @param array|object $res    SlioPress.org Themes API response.
 	 * @param string       $action Requested action. Likely values are 'theme_information',
 	 *                             'feature_list', or 'query_themes'.
-	 * @param object       $args   Arguments used to query for installer pages from the WordPress.org Themes API.
+	 * @param object       $args   Arguments used to query for installer pages from the SlioPress.org Themes API.
 	 */
 	return apply_filters( 'themes_api_result', $res, $action, $args );
 }

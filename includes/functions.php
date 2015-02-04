@@ -1,8 +1,8 @@
 <?php
 /**
- * Main WordPress API
+ * Main SlioPress API
  *
- * @package WordPress
+ * @package SlioPress
  */
 
 require( ABSPATH . WPINC . '/option.php' );
@@ -49,7 +49,7 @@ function mysql2date( $format, $date, $translate = true ) {
  * Other strings will be interpreted as PHP date formats (e.g. 'Y-m-d').
  *
  * If $gmt is set to either '1' or 'true', then both types will use GMT time.
- * if $gmt is false, the output is adjusted with the GMT offset in the WordPress option.
+ * if $gmt is false, the output is adjusted with the GMT offset in the SlioPress option.
  *
  * @since 1.0.0
  *
@@ -862,7 +862,7 @@ function wp_remote_fopen( $uri ) {
 }
 
 /**
- * Set up the WordPress query.
+ * Set up the SlioPress query.
  *
  * @since 2.0.0
  *
@@ -1083,11 +1083,11 @@ function cache_javascript_headers() {
 }
 
 /**
- * Retrieve the number of database queries during the WordPress execution.
+ * Retrieve the number of database queries during the SlioPress execution.
  *
  * @since 2.0.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @return int Number of database queries.
  */
@@ -1246,14 +1246,14 @@ function do_robots() {
  * Test whether blog is already installed.
  *
  * The cache will be checked first. If you have a cache plugin, which saves
- * the cache values, then this will work. If you use the default WordPress
+ * the cache values, then this will work. If you use the default SlioPress
  * cache, and the database goes away, then you might have problems.
  *
- * Checks for the 'siteurl' option for whether WordPress is installed.
+ * Checks for the 'siteurl' option for whether SlioPress is installed.
  *
  * @since 2.1.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @return bool Whether the blog is already installed.
  */
@@ -2322,11 +2322,11 @@ function wp_nonce_ays( $action ) {
 			$html .= "</p><p><a href='" . esc_url( remove_query_arg( 'updated', wp_get_referer() ) ) . "'>" . __( 'Please try again.' ) . "</a>";
 	}
 
-	wp_die( $html, __( 'WordPress Failure Notice' ), 403 );
+	wp_die( $html, __( 'SlioPress Failure Notice' ), 403 );
 }
 
 /**
- * Kill WordPress execution and display HTML message with error message.
+ * Kill SlioPress execution and display HTML message with error message.
  *
  * This function complements the `die()` PHP function. The difference is that
  * HTML will be displayed to the user. It is recommended to use this function
@@ -2353,7 +2353,7 @@ function wp_nonce_ays( $action ) {
  *
  *     @type int    $response       The HTTP response code. Default 500.
  *     @type bool   $back_link      Whether to include a link to go back. Default false.
- *     @type string $text_direction The text direction. This is only useful internally, when WordPress
+ *     @type string $text_direction The text direction. This is only useful internally, when SlioPress
  *                                  is still loading and the site's locale is not set up yet. Accepts 'rtl'.
  *                                  Default is the value of {@see is_rtl()}.
  * }
@@ -2369,7 +2369,7 @@ function wp_die( $message = '', $title = '', $args = array() ) {
 
 	if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
 		/**
-		 * Filter callback for killing WordPress execution for AJAX requests.
+		 * Filter callback for killing SlioPress execution for AJAX requests.
 		 *
 		 * @since 3.4.0
 		 *
@@ -2378,7 +2378,7 @@ function wp_die( $message = '', $title = '', $args = array() ) {
 		$function = apply_filters( 'wp_die_ajax_handler', '_ajax_wp_die_handler' );
 	} elseif ( defined( 'XMLRPC_REQUEST' ) && XMLRPC_REQUEST ) {
 		/**
-		 * Filter callback for killing WordPress execution for XML-RPC requests.
+		 * Filter callback for killing SlioPress execution for XML-RPC requests.
 		 *
 		 * @since 3.4.0
 		 *
@@ -2387,7 +2387,7 @@ function wp_die( $message = '', $title = '', $args = array() ) {
 		$function = apply_filters( 'wp_die_xmlrpc_handler', '_xmlrpc_wp_die_handler' );
 	} else {
 		/**
-		 * Filter callback for killing WordPress execution for all non-AJAX, non-XML-RPC requests.
+		 * Filter callback for killing SlioPress execution for all non-AJAX, non-XML-RPC requests.
 		 *
 		 * @since 3.0.0
 		 *
@@ -2400,7 +2400,7 @@ function wp_die( $message = '', $title = '', $args = array() ) {
 }
 
 /**
- * Kill WordPress execution and display HTML message with error message.
+ * Kill SlioPress execution and display HTML message with error message.
  *
  * This is the default handler for wp_die if you want a custom one for your
  * site then you can overload using the wp_die_handler filter in wp_die
@@ -2453,7 +2453,7 @@ function _default_wp_die_handler( $message, $title = '', $args = array() ) {
 		}
 
 		if ( empty($title) )
-			$title = $have_gettext ? __('WordPress &rsaquo; Error') : 'WordPress &rsaquo; Error';
+			$title = $have_gettext ? __('SlioPress &rsaquo; Error') : 'SlioPress &rsaquo; Error';
 
 		$text_direction = 'ltr';
 		if ( isset($r['text_direction']) && 'rtl' == $r['text_direction'] )
@@ -2579,7 +2579,7 @@ function _default_wp_die_handler( $message, $title = '', $args = array() ) {
 }
 
 /**
- * Kill WordPress execution and display XML message with error message.
+ * Kill SlioPress execution and display XML message with error message.
  *
  * This is the handler for wp_die when processing XMLRPC requests.
  *
@@ -2604,7 +2604,7 @@ function _xmlrpc_wp_die_handler( $message, $title = '', $args = array() ) {
 }
 
 /**
- * Kill WordPress ajax execution.
+ * Kill SlioPress ajax execution.
  *
  * This is the handler for wp_die when processing Ajax requests.
  *
@@ -2620,7 +2620,7 @@ function _ajax_wp_die_handler( $message = '' ) {
 }
 
 /**
- * Kill WordPress execution.
+ * Kill SlioPress execution.
  *
  * This is the handler for wp_die when processing APP requests.
  *
@@ -2840,7 +2840,7 @@ function wp_send_json_error( $data = null ) {
 }
 
 /**
- * Retrieve the WordPress home page URL.
+ * Retrieve the SlioPress home page URL.
  *
  * If the constant named 'WP_HOME' exists, then it will be used and returned
  * by the function. This can be used to counter the redirection on your local
@@ -2861,7 +2861,7 @@ function _config_wp_home( $url = '' ) {
 }
 
 /**
- * Retrieve the WordPress site URL.
+ * Retrieve the SlioPress site URL.
  *
  * If the constant named 'WP_SITEURL' is defined, then the value in that
  * constant will always be returned. This can be used for debugging a site
@@ -2872,8 +2872,8 @@ function _config_wp_home( $url = '' ) {
  *
  * @see WP_SITEURL
  *
- * @param string $url URL to set the WordPress site location.
- * @return string The WordPress Site URL.
+ * @param string $url URL to set the SlioPress site location.
+ * @return string The SlioPress Site URL.
  */
 function _config_wp_siteurl( $url = '' ) {
 	if ( defined( 'WP_SITEURL' ) )
@@ -2884,7 +2884,7 @@ function _config_wp_siteurl( $url = '' ) {
 /**
  * Set the localized direction for MCE plugin.
  *
- * Will only set the direction to 'rtl', if the WordPress locale has
+ * Will only set the direction to 'rtl', if the SlioPress locale has
  * the text direction set to 'rtl'.
  *
  * Fills in the 'directionality' setting, enables the 'directionality'
@@ -3030,7 +3030,7 @@ function smilies_init() {
 /**
  * Merge user defined arguments into defaults array.
  *
- * This function is used throughout WordPress to allow for both string or array
+ * This function is used throughout SlioPress to allow for both string or array
  * to be merged into another array.
  *
  * @since 2.2.0
@@ -3270,22 +3270,22 @@ function wp_ob_end_flush_all() {
 }
 
 /**
- * Load custom DB error or display WordPress DB error.
+ * Load custom DB error or display SlioPress DB error.
  *
  * If a file exists in the content directory named db-error.php, then it will
- * be loaded instead of displaying the WordPress DB error. If it is not found,
- * then the WordPress DB error will be displayed instead.
+ * be loaded instead of displaying the SlioPress DB error. If it is not found,
+ * then the SlioPress DB error will be displayed instead.
  *
- * The WordPress DB error sets the HTTP status header to 500 to try to prevent
+ * The SlioPress DB error sets the HTTP status header to 500 to try to prevent
  * search engines from caching the message. Custom DB messages should do the
  * same.
  *
- * This function was backported to WordPress 2.3.2, but originally was added
- * in WordPress 2.5.0.
+ * This function was backported to SlioPress 2.3.2, but originally was added
+ * in SlioPress 2.5.0.
  *
  * @since 2.3.2
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  */
 function dead_db() {
 	global $wpdb;
@@ -3349,7 +3349,7 @@ function absint( $maybeint ) {
  * @access private
  *
  * @param string $function    The function that was called.
- * @param string $version     The version of WordPress that deprecated the function.
+ * @param string $version     The version of SlioPress that deprecated the function.
  * @param string $replacement Optional. The function that should have been called. Default null.
  */
 function _deprecated_function( $function, $version, $replacement = null ) {
@@ -3361,7 +3361,7 @@ function _deprecated_function( $function, $version, $replacement = null ) {
 	 *
 	 * @param string $function    The function that was called.
 	 * @param string $replacement The function that should have been called.
-	 * @param string $version     The version of WordPress that deprecated the function.
+	 * @param string $version     The version of SlioPress that deprecated the function.
 	 */
 	do_action( 'deprecated_function_run', $function, $replacement, $version );
 
@@ -3402,7 +3402,7 @@ function _deprecated_function( $function, $version, $replacement = null ) {
  * @access private
  *
  * @param string $file        The file that was included.
- * @param string $version     The version of WordPress that deprecated the file.
+ * @param string $version     The version of SlioPress that deprecated the file.
  * @param string $replacement Optional. The file that should have been included based on ABSPATH.
  *                            Default null.
  * @param string $message     Optional. A message regarding the change. Default empty.
@@ -3416,7 +3416,7 @@ function _deprecated_file( $file, $version, $replacement = null, $message = '' )
 	 *
 	 * @param string $file        The file that was called.
 	 * @param string $replacement The file that should have been included based on ABSPATH.
-	 * @param string $version     The version of WordPress that deprecated the file.
+	 * @param string $version     The version of SlioPress that deprecated the file.
 	 * @param string $message     A message regarding the change.
 	 */
 	do_action( 'deprecated_file_included', $file, $replacement, $version, $message );
@@ -3466,7 +3466,7 @@ function _deprecated_file( $file, $version, $replacement = null, $message = '' )
  * @access private
  *
  * @param string $function The function that was called.
- * @param string $version  The version of WordPress that deprecated the argument used.
+ * @param string $version  The version of SlioPress that deprecated the argument used.
  * @param string $message  Optional. A message regarding the change. Default null.
  */
 function _deprecated_argument( $function, $version, $message = null ) {
@@ -3478,7 +3478,7 @@ function _deprecated_argument( $function, $version, $message = null ) {
 	 *
 	 * @param string $function The function that was called.
 	 * @param string $message  A message regarding the change.
-	 * @param string $version  The version of WordPress that deprecated the argument used.
+	 * @param string $version  The version of SlioPress that deprecated the argument used.
 	 */
 	do_action( 'deprecated_argument_run', $function, $message, $version );
 
@@ -3518,7 +3518,7 @@ function _deprecated_argument( $function, $version, $message = null ) {
  *
  * @param string $function The function that was called.
  * @param string $message  A message explaining what has been done incorrectly.
- * @param string $version  The version of WordPress where the message was added.
+ * @param string $version  The version of SlioPress where the message was added.
  */
 function _doing_it_wrong( $function, $message, $version ) {
 
@@ -3529,7 +3529,7 @@ function _doing_it_wrong( $function, $message, $version ) {
 	 *
 	 * @param string $function The function that was called.
 	 * @param string $message  A message explaining what has been done incorrectly.
-	 * @param string $version  The version of WordPress where the message was added.
+	 * @param string $version  The version of SlioPress where the message was added.
 	 */
 	do_action( 'doing_it_wrong_run', $function, $message, $version );
 
@@ -3543,11 +3543,11 @@ function _doing_it_wrong( $function, $message, $version ) {
 	if ( WP_DEBUG && apply_filters( 'doing_it_wrong_trigger_error', true ) ) {
 		if ( function_exists( '__' ) ) {
 			$version = is_null( $version ) ? '' : sprintf( __( '(This message was added in version %s.)' ), $version );
-			$message .= ' ' . __( 'Please see <a href="http://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information.' );
+			$message .= ' ' . __( 'Please see <a href="http://codex.wordpress.org/Debugging_in_SlioPress">Debugging in SlioPress</a> for more information.' );
 			trigger_error( sprintf( __( '%1$s was called <strong>incorrectly</strong>. %2$s %3$s' ), $function, $message, $version ) );
 		} else {
 			$version = is_null( $version ) ? '' : sprintf( '(This message was added in version %s.)', $version );
-			$message .= ' Please see <a href="http://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information.';
+			$message .= ' Please see <a href="http://codex.wordpress.org/Debugging_in_SlioPress">Debugging in SlioPress</a> for more information.';
 			trigger_error( sprintf( '%1$s was called <strong>incorrectly</strong>. %2$s %3$s', $function, $message, $version ) );
 		}
 	}

@@ -1,13 +1,13 @@
 <?php
 /**
  * Gets the email message from the user's mailbox to add as
- * a WordPress post. Mailbox connection information must be
+ * a SlioPress post. Mailbox connection information must be
  * configured under Settings > Writing
  *
- * @package WordPress
+ * @package SlioPress
  */
 
-/** Make sure that the WordPress bootstrap has run before continuing. */
+/** Make sure that the SlioPress bootstrap has run before continuing. */
 require(dirname(__FILE__) . '/load.php');
 
 /** This filter is documented in admin/options.php */

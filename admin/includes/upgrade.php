@@ -1,10 +1,10 @@
 <?php
 /**
- * WordPress Upgrade API
+ * SlioPress Upgrade API
  *
  * Most of the functions are pluggable and can be overwritten
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
@@ -12,10 +12,10 @@
 if ( file_exists(WP_CONTENT_DIR . '/install.php') )
 	require (WP_CONTENT_DIR . '/install.php');
 
-/** WordPress Administration API */
+/** SlioPress Administration API */
 require_once(ABSPATH . 'admin/includes/admin.php');
 
-/** WordPress Schema API */
+/** SlioPress Schema API */
 require_once(ABSPATH . 'admin/includes/schema.php');
 
 if ( !function_exists('wp_install') ) :
@@ -153,7 +153,7 @@ function wp_install_defaults( $user_id ) {
 		$first_post = str_replace( "SITE_URL", esc_url( network_home_url() ), $first_post );
 		$first_post = str_replace( "SITE_NAME", get_current_site()->site_name, $first_post );
 	} else {
-		$first_post = __('Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!');
+		$first_post = __('Welcome to SlioPress. This is your first post. Edit or delete it, then start blogging!');
 	}
 
 	$wpdb->insert( $wpdb->posts, array(
@@ -176,8 +176,8 @@ function wp_install_defaults( $user_id ) {
 	$wpdb->insert( $wpdb->term_relationships, array('term_taxonomy_id' => $cat_tt_id, 'object_id' => 1) );
 
 	// Default comment
-	$first_comment_author = __('Mr WordPress');
-	$first_comment_url = 'https://wordpress.org/';
+	$first_comment_author = __('Mr SlioPress');
+	$first_comment_url = 'http://sliolab.com/';
 	$first_comment = __('Hi, this is a comment.
 To delete a comment, just log in and view the post&#039;s comments. There you will have the option to edit or delete them.');
 	if ( is_multisite() ) {
@@ -204,7 +204,7 @@ To delete a comment, just log in and view the post&#039;s comments. There you wi
 
 <blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>
 
-As a new WordPress user, you should go to <a href=\"%s\">your dashboard</a> to delete this page and create new pages for your content. Have fun!" ), admin_url() );
+As a new SlioPress user, you should go to <a href=\"%s\">your dashboard</a> to delete this page and create new pages for your content. Have fun!" ), admin_url() );
 	if ( is_multisite() )
 		$first_page = get_site_option( 'first_page', $first_page );
 	$first_post_guid = get_option('home') . '/?page_id=2';
@@ -278,7 +278,7 @@ function wp_new_blog_notification($blog_title, $blog_url, $user_id, $password) {
 	$email = $user->user_email;
 	$name = $user->user_login;
 	$login_url = wp_login_url();
-	$message = sprintf( __( "Your new WordPress site has been successfully set up at:
+	$message = sprintf( __( "Your new SlioPress site has been successfully set up at:
 
 %1\$s
 
@@ -290,17 +290,17 @@ Log in here: %4\$s
 
 We hope you enjoy your new site. Thanks!
 
---The WordPress Team
+--The SlioPress Team
 https://wordpress.org/
 "), $blog_url, $name, $password, $login_url );
 
-	@wp_mail($email, __('New WordPress Site'), $message);
+	@wp_mail($email, __('New SlioPress Site'), $message);
 }
 endif;
 
 if ( !function_exists('wp_upgrade') ) :
 /**
- * Run WordPress Upgrade functions.
+ * Run SlioPress Upgrade functions.
  *
  * {@internal Missing Long Description}}
  *
@@ -451,7 +451,7 @@ function upgrade_all() {
 }
 
 /**
- * Execute changes made in WordPress 1.0.
+ * Execute changes made in SlioPress 1.0.
  *
  * @since 1.0.0
  */
@@ -506,7 +506,7 @@ function upgrade_100() {
 }
 
 /**
- * Execute changes made in WordPress 1.0.1.
+ * Execute changes made in SlioPress 1.0.1.
  *
  * @since 1.0.1
  */
@@ -524,7 +524,7 @@ function upgrade_101() {
 }
 
 /**
- * Execute changes made in WordPress 1.2.
+ * Execute changes made in SlioPress 1.2.
  *
  * @since 1.2.0
  */
@@ -584,7 +584,7 @@ function upgrade_110() {
 }
 
 /**
- * Execute changes made in WordPress 1.5.
+ * Execute changes made in SlioPress 1.5.
  *
  * @since 1.5.0
  */
@@ -668,7 +668,7 @@ function upgrade_130() {
 }
 
 /**
- * Execute changes made in WordPress 2.0.
+ * Execute changes made in SlioPress 2.0.
  *
  * @since 2.0.0
  */
@@ -751,7 +751,7 @@ function upgrade_160() {
 }
 
 /**
- * Execute changes made in WordPress 2.1.
+ * Execute changes made in SlioPress 2.1.
  *
  * @since 2.1.0
  */
@@ -795,7 +795,7 @@ function upgrade_210() {
 }
 
 /**
- * Execute changes made in WordPress 2.3.
+ * Execute changes made in SlioPress 2.3.
  *
  * @since 2.3.0
  */
@@ -1008,7 +1008,7 @@ function upgrade_old_slugs() {
 }
 
 /**
- * Execute changes made in WordPress 2.5.0.
+ * Execute changes made in SlioPress 2.5.0.
  *
  * @since 2.5.0
  */
@@ -1022,7 +1022,7 @@ function upgrade_250() {
 }
 
 /**
- * Execute changes made in WordPress 2.5.2.
+ * Execute changes made in SlioPress 2.5.2.
  *
  * @since 2.5.2
  */
@@ -1033,7 +1033,7 @@ function upgrade_252() {
 }
 
 /**
- * Execute changes made in WordPress 2.6.
+ * Execute changes made in SlioPress 2.6.
  *
  * @since 2.6.0
  */
@@ -1045,7 +1045,7 @@ function upgrade_260() {
 }
 
 /**
- * Execute changes made in WordPress 2.7.
+ * Execute changes made in SlioPress 2.7.
  *
  * @since 2.7.0
  */
@@ -1061,7 +1061,7 @@ function upgrade_270() {
 }
 
 /**
- * Execute changes made in WordPress 2.8.
+ * Execute changes made in SlioPress 2.8.
  *
  * @since 2.8.0
  */
@@ -1088,7 +1088,7 @@ function upgrade_280() {
 }
 
 /**
- * Execute changes made in WordPress 2.9.
+ * Execute changes made in SlioPress 2.9.
  *
  * @since 2.9.0
  */
@@ -1105,7 +1105,7 @@ function upgrade_290() {
 }
 
 /**
- * Execute changes made in WordPress 3.0.
+ * Execute changes made in SlioPress 3.0.
  *
  * @since 3.0.0
  */
@@ -1147,7 +1147,7 @@ function upgrade_300() {
 }
 
 /**
- * Execute changes made in WordPress 3.3.
+ * Execute changes made in SlioPress 3.3.
  *
  * @since 3.3.0
  */
@@ -1216,7 +1216,7 @@ function upgrade_330() {
 }
 
 /**
- * Execute changes made in WordPress 3.4.
+ * Execute changes made in SlioPress 3.4.
  *
  * @since 3.4.0
  */
@@ -1249,7 +1249,7 @@ function upgrade_340() {
 }
 
 /**
- * Execute changes made in WordPress 3.5.
+ * Execute changes made in SlioPress 3.5.
  *
  * @since 3.5.0
  */
@@ -1276,7 +1276,7 @@ function upgrade_350() {
 }
 
 /**
- * Execute changes made in WordPress 3.7.
+ * Execute changes made in SlioPress 3.7.
  *
  * @since 3.7.0
  */
@@ -1287,7 +1287,7 @@ function upgrade_370() {
 }
 
 /**
- * Execute changes made in WordPress 3.7.2.
+ * Execute changes made in SlioPress 3.7.2.
  *
  * @since 3.7.2
  * @since 3.8.0
@@ -1299,7 +1299,7 @@ function upgrade_372() {
 }
 
 /**
- * Execute changes made in WordPress 3.8.0.
+ * Execute changes made in SlioPress 3.8.0.
  *
  * @since 3.8.0
  */
@@ -1311,7 +1311,7 @@ function upgrade_380() {
 }
 
 /**
- * Execute changes made in WordPress 4.0.0.
+ * Execute changes made in SlioPress 4.0.0.
  *
  * @since 4.0.0
  */

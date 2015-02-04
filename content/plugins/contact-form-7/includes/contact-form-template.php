@@ -96,7 +96,7 @@ class WPCF7_ContactFormTemplate {
 			return $admin_email;
 		}
 
-		return 'wordpress@' . $sitename;
+		return 'sliopress@' . $sitename;
 	}
 
 	public static function messages() {

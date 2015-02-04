@@ -1,13 +1,13 @@
 <?php
 /**
- * The WordPress version string
+ * The SlioPress version string
  *
  * @global string $wp_version
  */
 $wp_version = '4.1';
 
 /**
- * Holds the WordPress DB revision, increments when changes are made to the WordPress DB schema.
+ * Holds the SlioPress DB revision, increments when changes are made to the SlioPress DB schema.
  *
  * @global int $wp_db_version
  */

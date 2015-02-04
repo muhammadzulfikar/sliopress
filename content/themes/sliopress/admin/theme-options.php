@@ -104,7 +104,7 @@ function custom_theme_options() {
 		array(
 			'id'		=> 'rss-feed',
 			'label'		=> __('FeedBurner URL', 'T20'),
-			'desc'		=> __('Enter your full FeedBurner URL (or any other preferred feed URL) if you wish to use FeedBurner over the standard WordPress feed e.g. http://feeds.feedburner.com/yoururlhere', 'T20'),
+			'desc'		=> __('Enter your full FeedBurner URL (or any other preferred feed URL) if you wish to use FeedBurner over the standard SlioPress feed e.g. http://feeds.feedburner.com/yoururlhere', 'T20'),
 			'type'		=> 'text',
 			'section'	=> 'general'
 		),
@@ -156,7 +156,7 @@ function custom_theme_options() {
 		array(
 			'id'		=> 'wp_pagenavi',
 			'label'		=> __('WP Pagenavi', 'T20'),
-			'desc'		=> __('Adds a more advanced paging navigation to your WordPress blog.', 'T20'),
+			'desc'		=> __('Adds a more advanced paging navigation to your SlioPress blog.', 'T20'),
 			'std'		=> 'on',
 			'type'		=> 'on-off',
 			'section'		=> 'blog'

@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Core Ajax Handlers.
+ * SlioPress Core Ajax Handlers.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
@@ -2099,7 +2099,7 @@ function wp_ajax_wp_remove_post_lock() {
 }
 
 /**
- * Ajax handler for dismissing a WordPress pointer.
+ * Ajax handler for dismissing a SlioPress pointer.
  *
  * @since 3.1.0
  */
@@ -2437,10 +2437,10 @@ function wp_ajax_send_link_to_editor() {
 
 	$post = get_post( isset( $_POST['post_id'] ) ? $_POST['post_id'] : 0 );
 
-	// Ping WordPress for an embed.
+	// Ping SlioPress for an embed.
 	$check_embed = $wp_embed->run_shortcode( '[embed]'. $src .'[/embed]' );
 
-	// Fallback that WordPress creates when no oEmbed was found.
+	// Fallback that SlioPress creates when no oEmbed was found.
 	$fallback = $wp_embed->maybe_make_link( $src );
 
 	if ( $check_embed !== $fallback ) {

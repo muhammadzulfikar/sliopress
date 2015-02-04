@@ -6,7 +6,7 @@ Requires at least: 3.9
 Tested up to: 4.1  
 Stable tag: 2.68  
 
-Adds an AJAX poll system to your WordPress blog. You can also easily add a poll into your WordPress's blog post/page.
+Adds an AJAX poll system to your SlioPress blog. You can also easily add a poll into your SlioPress's blog post/page.
 
 == Description ==
 Polls is extremely customizable via templates and css styles and there are tons of options for you to choose to ensure that Polls runs the way you wanted. It now supports multiple selection of answers.
@@ -29,8 +29,8 @@ I spent most of my free time creating, updating, maintaining and supporting thes
 == Changelog ==
 = Version 2.68 =
 * NEW: Poll answer percentage are now not rounded off, previously it was always rounded to add up to 100%
-* NEW: Support WordPress MultiSite Network Activation
-* NEW: Uses native WordPress uninstall.php
+* NEW: Support SlioPress MultiSite Network Activation
+* NEW: Uses native SlioPress uninstall.php
 * NEW: Show shortcode in success message after creating a poll
 * NEW: Checks and ensure that Poll Question and Poll Answers are not empty
 * NEW: Checks whether Poll is closed before checking whether user has voted
@@ -49,7 +49,7 @@ I spent most of my free time creating, updating, maintaining and supporting thes
 
 = Version 2.65 =
 * NEW: Use Dashicons
-* NEW: Supports TinyMCE 4.0 For WordPress 3.9
+* NEW: Supports TinyMCE 4.0 For SlioPress 3.9
 * NEW: Added Poll ID after adding it
 * FIXED: Use SITECOOKIEPATH instead of COOKIEPATH.
 * FIXED: Use http://ipinfo.io instead of http://ws.arin.net to get check IP information.
@@ -73,11 +73,11 @@ I spent most of my free time creating, updating, maintaining and supporting thes
 * FIXED: XSS Vulnerability. Thanks to Dweeks, Leon Juranic and Chad Lavoie of the Swiftwill Security Team Inc ([www.swiftwill.com](http://www.swiftwill.com "www.swiftwill.com"))
 
 = Version 2.60 (01-12-2009) =
-* NEW: Uses WordPress nonce Throughout
+* NEW: Uses SlioPress nonce Throughout
 * NEW: Display 2,000 Records In Poll Logs Instead Of 100
 
 = Version 2.50 (01-06-2009) =
-* NEW: Works For WordPress 2.8 Only
+* NEW: Works For SlioPress 2.8 Only
 * NEW: Javascript Now Placed At The Footer
 * NEW: Uses jQuery Instead Of tw-sack
 * NEW: Minified Javascript Instead Of Packed Javascript
@@ -86,11 +86,11 @@ I spent most of my free time creating, updating, maintaining and supporting thes
 * NEW: Renamed polls-js-packed.js To polls-js.js
 * NEW: Renamed polls-js.js To polls-js.dev.js
 * NEW: Translate Javascript Variables Using wp_localize_script()
-* NEW: Add "Add Poll" To WordPress Favourite Actions
+* NEW: Add "Add Poll" To SlioPress Favourite Actions
 * NEW: Minified plugin.js And Added Non-Minified plugin.min.js
 * NEW: Able To Remove Individual Answers When Adding Or Editing A Poll
 * NEW: Use _n() Instead Of __ngettext() And _n_noop() Instead Of __ngettext_noop()
-* NEW: Uses New Widget Class From WordPress
+* NEW: Uses New Widget Class From SlioPress
 * NEW: Merge Widget Code To polls.php And Remove polls-widget.php
 * FIXED: Uses $_SERVER['PHP_SELF'] With plugin_basename(__FILE__) Instead Of Just $_SERVER['REQUEST_URI']
 * FIXED: Ensure That Percentage Always Add Up To 100%
@@ -98,7 +98,7 @@ I spent most of my free time creating, updating, maintaining and supporting thes
 * FIXED: Logged By Username Now Shows Poll Results To Users Who Did Not Login
 
 = Version 2.40 (12-12-2008) =
-* NEW: Works For WordPress 2.7 Only
+* NEW: Works For SlioPress 2.7 Only
 * NEW: Load Admin JS And CSS Only In Polls Admin Pages
 * NEW: Added polls-admin-css.css For Polls Admin CSS Styles
 * NEW: Right To Left Language Support by Kambiz R. Khojasteh
@@ -111,12 +111,12 @@ I spent most of my free time creating, updating, maintaining and supporting thes
 * FIXED: Moved Call To update_pollbar() From onblur To onclick Event. It Was Showing The Last Selection Instead Of Current One by Kambiz R. Khojasteh
 
 = Version 2.31 (16-07-2008) =
-* NEW: Works For WordPress 2.6
+* NEW: Works For SlioPress 2.6
 * NEW: Better Translation Using __ngetext() by Anna Ozeritskaya
 * FIXED: MYSQL Charset Issue Should Be Solved
 
 = Version 2.30 (01-06-2008) =
-* NEW: Works For WordPress 2.5 Only
+* NEW: Works For SlioPress 2.5 Only
 * NEW: Added Paging Header And Footer Template For Polls Archive Page
 * NEW: Uses PageNavi Style Paging For Polls Archive Page
 * NEW: Polls Will Load 'polls-css.css' Inside Your Theme Directory If It Exists. If Not, It Will Just Load The Default 'polls-css.css' By Polls
@@ -142,7 +142,7 @@ I spent most of my free time creating, updating, maintaining and supporting thes
 * FIXED: Content-Type Not Being Sent Back When AJAX Return Results
 
 = Version 2.21 (01-10-2007) =
-* NEW: Works For WordPress 2.3 Only
+* NEW: Works For SlioPress 2.3 Only
 * NEW: Added Quick Tag For Poll To Visual (TinyMCE) / Code Editor
 * NEW: New CSS Style For Polls Archive (.polls-archive)
 * NEW: Uses Stats Filter To Add Stats Into Stats Page
@@ -169,7 +169,7 @@ I spent most of my free time creating, updating, maintaining and supporting thes
 * FIXED: Poll Archive Will Now Show Only Polls Results
 
 = Version 2.14 (01-02-2007) =
-* NEW: Works For WordPress 2.1 Only
+* NEW: Works For SlioPress 2.1 Only
 * NEW: Renamed polls-js.js to polls-js.php To Enable PHP Parsing
 * NEW: Ability To Make A Poll Expire
 * NEW: Ability To Make A Future Poll
@@ -203,7 +203,7 @@ I spent most of my free time creating, updating, maintaining and supporting thes
 * NEW: You Can Now Place The Poll On The Sidebar As A Widget
 * NEW: Moved polls.php To content/plugins/polls/ Folder
 * FIXED: AJAX Not Working In Opera Browser
-* FIXED: Poll Not Working On Physical Pages That Is Integrated Into WordPress
+* FIXED: Poll Not Working On Physical Pages That Is Integrated Into SlioPress
 
 = Version 2.1 (01-06-2006) =
 * NEW: Poll Is Now Using AJAX
@@ -242,7 +242,7 @@ I spent most of my free time creating, updating, maintaining and supporting thes
 * FIXED: Cannot Sent Header Error
 
 = Version 2.03 (01-01-2006) =
-* NEW: Compatible With WordPress 2.0 Only
+* NEW: Compatible With SlioPress 2.0 Only
 * NEW: Poll Administration Menu Added Automatically Upon Activating The Plugin
 * NEW: Removed Add Poll Link From The Administration Menu
 * NEW: GPL License Added
@@ -342,7 +342,7 @@ N/A
 = How To Add A Polls Archive? =
 1. Go to `Admin -> Pages -> Add New`.
 2. Type any title you like in the post's title area.
-3. If you ARE  using nice permalinks,  after typing the title, WordPress will generate the permalink to the page. You will see an 'Edit' link just beside the permalink.
+3. If you ARE  using nice permalinks,  after typing the title, SlioPress will generate the permalink to the page. You will see an 'Edit' link just beside the permalink.
 4. Click 'Edit' and type in `pollsarchive` in the text field and click 'Save'.
 5. Type `[page_polls]` in the post's content area.
 6. Click 'Publish'.

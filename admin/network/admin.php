@@ -1,15 +1,15 @@
 <?php
 /**
- * WordPress Network Administration Bootstrap
+ * SlioPress Network Administration Bootstrap
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Multisite
  * @since 3.1.0
  */
 
 define( 'WP_NETWORK_ADMIN', true );
 
-/** Load WordPress Administration Bootstrap */
+/** Load SlioPress Administration Bootstrap */
 require_once( dirname( dirname( __FILE__ ) ) . '/admin.php' );
 
 if ( ! is_multisite() )

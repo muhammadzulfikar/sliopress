@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress media templates.
+ * SlioPress media templates.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Media
  * @since 3.5.0
  */

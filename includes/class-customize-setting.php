@@ -4,7 +4,7 @@
  *
  * Handles saving and sanitizing of settings.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Customize
  * @since 3.4.0
  */
@@ -500,7 +500,7 @@ class WP_Customize_Setting {
  *
  * Results should be properly handled using another setting or callback.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Customize
  * @since 3.4.0
  */
@@ -517,7 +517,7 @@ class WP_Customize_Filter_Setting extends WP_Customize_Setting {
  *
  * Results should be properly handled using another setting or callback.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Customize
  * @since 3.4.0
  */
@@ -547,7 +547,7 @@ final class WP_Customize_Header_Image_Setting extends WP_Customize_Setting {
 /**
  * Class WP_Customize_Background_Image_Setting
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Customize
  * @since 3.4.0
  */

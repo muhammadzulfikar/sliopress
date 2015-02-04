@@ -1,10 +1,10 @@
 /**
- * WordPress Administration Navigation Menu
+ * SlioPress Administration Navigation Menu
  * Interface JS functions
  *
  * @version 2.0.0
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 

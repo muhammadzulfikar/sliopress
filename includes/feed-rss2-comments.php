@@ -2,7 +2,7 @@
 /**
  * RSS2 Feed Template for displaying RSS2 Comments feed.
  *
- * @package WordPress
+ * @package SlioPress
  */
 
 header('Content-Type: ' . feed_content_type('rss-http') . '; charset=' . get_option('blog_charset'), true);

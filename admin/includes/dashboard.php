@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Dashboard Widget Administration Screen API
+ * SlioPress Dashboard Widget Administration Screen API
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
@@ -48,8 +48,8 @@ function wp_dashboard_setup() {
 		wp_add_dashboard_widget( 'dashboard_quick_press', $quick_draft_title, 'wp_dashboard_quick_press' );
 	}
 
-	// WordPress News
-	wp_add_dashboard_widget( 'dashboard_primary', __( 'WordPress News' ), 'wp_dashboard_primary' );
+	// SlioPress News
+	wp_add_dashboard_widget( 'dashboard_primary', __( 'SlioPress News' ), 'wp_dashboard_primary' );
 
 	if ( is_network_admin() ) {
 
@@ -919,7 +919,7 @@ function wp_dashboard_rss_control( $widget_id, $form_inputs = array() ) {
 }
 
 /**
- * WordPress News dashboard widget.
+ * SlioPress News dashboard widget.
  *
  * @since 2.7.0
  */
@@ -928,7 +928,7 @@ function wp_dashboard_primary() {
 		'news' => array(
 
 			/**
-			 * Filter the primary link URL for the 'WordPress News' dashboard widget.
+			 * Filter the primary link URL for the 'SlioPress News' dashboard widget.
 			 *
 			 * @since 2.5.0
 			 *
@@ -937,7 +937,7 @@ function wp_dashboard_primary() {
 			'link' => apply_filters( 'dashboard_primary_link', __( 'http://wordpress.org/news/' ) ),
 
 			/**
-			 * Filter the primary feed URL for the 'WordPress News' dashboard widget.
+			 * Filter the primary feed URL for the 'SlioPress News' dashboard widget.
 			 *
 			 * @since 2.3.0
 			 *
@@ -946,13 +946,13 @@ function wp_dashboard_primary() {
 			'url' => apply_filters( 'dashboard_primary_feed', __( 'http://wordpress.org/news/feed/' ) ),
 
 			/**
-			 * Filter the primary link title for the 'WordPress News' dashboard widget.
+			 * Filter the primary link title for the 'SlioPress News' dashboard widget.
 			 *
 			 * @since 2.3.0
 			 *
 			 * @param string $title Title attribute for the widget's primary link.
 			 */
-			'title'        => apply_filters( 'dashboard_primary_title', __( 'WordPress Blog' ) ),
+			'title'        => apply_filters( 'dashboard_primary_title', __( 'SlioPress Blog' ) ),
 			'items'        => 1,
 			'show_summary' => 1,
 			'show_author'  => 0,
@@ -961,7 +961,7 @@ function wp_dashboard_primary() {
 		'planet' => array(
 
 			/**
-			 * Filter the secondary link URL for the 'WordPress News' dashboard widget.
+			 * Filter the secondary link URL for the 'SlioPress News' dashboard widget.
 			 *
 			 * @since 2.3.0
 			 *
@@ -970,7 +970,7 @@ function wp_dashboard_primary() {
 			'link' => apply_filters( 'dashboard_secondary_link', __( 'https://planet.wordpress.org/' ) ),
 
 			/**
-			 * Filter the secondary feed URL for the 'WordPress News' dashboard widget.
+			 * Filter the secondary feed URL for the 'SlioPress News' dashboard widget.
 			 *
 			 * @since 2.3.0
 			 *
@@ -979,13 +979,13 @@ function wp_dashboard_primary() {
 			'url' => apply_filters( 'dashboard_secondary_feed', __( 'https://planet.wordpress.org/feed/' ) ),
 
 			/**
-			 * Filter the secondary link title for the 'WordPress News' dashboard widget.
+			 * Filter the secondary link title for the 'SlioPress News' dashboard widget.
 			 *
 			 * @since 2.3.0
 			 *
 			 * @param string $title Title attribute for the widget's secondary link.
 			 */
-			'title'        => apply_filters( 'dashboard_secondary_title', __( 'Other WordPress News' ) ),
+			'title'        => apply_filters( 'dashboard_secondary_title', __( 'Other SlioPress News' ) ),
 			'items'        => 3,
 			'show_summary' => 0,
 			'show_author'  => 0,
@@ -1011,7 +1011,7 @@ function wp_dashboard_primary() {
 }
 
 /**
- * Display the WordPress news feeds.
+ * Display the SlioPress news feeds.
  *
  * @since 3.8.0
  *
@@ -1032,7 +1032,7 @@ function wp_dashboard_primary_output( $widget_id, $feeds ) {
 }
 
 /**
- * Display plugins text for the WordPress news widget.
+ * Display plugins text for the SlioPress news widget.
  *
  * @since 2.5.0
  */
@@ -1171,9 +1171,9 @@ function wp_dashboard_browser_nag() {
 
 	if ( $response ) {
 		if ( $response['insecure'] ) {
-			$msg = sprintf( __( "It looks like you're using an insecure version of <a href='%s'>%s</a>. Using an outdated browser makes your computer unsafe. For the best WordPress experience, please update your browser." ), esc_attr( $response['update_url'] ), esc_html( $response['name'] ) );
+			$msg = sprintf( __( "It looks like you're using an insecure version of <a href='%s'>%s</a>. Using an outdated browser makes your computer unsafe. For the best SlioPress experience, please update your browser." ), esc_attr( $response['update_url'] ), esc_html( $response['name'] ) );
 		} else {
-			$msg = sprintf( __( "It looks like you're using an old version of <a href='%s'>%s</a>. For the best WordPress experience, please update your browser." ), esc_attr( $response['update_url'] ), esc_html( $response['name'] ) );
+			$msg = sprintf( __( "It looks like you're using an old version of <a href='%s'>%s</a>. For the best SlioPress experience, please update your browser." ), esc_attr( $response['update_url'] ), esc_html( $response['name'] ) );
 		}
 
 		$browser_nag_class = '';
@@ -1233,7 +1233,7 @@ function wp_check_browser_version() {
 
 		$options = array(
 			'body'			=> array( 'useragent' => $_SERVER['HTTP_USER_AGENT'] ),
-			'user-agent'	=> 'WordPress/' . $wp_version . '; ' . home_url()
+			'user-agent'	=> 'SlioPress/' . $wp_version . '; ' . home_url()
 		);
 
 		$response = wp_remote_post( 'http://api.wordpress.org/core/browse-happy/1.1/', $options );
@@ -1269,14 +1269,14 @@ function wp_check_browser_version() {
 function wp_dashboard_empty() {}
 
 /**
- * Displays a welcome panel to introduce users to WordPress.
+ * Displays a welcome panel to introduce users to SlioPress.
  *
  * @since 3.3.0
  */
 function wp_welcome_panel() {
 	?>
 	<div class="welcome-panel-content">
-	<h3><?php _e( 'Welcome to WordPress!' ); ?></h3>
+	<h3><?php _e( 'Welcome to SlioPress!' ); ?></h3>
 	<p class="about-description"><?php _e( 'We&#8217;ve assembled some links to get you started:' ); ?></p>
 	<div class="welcome-panel-column-container">
 	<div class="welcome-panel-column">
@@ -1324,7 +1324,7 @@ function wp_welcome_panel() {
 		<?php if ( current_user_can( 'manage_options' ) ) : ?>
 			<li><?php printf( '<a href="%s" class="welcome-icon welcome-comments">' . __( 'Turn comments on or off' ) . '</a>', admin_url( 'options-discussion.php' ) ); ?></li>
 		<?php endif; ?>
-			<li><?php printf( '<a href="%s" class="welcome-icon welcome-learn-more">' . __( 'Learn more about getting started' ) . '</a>', __( 'http://codex.wordpress.org/First_Steps_With_WordPress' ) ); ?></li>
+			<li><?php printf( '<a href="%s" class="welcome-icon welcome-learn-more">' . __( 'Learn more about getting started' ) . '</a>', __( 'http://codex.wordpress.org/First_Steps_With_SlioPress' ) ); ?></li>
 		</ul>
 	</div>
 	</div>

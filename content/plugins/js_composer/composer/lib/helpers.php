@@ -207,7 +207,7 @@ function wpb_js_remove_wpautop($content, $autop = false) {
 
 if ( ! function_exists( 'shortcode_exists' ) ) {
     /**
-     * Check if a shortcode is registered in WordPress.
+     * Check if a shortcode is registered in SlioPress.
      *
      * Examples: shortcode_exists( 'caption' ) - will return true.
      * shortcode_exists( 'blah' ) - will return false.

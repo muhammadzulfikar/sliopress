@@ -1,8 +1,8 @@
 <?php
 /**
- * Facilitates adding of the WordPress editor as used on the Write and Edit screens.
+ * Facilitates adding of the SlioPress editor as used on the Write and Edit screens.
  *
- * @package WordPress
+ * @package SlioPress
  * @since 3.3.0
  *
  * Private, not included by default. See wp_editor() in includes/general-template.php.
@@ -374,7 +374,7 @@ final class _WP_Editors {
 					 * Filter the list of default TinyMCE plugins.
 					 *
 					 * The filter specifies which of the default plugins included
-					 * in WordPress should be added to the TinyMCE instance.
+					 * in SlioPress should be added to the TinyMCE instance.
 					 *
 					 * @since 3.3.0
 					 *
@@ -525,7 +525,7 @@ final class _WP_Editors {
 				$version = 'ver=' . $GLOBALS['wp_version'];
 				$dashicons = includes_url( "css/dashicons$suffix.css?$version" );
 
-				// WordPress default stylesheet and dashicons
+				// SlioPress default stylesheet and dashicons
 				$mce_css = array(
 					$dashicons,
 					self::$baseurl . '/skins/wordpress/content.css?' . $version
@@ -990,7 +990,7 @@ final class _WP_Editors {
 			'Table' => _x( 'Table', 'TinyMCE menu' ),
 			'Format' => _x( 'Format', 'TinyMCE menu' ),
 
-			// WordPress strings
+			// SlioPress strings
 			'Keyboard Shortcuts' => __( 'Keyboard Shortcuts' ),
 			'Toolbar Toggle' => __( 'Toolbar Toggle' ),
 			'Insert Read More tag' => __( 'Insert Read More tag' ),

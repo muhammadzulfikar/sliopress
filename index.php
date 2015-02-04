@@ -1,17 +1,17 @@
 <?php
 /**
- * Front to the WordPress application. This file doesn't do anything, but loads
- * blog-header.php which does and tells WordPress to load the theme.
+ * Front to the SlioPress application. This file doesn't do anything, but loads
+ * blog-header.php which does and tells SlioPress to load the theme.
  *
- * @package WordPress
+ * @package SlioPress
  */
 
 /**
- * Tells WordPress to load the WordPress theme and output it.
+ * Tells SlioPress to load the SlioPress theme and output it.
  *
  * @var bool
  */
 define('WP_USE_THEMES', true);
 
-/** Loads the WordPress Environment and Template */
+/** Loads the SlioPress Environment and Template */
 require( dirname( __FILE__ ) . '/blog-header.php' );

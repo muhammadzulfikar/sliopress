@@ -2,7 +2,7 @@
 /**
  * MS Themes List Table class.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage List_Table
  * @since 3.1.0
  * @access private

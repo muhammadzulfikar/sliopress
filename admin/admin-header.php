@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Administration Template Header
+ * SlioPress Administration Template Header
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
@@ -29,9 +29,9 @@ else
 	$admin_title = get_bloginfo( 'name' );
 
 if ( $admin_title == $title )
-	$admin_title = sprintf( __( '%1$s &#8212; WordPress' ), $title );
+	$admin_title = sprintf( __( '%1$s &#8212; SlioPress' ), $title );
 else
-	$admin_title = sprintf( __( '%1$s &lsaquo; %2$s &#8212; WordPress' ), $title, $admin_title );
+	$admin_title = sprintf( __( '%1$s &lsaquo; %2$s &#8212; SlioPress' ), $title, $admin_title );
 
 /**
  * Filter the title tag content for an admin page.

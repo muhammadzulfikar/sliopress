@@ -96,7 +96,7 @@ add_action( 'wp_footer', 'wp_admin_bar_render', 1000 );
 add_action( 'in_admin_header', 'wp_admin_bar_render', 0 );
 
 /**
- * Add the WordPress logo menu.
+ * Add the SlioPress logo menu.
  *
  * @since 3.3.0
  *
@@ -108,50 +108,26 @@ function wp_admin_bar_wp_menu( $wp_admin_bar ) {
 		'title' => '<span class="ab-icon"></span>',
 		'href'  => self_admin_url( 'about.php' ),
 		'meta'  => array(
-			'title' => __('About WordPress'),
+			'title' => __('About SlioPress'),
 		),
 	) );
 
 	if ( is_user_logged_in() ) {
-		// Add "About WordPress" link
+		// Add "About SlioPress" link
 		$wp_admin_bar->add_menu( array(
 			'parent' => 'logo',
 			'id'     => 'about',
-			'title'  => __('About WordPress'),
+			'title'  => __('About SlioPress'),
 			'href'  => self_admin_url( 'about.php' ),
 		) );
 	}
 
-	// Add WordPress.org link
+	// Add SlioPress.org link
 	$wp_admin_bar->add_menu( array(
 		'parent'    => 'logo-external',
 		'id'        => 'wporg',
-		'title'     => __('WordPress.org'),
-		'href'      => __('https://wordpress.org/'),
-	) );
-
-	// Add codex link
-	$wp_admin_bar->add_menu( array(
-		'parent'    => 'logo-external',
-		'id'        => 'documentation',
-		'title'     => __('Documentation'),
-		'href'      => __('http://codex.wordpress.org/'),
-	) );
-
-	// Add forums link
-	$wp_admin_bar->add_menu( array(
-		'parent'    => 'logo-external',
-		'id'        => 'support-forums',
-		'title'     => __('Support Forums'),
-		'href'      => __('https://wordpress.org/support/'),
-	) );
-
-	// Add feedback link
-	$wp_admin_bar->add_menu( array(
-		'parent'    => 'logo-external',
-		'id'        => 'feedback',
-		'title'     => __('Feedback'),
-		'href'      => __('https://wordpress.org/support/forum/requests-and-feedback'),
+		'title'     => __('SlioPress.com'),
+		'href'      => __('http://sliolab.com/'),
 	) );
 }
 

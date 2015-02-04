@@ -56,7 +56,7 @@ if ( ! function_exists( 'ot_type_creating_options' ) ) {
         echo '<p>' . __( 'Enter a numeric value for the number of rows in your textarea. This will only affect the following option types: CSS, Textarea, & Textarea Simple.', 'option-tree' ) . '</p>';
         
         echo '<h4>'. __( 'Post Type', 'option-tree' ) . ':</h4>';
-        echo '<p>' . __( 'Add a comma separated list of post type like <code>post,page</code>. This will only affect the following option types: Custom Post Type Checkbox, & Custom Post Type Select. Below are the default post types available with WordPress and that are also compatible with OptionTree. You can also add your own custom <code>post_type</code>. At this time <code>any</code> does not seem to return results properly and is something I plan on looking into.', 'option-tree' ) . '</p>';
+        echo '<p>' . __( 'Add a comma separated list of post type like <code>post,page</code>. This will only affect the following option types: Custom Post Type Checkbox, & Custom Post Type Select. Below are the default post types available with SlioPress and that are also compatible with OptionTree. You can also add your own custom <code>post_type</code>. At this time <code>any</code> does not seem to return results properly and is something I plan on looking into.', 'option-tree' ) . '</p>';
         
         echo '<ul class="docs-ul">';
           echo '<li><code>post</code></li>';
@@ -142,10 +142,10 @@ body {
 /* END demo_background */</code></pre>';
         
         echo '<h4>'. __( 'Custom Post Type Checkbox', 'option-tree' ) . ':</h4>'; 
-        echo '<p>' . sprintf( __( 'The Custom Post Type Select option type displays a list of IDs from any available WordPress post type or custom post type. It allows the user to check multiple post IDs for use in a custom function or loop. Requires at least one valid %1$s in the %1$s field.', 'option-tree' ), '<code>post_type</code>' ) . '</p>';
+        echo '<p>' . sprintf( __( 'The Custom Post Type Select option type displays a list of IDs from any available SlioPress post type or custom post type. It allows the user to check multiple post IDs for use in a custom function or loop. Requires at least one valid %1$s in the %1$s field.', 'option-tree' ), '<code>post_type</code>' ) . '</p>';
         
         echo '<h4>'. __( 'Custom Post Type Select', 'option-tree' ) . ':</h4>'; 
-        echo '<p>' . sprintf( __( 'The Custom Post Type Select option type displays a list of IDs from any available WordPress post type or custom post type. It will return a single post ID for use in a custom function or loop. Requires at least one valid %1$s in the %1$s field.', 'option-tree' ), '<code>post_type</code>' ) . '</p>';
+        echo '<p>' . sprintf( __( 'The Custom Post Type Select option type displays a list of IDs from any available SlioPress post type or custom post type. It will return a single post ID for use in a custom function or loop. Requires at least one valid %1$s in the %1$s field.', 'option-tree' ), '<code>post_type</code>' ) . '</p>';
         
         echo '<h4>'. __( 'Date Picker', 'option-tree' ) . ':</h4>'; 
         echo '<p>' . __( 'The Date Picker option type is tied to a standard form input field which displays a calendar pop-up that allow the user to pick any date when focus is given to the input field. The returned value is a date formatted string.', 'option-tree' ) . '</p>';
@@ -242,8 +242,8 @@ add_filter( \'ot_radio_images\', \'filter_radio_images\', 10, 2 );</code></pre>'
         echo '<p>' . __( 'The Select option type is used to list anything you want that would be chosen from a select list.', 'option-tree' ) . '</p>';
         
         echo '<h4>'. __( 'Sidebar Select', 'option-tree' ) . ':</h4>';
-        echo '<p>' . sprintf(  __( 'This option type makes it possible for users to select a WordPress registered sidebar to use on a specific area. By using the two provided filters, %s, and %s we can be selective about which sidebars are available on a specific content area.', 'option-tree' ), '<code>ot_recognized_sidebars</code>', '<code>ot_recognized_sidebars_{$field_id}</code>' ) . '</p>';
-        echo '<p>' . sprintf( __( 'For example, if we create a WordPress theme that provides the ability to change the Blog Sidebar and we don\'t want to have the footer sidebars available on this area, we can unset those sidebars either manually or by using a regular expression if we have a common name like %s.', 'option-tree' ), '<code>footer-sidebar-$i</code>' ) . '</p>';
+        echo '<p>' . sprintf(  __( 'This option type makes it possible for users to select a SlioPress registered sidebar to use on a specific area. By using the two provided filters, %s, and %s we can be selective about which sidebars are available on a specific content area.', 'option-tree' ), '<code>ot_recognized_sidebars</code>', '<code>ot_recognized_sidebars_{$field_id}</code>' ) . '</p>';
+        echo '<p>' . sprintf( __( 'For example, if we create a SlioPress theme that provides the ability to change the Blog Sidebar and we don\'t want to have the footer sidebars available on this area, we can unset those sidebars either manually or by using a regular expression if we have a common name like %s.', 'option-tree' ), '<code>footer-sidebar-$i</code>' ) . '</p>';
         
         echo '<h4>'. __( 'Slider', 'option-tree' ) . ':</h4>';
         echo '<p>' . __( 'The Slider option type is technically deprecated. Use the List Item option type instead, as it\'s infinitely more customizable. Typical use is for creating sliding image content.', 'option-tree' ) . '</p>';
@@ -271,7 +271,7 @@ add_filter( \'ot_radio_images\', \'filter_radio_images\', 10, 2 );</code></pre>'
         
         echo '<p class="aside">' . __( 'Example filters to alter the Textarea option type. Added to <code>functions.php</code>.', 'option-tree' ) . '</p>';
         
-        echo '<p>' . __( 'This example keeps WordPress from executing the <code>wpautop</code> filter on the line breaks. The default is <code>true</code> which means it wraps line breaks with an HTML <code>p</code> tag.', 'option-tree' ) . '</p>';
+        echo '<p>' . __( 'This example keeps SlioPress from executing the <code>wpautop</code> filter on the line breaks. The default is <code>true</code> which means it wraps line breaks with an HTML <code>p</code> tag.', 'option-tree' ) . '</p>';
         echo '<pre><code>function filter_textarea_wpautop( $content, $field_id ) {
   
   /* only run the filter on the textarea with a field ID of my_textarea */
@@ -284,7 +284,7 @@ add_filter( \'ot_radio_images\', \'filter_radio_images\', 10, 2 );</code></pre>'
 }
 add_filter( \'ot_wpautop\', \'filter_textarea_wpautop\', 10, 2 );</code></pre>';
 
-        echo '<p>' . __( 'This example keeps WordPress from executing the <code>media_buttons</code> filter on the textarea WYSIWYG. The default is <code>true</code> which means show the buttons.', 'option-tree' ) . '</p>';
+        echo '<p>' . __( 'This example keeps SlioPress from executing the <code>media_buttons</code> filter on the textarea WYSIWYG. The default is <code>true</code> which means show the buttons.', 'option-tree' ) . '</p>';
         echo '<pre><code>function filter_textarea_media_buttons( $content, $field_id ) {
   
   /* only run the filter on the textarea with a field ID of my_textarea */
@@ -297,7 +297,7 @@ add_filter( \'ot_wpautop\', \'filter_textarea_wpautop\', 10, 2 );</code></pre>';
 }
 add_filter( \'ot_media_buttons\', \'filter_textarea_media_buttons\', 10, 2 );</code></pre>';
         
-        echo '<p>' . __( 'This example keeps WordPress from executing the <code>tinymce</code> filter on the textarea WYSIWYG. The default is <code>true</code> which means show the tinymce.', 'option-tree' ) . '</p>';
+        echo '<p>' . __( 'This example keeps SlioPress from executing the <code>tinymce</code> filter on the textarea WYSIWYG. The default is <code>true</code> which means show the tinymce.', 'option-tree' ) . '</p>';
         echo '<pre><code>function filter_textarea_tinymce( $content, $field_id ) {
   
   /* only run the filter on the textarea with a field ID of my_textarea */
@@ -328,7 +328,7 @@ add_filter( \'ot_quicktags\', \'filter_textarea_quicktags\', 10, 1 );</code></pr
         echo '<h4>'. __( 'Textarea Simple', 'option-tree' ) . ':</h4>'; 
         echo '<p>' . __( 'The Textarea Simple option type is a large string value used for custom code or text in the theme. The Textarea Simple does not have a WYSIWYG editor.', 'option-tree' ) . '</p>';
         
-        echo '<p class="aside">' . sprintf( __( 'This example tells WordPress to execute the %s filter on the line breaks. The default is %s which means it does not wraps line breaks with an HTML %s tag. Added to %s.', 'option-tree' ), '<code>wpautop</code>', '<code>false</code>', '<code>p</code>', '<code>functions.php</code>' ) . '</p>';
+        echo '<p class="aside">' . sprintf( __( 'This example tells SlioPress to execute the %s filter on the line breaks. The default is %s which means it does not wraps line breaks with an HTML %s tag. Added to %s.', 'option-tree' ), '<code>wpautop</code>', '<code>false</code>', '<code>p</code>', '<code>functions.php</code>' ) . '</p>';
         echo '<pre><code>function filter_textarea_simple_wpautop( $content, $field_id ) {
   
   /* only run the filter on the textarea with a field ID of my_textarea */
@@ -368,7 +368,7 @@ add_filter( \'ot_wpautop\', \'filter_textarea_simple_wpautop\', 10, 2 );</code><
 add_filter( \'ot_recognized_font_families\', \'filter_ot_recognized_font_families\', 10, 2 );</code></pre>';
 
         echo '<h4>'. __( 'Upload', 'option-tree' ) . ':</h4>'; 
-        echo '<p>' . sprintf( __( 'The Upload option type is used to upload any WordPress supported media. After uploading, users are required to press the "%s" button in order to populate the input with the URI of that media. There is one caveat of this feature. If you import the theme options and have uploaded media on one site the old URI will not reflect the URI of your new site. You will have to re-upload or %s any media to your new server and change the URIs if necessary.', 'option-tree' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'option-tree' ) ), 'FTP' ) . '</p>';
+        echo '<p>' . sprintf( __( 'The Upload option type is used to upload any SlioPress supported media. After uploading, users are required to press the "%s" button in order to populate the input with the URI of that media. There is one caveat of this feature. If you import the theme options and have uploaded media on one site the old URI will not reflect the URI of your new site. You will have to re-upload or %s any media to your new server and change the URIs if necessary.', 'option-tree' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'option-tree' ) ), 'FTP' ) . '</p>';
         
       echo '</div>';
       
@@ -619,7 +619,7 @@ if ( ! function_exists( 'ot_type_layouts_overview' ) ) {
         
         echo '<p>' . __( 'Once you have created all your different layouts, or theme variations, you can save them to a separate text file for repackaging with your theme. Alternatively, you could just make different variations for yourself and change your theme with the click of a button, all without deleting your previous options data.', 'option-tree' ) . '</p>';
 
-        echo '<p class="aside">' . __( ' Adding a layout is ridiculously easy, follow these steps and you\'ll be on your way to having a WordPress super theme.', 'option-tree' ) . '</p>';
+        echo '<p class="aside">' . __( ' Adding a layout is ridiculously easy, follow these steps and you\'ll be on your way to having a SlioPress super theme.', 'option-tree' ) . '</p>';
         
         echo '<h4>' . __( 'For Developers', 'option-tree' ) . ':</h4>';
         
@@ -707,7 +707,7 @@ if ( ! function_exists( 'ot_type_meta_boxes' ) ) {
         
         echo '<p>' . __( 'There are a few simple steps you need to take in order to use OptionTree\'s built in Meta Box API. In the code below I\'ll show you a basic demo of how to create your very own custom meta box using any number of the option types you have at your disposal. If you would like to see some demo code, there is a directory named <code>theme-mode</code> inside the <code>assets</code> directory that contains a file named <code>demo-meta-boxes.php</code> you can reference.', 'option-tree' ) . '</p>';
         
-        echo '<p>' . __( 'It\'s important to note that Meta Boxes do not support WYSIWYG editors at this time and if you set one of your options to Textarea it will automatically revert to a Textarea Simple until a valid solution is found. WordPress released this statement regarding the wp_editor() function:', 'option-tree' ) . '</p>';
+        echo '<p>' . __( 'It\'s important to note that Meta Boxes do not support WYSIWYG editors at this time and if you set one of your options to Textarea it will automatically revert to a Textarea Simple until a valid solution is found. SlioPress released this statement regarding the wp_editor() function:', 'option-tree' ) . '</p>';
         
         echo '<blockquote>' . __( 'Once instantiated, the WYSIWYG editor cannot be moved around in the DOM. What this means in practical terms, is that you cannot put it in meta-boxes that can be dragged and placed elsewhere on the page.', 'option-tree' ) . '</blockquote>';
         

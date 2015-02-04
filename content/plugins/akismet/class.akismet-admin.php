@@ -547,7 +547,7 @@ class Akismet_Admin {
 		return (int) $wpdb->get_var( $wpdb->prepare( "SELECT COUNT(comment_ID) FROM {$wpdb->comments} WHERE comment_approved = 'spam' AND comment_type = %s", $type ) );
 	}
 
-	// Check connectivity between the WordPress blog and Akismet's servers.
+	// Check connectivity between the SlioPress blog and Akismet's servers.
 	// Returns an associative array of server IP addresses, where the key is the IP address, and value is true (available) or false (unable to connect).
 	public static function check_server_ip_connectivity() {
 		

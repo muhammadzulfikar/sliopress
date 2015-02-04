@@ -2,11 +2,11 @@
 /**
  * Simple and uniform HTTP request API.
  *
- * Will eventually replace and standardize the WordPress HTTP requests made.
+ * Will eventually replace and standardize the SlioPress HTTP requests made.
  *
  * @link https://core.trac.wordpress.org/ticket/4779 HTTP API Proposal
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage HTTP
  * @since 2.7.0
  */

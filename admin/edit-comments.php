@@ -2,11 +2,11 @@
 /**
  * Edit Comments Administration Screen.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** SlioPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 if ( !current_user_can('edit_posts') )
 	wp_die( __( 'Cheatin&#8217; uh?' ), 403 );

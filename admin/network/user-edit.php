@@ -2,12 +2,12 @@
 /**
  * Edit user network administration panel.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Multisite
  * @since 3.1.0
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load SlioPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( ! is_multisite() )

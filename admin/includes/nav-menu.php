@@ -3,7 +3,7 @@
 /**
  * Create HTML list of nav menu input items.
  *
- * @package WordPress
+ * @package SlioPress
  * @since 3.0.0
  * @uses Walker_Nav_Menu
  */

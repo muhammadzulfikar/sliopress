@@ -508,7 +508,7 @@ class WPBakeryVisualComposerSettings {
        <div class="tab_intro">
            <p>
                <?php //_e('Add your Envato credentials, to enable auto updater. With correct login credentials Visual Composer will be updated automatically (same as other plugins do).', 'js_composer') ?>
-               <?php echo sprintf(__('A valid license key qualifies you for support and enables automatic updates. <strong>A license key may only be used for one Visual Composer installation on one WordPress site at a time.</strong> If you previosly activated your license key on another site, then you should deactivate it first or <a href="%s" target="_blank">obtain new license key</a>.', 'js_composer'), esc_url( "http://bit.ly/vcomposer" )); ?>
+               <?php echo sprintf(__('A valid license key qualifies you for support and enables automatic updates. <strong>A license key may only be used for one Visual Composer installation on one SlioPress site at a time.</strong> If you previosly activated your license key on another site, then you should deactivate it first or <a href="%s" target="_blank">obtain new license key</a>.', 'js_composer'), esc_url( "http://bit.ly/vcomposer" )); ?>
            </p>
        </div>
         <?php endif;
@@ -695,7 +695,7 @@ class WPBakeryVisualComposerSettings {
         <?php settings_fields( $this->option_group.'_'.$tab ) ?>
         <div class="deprecated">
             <p>
-            <?php _e("<strong>Deprecated:</strong> To override class names that are applied to Visual Composer content elements you should use WordPress add_filter('vc_shortcodes_css_class') function. <a class='vc_show_example'>See Example</a>.", "js_composer") ?>
+            <?php _e("<strong>Deprecated:</strong> To override class names that are applied to Visual Composer content elements you should use SlioPress add_filter('vc_shortcodes_css_class') function. <a class='vc_show_example'>See Example</a>.", "js_composer") ?>
             </p>
         </div>
         <div class="vc_helper">

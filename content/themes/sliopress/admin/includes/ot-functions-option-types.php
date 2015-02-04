@@ -1483,12 +1483,12 @@ if ( ! function_exists( 'ot_type_select' ) ) {
 /**
  * Sidebar Select option type.
  *
- * This option type makes it possible for users to select a WordPress registered sidebar 
+ * This option type makes it possible for users to select a SlioPress registered sidebar 
  * to use on a specific area. By using the two provided filters, 'ot_recognized_sidebars', 
  * and 'ot_recognized_sidebars_{$field_id}' we can be selective about which sidebars are 
  * available on a specific content area.
  *
- * For example, if we create a WordPress theme that provides the ability to change the 
+ * For example, if we create a SlioPress theme that provides the ability to change the 
  * Blog Sidebar and we don't want to have the footer sidebars available on this area, 
  * we can unset those sidebars either manually or by using a regular expression if we 
  * have a common name like footer-sidebar-$i.

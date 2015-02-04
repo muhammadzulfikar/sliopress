@@ -1,21 +1,21 @@
 <?php
 /**
- * WordPress Error API.
+ * SlioPress Error API.
  *
  * Contains the WP_Error class and the is_wp_error() function.
  *
- * @package WordPress
+ * @package SlioPress
  */
 
 /**
- * WordPress Error class.
+ * SlioPress Error class.
  *
- * Container for checking for WordPress errors and error messages. Return
+ * Container for checking for SlioPress errors and error messages. Return
  * WP_Error and use {@link is_wp_error()} to check if this class is returned.
- * Many core WordPress functions pass this class in the event of an error and
+ * Many core SlioPress functions pass this class in the event of an error and
  * if not handled properly will result in code errors.
  *
- * @package WordPress
+ * @package SlioPress
  * @since 2.1.0
  */
 class WP_Error {
@@ -260,7 +260,7 @@ class WP_Error {
 }
 
 /**
- * Check whether variable is a WordPress Error.
+ * Check whether variable is a SlioPress Error.
  *
  * Returns true if $thing is an object of the WP_Error class.
  *

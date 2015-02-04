@@ -6,7 +6,7 @@
             <div class="post-types-list">
                 {{{ vc.loop_partial('checkboxes', 'post_type', loop) }}}
             </div>
-            <span class="description clear"><?php _e('Select post types to populate posts from. Note: If no post type is selected, WordPress will use default "Post" value.', 'js_composer'); ?></span>
+            <span class="description clear"><?php _e('Select post types to populate posts from. Note: If no post type is selected, SlioPress will use default "Post" value.', 'js_composer'); ?></span>
             <# } #>
         </div>
     </div>
@@ -22,7 +22,7 @@
         <div class="vc_span4">
             <label class="wpb_element_label"><?php _e('Order By', 'js_composer') ?></label>
             {{{ vc.loop_partial('dropdown', 'order_by', loop) }}}
-            <span class="description clear"><?php echo sprintf(__('Select how to sort retrieved posts. More at %s.', 'js_composer'), '<a href="http://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters" target="_blank">WordPress codex page</a>'); ?></span>
+            <span class="description clear"><?php echo sprintf(__('Select how to sort retrieved posts. More at %s.', 'js_composer'), '<a href="http://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters" target="_blank">SlioPress codex page</a>'); ?></span>
         </div>
         <# } #>
         <# if(vc.loop_field_not_hidden('order', loop)) { #>

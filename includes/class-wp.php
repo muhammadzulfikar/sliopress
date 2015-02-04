@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress environment setup class.
+ * SlioPress environment setup class.
  *
- * @package WordPress
+ * @package SlioPress
  * @since 2.0.0
  */
 class WP {
@@ -36,7 +36,7 @@ class WP {
 	public $extra_query_vars = array();
 
 	/**
-	 * Query variables for setting up the WordPress Query Loop.
+	 * Query variables for setting up the SlioPress Query Loop.
 	 *
 	 * @since 2.0.0
 	 * @var array
@@ -108,7 +108,7 @@ class WP {
 	}
 
 	/**
-	 * Parse request to find correct WordPress query.
+	 * Parse request to find correct SlioPress query.
 	 *
 	 * Sets up the query variables based on the request. There are also many
 	 * filters and actions that can be used to further manipulate the result.
@@ -126,7 +126,7 @@ class WP {
 		 * @since 3.5.0
 		 *
 		 * @param bool         $bool             Whether or not to parse the request. Default true.
-		 * @param WP           $this             Current WordPress environment instance.
+		 * @param WP           $this             Current SlioPress environment instance.
 		 * @param array|string $extra_query_vars Extra passed query variables.
 		 */
 		if ( ! apply_filters( 'do_parse_request', true, $this, $extra_query_vars ) )
@@ -328,7 +328,7 @@ class WP {
 		 *
 		 * @since 2.1.0
 		 *
-		 * @param WP &$this Current WordPress environment instance (passed by reference).
+		 * @param WP &$this Current SlioPress environment instance (passed by reference).
 		 */
 		do_action_ref_array( 'parse_request', array( &$this ) );
 	}
@@ -406,7 +406,7 @@ class WP {
 		 * @since 2.8.0
 		 *
 		 * @param array $headers The list of headers to be sent.
-		 * @param WP    $this    Current WordPress environment instance.
+		 * @param WP    $this    Current SlioPress environment instance.
 		 */
 		$headers = apply_filters( 'wp_headers', $headers, $this );
 
@@ -443,7 +443,7 @@ class WP {
 		 *
 		 * @since 2.1.0
 		 *
-		 * @param WP &$this Current WordPress environment instance (passed by reference).
+		 * @param WP &$this Current SlioPress environment instance (passed by reference).
 		 */
 		do_action_ref_array( 'send_headers', array( &$this ) );
 	}
@@ -482,11 +482,11 @@ class WP {
 	}
 
 	/**
-	 * Set up the WordPress Globals.
+	 * Set up the SlioPress Globals.
 	 *
 	 * The query_vars property will be extracted to the GLOBALS. So care should
 	 * be taken when naming global variables that might interfere with the
-	 * WordPress environment.
+	 * SlioPress environment.
 	 *
 	 * @global string $query_string Query string for the loop.
 	 * @global array $posts The found posts.
@@ -594,7 +594,7 @@ class WP {
 	}
 
 	/**
-	 * Sets up all of the variables required by the WordPress environment.
+	 * Sets up all of the variables required by the SlioPress environment.
 	 *
 	 * The action 'wp' has one parameter that references the WP object. It
 	 * allows for accessing the properties and methods to further manipulate the
@@ -613,11 +613,11 @@ class WP {
 		$this->register_globals();
 
 		/**
-		 * Fires once the WordPress environment has been set up.
+		 * Fires once the SlioPress environment has been set up.
 		 *
 		 * @since 2.1.0
 		 *
-		 * @param WP &$this Current WordPress environment instance (passed by reference).
+		 * @param WP &$this Current SlioPress environment instance (passed by reference).
 		 */
 		do_action_ref_array( 'wp', array( &$this ) );
 	}

@@ -2,21 +2,21 @@
 /**
  * A simple set of functions to check our version 1.0 update service.
  *
- * @package WordPress
+ * @package SlioPress
  * @since 2.3.0
  */
 
 /**
- * Check WordPress version against the newest version.
+ * Check SlioPress version against the newest version.
  *
- * The WordPress version, PHP version, and Locale is sent. Checks against the
- * WordPress server at api.wordpress.org server. Will only check if WordPress
+ * The SlioPress version, PHP version, and Locale is sent. Checks against the
+ * SlioPress server at api.wordpress.org server. Will only check if SlioPress
  * isn't installing.
  *
  * @since 2.3.0
- * @uses $wp_version Used to check against the newest WordPress version.
+ * @uses $wp_version Used to check against the newest SlioPress version.
  *
- * @param array $extra_stats Extra statistics to report to the WordPress.org API.
+ * @param array $extra_stats Extra statistics to report to the SlioPress.org API.
  * @param bool $force_check Whether to bypass the transient cache and force a fresh update check. Defaults to false, true if $extra_stats is set.
  * @return null|false Returns null if update is unsupported. Returns false if check is too soon.
  */
@@ -52,7 +52,7 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
 
 	$locale = get_locale();
 	/**
-	 * Filter the locale requested for WordPress core translations.
+	 * Filter the locale requested for SlioPress core translations.
 	 *
 	 * @since 2.8.0
 	 *
@@ -106,7 +106,7 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
 
 	$options = array(
 		'timeout' => ( ( defined('DOING_CRON') && DOING_CRON ) ? 30 : 3 ),
-		'user-agent' => 'WordPress/' . $wp_version . '; ' . home_url( '/' ),
+		'user-agent' => 'SlioPress/' . $wp_version . '; ' . home_url( '/' ),
 		'headers' => array(
 			'wp_install' => $wp_install,
 			'wp_blog' => home_url( '/' )
@@ -116,7 +116,7 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
 
 	$response = wp_remote_post( $url, $options );
 	if ( $ssl && is_wp_error( $response ) ) {
-		trigger_error( __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
+		trigger_error( __( 'An unexpected error occurred. Something may be wrong with SlioPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ) . ' ' . __( '(SlioPress could not establish a secure connection to SlioPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
 		$response = wp_remote_post( $http_url, $options );
 	}
 
@@ -170,16 +170,16 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
 }
 
 /**
- * Check plugin versions against the latest versions hosted on WordPress.org.
+ * Check plugin versions against the latest versions hosted on SlioPress.org.
  *
- * The WordPress version, PHP version, and Locale is sent along with a list of
- * all plugins installed. Checks against the WordPress server at
- * api.wordpress.org. Will only check if WordPress isn't installing.
+ * The SlioPress version, PHP version, and Locale is sent along with a list of
+ * all plugins installed. Checks against the SlioPress server at
+ * api.wordpress.org. Will only check if SlioPress isn't installing.
  *
  * @since 2.3.0
- * @uses $wp_version Used to notify the WordPress version.
+ * @uses $wp_version Used to notify the SlioPress version.
  *
- * @param array $extra_stats Extra statistics to report to the WordPress.org API.
+ * @param array $extra_stats Extra statistics to report to the SlioPress.org API.
  * @return false|null Returns null if update is unsupported. Returns false if check is too soon.
  */
 function wp_update_plugins( $extra_stats = array() ) {
@@ -279,7 +279,7 @@ function wp_update_plugins( $extra_stats = array() ) {
 			'locale'       => wp_json_encode( $locales ),
 			'all'          => wp_json_encode( true ),
 		),
-		'user-agent' => 'WordPress/' . $wp_version . '; ' . get_bloginfo( 'url' )
+		'user-agent' => 'SlioPress/' . $wp_version . '; ' . get_bloginfo( 'url' )
 	);
 
 	if ( $extra_stats ) {
@@ -292,7 +292,7 @@ function wp_update_plugins( $extra_stats = array() ) {
 
 	$raw_response = wp_remote_post( $url, $options );
 	if ( $ssl && is_wp_error( $raw_response ) ) {
-		trigger_error( __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
+		trigger_error( __( 'An unexpected error occurred. Something may be wrong with SlioPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ) . ' ' . __( '(SlioPress could not establish a secure connection to SlioPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
 		$raw_response = wp_remote_post( $http_url, $options );
 	}
 
@@ -324,16 +324,16 @@ function wp_update_plugins( $extra_stats = array() ) {
 }
 
 /**
- * Check theme versions against the latest versions hosted on WordPress.org.
+ * Check theme versions against the latest versions hosted on SlioPress.org.
  *
  * A list of all themes installed in sent to WP. Checks against the
- * WordPress server at api.wordpress.org. Will only check if WordPress isn't
+ * SlioPress server at api.wordpress.org. Will only check if SlioPress isn't
  * installing.
  *
  * @since 2.7.0
- * @uses $wp_version Used to notify the WordPress version.
+ * @uses $wp_version Used to notify the SlioPress version.
  *
- * @param array $extra_stats Extra statistics to report to the WordPress.org API.
+ * @param array $extra_stats Extra statistics to report to the SlioPress.org API.
  * @return false|null Returns null if update is unsupported. Returns false if check is too soon.
  */
 function wp_update_themes( $extra_stats = array() ) {
@@ -441,7 +441,7 @@ function wp_update_themes( $extra_stats = array() ) {
 			'translations' => wp_json_encode( $translations ),
 			'locale'       => wp_json_encode( $locales ),
 		),
-		'user-agent'	=> 'WordPress/' . $wp_version . '; ' . get_bloginfo( 'url' )
+		'user-agent'	=> 'SlioPress/' . $wp_version . '; ' . get_bloginfo( 'url' )
 	);
 
 	if ( $extra_stats ) {
@@ -454,7 +454,7 @@ function wp_update_themes( $extra_stats = array() ) {
 
 	$raw_response = wp_remote_post( $url, $options );
 	if ( $ssl && is_wp_error( $raw_response ) ) {
-		trigger_error( __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
+		trigger_error( __( 'An unexpected error occurred. Something may be wrong with SlioPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ) . ' ' . __( '(SlioPress could not establish a secure connection to SlioPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
 		$raw_response = wp_remote_post( $http_url, $options );
 	}
 
@@ -476,7 +476,7 @@ function wp_update_themes( $extra_stats = array() ) {
 }
 
 /**
- * Performs WordPress automatic background updates.
+ * Performs SlioPress automatic background updates.
  *
  * @since 3.7.0
  */
@@ -546,7 +546,7 @@ function wp_get_update_data() {
 	$counts['total'] = $counts['plugins'] + $counts['themes'] + $counts['wordpress'] + $counts['translations'];
 	$titles = array();
 	if ( $counts['wordpress'] )
-		$titles['wordpress'] = sprintf( __( '%d WordPress Update'), $counts['wordpress'] );
+		$titles['wordpress'] = sprintf( __( '%d SlioPress Update'), $counts['wordpress'] );
 	if ( $counts['plugins'] )
 		$titles['plugins'] = sprintf( _n( '%d Plugin Update', '%d Plugin Updates', $counts['plugins'] ), $counts['plugins'] );
 	if ( $counts['themes'] )
@@ -558,14 +558,14 @@ function wp_get_update_data() {
 
 	$update_data = array( 'counts' => $counts, 'title' => $update_title );
 	/**
-	 * Filter the returned array of update data for plugins, themes, and WordPress core.
+	 * Filter the returned array of update data for plugins, themes, and SlioPress core.
 	 *
 	 * @since 3.5.0
 	 *
 	 * @param array $update_data {
 	 *     Fetched update data.
 	 *
-	 *     @type array   $counts       An array of counts for available plugin, theme, and WordPress updates.
+	 *     @type array   $counts       An array of counts for available plugin, theme, and SlioPress updates.
 	 *     @type string  $update_title Titles of available updates.
 	 * }
 	 * @param array $titles An array of update counts and UI strings for available updates.
@@ -589,7 +589,7 @@ function _maybe_update_core() {
 /**
  * Check the last time plugins were run before checking plugin versions.
  *
- * This might have been backported to WordPress 2.6.1 for performance reasons.
+ * This might have been backported to SlioPress 2.6.1 for performance reasons.
  * This is used for the admin to check only so often instead of every page
  * load.
  *

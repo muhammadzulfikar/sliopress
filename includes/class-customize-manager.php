@@ -10,7 +10,7 @@
  * Serves as a factory for Customize Controls and Settings, and
  * instantiates default Customize Controls and Settings.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Customize
  * @since 3.4.0
  */
@@ -368,7 +368,7 @@ final class WP_Customize_Manager {
 	public function wp_loaded() {
 
 		/**
-		 * Fires once WordPress has loaded, allowing scripts and styles to be initialized.
+		 * Fires once SlioPress has loaded, allowing scripts and styles to be initialized.
 		 *
 		 * @since 3.4.0
 		 *

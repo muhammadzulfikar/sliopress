@@ -75,8 +75,8 @@ msgid "Developer Reference"
 msgstr "Referensi Pengembang"
 
 #: admin/about.php:145
-msgid "%s tells WordPress to handle the complexities of document titles."
-msgstr "%s meminta WordPress untuk menangani kompleksitas judul dokumen."
+msgid "%s tells SlioPress to handle the complexities of document titles."
+msgstr "%s meminta SlioPress untuk menangani kompleksitas judul dokumen."
 
 #. translators: %s: "<title>" tag
 #: admin/about.php:142
@@ -100,8 +100,8 @@ msgid "Log out everywhere"
 msgstr "Log keluar dimanapun"
 
 #: admin/about.php:92
-msgid "Right now, WordPress %1$s is already translated into %2$s languages, with more always in progress. You can switch to any translation on the <a href=\"%3$s\">General Settings</a> screen."
-msgstr "Kini, WordPress %1$s telah diterjemahkan dalam %2$s bahasa, dan lebih banyak lagi sedang dalam pengerjaan. Anda bisa beralih ke terjemahan apapun pada laman <a href=\"%3$s\">Pengaturan Umum</a>."
+msgid "Right now, SlioPress %1$s is already translated into %2$s languages, with more always in progress. You can switch to any translation on the <a href=\"%3$s\">General Settings</a> screen."
+msgstr "Kini, SlioPress %1$s telah diterjemahkan dalam %2$s bahasa, dan lebih banyak lagi sedang dalam pengerjaan. Anda bisa beralih ke terjemahan apapun pada laman <a href=\"%3$s\">Pengaturan Umum</a>."
 
 #: admin/about.php:68
 msgid "Distraction-free writing"
@@ -124,8 +124,8 @@ msgid "Enable distraction-free writing mode, and everything surrounding the edit
 msgstr "Aktifkan mode menulis bebas-distraksi, dan segala perkakas di sekeliling penyunting akan lenyap saat Anda mulai mengetik. Geser mouse Anda keluar area penyunting untuk menampilkannya lagi."
 
 #: admin/about.php:30 admin/credits.php:85 admin/freedoms.php:22
-msgid "Thank you for updating! WordPress %s helps you focus on your writing, and the new default theme lets you show it off in style."
-msgstr "Terima kasih telah memutakhirkan! WordPress %s membantu Anda fokus menulis, dan tema bawaan yang baru menampilkannya dengan gaya."
+msgid "Thank you for updating! SlioPress %s helps you focus on your writing, and the new default theme lets you show it off in style."
+msgstr "Terima kasih telah memutakhirkan! SlioPress %s membantu Anda fokus menulis, dan tema bawaan yang baru menampilkannya dengan gaya."
 
 #: admin/includes/class-plugin-install-list-table.php:67
 msgctxt "Plugin Installer"
@@ -134,7 +134,7 @@ msgstr "Disarankan"
 
 #: admin/includes/upgrade.php:281
 msgid ""
-"Your new WordPress site has been successfully set up at:\n"
+"Your new SlioPress site has been successfully set up at:\n"
 "\n"
 "%1$s\n"
 "\n"
@@ -146,10 +146,10 @@ msgid ""
 "\n"
 "We hope you enjoy your new site. Thanks!\n"
 "\n"
-"--The WordPress Team\n"
+"--The SlioPress Team\n"
 "https://wordpress.org/\n"
 msgstr ""
-"Situs WordPress baru Anda berhasil dibangun di:\n"
+"Situs SlioPress baru Anda berhasil dibangun di:\n"
 "\n"
 "%1$s\n"
 "\n"
@@ -161,7 +161,7 @@ msgstr ""
 "\n"
 "Selamat menikmati situs abru Anda. Terimakasih!\n"
 "\n"
-"--Tim WordPress\n"
+"--Tim SlioPress\n"
 "https://wordpress.org/\n"
 
 #: admin/user-edit.php:512
@@ -206,12 +206,12 @@ msgid "You can log out of other devices, such as your phone or a public computer
 msgstr "Anda bisa log keluar dari perangkat lainnya, seperti telepon atau komputer publik, dengan mengklik Log Keluar dari Seluruh Sesi Lainnya. Tombol tsb hanya akan tampil jika Anda log masuk melalui lebih dari satu perangkat."
 
 #: admin/index.php:74
-msgid "<strong>WordPress News</strong> - Latest news from the official WordPress project, the <a href=\"https://planet.wordpress.org/\">WordPress Planet</a>."
-msgstr "<strong>Berita WordPress</strong> - Kabar terbaru dari proyek resmi WordPress, <a href=\"https://planet.wordpress.org/\">WordPress Planet</a>."
+msgid "<strong>SlioPress News</strong> - Latest news from the official SlioPress project, the <a href=\"https://planet.wordpress.org/\">SlioPress Planet</a>."
+msgstr "<strong>Berita SlioPress</strong> - Kabar terbaru dari proyek resmi SlioPress, <a href=\"https://planet.wordpress.org/\">SlioPress Planet</a>."
 
 #: admin/index.php:72
-msgid "<strong>WordPress News</strong> - Latest news from the official WordPress project, the <a href=\"https://planet.wordpress.org/\">WordPress Planet</a>, and popular and recent plugins."
-msgstr "<strong>Berita WordPress</strong> - Kabar terbaru dari proyek resmi WordPress, <a href=\"https://planet.wordpress.org/\">WordPress Planet</a>, serta plugin-plugin terbaru dan terpopuler."
+msgid "<strong>SlioPress News</strong> - Latest news from the official SlioPress project, the <a href=\"https://planet.wordpress.org/\">SlioPress Planet</a>, and popular and recent plugins."
+msgstr "<strong>Berita SlioPress</strong> - Kabar terbaru dari proyek resmi SlioPress, <a href=\"https://planet.wordpress.org/\">SlioPress Planet</a>, serta plugin-plugin terbaru dan terpopuler."
 
 #: admin/includes/template.php:2032
 msgid "Add, edit, and play around with your widgets from the Customizer."
@@ -230,8 +230,8 @@ msgid "https://planet.wordpress.org/"
 msgstr "https://planet.wordpress.org/"
 
 #: admin/includes/class-plugin-install-list-table.php:482
-msgid "Untested with your version of WordPress"
-msgstr "Belum diuji dengan versi WordPress Anda"
+msgid "Untested with your version of SlioPress"
+msgstr "Belum diuji dengan versi SlioPress Anda"
 
 #: admin/includes/class-upgrader.php:3168
 msgid ""
@@ -239,25 +239,25 @@ msgid ""
 "BETA TESTING?\n"
 "=============\n"
 "\n"
-"This debugging email is sent when you are using a development version of WordPress.\n"
+"This debugging email is sent when you are using a development version of SlioPress.\n"
 "\n"
-"If you think these failures might be due to a bug in WordPress, could you report it?\n"
+"If you think these failures might be due to a bug in SlioPress, could you report it?\n"
 " * Open a thread in the support forums: https://wordpress.org/support/forum/alphabeta\n"
 " * Or, if you're comfortable writing a bug report: https://core.trac.wordpress.org/\n"
 "\n"
-"Thanks! -- The WordPress Team"
+"Thanks! -- The SlioPress Team"
 msgstr ""
 "\n"
 "BETA TESTING?\n"
 "=============\n"
 "\n"
-"This debugging email is sent when you are using a development version of WordPress.\n"
+"This debugging email is sent when you are using a development version of SlioPress.\n"
 "\n"
-"If you think these failures might be due to a bug in WordPress, could you report it?\n"
+"If you think these failures might be due to a bug in SlioPress, could you report it?\n"
 " * Open a thread in the support forums: https://wordpress.org/support/forum/alphabeta\n"
 " * Or, if you're comfortable writing a bug report: https://core.trac.wordpress.org/\n"
 "\n"
-"Thanks! -- The WordPress Team"
+"Thanks! -- The SlioPress Team"
 
 #: admin/includes/class-links-list-table.php:82
 #: admin/includes/class-posts-list-table.php:243
@@ -455,16 +455,16 @@ msgstr[0] "Tong Sampah (%s)"
 msgstr[1] "Tong Sampah (%s)"
 
 #: admin/install.php:216
-msgid "Welcome to the famous five-minute WordPress installation process! Just fill in the information below and you&#8217;ll be on your way to using the most extendable and powerful personal publishing platform in the world."
-msgstr "Selamat datang di proses instalasi 5 menit WordPress yang terkenal! Isikan informasi di bawah ini dan Anda akan memulai pengalaman menggunakan platorm penerbitan pribadi yang paling mudah dikembangkan dan berkemampuan luas di dunia."
+msgid "Welcome to the famous five-minute SlioPress installation process! Just fill in the information below and you&#8217;ll be on your way to using the most extendable and powerful personal publishing platform in the world."
+msgstr "Selamat datang di proses instalasi 5 menit SlioPress yang terkenal! Isikan informasi di bawah ini dan Anda akan memulai pengalaman menggunakan platorm penerbitan pribadi yang paling mudah dikembangkan dan berkemampuan luas di dunia."
 
 #: admin/includes/class-plugin-install-list-table.php:484
-msgid "<strong>Incompatible</strong> with your version of WordPress"
-msgstr "<strong>Tidak kompatibel</strong> dengan versi WordPress Anda"
+msgid "<strong>Incompatible</strong> with your version of SlioPress"
+msgstr "<strong>Tidak kompatibel</strong> dengan versi SlioPress Anda"
 
 #: admin/includes/class-plugin-install-list-table.php:486
-msgid "<strong>Compatible</strong> with your version of WordPress"
-msgstr "<strong>Kompatibel</strong> dengan versi WordPress Anda"
+msgid "<strong>Compatible</strong> with your version of SlioPress"
+msgstr "<strong>Kompatibel</strong> dengan versi SlioPress Anda"
 
 #: admin/includes/plugin-install.php:482
 msgid "%d star"
@@ -532,8 +532,8 @@ msgid "Add the user without sending an email that requires their confirmation."
 msgstr "Tambahkan pengguna tanpa mengirimkan email yang meminta konfirmasi dari mereka."
 
 #: admin/includes/class-upgrader.php:3021
-msgid "The WordPress team is willing to help you. Forward this email to %s and the team will work with you to make sure your site is working."
-msgstr "Tim WordPress siap untuk membantu Anda. Teruskan email ini ke %s dan tim kami akan bekerja bersama Anda untuk memastikan situs Anda berjalan."
+msgid "The SlioPress team is willing to help you. Forward this email to %s and the team will work with you to make sure your site is working."
+msgstr "Tim SlioPress siap untuk membantu Anda. Teruskan email ini ke %s dan tim kami akan bekerja bersama Anda untuk memastikan situs Anda berjalan."
 
 #: admin/includes/ajax-actions.php:2678
 msgid "%s failed to embed."
@@ -766,8 +766,8 @@ msgid "<strong>Box Controls</strong> - Click the title bar of the box to expand 
 msgstr "<strong>Kontrol Boks</strong> - Klik papan judul boks untuk membuka atau menyembunyikannya. Beberapa boks ditambahkan oleh plugin mungkin memiliki konten yang terkonfigurasikan, dan akan menampilkan sebuah tautan &#8220;Konfigurasikan&#8221; pada papan judul jika Anda meletakkan kursor diatasnya."
 
 #: admin/index.php:67
-msgid "<strong>At A Glance</strong> - Displays a summary of the content on your site and identifies which theme and version of WordPress you are using."
-msgstr "<strong>Selayang Pandang</strong> - Menampilkan ringkasan konten pada situs Anda dan mengidentifikasi tema dan versi WordPress yang Anda gunakan."
+msgid "<strong>At A Glance</strong> - Displays a summary of the content on your site and identifies which theme and version of SlioPress you are using."
+msgstr "<strong>Selayang Pandang</strong> - Menampilkan ringkasan konten pada situs Anda dan mengidentifikasi tema dan versi SlioPress yang Anda gunakan."
 
 #: admin/users.php:48
 msgid "Delete brings you to the Delete Users screen for confirmation, where you can permanently remove a user from your site and delete their content. You can also delete multiple users at once by using Bulk Actions."
@@ -778,8 +778,8 @@ msgid "Type"
 msgstr "Tipe"
 
 #: admin/admin-footer.php:29
-msgid "Thank you for creating with <a href=\"%s\">WordPress</a>."
-msgstr "Terimakasih telah membangun dengan <a href=\"%s\">WordPress</a>."
+msgid "Thank you for creating with <a href=\"%s\">SlioPress</a>."
+msgstr "Terimakasih telah membangun dengan <a href=\"%s\">SlioPress</a>."
 
 #: admin/comment.php:59 admin/custom-background.php:160
 #: admin/custom-header.php:197 admin/edit-comments.php:136
@@ -801,7 +801,7 @@ msgstr "Terimakasih telah membangun dengan <a href=\"%s\">WordPress</a>."
 msgid "<a href=\"https://wordpress.org/support/\" target=\"_blank\">Support Forums</a>"
 msgstr "<a href=\"http://id.forums.wordpress.org/\" target=\"_blank\">Forum Dukungan</a>"
 
-#. translators: URL to the Make WordPress 'Get Involved' landing page used on
+#. translators: URL to the Make SlioPress 'Get Involved' landing page used on
 #. the credits page
 #: admin/credits.php:164
 msgid "https://make.wordpress.org/"
@@ -836,16 +836,16 @@ msgid "Search installed themes..."
 msgstr "Cari tema terpasang.."
 
 #: admin/update-core.php:488
-msgid "<strong>Translations</strong> &mdash; The files translating WordPress into your language are updated for you whenever any other updates occur. But if these files are out of date, you can <strong>click the &#8220;Update Translations&#8221;</strong> button."
-msgstr "<strong>Terjemahan</strong> &mdash; File-file yang menerjemahkan WordPress ke dalam bahasa Anda selalu dimutakhirkan setiap kali pemutakhiran berlangsung. Namun jika file-file ini sudah usang, kamu bisa <strong>meng-klik tombol &#8220;Mutakhirkan Terjemahan&#8221;</strong>."
+msgid "<strong>Translations</strong> &mdash; The files translating SlioPress into your language are updated for you whenever any other updates occur. But if these files are out of date, you can <strong>click the &#8220;Update Translations&#8221;</strong> button."
+msgstr "<strong>Terjemahan</strong> &mdash; File-file yang menerjemahkan SlioPress ke dalam bahasa Anda selalu dimutakhirkan setiap kali pemutakhiran berlangsung. Namun jika file-file ini sudah usang, kamu bisa <strong>meng-klik tombol &#8220;Mutakhirkan Terjemahan&#8221;</strong>."
 
 #: admin/update-core.php:484
-msgid "In most cases, WordPress will automatically apply maintenance and security updates in the background for you."
-msgstr "Dalam kebanyakan kasus, WordPress akan secara otomatis melakukan pemutakhiran pemeliharaan dan keamanan di balik layar untuk Anda."
+msgid "In most cases, SlioPress will automatically apply maintenance and security updates in the background for you."
+msgstr "Dalam kebanyakan kasus, SlioPress akan secara otomatis melakukan pemutakhiran pemeliharaan dan keamanan di balik layar untuk Anda."
 
 #: admin/update-core.php:484
-msgid "<strong>WordPress</strong> &mdash; Updating your WordPress installation is a simple one-click procedure: just <strong>click on the &#8220;Update Now&#8221; button</strong> when you are notified that a new version is available."
-msgstr "<strong>WordPress</strong> &mdash; Pemutakhiran instalasi WordPress Anda adalah sebuah prosedur satu-klik yang mudah: cukup <strong>klik tombol &#8220;Mutakhirkan Sekarang&#8221;</strong> ketika Anda diberitahu bahwa versi baru telah tersedia."
+msgid "<strong>SlioPress</strong> &mdash; Updating your SlioPress installation is a simple one-click procedure: just <strong>click on the &#8220;Update Now&#8221; button</strong> when you are notified that a new version is available."
+msgstr "<strong>SlioPress</strong> &mdash; Pemutakhiran instalasi SlioPress Anda adalah sebuah prosedur satu-klik yang mudah: cukup <strong>klik tombol &#8220;Mutakhirkan Sekarang&#8221;</strong> ketika Anda diberitahu bahwa versi baru telah tersedia."
 
 #: admin/update-core.php:476
 msgid "If an update is available, you&#8127;ll see a notification appear in the Toolbar and navigation menu."
@@ -856,16 +856,16 @@ msgid "<strong>Themes and Plugins</strong> &mdash; To update individual themes o
 msgstr "<strong>Tema dan Plugin</strong> &mdash; Untuk memutakhirkan masing-masing tema atau plugin di layar ini, pergunakan kotak centang untuk menentukan pilihan Anda, lalu <strong>klik tombol &#8220;Mutakhirkan&#8221;</strong>. Untuk memutakhirkan seluruh tema dan plugin sekaligus, Anda bisa mencentang kotak pada bagian atas (untuk memilih semua) sebelum meng-klik tombol pemutakhiran,"
 
 #: admin/update-core.php:475
-msgid "On this screen, you can update to the latest version of WordPress, as well as update your themes and plugins from the WordPress.org repositories."
-msgstr "Pada layar ini, Anda bisa memutakhirkan situs ke versi terbaru WordPress, termasuk memutakhirkan tema dan plugin dari repositori WordPress.org."
+msgid "On this screen, you can update to the latest version of SlioPress, as well as update your themes and plugins from the SlioPress.org repositories."
+msgstr "Pada layar ini, Anda bisa memutakhirkan situs ke versi terbaru SlioPress, termasuk memutakhirkan tema dan plugin dari repositori SlioPress.org."
 
 #: admin/about.php:28
-msgid "Welcome to WordPress&nbsp;%s"
-msgstr "Selamat datang di WordPress&nbsp;%s"
+msgid "Welcome to SlioPress&nbsp;%s"
+msgstr "Selamat datang di SlioPress&nbsp;%s"
 
 #: admin/themes.php:64
-msgid "If you would like to see more themes to choose from, click on the &#8220;Add New&#8221; button and you will be able to browse or search for additional themes from the <a href=\"%s\" target=\"_blank\">WordPress.org Theme Directory</a>. Themes in the WordPress.org Theme Directory are designed and developed by third parties, and are compatible with the license WordPress uses. Oh, and they&#8217;re free!"
-msgstr "Jika Anda ingin melihat lebih banyak pilihan tema, klik pada tombol &#8220;Tambahkan Baru&#8221; dan Anda akan bisa melihat-lihat atau mencari tema-tema tambahan dari <a href=\"%s\" target=\"_blank\">Direktori Tema WordPress</a>. Tema-tema di dalam Direktori Tema WordPress dirancang dan dibangun oleh pihak ketiga, dan sesuai dengan lisensi yang digunakan oleh WordPress. Oiya, dan semuanya itu gratis!"
+msgid "If you would like to see more themes to choose from, click on the &#8220;Add New&#8221; button and you will be able to browse or search for additional themes from the <a href=\"%s\" target=\"_blank\">SlioPress.org Theme Directory</a>. Themes in the SlioPress.org Theme Directory are designed and developed by third parties, and are compatible with the license SlioPress uses. Oh, and they&#8217;re free!"
+msgstr "Jika Anda ingin melihat lebih banyak pilihan tema, klik pada tombol &#8220;Tambahkan Baru&#8221; dan Anda akan bisa melihat-lihat atau mencari tema-tema tambahan dari <a href=\"%s\" target=\"_blank\">Direktori Tema SlioPress</a>. Tema-tema di dalam Direktori Tema SlioPress dirancang dan dibangun oleh pihak ketiga, dan sesuai dengan lisensi yang digunakan oleh SlioPress. Oiya, dan semuanya itu gratis!"
 
 #: admin/includes/theme.php:213
 msgid "Fixed Layout"
@@ -976,8 +976,8 @@ msgid "Hover or tap to see Activate and Live Preview buttons"
 msgstr "Letakkan kursor atau ketuk layar untuk melihat tombol-tombol Aktifkan dan Pratinjau Langsung"
 
 #: admin/themes.php:45
-msgid "This screen is used for managing your installed themes. Aside from the default theme(s) included with your WordPress installation, themes are designed and developed by third parties."
-msgstr "Layar ini berguna untuk mengelola tema-tema yang Anda instal. Selain tema-tema asal yang disertakan dalam instalasi WordPress Anda, tema-tema lainnya dirancang dan dibangun oleh pihak ketiga."
+msgid "This screen is used for managing your installed themes. Aside from the default theme(s) included with your SlioPress installation, themes are designed and developed by third parties."
+msgstr "Layar ini berguna untuk mengelola tema-tema yang Anda instal. Selain tema-tema asal yang disertakan dalam instalasi SlioPress Anda, tema-tema lainnya dirancang dan dibangun oleh pihak ketiga."
 
 #: admin/themes.php:79
 msgid "When previewing on smaller monitors, you can use the collapse icon at the bottom of the left-hand pane. This will hide the pane, giving you more room to preview your site in the new theme. To bring the pane back, click on the collapse icon again."
@@ -1114,16 +1114,16 @@ msgid "Activity"
 msgstr "Aktivitas"
 
 #: admin/includes/class-upgrader.php:3116
-msgid "WordPress site: %s"
-msgstr "Situs WordPress: %s"
+msgid "SlioPress site: %s"
+msgstr "Situs SlioPress: %s"
 
 #: admin/includes/class-upgrader.php:3122
-msgid "SUCCESS: WordPress was successfully updated to %s"
-msgstr "SUKSES: WordPress berhasil dimutakhirkan ke %s"
+msgid "SUCCESS: SlioPress was successfully updated to %s"
+msgstr "SUKSES: SlioPress berhasil dimutakhirkan ke %s"
 
 #: admin/includes/class-upgrader.php:3124
-msgid "FAILED: WordPress failed to update to %s"
-msgstr "GAGAL: WordPress gagal dimutakhirkan ke %s"
+msgid "FAILED: SlioPress failed to update to %s"
+msgstr "GAGAL: SlioPress gagal dimutakhirkan ke %s"
 
 #: admin/includes/class-upgrader.php:3144
 msgid "SUCCESS: %s"
@@ -1146,12 +1146,12 @@ msgid "Quick Draft"
 msgstr "Draf Cepat"
 
 #: admin/includes/dashboard.php:52
-msgid "WordPress News"
-msgstr "Berita WordPress"
+msgid "SlioPress News"
+msgstr "Berita SlioPress"
 
 #: admin/includes/update.php:224
-msgid "WordPress %1$s running %2$s theme."
-msgstr "WordPress %1$s menjalankan tema %2$s."
+msgid "SlioPress %1$s running %2$s theme."
+msgstr "SlioPress %1$s menjalankan tema %2$s."
 
 #: admin/includes/dashboard.php:458
 msgid "What&#8217;s on your mind?"
@@ -1188,12 +1188,12 @@ msgid "The update cannot be installed because we will be unable to copy some fil
 msgstr "Pemutakhiran gagal diinstal sebab kami tidak akan bisa menyalin beberapa berkas. Ini biasanya dikarenakan perizinan berkas tidak konsisten."
 
 #: admin/includes/class-upgrader.php:2983
-msgid "WordPress %s is also now available."
-msgstr "WordPress %s kini telah tersedia."
+msgid "SlioPress %s is also now available."
+msgstr "SlioPress %s kini telah tersedia."
 
 #: admin/includes/class-upgrader.php:3007
-msgid "Your site at %1$s experienced a critical failure while trying to update WordPress to version %2$s."
-msgstr "Situs Anda di %1$s mengalami kegagalan kritis ketika mencoba memutakhirkan WordPress ke versi %2$s."
+msgid "Your site at %1$s experienced a critical failure while trying to update SlioPress to version %2$s."
+msgstr "Situs Anda di %1$s mengalami kegagalan kritis ketika mencoba memutakhirkan SlioPress ke versi %2$s."
 
 #: admin/includes/class-upgrader.php:3047
 msgid "Your site was running version %s."
@@ -1217,15 +1217,15 @@ msgstr "Memutakhirkan terjemahan untuk %1$s (%2$s)&#8230;"
 msgid "Translations for %s"
 msgstr "Terjemahan untuk %s"
 
-#. translators: 1: Site name, 2: WordPress version number.
+#. translators: 1: Site name, 2: SlioPress version number.
 #: admin/includes/class-upgrader.php:2946
-msgid "[%1$s] Your site has updated to WordPress %2$s"
-msgstr "[%1$s] Situs Anda telah dimutakhirkan ke WordPress %2$s"
+msgid "[%1$s] Your site has updated to SlioPress %2$s"
+msgstr "[%1$s] Situs Anda telah dimutakhirkan ke SlioPress %2$s"
 
-#. translators: 1: Site name, 2: WordPress version number.
+#. translators: 1: Site name, 2: SlioPress version number.
 #: admin/includes/class-upgrader.php:2952
-msgid "[%1$s] WordPress %2$s is available. Please update!"
-msgstr "[%1$s] WordPress %2$s telah tersedia. Silakan mutakhirkan!"
+msgid "[%1$s] SlioPress %2$s is available. Please update!"
+msgstr "[%1$s] SlioPress %2$s telah tersedia. Silakan mutakhirkan!"
 
 #. translators: 1: Site name.
 #: admin/includes/class-upgrader.php:2957
@@ -1233,20 +1233,20 @@ msgid "[%1$s] URGENT: Your site may be down due to a failed update"
 msgstr "[%1$s] PENTING: Situs Anda mungkin down akibat kegagalan pemutakhiran"
 
 #: admin/includes/class-upgrader.php:2972
-msgid "Howdy! Your site at %1$s has been updated automatically to WordPress %2$s."
-msgstr "Hai! Situs Anda di %1$s telah dimutakhirkan secara otomatis ke WordPress %2$s."
+msgid "Howdy! Your site at %1$s has been updated automatically to SlioPress %2$s."
+msgstr "Hai! Situs Anda di %1$s telah dimutakhirkan secara otomatis ke SlioPress %2$s."
 
 #: admin/includes/class-upgrader.php:2975
 msgid "No further action is needed on your part."
 msgstr "Tak ada tindakan lebih lanjut yang dibutuhkan dari pihak Anda."
 
 #: admin/includes/class-upgrader.php:2979
-msgid "For more on version %s, see the About WordPress screen:"
-msgstr "Lebih lanjut mengenai versi %s, lihat layar Tentang WordPress:"
+msgid "For more on version %s, see the About SlioPress screen:"
+msgstr "Lebih lanjut mengenai versi %s, lihat layar Tentang SlioPress:"
 
 #: admin/includes/class-upgrader.php:2992
-msgid "Please update your site at %1$s to WordPress %2$s."
-msgstr "Silakan mutakhirkan situs Anda di %1$s ke WordPress %2$s."
+msgid "Please update your site at %1$s to SlioPress %2$s."
+msgstr "Silakan mutakhirkan situs Anda di %1$s ke SlioPress %2$s."
 
 #: admin/includes/class-upgrader.php:2999
 msgid "We tried but were unable to update your site automatically."
@@ -1258,16 +1258,16 @@ msgid "Updating is easy and only takes a few moments:"
 msgstr "Pemutakhiran itu mudah dan hanya butuh beberapa saat saja:"
 
 #: admin/includes/class-upgrader.php:3009
-msgid "Your site at %1$s experienced a critical failure while trying to update to the latest version of WordPress, %2$s."
-msgstr "Situs Anda pada %1$s mengalami kegagalan kritis ketika mencoba memutakhirkan ke versi WordPress terbaru, %2$s."
+msgid "Your site at %1$s experienced a critical failure while trying to update to the latest version of SlioPress, %2$s."
+msgstr "Situs Anda pada %1$s mengalami kegagalan kritis ketika mencoba memutakhirkan ke versi SlioPress terbaru, %2$s."
 
 #: admin/includes/class-upgrader.php:3011
 msgid "This means your site may be offline or broken. Don't panic; this can be fixed."
 msgstr "Ini berarti situs Anda mungkin offline atau rusak. Jangan panik; ini bisa diperbaiki."
 
 #: admin/includes/class-upgrader.php:3024
-msgid "If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help."
-msgstr "Jika Anda mengalami permasalahan atau memerlukan bantuan, para relawan di forum dukungan WordPress.org mungkin bisa membantu."
+msgid "If you experience any issues or need support, the volunteers in the SlioPress.org support forums may be able to help."
+msgstr "Jika Anda mengalami permasalahan atau memerlukan bantuan, para relawan di forum dukungan SlioPress.org mungkin bisa membantu."
 
 #: admin/includes/class-upgrader.php:3013
 msgid "Please check out your site now. It's possible that everything is working. If it says you need to update, you should do so:"
@@ -1282,8 +1282,8 @@ msgid "Keeping your site updated is important for security. It also makes the in
 msgstr "Memastikan kemutakhiran situs sangat penting untuk keamanan. Ini juga membuat internet sebagai tempat yang aman bagi anda dan pembaca anda "
 
 #: admin/includes/class-upgrader.php:3043
-msgid "The WordPress Team"
-msgstr "Tim WordPress"
+msgid "The SlioPress Team"
+msgstr "Tim SlioPress"
 
 #: admin/includes/class-upgrader.php:3048
 msgid "We have some data that describes the error your site encountered."
@@ -1374,8 +1374,8 @@ msgid "The sizes listed below determine the maximum dimensions in pixels to use 
 msgstr "Ukuran yang tertera dibawah ini menentukan dimensi maksimum dalam pixel yang digunakan ketika menambahkan sebuah gambar dalam Pustaka Media."
 
 #: admin/options-permalink.php:184
-msgid "By default WordPress uses web <abbr title=\"Universal Resource Locator\">URL</abbr>s which have question marks and lots of numbers in them; however, WordPress offers you the ability to create a custom URL structure for your permalinks and archives. This can improve the aesthetics, usability, and forward-compatibility of your links. A <a href=\"http://codex.wordpress.org/Using_Permalinks\">number of tags are available</a>, and here are some examples to get you started."
-msgstr "Secara default WordPress menggunakan web <abbr title=\"Universal Resource Locator\">URL</abbr> yang memiliki tanda tanya dan berbagai angka di dalamnya, namun, WordPress menawarkan Anda kemampuan untuk membuat struktur URL kustom untuk permalink dan arsip . Ini dapat meningkatkan estetika, kegunaan, dan kompatibilitas link anda. <a href=\"http://codex.wordpress.org/Using_Permalinks\">Sejumlah tag tersedia </a>, dan di sini adalah beberapa contoh untuk Anda mulai."
+msgid "By default SlioPress uses web <abbr title=\"Universal Resource Locator\">URL</abbr>s which have question marks and lots of numbers in them; however, SlioPress offers you the ability to create a custom URL structure for your permalinks and archives. This can improve the aesthetics, usability, and forward-compatibility of your links. A <a href=\"http://codex.wordpress.org/Using_Permalinks\">number of tags are available</a>, and here are some examples to get you started."
+msgstr "Secara default SlioPress menggunakan web <abbr title=\"Universal Resource Locator\">URL</abbr> yang memiliki tanda tanya dan berbagai angka di dalamnya, namun, SlioPress menawarkan Anda kemampuan untuk membuat struktur URL kustom untuk permalink dan arsip . Ini dapat meningkatkan estetika, kegunaan, dan kompatibilitas link anda. <a href=\"http://codex.wordpress.org/Using_Permalinks\">Sejumlah tag tersedia </a>, dan di sini adalah beberapa contoh untuk Anda mulai."
 
 #: admin/includes/update-core.php:846
 msgid "Preparing to install the latest version&#8230;"
@@ -1428,16 +1428,16 @@ msgid "Attempting to roll back to previous version."
 msgstr "Mencoba untuk mengembalikan ke versi sebelumnya."
 
 #: admin/includes/class-upgrader.php:1939
-msgid "Due to an error during updating, WordPress has rolled back to your previous version."
-msgstr "Karena terjadi galat saat memutakhirkan, WordPress telah mengembalikan situs Anda ke versi sebelumnya."
+msgid "Due to an error during updating, SlioPress has rolled back to your previous version."
+msgstr "Karena terjadi galat saat memutakhirkan, SlioPress telah mengembalikan situs Anda ke versi sebelumnya."
 
 #: admin/includes/class-upgrader.php:2623
-msgid "Updating to WordPress %s"
-msgstr "Memutakhirkan ke WordPress %s"
+msgid "Updating to SlioPress %s"
+msgstr "Memutakhirkan ke SlioPress %s"
 
 #: admin/includes/class-upgrader.php:2624
-msgid "WordPress %s"
-msgstr "WordPress %s"
+msgid "SlioPress %s"
+msgstr "SlioPress %s"
 
 #: admin/includes/file.php:1151
 msgid "This password will not be stored on the server."
@@ -1683,8 +1683,8 @@ msgid "Add menu items from the column on the left."
 msgstr "Tambahkan item menu dari kolom di sebelah kiri."
 
 #: admin/includes/plugin-install.php:135
-msgid "Plugins extend and expand the functionality of WordPress. You may automatically install plugins from the <a href=\"%1$s\">WordPress Plugin Directory</a> or upload a plugin in .zip format via <a href=\"%2$s\">this page</a>."
-msgstr "Plugin memperlebar dan memperluas fungsionalitas WordPress. Anda bisa menginstal plugin secara otomatis dari <a href=\"%1$s\">Direktori Plugin WordPress</a> atau mengunggah plugin dalam format .zip via <a href=\"%2$s\">laman ini</a>."
+msgid "Plugins extend and expand the functionality of SlioPress. You may automatically install plugins from the <a href=\"%1$s\">SlioPress Plugin Directory</a> or upload a plugin in .zip format via <a href=\"%2$s\">this page</a>."
+msgstr "Plugin memperlebar dan memperluas fungsionalitas SlioPress. Anda bisa menginstal plugin secara otomatis dari <a href=\"%1$s\">Direktori Plugin SlioPress</a> atau mengunggah plugin dalam format .zip via <a href=\"%2$s\">laman ini</a>."
 
 #. Plugin URI of the plugin/theme
 msgid "http://wordpress.org/plugins/hello-dolly/"
@@ -2053,8 +2053,8 @@ msgid "Thank you for Updating! Please visit the <a href=\"%s\">Upgrade Network</
 msgstr "Terimakasih telah memutakhirkan! Silakan kunjungi laman <a href=\"%s\">Mutakhirkan Jaringan</a> untuk memutakhirkan seluruh situs Anda.."
 
 #: admin/setup-config.php:337
-msgid "All right, sparky! You&#8217;ve made it through this part of the installation. WordPress can now communicate with your database. If you are ready, time now to&hellip;"
-msgstr "Ok, sobat! Anda telah berhasil melewati bagian instalasi ini. WordPress sudah dapat berkomunikasi dengan database. Jika anda siap, sekarang saatnya untuk &hellip;"
+msgid "All right, sparky! You&#8217;ve made it through this part of the installation. SlioPress can now communicate with your database. If you are ready, time now to&hellip;"
+msgstr "Ok, sobat! Anda telah berhasil melewati bagian instalasi ini. SlioPress sudah dapat berkomunikasi dengan database. Jika anda siap, sekarang saatnya untuk &hellip;"
 
 #: admin/includes/nav-menu.php:102
 msgid "sub item"
@@ -2118,8 +2118,8 @@ msgid "%s is currently editing"
 msgstr "%s sedang menyunting"
 
 #: admin/includes/dashboard.php:1327
-msgid "http://codex.wordpress.org/First_Steps_With_WordPress"
-msgstr "http://codex.wordpress.org/First_Steps_With_WordPress"
+msgid "http://codex.wordpress.org/First_Steps_With_SlioPress"
+msgstr "http://codex.wordpress.org/First_Steps_With_SlioPress"
 
 #: admin/edit-form-advanced.php:338
 msgid "You can upload and insert media (images, audio, documents, etc.) by clicking the Add Media button. You can select from the images and files already uploaded to the Media Library, or upload new media to add to your page or post. To create an image gallery, select the images to add and click the &#8220;Create a new gallery&#8221; button."
@@ -2305,16 +2305,16 @@ msgid "It is up to search engines to honor this request."
 msgstr "Sepenuhnya tergantung mesin pencari untuk menghormati permintaan ini."
 
 #: admin/options-writing.php:183
-msgid "WordPress is not notifying any <a href=\"http://codex.wordpress.org/Update_Services\">Update Services</a> because of your site&#8217;s <a href=\"%s\">visibility settings</a>."
-msgstr "WordPress tidak memberitahu <a href=\"http://codex.wordpress.org/Update_Services\">Layanan Pembaruan</a> karena <a href=\"%s\">pengaturan visibilitas</a> situs Anda."
+msgid "SlioPress is not notifying any <a href=\"http://codex.wordpress.org/Update_Services\">Update Services</a> because of your site&#8217;s <a href=\"%s\">visibility settings</a>."
+msgstr "SlioPress tidak memberitahu <a href=\"http://codex.wordpress.org/Update_Services\">Layanan Pembaruan</a> karena <a href=\"%s\">pengaturan visibilitas</a> situs Anda."
 
 #: admin/plugin-install.php:77
-msgid "If you know what you&#8217;re looking for, Search is your best bet. The Search screen has options to search the WordPress.org Plugin Directory for a particular Term, Author, or Tag. You can also search the directory by selecting popular tags. Tags in larger type mean more plugins have been labeled with that tag."
-msgstr "Bila Anda ingin tahu apa yang ingin Anda cari, Pencarian adalah teman Anda. Layar Pencarian memiliki pilihan untuk mencari Direktori Plugin WordPress.org menggunakan Istilah, Penulis, atau Tag tertentu. Anda juga dapat mencari direktori dengan memilih tag populer. Tag dengan huruf lebih besar artinya banyak plugin yang dilabel dengan tag itu."
+msgid "If you know what you&#8217;re looking for, Search is your best bet. The Search screen has options to search the SlioPress.org Plugin Directory for a particular Term, Author, or Tag. You can also search the directory by selecting popular tags. Tags in larger type mean more plugins have been labeled with that tag."
+msgstr "Bila Anda ingin tahu apa yang ingin Anda cari, Pencarian adalah teman Anda. Layar Pencarian memiliki pilihan untuk mencari Direktori Plugin SlioPress.org menggunakan Istilah, Penulis, atau Tag tertentu. Anda juga dapat mencari direktori dengan memilih tag populer. Tag dengan huruf lebih besar artinya banyak plugin yang dilabel dengan tag itu."
 
 #: admin/plugin-install.php:79
-msgid "You can also browse a user&#8217;s favorite plugins, by using the Favorites link in the upper left of the screen and entering their WordPress.org username."
-msgstr "Anda juga dapat menelusuri plugin kesukaan seorang pengguna, dengan menggunakan taut Kesukaan di kiri bawah layar dan mengisikan nama pengguna WordPress.org mereka."
+msgid "You can also browse a user&#8217;s favorite plugins, by using the Favorites link in the upper left of the screen and entering their SlioPress.org username."
+msgstr "Anda juga dapat menelusuri plugin kesukaan seorang pengguna, dengan menggunakan taut Kesukaan di kiri bawah layar dan mengisikan nama pengguna SlioPress.org mereka."
 
 #: admin/plugin-install.php:80
 msgid "If you want to install a plugin that you&#8217;ve downloaded elsewhere, click the Upload link in the upper left. You will be prompted to upload the .zip package, and once uploaded, you can activate the new plugin."
@@ -2341,8 +2341,8 @@ msgid "Settings saved and theme activated. <a href=\"%s\">Visit site</a>"
 msgstr "Pengaturan tersimpan dan tema telah diaktifkan. <a href=\"%s\">Kunjungi situs</a>"
 
 #: admin/includes/dashboard.php:1279
-msgid "Welcome to WordPress!"
-msgstr "Selamat Datang di WordPress!"
+msgid "Welcome to SlioPress!"
+msgstr "Selamat Datang di SlioPress!"
 
 #: admin/includes/dashboard.php:1280
 msgid "We&#8217;ve assembled some links to get you started:"
@@ -2389,12 +2389,12 @@ msgid "Uploaded on: <b>%1$s</b>"
 msgstr "Terunggah pada: <b>%1$s</b>"
 
 #: admin/includes/plugin-install.php:224
-msgid "If you have marked plugins as favorites on WordPress.org, you can browse them here."
-msgstr "Jika Anda telah menandakan plugin sebagai kesukaan pada WordPress.org, Anda dapat melihatnya di sini."
+msgid "If you have marked plugins as favorites on SlioPress.org, you can browse them here."
+msgstr "Jika Anda telah menandakan plugin sebagai kesukaan pada SlioPress.org, Anda dapat melihatnya di sini."
 
 #: admin/includes/plugin-install.php:228
-msgid "Your WordPress.org username:"
-msgstr "Nama pengguna WordPress.org Anda:"
+msgid "Your SlioPress.org username:"
+msgstr "Nama pengguna SlioPress.org Anda:"
 
 #: admin/includes/plugin-install.php:230
 msgid "Get Favorites"
@@ -2411,8 +2411,8 @@ msgid "The privacy options group has been removed. Use another settings group."
 msgstr "Kelompok pengaturan privasi sudah disingkirkan. Gunakan kelompok pengaturan lain."
 
 #: admin/includes/update-core.php:1175 admin/update-core.php:431
-msgid "Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href=\"%2$s\">here</a>."
-msgstr "Selamat datang di WordPress %1$s. Anda kini akan dilarikan ke halaman Tentang WordPress. Bila tidak, klik <a href=\"%2$s\">di sini</a>."
+msgid "Welcome to SlioPress %1$s. You will be redirected to the About SlioPress screen. If not, click <a href=\"%2$s\">here</a>."
+msgstr "Selamat datang di SlioPress %1$s. Anda kini akan dilarikan ke halaman Tentang SlioPress. Bila tidak, klik <a href=\"%2$s\">di sini</a>."
 
 #: admin/includes/class-themes-list-table.php:216
 #: admin/theme-editor.php:33 admin/update-core.php:304
@@ -2513,7 +2513,7 @@ msgid ""
 "\n"
 "<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\n"
 "\n"
-"As a new WordPress user, you should go to <a href=\"%s\">your dashboard</a> to delete this page and create new pages for your content. Have fun!"
+"As a new SlioPress user, you should go to <a href=\"%s\">your dashboard</a> to delete this page and create new pages for your content. Have fun!"
 msgstr ""
 "Ini adalah halaman contoh. Berbeda dari tulisan blog karena dia akan tetap pada posisinya dan muncul di navigasi situs Anda (pada sebagian tema). Biasanya penulis mulai dengan halaman Tentang yang memperkenalkan pembaca dengan diri mereka. Isinya dapat berupa:\n"
 "\n"
@@ -2523,7 +2523,7 @@ msgstr ""
 "\n"
 "<blockquote>PT. XYZ SerbaUntung didirikan di tahun 1971, dan telah berhasil menghasilkan banyak sekali laba untuk investornya. Kami berkantor pusat di ibukota kita tercinta, Jakarta. PT. XYZ mempekerjakan lebih dari 2.000 karyawan dan telah banyak berkontribusi untuk komunitas kota Jakarta tercinta.</blockquote>\n"
 "\n"
-"Sebagai pengguna WordPress baru, Anda sebaiknya buka <a href=\"%s\">dasbor Anda</a> untuk menghapus halaman ini dan menciptakan halaman baru sesuai dengan konten Anda. Oke, selamat menikmati!"
+"Sebagai pengguna SlioPress baru, Anda sebaiknya buka <a href=\"%s\">dasbor Anda</a> untuk menghapus halaman ini dan menciptakan halaman baru sesuai dengan konten Anda. Oke, selamat menikmati!"
 
 #: admin/includes/class-comments-list-table.php:372
 msgid "Select comment"
@@ -2625,8 +2625,8 @@ msgid "Once you have generated a list of themes, you can preview and install any
 msgstr "Ketika daftar tema telah berhasil dibuat, Anda dapat mempratinjau dan menginstal mereka. Klik pada gambar mini dari tema yang ingin Anda pratinjau. Maka sebuah halaman Pratinjau satu layar penuh akan memberikan gambaran bagaimana tema tadi akan terlihat."
 
 #: admin/includes/media.php:2581
-msgid "You are using the browser&#8217;s built-in file uploader. The WordPress uploader includes multiple file selection and drag and drop capability. <a href=\"#\">Switch to the multi-file uploader</a>."
-msgstr "Anda menggunakan pengunggah berkas bawaan peramban. Pengunggah WordPress mendukung pemilihan banyak berkas dan kemampuan tarik dan taruh. <a href=\"#\">Beralih ke pengunggah multi-berkas</a>."
+msgid "You are using the browser&#8217;s built-in file uploader. The SlioPress uploader includes multiple file selection and drag and drop capability. <a href=\"#\">Switch to the multi-file uploader</a>."
+msgstr "Anda menggunakan pengunggah berkas bawaan peramban. Pengunggah SlioPress mendukung pemilihan banyak berkas dan kemampuan tarik dan taruh. <a href=\"#\">Beralih ke pengunggah multi-berkas</a>."
 
 #: admin/includes/class-theme-install-list-table.php:253
 msgid "Preview %s"
@@ -2660,8 +2660,8 @@ msgid "Some themes come with additional header images bundled. If you see multip
 msgstr "Beberapa tema datang bersama beberapa gambar tajuk dipaket di dalamnya. Jika Anda melihat beberapa gambar ditampilkan, pilih salah satu yang Anda sukai dan klik tombol &#8220;Simpan Perubahan&#8221;."
 
 #: admin/custom-header.php:181
-msgid "If your theme has more than one default header image, or you have uploaded more than one custom header image, you have the option of having WordPress display a randomly different image on each page of your site. Click the &#8220;Random&#8221; radio button next to the Uploaded Images or Default Images section to enable this feature."
-msgstr "Jika tema Anda datang bersama beberapa gambar tajuk dipaket di dalamnya, atau Anda telah mengunggah lebih dari satu gambar tajuk, Anda memiliki opsi agar WordPress menampilkan gambar yang berbeda di setiap halamannya. Klik tombol radio &#8220;Acak&#8221; di sebelah bagian Gambar Terunggah atau Gambar Bawaan untuk mengaktifkan fitur ini."
+msgid "If your theme has more than one default header image, or you have uploaded more than one custom header image, you have the option of having SlioPress display a randomly different image on each page of your site. Click the &#8220;Random&#8221; radio button next to the Uploaded Images or Default Images section to enable this feature."
+msgstr "Jika tema Anda datang bersama beberapa gambar tajuk dipaket di dalamnya, atau Anda telah mengunggah lebih dari satu gambar tajuk, Anda memiliki opsi agar SlioPress menampilkan gambar yang berbeda di setiap halamannya. Klik tombol radio &#8220;Acak&#8221; di sebelah bagian Gambar Terunggah atau Gambar Bawaan untuk mengaktifkan fitur ini."
 
 #: admin/custom-header.php:189
 msgid "For most themes, the header text is your Site Title and Tagline, as defined in the <a href=\"%1$s\">General Settings</a> section."
@@ -3287,8 +3287,8 @@ msgid "<a href=\"http://codex.wordpress.org/Dashboard_My_Sites_Screen\" target=\
 msgstr "<a href=\"http://codex.wordpress.org/Dashboard_My_Sites_Screen\" target=\"_blank\">Dokumentasi mengenai Situsku</a>"
 
 #: admin/my-sites.php:43
-msgid "Up until WordPress version 3.0, what is now called a Multisite Network had to be installed separately as WordPress MU (multi-user)."
-msgstr "Hingga WordPress versi 3.0, yang kini disebut sebagai sebuah Jaringan Multi-Situs yang dulu harus dipasang secara terpisah sebagai WordPress MU (multi-user)."
+msgid "Up until SlioPress version 3.0, what is now called a Multisite Network had to be installed separately as SlioPress MU (multi-user)."
+msgstr "Hingga SlioPress versi 3.0, yang kini disebut sebagai sebuah Jaringan Multi-Situs yang dulu harus dipasang secara terpisah sebagai SlioPress MU (multi-user)."
 
 #: admin/my-sites.php:63
 msgid "You must be a member of at least one site to use this page."
@@ -3333,8 +3333,8 @@ msgid "Table Prefix"
 msgstr "Prefiks Tabel"
 
 #: admin/setup-config.php:179
-msgid "If you want to run multiple WordPress installations in a single database, change this."
-msgstr "Jika Anda ingin menjalankan beberapa instalasi WordPress di dalam satu basis data tunggal, ubahlah di sini."
+msgid "If you want to run multiple SlioPress installations in a single database, change this."
+msgstr "Jika Anda ingin menjalankan beberapa instalasi SlioPress di dalam satu basis data tunggal, ubahlah di sini."
 
 #: admin/setup-config.php:301
 msgid "You can create the <code>config.php</code> manually and paste the following text into it."
@@ -3345,8 +3345,8 @@ msgid "Run the install"
 msgstr "Jalankan instalasi"
 
 #: admin/setup-config.php:49
-msgid "Sorry, I need a config-sample.php file to work from. Please re-upload this file from your WordPress installation."
-msgstr "Maaf, saya memerlukan sebuah berkas config-sample.php untuk dijadikan acuan. Silahkan unggah ulang berkas ini dari instalasi WordPress Anda."
+msgid "Sorry, I need a config-sample.php file to work from. Please re-upload this file from your SlioPress installation."
+msgstr "Maaf, saya memerlukan sebuah berkas config-sample.php untuk dijadikan acuan. Silahkan unggah ulang berkas ini dari instalasi SlioPress Anda."
 
 #: admin/setup-config.php:53
 msgid "The file 'config.php' already exists. If you need to reset any of the configuration items in this file, please delete it first. You may try <a href='%s'>installing now</a>."
@@ -3369,24 +3369,24 @@ msgid "Database host"
 msgstr "Host basis data"
 
 #: admin/setup-config.php:134
-msgid "Table prefix (if you want to run more than one WordPress in a single database)"
-msgstr "Prefiks Tabel (jika Anda ingin menjalankan lebih dari satu WordPress pada satu basis data)"
+msgid "Table prefix (if you want to run more than one SlioPress in a single database)"
+msgstr "Prefiks Tabel (jika Anda ingin menjalankan lebih dari satu SlioPress pada satu basis data)"
 
 #: admin/setup-config.php:143
 msgid "Let&#8217;s go!"
 msgstr "Ayo!"
 
 #: admin/setup-config.php:57
-msgid "The file 'config.php' already exists one level above your WordPress installation. If you need to reset any of the configuration items in this file, please delete it first. You may try <a href='install.php'>installing now</a>."
-msgstr "Berkas 'config.php' sudah ada satu level di atas instalasi WordPress. Jika Anda perlu me-reset beberapa item konfigurasi pada berkas ini, silahkan hapus terlebih dahulu. Anda dapat mencoba <a href='install.php'>menginstal sekarang</a>."
+msgid "The file 'config.php' already exists one level above your SlioPress installation. If you need to reset any of the configuration items in this file, please delete it first. You may try <a href='install.php'>installing now</a>."
+msgstr "Berkas 'config.php' sudah ada satu level di atas instalasi SlioPress. Jika Anda perlu me-reset beberapa item konfigurasi pada berkas ini, silahkan hapus terlebih dahulu. Anda dapat mencoba <a href='install.php'>menginstal sekarang</a>."
 
 #: admin/setup-config.php:82
-msgid "WordPress &rsaquo; Setup Configuration File"
-msgstr "Berkas WordPress &rsaquo; Konfigurasi Pemasangan"
+msgid "SlioPress &rsaquo; Setup Configuration File"
+msgstr "Berkas SlioPress &rsaquo; Konfigurasi Pemasangan"
 
 #: admin/setup-config.php:128
-msgid "Welcome to WordPress. Before getting started, we need some information on the database. You will need to know the following items before proceeding."
-msgstr "Selamat datang di WordPress. Sebelum mulai, kami memerlukan beberapa informasi mengenai basis datanya. Anda harus mengetahui beberapa item ini sebelum melanjutkan."
+msgid "Welcome to SlioPress. Before getting started, we need some information on the database. You will need to know the following items before proceeding."
+msgstr "Selamat datang di SlioPress. Sebelum mulai, kami memerlukan beberapa informasi mengenai basis datanya. Anda harus mengetahui beberapa item ini sebelum melanjutkan."
 
 #: admin/maint/repair.php:30
 msgid "To allow use of this page to automatically repair database problems, please add the following line to your <code>config.php</code> file. Once this line is added to your config, reload this page."
@@ -3468,7 +3468,7 @@ msgid "Updating this theme will lose any customizations you have made. 'Cancel' 
 msgstr "Memperbarui tema ini akan menghilangkan kustomisasi yang telah Anda buat. 'Batal' untuk berhenti, 'OK' untuk memperbarui."
 
 #: admin/import.php:23
-msgid "In previous versions of WordPress, all importers were built-in. They have been turned into plugins since most people only use them once or infrequently."
+msgid "In previous versions of SlioPress, all importers were built-in. They have been turned into plugins since most people only use them once or infrequently."
 msgstr "Dalam versi Wordpress sebelumnya, semua importir sifatnya built-in. Mereka telah berubah menjadi plugin karena sebagian besar orang hanya menggunakan mereka sekali atau jarang kali."
 
 #: admin/includes/image-edit.php:196
@@ -3480,12 +3480,12 @@ msgid "You can filter the list of users by User Role using the text links in the
 msgstr "Anda dapat menyaring daftar pengguna dengan Peran Pengguna menggunakan taut teks di kiri atas untuk menunjukkan Semua, Administrator, Editor, Penulis, Kontributor, atau Pelanggan. Tampilan bawaan adalah untuk menunjukkan semua pengguna. Peran Pengguna tidak digunakan tidak terdaftar."
 
 #: admin/update-core.php:46
-msgid "You are using a development version of WordPress. You can update to the latest nightly build automatically or download the nightly build and install it manually:"
+msgid "You are using a development version of SlioPress. You can update to the latest nightly build automatically or download the nightly build and install it manually:"
 msgstr "Anda menggunakan versi pengembangan dari Wordpress. Anda dapat memperbarui ke bangun malam terbaru secara otomatis atau unduh bangun malam dan memasangnya secara manual:"
 
 #: admin/options-writing.php:36
-msgid "Post via email settings allow you to send your WordPress install an email with the content of your post. You must set up a secret e-mail account with POP3 access to use this, and any mail received at this address will be posted, so it&#8217;s a good idea to keep this address very secret."
-msgstr "Pengaturan mengirim melalui surel memungkinkan Anda untuk mengirim surel ke instalasi WordPress Anda yang berisi konten dari tulisan Anda. Anda harus mengatur akun surel rahasia dengan akses POP3 untuk menggunakan fitur ini, dan setiap surel yang diterima pada alamat ini akan ditulis, maka dari itu amat diharapkan untuk menjaga alamat ini dengan amat sangat rahasia."
+msgid "Post via email settings allow you to send your SlioPress install an email with the content of your post. You must set up a secret e-mail account with POP3 access to use this, and any mail received at this address will be posted, so it&#8217;s a good idea to keep this address very secret."
+msgstr "Pengaturan mengirim melalui surel memungkinkan Anda untuk mengirim surel ke instalasi SlioPress Anda yang berisi konten dari tulisan Anda. Anda harus mengatur akun surel rahasia dengan akses POP3 untuk menggunakan fitur ini, dan setiap surel yang diterima pada alamat ini akan ditulis, maka dari itu amat diharapkan untuk menjaga alamat ini dengan amat sangat rahasia."
 
 #: admin/custom-header.php:812 admin/custom-header.php:936
 #: admin/custom-header.php:1248
@@ -3497,8 +3497,8 @@ msgid "Repairs complete. Please remove the following line from config.php to pre
 msgstr "Perbaikan selesai. Silakan melepas baris berikut ini dari config.php untuk mencegah halaman ini dipergunakan oleh pengguna yang tak berwenang."
 
 #: admin/maint/repair.php:118
-msgid "WordPress can also attempt to optimize the database. This improves performance in some situations. Repairing and optimizing the database can take a long time and the database will be locked while optimizing."
-msgstr "WordPress juga dapat mencoba mengoptimalkan basis data. Ini meningkatkan performa di beberapa situasi. Memperbaiki dan mengoptimalkan basis data dapat menyita banyak waktu dan basis data dapat terkunci selagi mengoptimalkan."
+msgid "SlioPress can also attempt to optimize the database. This improves performance in some situations. Repairing and optimizing the database can take a long time and the database will be locked while optimizing."
+msgstr "SlioPress juga dapat mencoba mengoptimalkan basis data. Ini meningkatkan performa di beberapa situasi. Memperbaiki dan mengoptimalkan basis data dapat menyita banyak waktu dan basis data dapat terkunci selagi mengoptimalkan."
 
 #: admin/options-discussion.php:173
 msgid "An avatar is an image that follows you from weblog to weblog appearing beside your name when you comment on avatar enabled sites. Here you can enable the display of avatars for people who comment on your site."
@@ -3513,8 +3513,8 @@ msgid "The active theme is broken. Reverting to the default theme."
 msgstr "Tema yang aktif rusak. Mengembalikan ke tema bawaan."
 
 #: admin/maint/repair.php:115
-msgid "WordPress can automatically look for some common database problems and repair them. Repairing can take a while, so please be patient."
-msgstr "WordPress dapat secara otomatis memeriksa beberapa permasalahan umum basis data dan memperbaikinya. Proses perbaikan dapat menyita waktu cukup lama, jadi mohon bersabar."
+msgid "SlioPress can automatically look for some common database problems and repair them. Repairing can take a while, so please be patient."
+msgstr "SlioPress dapat secara otomatis memeriksa beberapa permasalahan umum basis data dan memperbaikinya. Proses perbaikan dapat menyita waktu cukup lama, jadi mohon bersabar."
 
 #: admin/plugin-editor.php:252
 msgid "<strong>Warning:</strong> Making changes to active plugins is not recommended. If your changes cause a fatal error, the plugin will be automatically deactivated."
@@ -3526,8 +3526,8 @@ msgstr "Masukkan alamat surel atau nama pengguna yang telah ada di jaringan ini 
 
 #. translators: 1: table name, 2: error message,
 #: admin/maint/repair.php:63
-msgid "The %1$s table is not okay. It is reporting the following error: %2$s. WordPress will attempt to repair this table&hellip;"
-msgstr "Tabel %1$s tidak oke. Dia melaporkan kesalahan berikut: %2$s. WordPress akan mencoba untuk memperbaiki tabel ini&hellip;"
+msgid "The %1$s table is not okay. It is reporting the following error: %2$s. SlioPress will attempt to repair this table&hellip;"
+msgstr "Tabel %1$s tidak oke. Dia melaporkan kesalahan berikut: %2$s. SlioPress akan mencoba untuk memperbaiki tabel ini&hellip;"
 
 #: admin/edit-form-advanced.php:135
 msgid "There is an autosave of this post that is more recent than the version below. <a href=\"%s\">View the autosave</a>"
@@ -3541,7 +3541,7 @@ msgstr "Pengembang yang Turut Berkontribusi"
 msgid "Show Toolbar when viewing site"
 msgstr "Tampilkan Baris Perkakas ketika mengunjungi situs"
 
-#. translators: 1: WordPress version number, 2: plural number of bugs. Singular
+#. translators: 1: SlioPress version number, 2: plural number of bugs. Singular
 #. security issue.
 #: admin/about.php:199
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
@@ -3553,7 +3553,7 @@ msgstr[1] "<strong>Versi %1$s</strong> telah memperbaiki masalah keamanan dan me
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Untuk informasi lebih lanjut, lihatlah <a href=\"%s\">catatan rilis</a>."
 
-#. translators: 1: WordPress version number, 2: plural number of bugs. More
+#. translators: 1: SlioPress version number, 2: plural number of bugs. More
 #. than one security issue.
 #: admin/about.php:203
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
@@ -3561,7 +3561,7 @@ msgid_plural "<strong>Version %1$s</strong> addressed some security issues and f
 msgstr[0] "<strong>Versi %1$s</strong> memperbaiki beberapa masalah keamanan dan %2$s bug."
 msgstr[1] "<strong>Versi %1$s</strong> memperbaiki beberapa masalah keamanan dan %2$s bug."
 
-#. translators: 1: WordPress version number, 2: plural number of bugs.
+#. translators: 1: SlioPress version number, 2: plural number of bugs.
 #: admin/about.php:195
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
@@ -3569,8 +3569,8 @@ msgstr[0] "<strong>Versi %1$s</strong> mengatasi %2$s bug."
 msgstr[1] "<strong>Versi %1$s</strong> mengatasi %2$s bug."
 
 #: admin/index.php:32
-msgid "Welcome to your WordPress Dashboard! This is the screen you will see when you log in to your site, and gives you access to all the site management features of WordPress. You can get help for any screen by clicking the Help tab in the upper corner."
-msgstr "Selamat datang di Dasbor WordPress Anda! Ini adalah tampilan yang akan Anda lihat ketika log masuk ke situs Anda, dan memberi akses ke semua fitur manajemen situs WordPress. Anda bisa mendapatkan bantuan untuk setiap tampilan dengan mengklik tab Bantuan di sudut atas."
+msgid "Welcome to your SlioPress Dashboard! This is the screen you will see when you log in to your site, and gives you access to all the site management features of SlioPress. You can get help for any screen by clicking the Help tab in the upper corner."
+msgstr "Selamat datang di Dasbor SlioPress Anda! Ini adalah tampilan yang akan Anda lihat ketika log masuk ke situs Anda, dan memberi akses ke semua fitur manajemen situs SlioPress. Anda bisa mendapatkan bantuan untuk setiap tampilan dengan mengklik tab Bantuan di sudut atas."
 
 #: admin/about.php:188
 msgid "Maintenance and Security Release"
@@ -3594,7 +3594,7 @@ msgid_plural "Maintenance Releases"
 msgstr[0] "Rilis Perawatan"
 msgstr[1] "Rilis Perawatan"
 
-#. translators: 1: WordPress version number.
+#. translators: 1: SlioPress version number.
 #: admin/about.php:191
 msgid "<strong>Version %1$s</strong> addressed a security issue."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues."
@@ -3610,8 +3610,8 @@ msgid "Return to Updates"
 msgstr "Kembali ke Pembaruan"
 
 #: admin/includes/update-core.php:1176 admin/update-core.php:432
-msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
-msgstr "Selamat datang di WordPress %1$s. <a href=\"%2$s\">Pelajari lebih lanjut</a>."
+msgid "Welcome to SlioPress %1$s. <a href=\"%2$s\">Learn more</a>."
+msgstr "Selamat datang di SlioPress %1$s. <a href=\"%2$s\">Pelajari lebih lanjut</a>."
 
 #: admin/edit-tags.php:225
 msgid "Adding Categories"
@@ -3662,8 +3662,8 @@ msgid "Remember to click the Add New User button at the bottom of this screen wh
 msgstr "Jangan lupa untuk klik tombol Tambah Pengguna Baru di bagian bawah layar ini ketika Anda selesai."
 
 #: admin/export.php:152
-msgid "Once you&#8217;ve saved the download file, you can use the Import function in another WordPress installation to import the content from this site."
-msgstr "Setelah Anda telah menyimpan berkas unduhan, Anda dapat menggunakan fungsi Impor di instalasi WordPress lain untuk mengimpor konten dari situs ini."
+msgid "Once you&#8217;ve saved the download file, you can use the Import function in another SlioPress installation to import the content from this site."
+msgstr "Setelah Anda telah menyimpan berkas unduhan, Anda dapat menggunakan fungsi Impor di instalasi SlioPress lain untuk mengimpor konten dari situs ini."
 
 #: admin/user-new.php:156
 msgid "You must assign a password to the new user, which they can change after logging in. The username, however, cannot be changed."
@@ -3718,8 +3718,8 @@ msgid "You can also edit or move multiple posts to the trash at once. Select the
 msgstr "Anda juga dapat menyunting dan memindahkan beberapa tulisan ke tong sampah sekaligus. Pilih tulisan-tulisan yang Anda ingin berikan tindakan dengan mencentang kotak-cek, lalu memilih tindakan yang diingkan dari menu Tindakan Massal lalu klik Terapkan."
 
 #: admin/plugin-install.php:71
-msgid "Plugins hook into WordPress to extend its functionality with custom features. Plugins are developed independently from the core WordPress application by thousands of developers all over the world. All plugins in the official <a href=\"%s\" target=\"_blank\">WordPress.org Plugin Directory</a> are compatible with the license WordPress uses. You can find new plugins to install by searching or browsing the Directory right here in your own Plugins section."
-msgstr "Kaitkan plugin ke WordPress untuk memperluas fungsionalitasnya dengan fitur-fitur tambahan. Plugin yang dikembangkan secara independen dari aplikasi inti WordPress oleh ribuan pengembang dari berbagai penjuru dunia. Seluruh plugin di <a href=\"%s\" target=\"_blank\">Direktori Plugin WordPress.org</a> resmi kompatibel dengan lisensi yang digunakan WordPress. Anda dapat menemukan plugin baru untuk dipasang dengan mencari atau meramban Direktori tadi dari sini di bagian Plugin Anda sendiri."
+msgid "Plugins hook into SlioPress to extend its functionality with custom features. Plugins are developed independently from the core SlioPress application by thousands of developers all over the world. All plugins in the official <a href=\"%s\" target=\"_blank\">SlioPress.org Plugin Directory</a> are compatible with the license SlioPress uses. You can find new plugins to install by searching or browsing the Directory right here in your own Plugins section."
+msgstr "Kaitkan plugin ke SlioPress untuk memperluas fungsionalitasnya dengan fitur-fitur tambahan. Plugin yang dikembangkan secara independen dari aplikasi inti SlioPress oleh ribuan pengembang dari berbagai penjuru dunia. Seluruh plugin di <a href=\"%s\" target=\"_blank\">Direktori Plugin SlioPress.org</a> resmi kompatibel dengan lisensi yang digunakan SlioPress. Anda dapat menemukan plugin baru untuk dipasang dengan mencari atau meramban Direktori tadi dari sini di bagian Plugin Anda sendiri."
 
 #: admin/options-permalink.php:28 admin/options-permalink.php:201
 msgid "Common Settings"
@@ -3754,8 +3754,8 @@ msgid "If you want site visitors to be able to register themselves, as opposed t
 msgstr "Jika Anda ingin pengunjung situs untuk bisa mendaftarkan diri, bukan didaftarkan oleh administrator situs, centang kotak keanggotaan. Peran bawaan pengguna dapat diatur untuk semua pengguna baru, apakah mendaftar sendiri atau didaftarkan oleh admin situs."
 
 #: admin/options-writing.php:45
-msgid "If desired, WordPress will automatically alert various services of your new posts."
-msgstr "Jika diinginkan, WordPress secara otomatis akan memberitahukan berbagai layanan lain mengenai tulisan baru Anda."
+msgid "If desired, SlioPress will automatically alert various services of your new posts."
+msgstr "Jika diinginkan, SlioPress secara otomatis akan memberitahukan berbagai layanan lain mengenai tulisan baru Anda."
 
 #: admin/options-writing.php:35
 msgid "Post Via Email"
@@ -3766,8 +3766,8 @@ msgid "This screen provides many options for controlling the management and disp
 msgstr "Layar ini menyediakan banyak pilih dalam mengkontrol manajemen dan penampilan komentar dan tautan pada tulisan/halaman Anda. Banyak sekali, bahkan, tidak semuanya dapat dimuat di sini! :) Gunakan taut dokumentasi untuk mendapatkan informasi lebih lanjut mengenai masing-masing pengaturan diskusi yang ada di sini."
 
 #: admin/user-edit.php:40
-msgid "You can change your password, turn on keyboard shortcuts, change the color scheme of your WordPress administration screens, and turn off the WYSIWYG (Visual) editor, among other things. You can hide the Toolbar (formerly called the Admin Bar) from the front end of your site, however it cannot be disabled on the admin screens."
-msgstr "Anda dapat mengubah kata sandi, mengaktifkan tombol pintas keyboard, mengubah skema warna layar administrasi WordPress Anda, dan menonaktifkan penyunting WYSIWYG (Visual), dan masih banyak lagi. Anda dapat menyembunyikan Baris Perkakas (yang sebelumnya dipanggil Baris Admin) dari tampilan depan situs Anda, namun ini tidak dapat dinonaktifkan pada layar-layar admin."
+msgid "You can change your password, turn on keyboard shortcuts, change the color scheme of your SlioPress administration screens, and turn off the WYSIWYG (Visual) editor, among other things. You can hide the Toolbar (formerly called the Admin Bar) from the front end of your site, however it cannot be disabled on the admin screens."
+msgstr "Anda dapat mengubah kata sandi, mengaktifkan tombol pintas keyboard, mengubah skema warna layar administrasi SlioPress Anda, dan menonaktifkan penyunting WYSIWYG (Visual), dan masih banyak lagi. Anda dapat menyembunyikan Baris Perkakas (yang sebelumnya dipanggil Baris Admin) dari tampilan depan situs Anda, namun ini tidak dapat dinonaktifkan pada layar-layar admin."
 
 #: admin/widgets.php:94
 msgid "Inactive Sidebar (not used)"
@@ -3814,8 +3814,8 @@ msgid "In the <strong>Author</strong> column, in addition to the author&#8217;s 
 msgstr "Pada kolom <strong>Penulis</strong>, di samping nama penulis, alamat surel, dan URL blog, alamat IP pemberi komentar juga ditampilkan di sana. Dengan mengklik taut ini akan memunculkan semua komentar yang dikirim dari alamat IP ini."
 
 #: admin/index.php:46
-msgid "Links in the Toolbar at the top of the screen connect your dashboard and the front end of your site, and provide access to your profile and helpful WordPress information."
-msgstr "Taut-taut pada Baris Perkakas di bagian atas layar akan menghubungkan dasbor Anda dengan antar muka depan situs Anda, dan memberikan akses ke riwayat Anda dan informasi WordPress yang berguna untuk Anda."
+msgid "Links in the Toolbar at the top of the screen connect your dashboard and the front end of your site, and provide access to your profile and helpful SlioPress information."
+msgstr "Taut-taut pada Baris Perkakas di bagian atas layar akan menghubungkan dasbor Anda dengan antar muka depan situs Anda, dan memberikan akses ke riwayat Anda dan informasi SlioPress yang berguna untuk Anda."
 
 #: admin/upload.php:214
 msgid "If a media file has not been attached to any post, you will see that in the Attached To column, and can click on Attach File to launch a small popup that will allow you to search for a post and attach the file."
@@ -3854,8 +3854,8 @@ msgid "Links may be separated into Link Categories; these are different than the
 msgstr "Taut-taut dapat dipisahkan menjadi Kategori Tautan; yang berbeda dari kategori yang digunakan pada tulisan Anda."
 
 #: admin/update-core.php:196
-msgid "<a href=\"%s\">Learn more about WordPress %s</a>."
-msgstr "<a href=\"%s\">Pelajari lebih banyak mengenai WordPress %s</a>."
+msgid "<a href=\"%s\">Learn more about SlioPress %s</a>."
+msgstr "<a href=\"%s\">Pelajari lebih banyak mengenai SlioPress %s</a>."
 
 #: admin/edit.php:222
 msgid "Managing Pages"
@@ -3902,8 +3902,8 @@ msgid "Likely direct inclusion of admin/includes/template.php in order to use ad
 msgstr "Sepertinya akibat penyertaan langsung admin/includes/template.php untuk menggunakan add_meta_box(). Ini amatlah salah. Sebaiknya kaitkan panggilan add_meta_box() ke dalam tindakan add_meta_boxes."
 
 #: admin/credits.php:83 admin/freedoms.php:20
-msgid "Welcome to WordPress %s"
-msgstr "Selamat Datang di WordPress %s"
+msgid "Welcome to SlioPress %s"
+msgstr "Selamat Datang di SlioPress %s"
 
 #: admin/about.php:162
 msgid "Go to Dashboard &rarr; Home"
@@ -3914,8 +3914,8 @@ msgid "Return to Dashboard &rarr; Updates"
 msgstr "Kembali ke Dasbor &rarr; Pembaruan"
 
 #: admin/credits.php:112
-msgid "WordPress is created by a worldwide team of passionate individuals."
-msgstr "WordPress diciptakan oleh tim dari individu-individu yang amat berkomitmen dari berbagai penjuru dunia."
+msgid "SlioPress is created by a worldwide team of passionate individuals."
+msgstr "SlioPress diciptakan oleh tim dari individu-individu yang amat berkomitmen dari berbagai penjuru dunia."
 
 #: admin/credits.php:176
 msgid "Core Developers"
@@ -4099,7 +4099,7 @@ msgid "You can use the following controls to arrange your Dashboard screen to su
 msgstr "Anda dapat menggunakan kontrol berikut untuk mengatur layar Dasbor sesuai dengan keinginan Anda. Hal ini juga berlaku pada layar administrasi lainnya."
 
 #: admin/index.php:45
-msgid "The left-hand navigation menu provides links to all of the WordPress administration screens, with submenu items displayed on hover. You can minimize this menu to a narrow icon strip by clicking on the Collapse Menu arrow at the bottom."
+msgid "The left-hand navigation menu provides links to all of the SlioPress administration screens, with submenu items displayed on hover. You can minimize this menu to a narrow icon strip by clicking on the Collapse Menu arrow at the bottom."
 msgstr "Menu navigasi sebelah kiri menyediakan taut ke semua layar administrasi Wordpress, dengan item submenu yang ditampilkan ketika melayang di atas tombol. Anda dapat meminimalkan menu ini menjadi ikon kecil dengan mengklik pada panah Persempit Menu di bagian bawah."
 
 #: admin/index.php:56
@@ -4402,12 +4402,12 @@ msgid "Featured Image Header"
 msgstr "Gambar Tajuk Andalan"
 
 #: admin/includes/dashboard.php:1176
-msgid "It looks like you're using an old version of <a href='%s'>%s</a>. For the best WordPress experience, please update your browser."
-msgstr "Sepertinya Anda menggunakan versi lama dari <a href='%s'>%s</a>. Untuk pengalaman WordPress terbaik, silakan perbarui peramban <em>(browser)</em> Anda. "
+msgid "It looks like you're using an old version of <a href='%s'>%s</a>. For the best SlioPress experience, please update your browser."
+msgstr "Sepertinya Anda menggunakan versi lama dari <a href='%s'>%s</a>. Untuk pengalaman SlioPress terbaik, silakan perbarui peramban <em>(browser)</em> Anda. "
 
 #: admin/includes/dashboard.php:1174
-msgid "It looks like you're using an insecure version of <a href='%s'>%s</a>. Using an outdated browser makes your computer unsafe. For the best WordPress experience, please update your browser."
-msgstr "Sepertinya Anda menggunakan versi kurang aman dari <a href='%s'>%s</a>. Menggunakan peramban kadaluarsa membuat komputer Anda tidak aman. Untuk pengalaman WordPress terbaik, silakan perbarui peramban <em>(browser)</em> Anda."
+msgid "It looks like you're using an insecure version of <a href='%s'>%s</a>. Using an outdated browser makes your computer unsafe. For the best SlioPress experience, please update your browser."
+msgstr "Sepertinya Anda menggunakan versi kurang aman dari <a href='%s'>%s</a>. Menggunakan peramban kadaluarsa membuat komputer Anda tidak aman. Untuk pengalaman SlioPress terbaik, silakan perbarui peramban <em>(browser)</em> Anda."
 
 #: admin/includes/nav-menu.php:1195
 msgid "There are some invalid menu items. Please check or delete them."
@@ -4441,8 +4441,8 @@ msgid "Icon Design"
 msgstr "Desain Ikon"
 
 #: admin/theme-install.php:72
-msgid "You can find additional themes for your site by using the Theme Browser/Installer on this screen, which will display themes from the <a href=\"%s\" target=\"_blank\">WordPress.org Theme Directory</a>. These themes are designed and developed by third parties, are available free of charge, and are compatible with the license WordPress uses."
-msgstr "Anda dapat menemukan beberapa tema tambahan untuk situs Anda dengan menggunakan Perambah / Pemasang Tema pada layar ini, yang akan menampilkan tema dari <a href=\"%s\" target=\"_blank\">Direktori Tema WordPress.org</a>. Tema-tema ini dirancang dan dikembangkan oleh pihak ketiga, tersedia gratis, dan kompatibel dengan lisensi yang digunakan oleh WordPress."
+msgid "You can find additional themes for your site by using the Theme Browser/Installer on this screen, which will display themes from the <a href=\"%s\" target=\"_blank\">SlioPress.org Theme Directory</a>. These themes are designed and developed by third parties, are available free of charge, and are compatible with the license SlioPress uses."
+msgstr "Anda dapat menemukan beberapa tema tambahan untuk situs Anda dengan menggunakan Perambah / Pemasang Tema pada layar ini, yang akan menampilkan tema dari <a href=\"%s\" target=\"_blank\">Direktori Tema SlioPress.org</a>. Tema-tema ini dirancang dan dikembangkan oleh pihak ketiga, tersedia gratis, dan kompatibel dengan lisensi yang digunakan oleh SlioPress."
 
 #: admin/update-core.php:51
 msgid "Re-install Now"
@@ -4497,23 +4497,23 @@ msgctxt "Translate this to be the equivalent of English Translators in your lang
 msgid "Translators"
 msgstr "Penerjemah Bahasa Indonesia"
 
-#. translators: Url to the codex documentation on contributing to WordPress
+#. translators: Url to the codex documentation on contributing to SlioPress
 #. used on the credits page
 #: admin/credits.php:107
-msgid "http://codex.wordpress.org/Contributing_to_WordPress"
-msgstr "http://codex.wordpress.org/Contributing_to_WordPress"
+msgid "http://codex.wordpress.org/Contributing_to_SlioPress"
+msgstr "http://codex.wordpress.org/Contributing_to_SlioPress"
 
 #: admin/freedoms.php:45
-msgid "WordPress grows when people like you tell their friends about it, and the thousands of businesses and services that are built on and around WordPress share that fact with their users. We&#8217;re flattered every time someone spreads the good word, just make sure to <a href=\"%s\">check out our trademark guidelines</a> first."
-msgstr "WordPress bertambah maju ketika orang-orang seperti Anda memberitahukan kepada teman-teman yang lain tentang WordPress, dan ribuan perusahaan dan layanan jasa yang telah dibangun di atas dan berlandaskan Wordpress memberi gambaran faktanya kepada para penggunanya. Kami benar-benar tersanjung setiap kali seseorang menyebarkan kabar baik ini, hanya pastikan untuk <a href=\"%s\">memeriksa panduan merek dagang kami</a> sebelumnya."
+msgid "SlioPress grows when people like you tell their friends about it, and the thousands of businesses and services that are built on and around SlioPress share that fact with their users. We&#8217;re flattered every time someone spreads the good word, just make sure to <a href=\"%s\">check out our trademark guidelines</a> first."
+msgstr "SlioPress bertambah maju ketika orang-orang seperti Anda memberitahukan kepada teman-teman yang lain tentang SlioPress, dan ribuan perusahaan dan layanan jasa yang telah dibangun di atas dan berlandaskan Wordpress memberi gambaran faktanya kepada para penggunanya. Kami benar-benar tersanjung setiap kali seseorang menyebarkan kabar baik ini, hanya pastikan untuk <a href=\"%s\">memeriksa panduan merek dagang kami</a> sebelumnya."
 
 #: admin/freedoms.php:52
-msgid "Every plugin and theme in WordPress.org&#8217;s directory is 100%% GPL or a similarly free and compatible license, so you can feel safe finding <a href=\"%1$s\">plugins</a> and <a href=\"%2$s\">themes</a> there. If you get a plugin or theme from another source, make sure to <a href=\"%3$s\">ask them if it&#8217;s GPL</a> first. If they don&#8217;t respect the WordPress license, we don&#8217;t recommend them."
-msgstr "Setiap plugin dan tema dalam direktori WordPress.org adalah 100%% GPL atau lisensi yang sama bebasnya dan kompatibel, sehingga Anda dapat merasa aman menemukan <a href=\"%1$s\">plugin</a> dan <a href=\"%2$s\"> tema-tema </a> di sana. Jika Anda mendapatkan sebuah plugin atau tema dari sumber lain, pastikan untuk <a href=\"%3$s\"> bertanya kepada mereka apakah itu GPL</a> terlebih dahulu. Jika mereka tidak menghormati lisensi Wordpress, kami tidak merekomendasikan mereka."
+msgid "Every plugin and theme in SlioPress.org&#8217;s directory is 100%% GPL or a similarly free and compatible license, so you can feel safe finding <a href=\"%1$s\">plugins</a> and <a href=\"%2$s\">themes</a> there. If you get a plugin or theme from another source, make sure to <a href=\"%3$s\">ask them if it&#8217;s GPL</a> first. If they don&#8217;t respect the SlioPress license, we don&#8217;t recommend them."
+msgstr "Setiap plugin dan tema dalam direktori SlioPress.org adalah 100%% GPL atau lisensi yang sama bebasnya dan kompatibel, sehingga Anda dapat merasa aman menemukan <a href=\"%1$s\">plugin</a> dan <a href=\"%2$s\"> tema-tema </a> di sana. Jika Anda mendapatkan sebuah plugin atau tema dari sumber lain, pastikan untuk <a href=\"%3$s\"> bertanya kepada mereka apakah itu GPL</a> terlebih dahulu. Jika mereka tidak menghormati lisensi Wordpress, kami tidak merekomendasikan mereka."
 
 #: admin/freedoms.php:36
-msgid "WordPress is Free and open source software, built by a distributed community of mostly volunteer developers from around the world. WordPress comes with some awesome, worldview-changing rights courtesy of its <a href=\"%s\">license</a>, the GPL."
-msgstr "WordPress adalah piranti lunak yang Bebas dan <em>open source</em>, dibangun oleh sebuah komunitas terdistribusi yang terdiri dari sebagian besar relawan pengembang dari seluruh dunia. WordPress dihadirkan dengan beberapa kepatuhan hak yang menakjubkan, mengubah pandangan dunia atas <a href=\"%s\">lisensinya</a>, yaitu: GPL."
+msgid "SlioPress is Free and open source software, built by a distributed community of mostly volunteer developers from around the world. SlioPress comes with some awesome, worldview-changing rights courtesy of its <a href=\"%s\">license</a>, the GPL."
+msgstr "SlioPress adalah piranti lunak yang Bebas dan <em>open source</em>, dibangun oleh sebuah komunitas terdistribusi yang terdiri dari sebagian besar relawan pengembang dari seluruh dunia. SlioPress dihadirkan dengan beberapa kepatuhan hak yang menakjubkan, mengubah pandangan dunia atas <a href=\"%s\">lisensinya</a>, yaitu: GPL."
 
 #: admin/credits.php:181
 msgid "Lead Developer"
@@ -4542,8 +4542,8 @@ msgid "Internationalization"
 msgstr "Internasionalisasi"
 
 #: admin/credits.php:178
-msgid "Core Contributors to WordPress %s"
-msgstr "Kontributor Inti untuk WordPress %s"
+msgid "Core Contributors to SlioPress %s"
+msgstr "Kontributor Inti untuk SlioPress %s"
 
 #: admin/credits.php:177
 msgid "Recent Rockstars"
@@ -4554,8 +4554,8 @@ msgid "All Comments"
 msgstr "Semua Komentar"
 
 #: admin/credits.php:104
-msgid "WordPress is created by a <a href=\"%1$s\">worldwide team</a> of passionate individuals. <a href=\"%2$s\">Get involved in WordPress</a>."
-msgstr "WordPress dibuat oleh <a href=\"%1$s\">tim dari seluruh penjuru dunia</a> yang terdiri dari individu-individu yang penuh semangat. <a href=\"%2$s\">Mari ikut terlibat di WordPress</a>."
+msgid "SlioPress is created by a <a href=\"%1$s\">worldwide team</a> of passionate individuals. <a href=\"%2$s\">Get involved in SlioPress</a>."
+msgstr "SlioPress dibuat oleh <a href=\"%1$s\">tim dari seluruh penjuru dunia</a> yang terdiri dari individu-individu yang penuh semangat. <a href=\"%2$s\">Mari ikut terlibat di SlioPress</a>."
 
 #: admin/credits.php:188
 msgid "Designer"
@@ -4570,8 +4570,8 @@ msgid "Project Leaders"
 msgstr "Para Kepala Projek"
 
 #: admin/credits.php:162
-msgid "Want to see your name in lights on this page? <a href=\"%s\">Get involved in WordPress</a>."
-msgstr "Ingin melihat nama Anda dicantumkan pada halaman ini? <a href=\"%s\">Mari ikut terlibat di WordPress</a> dan kunjungi halaman <a href=\"http://codex.wordpress.org/L10n:Localization_Teams#Indonesian_-_Bahasa_Indonesia\">Tim Lokalisasi / Penerjemah Bahasa Indonesia</a>."
+msgid "Want to see your name in lights on this page? <a href=\"%s\">Get involved in SlioPress</a>."
+msgstr "Ingin melihat nama Anda dicantumkan pada halaman ini? <a href=\"%s\">Mari ikut terlibat di SlioPress</a> dan kunjungi halaman <a href=\"http://codex.wordpress.org/L10n:Localization_Teams#Indonesian_-_Bahasa_Indonesia\">Tim Lokalisasi / Penerjemah Bahasa Indonesia</a>."
 
 #: admin/freedoms.php:54
 msgid "Don&#8217;t you wish all software came with these freedoms? So do we! For more information, check out the <a href=\"http://www.fsf.org/\">Free Software Foundation</a>."
@@ -4623,7 +4623,7 @@ msgid "Collapse menu"
 msgstr "Persempit menu"
 
 #: admin/includes/class-plugins-list-table.php:355
-msgid "Drop-ins are advanced plugins in the <code>%s</code> directory that replace WordPress functionality when present."
+msgid "Drop-ins are advanced plugins in the <code>%s</code> directory that replace SlioPress functionality when present."
 msgstr "Drop-in adalah plugin canggih dalam direktori <code>%s</code> yang dapat menggantikan fungsionalitas Wordpress ketika tersedia."
 
 #: admin/includes/class-plugins-list-table.php:353
@@ -4699,8 +4699,8 @@ msgid "<a href=\"http://codex.wordpress.org/Settings_Media_Screen\" target=\"_bl
 msgstr "<a href=\"http://codex.wordpress.org/Settings_Media_Screen\" target=\"_blank\">Dokumentasi tentang Pengaturan Media</a>"
 
 #: admin/update-core.php:499
-msgid "<a href=\"http://codex.wordpress.org/Dashboard_Updates_Screen\" target=\"_blank\">Documentation on Updating WordPress</a>"
-msgstr "<a href=\"http://codex.wordpress.org/Dashboard_Updates_Screen\" target=\"_blank\">Dokumentasi tentang Pembaruan WordPress</a>"
+msgid "<a href=\"http://codex.wordpress.org/Dashboard_Updates_Screen\" target=\"_blank\">Documentation on Updating SlioPress</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Dashboard_Updates_Screen\" target=\"_blank\">Dokumentasi tentang Pembaruan SlioPress</a>"
 
 #: admin/edit-form-advanced.php:300
 msgid "<a href=\"http://codex.wordpress.org/Posts_Add_New_Screen\" target=\"_blank\">Documentation on Writing and Editing Posts</a>"
@@ -4899,12 +4899,12 @@ msgid "Super admin privileges cannot be removed because this user has the networ
 msgstr "Hak istimewa admin super tidak dapat dihapus karena pengguna ini memiliki surel admin jaringan."
 
 #: admin/includes/class-themes-list-table.php:89
-msgid "You only have one theme installed right now. Live a little! You can choose from over 1,000 free themes in the WordPress.org Theme Directory at any time: just click on the <a href=\"%s\">Install Themes</a> tab above."
-msgstr "Anda hanya memiliki satu tema diinstal sekarang. Begitu sedikit! Anda dapat memilih lebih dari 1,000 tema gratis dalam Direktori Tema WordPress.org setiap saat: cukup klik pada tab <a href=\"%s\">Instal Tema</a> di atas. "
+msgid "You only have one theme installed right now. Live a little! You can choose from over 1,000 free themes in the SlioPress.org Theme Directory at any time: just click on the <a href=\"%s\">Install Themes</a> tab above."
+msgstr "Anda hanya memiliki satu tema diinstal sekarang. Begitu sedikit! Anda dapat memilih lebih dari 1,000 tema gratis dalam Direktori Tema SlioPress.org setiap saat: cukup klik pada tab <a href=\"%s\">Instal Tema</a> di atas. "
 
 #: admin/maint/repair.php:113
-msgid "One or more database tables are unavailable. To allow WordPress to attempt to repair these tables, press the &#8220;Repair Database&#8221; button. Repairing can take a while, so please be patient."
-msgstr "Satu atau lebih tabel basis data tidak tersedia. Untuk memperbolehkan WordPress mencoba memperbaiki tabel ini, tekan tombol &#8220;Perbaiki Basis Data&#8221;. Perbaikan bisa berlangsung agak lama, jadi harap bersabar."
+msgid "One or more database tables are unavailable. To allow SlioPress to attempt to repair these tables, press the &#8220;Repair Database&#8221; button. Repairing can take a while, so please be patient."
+msgstr "Satu atau lebih tabel basis data tidak tersedia. Untuk memperbolehkan SlioPress mencoba memperbaiki tabel ini, tekan tombol &#8220;Perbaiki Basis Data&#8221;. Perbaikan bisa berlangsung agak lama, jadi harap bersabar."
 
 #: admin/includes/file.php:16
 msgid "Visual Editor RTL Stylesheet"
@@ -4925,20 +4925,20 @@ msgid "Network Enable"
 msgstr "Jaringan Diaktifkan"
 
 #: admin/upgrade.php:99
-msgid "Your WordPress database has been successfully updated!"
-msgstr "Basis data WordPress Anda telah berhasil diperbarui! "
+msgid "Your SlioPress database has been successfully updated!"
+msgstr "Basis data SlioPress Anda telah berhasil diperbarui! "
 
 #: admin/upgrade.php:88
-msgid "Update WordPress Database"
-msgstr "Perbarui Basis Data WordPress"
+msgid "Update SlioPress Database"
+msgstr "Perbarui Basis Data SlioPress"
 
 #: admin/upgrade.php:55
-msgid "WordPress &rsaquo; Update"
-msgstr "WordPress &rsaquo; Perbarui"
+msgid "SlioPress &rsaquo; Update"
+msgstr "SlioPress &rsaquo; Perbarui"
 
 #: admin/upgrade.php:86
-msgid "WordPress has been updated! Before we send you on your way, we have to update your database to the newest version."
-msgstr "WordPress telah diperbarui! Sebelum Anda menggunakannya, kami harus memperbarui basis data Anda ke versi yang paling baru."
+msgid "SlioPress has been updated! Before we send you on your way, we have to update your database to the newest version."
+msgstr "SlioPress telah diperbarui! Sebelum Anda menggunakannya, kami harus memperbarui basis data Anda ke versi yang paling baru."
 
 #: admin/upgrade.php:87
 msgid "The update process may take a little while, so please be patient."
@@ -4957,8 +4957,8 @@ msgid "No Update Required"
 msgstr "Pembaruan Tidak Diperlukan"
 
 #: admin/update-core.php:101
-msgid "You are about to install WordPress %s <strong>in English (US).</strong> There is a chance this update will break your translation. You may prefer to wait for the localized version to be released."
-msgstr "Anda akan menginstal WordPress %s <strong>dalam Bahasa Inggris (US).</strong> Ada kemungkinan pembaruan ini akan merusak terjemahan Anda. Anda dapat memilih untuk menunggu hingga versi pelokalannya dirilis."
+msgid "You are about to install SlioPress %s <strong>in English (US).</strong> There is a chance this update will break your translation. You may prefer to wait for the localized version to be released."
+msgstr "Anda akan menginstal SlioPress %s <strong>dalam Bahasa Inggris (US).</strong> Ada kemungkinan pembaruan ini akan merusak terjemahan Anda. Anda dapat memilih untuk menunggu hingga versi pelokalannya dirilis."
 
 #: admin/includes/class-upgrader.php:687
 msgid "Plugin updated successfully."
@@ -5027,8 +5027,8 @@ msgid "Sorry, this file type is not permitted for security reasons."
 msgstr "Maaf, demi keamanan, tipe berkas ini tidak diizinkan."
 
 #: admin/admin-header.php:32
-msgid "%1$s &#8212; WordPress"
-msgstr "%1$s &#8212; WordPress"
+msgid "%1$s &#8212; SlioPress"
+msgstr "%1$s &#8212; SlioPress"
 
 #: admin/user-edit.php:276
 msgid "<a href=\"http://codex.wordpress.org/Keyboard_Shortcuts\" target=\"_blank\">More information</a>"
@@ -5077,8 +5077,8 @@ msgid "E-mail or Username"
 msgstr "Surel atau Nama Pengguna"
 
 #: admin/admin-header.php:34
-msgid "%1$s &lsaquo; %2$s &#8212; WordPress"
-msgstr "%1$s &lsaquo; %2$s &#8212; WordPress"
+msgid "%1$s &lsaquo; %2$s &#8212; SlioPress"
+msgstr "%1$s &lsaquo; %2$s &#8212; SlioPress"
 
 #: admin/themes.php:111
 msgid "Search Installed Themes"
@@ -5157,8 +5157,8 @@ msgid "You are not allowed to edit this comment."
 msgstr "Anda tidak diizinkan menyunting komentar ini."
 
 #: admin/includes/file.php:1121
-msgid "To perform the requested action, WordPress needs to access your web server."
-msgstr "Untuk melaksanakan tindakan yang diminta, WordPress perlu mengakses server web Anda."
+msgid "To perform the requested action, SlioPress needs to access your web server."
+msgstr "Untuk melaksanakan tindakan yang diminta, SlioPress perlu mengakses server web Anda."
 
 #: admin/includes/class-list-table.php:699
 msgid "Go to the next page"
@@ -5221,8 +5221,8 @@ msgid "You have %1$s and %2$s."
 msgstr "Anda memiliki %1$s dan %2$s."
 
 #: admin/update-core.php:166
-msgid "<strong>Important:</strong> before updating, please <a href=\"http://codex.wordpress.org/WordPress_Backups\">back up your database and files</a>. For help with updates, visit the <a href=\"http://codex.wordpress.org/Updating_WordPress\">Updating WordPress</a> Codex page."
-msgstr "<strong>Penting:</strong> sebelum memperbarui, silakan <a href=\"http://codex.wordpress.org/WordPress_Backups\">cadangkan basis data dan berkas-berkas Anda</a>. Untuk bantuan dengan pembaruan, kunjungi <a href=\"http://codex.wordpress.org/Updating_WordPress\">Memperbarui WordPress</a> halaman Codex."
+msgid "<strong>Important:</strong> before updating, please <a href=\"http://codex.wordpress.org/SlioPress_Backups\">back up your database and files</a>. For help with updates, visit the <a href=\"http://codex.wordpress.org/Updating_SlioPress\">Updating SlioPress</a> Codex page."
+msgstr "<strong>Penting:</strong> sebelum memperbarui, silakan <a href=\"http://codex.wordpress.org/SlioPress_Backups\">cadangkan basis data dan berkas-berkas Anda</a>. Untuk bantuan dengan pembaruan, kunjungi <a href=\"http://codex.wordpress.org/Updating_SlioPress\">Memperbarui SlioPress</a> halaman Codex."
 
 #: admin/includes/dashboard.php:946
 msgid "http://wordpress.org/news/feed/"
@@ -5241,8 +5241,8 @@ msgid "New users will receive an email letting them know they&#8217;ve been adde
 msgstr "Pengguna baru akan menerima email yang memberitahukan bahwa mereka telah ditambahkan sebagai pengguna untuk situs Anda. Secara bawaan, email ini juga akan berisi kata sandi mereka. Hapus centang pada kotak jika Anda tidak ingin kata sandi dimasukkan dalam email penyambutan."
 
 #: admin/update-core.php:67
-msgid "You can update to <a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress %2$s</a> automatically or download the package and install it manually:"
-msgstr "Anda dapat perbarui ke <a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress %2$s</a> secara otomatis atau mengunduh paket dan memasangnya secara manual:"
+msgid "You can update to <a href=\"http://codex.wordpress.org/Version_%1$s\">SlioPress %2$s</a> automatically or download the package and install it manually:"
+msgstr "Anda dapat perbarui ke <a href=\"http://codex.wordpress.org/Version_%1$s\">SlioPress %2$s</a> secara otomatis atau mengunduh paket dan memasangnya secara manual:"
 
 #: admin/includes/theme.php:168 admin/includes/update.php:282
 #: admin/includes/update.php:371
@@ -5261,8 +5261,8 @@ msgstr "Pergi ke halaman plugin"
 #: admin/includes/class-upgrader-skins.php:341
 #: admin/includes/class-upgrader-skins.php:386
 #: admin/includes/class-upgrader-skins.php:685
-msgid "Go to WordPress Updates page"
-msgstr "Pergi ke halaman Pembaruan WordPress"
+msgid "Go to SlioPress Updates page"
+msgstr "Pergi ke halaman Pembaruan SlioPress"
 
 #. translators: %s: title of menu item in draft status
 #: admin/includes/nav-menu.php:89
@@ -5309,12 +5309,12 @@ msgid "Crop and Publish"
 msgstr "Pangkas dan Terbitkan"
 
 #: admin/plugins.php:366
-msgid "You can find additional plugins for your site by using the <a href=\"%1$s\">Plugin Browser/Installer</a> functionality or by browsing the <a href=\"%2$s\" target=\"_blank\">WordPress Plugin Directory</a> directly and installing new plugins manually. To manually install a plugin you generally just need to upload the plugin file into your <code>/content/plugins</code> directory. Once a plugin has been installed, you can activate it here."
-msgstr "Anda dapat menemukan plugin tambahan untuk situs Anda dengan menggunakan fungsionalitas <a href=\"%1$s\">Peramban/Pemasang Plugin</a> atau dengan menjelajahi <a href=\"%2$s\" target=\"_blank\">Direktori Plugin WordPress</a> secara langsung dan memasangnya secara manual. Untuk secara manual memasang sebuah plugin secara umum Anda hanya perlu mengunggah berkas plugin ke dalam direktori <code>/content/plugins</code> Anda. Setelah sebuah plugin terpasang, Anda dapat mengaktifkannya di sini."
+msgid "You can find additional plugins for your site by using the <a href=\"%1$s\">Plugin Browser/Installer</a> functionality or by browsing the <a href=\"%2$s\" target=\"_blank\">SlioPress Plugin Directory</a> directly and installing new plugins manually. To manually install a plugin you generally just need to upload the plugin file into your <code>/content/plugins</code> directory. Once a plugin has been installed, you can activate it here."
+msgstr "Anda dapat menemukan plugin tambahan untuk situs Anda dengan menggunakan fungsionalitas <a href=\"%1$s\">Peramban/Pemasang Plugin</a> atau dengan menjelajahi <a href=\"%2$s\" target=\"_blank\">Direktori Plugin SlioPress</a> secara langsung dan memasangnya secara manual. Untuk secara manual memasang sebuah plugin secara umum Anda hanya perlu mengunggah berkas plugin ke dalam direktori <code>/content/plugins</code> Anda. Setelah sebuah plugin terpasang, Anda dapat mengaktifkannya di sini."
 
 #: admin/edit-link-form.php:60
-msgid "XFN stands for <a href=\"http://gmpg.org/xfn/\" target=\"_blank\">XHTML Friends Network</a>, which is optional. WordPress allows the generation of XFN attributes to show how you are related to the authors/owners of the site to which you are linking."
-msgstr "XFN adalah singkatan dari <a href=\"http://gmpg.org/xfn/\" target=\"_blank\">XHTML Friends Network</a>, yang merupakan tambahan. WordPress memungkinkan generasi atribut XFN untuk menunjukkan bagaimana Anda berhubungan dengan para penulis/pemilik situs yang Anda hubungkan."
+msgid "XFN stands for <a href=\"http://gmpg.org/xfn/\" target=\"_blank\">XHTML Friends Network</a>, which is optional. SlioPress allows the generation of XFN attributes to show how you are related to the authors/owners of the site to which you are linking."
+msgstr "XFN adalah singkatan dari <a href=\"http://gmpg.org/xfn/\" target=\"_blank\">XHTML Friends Network</a>, yang merupakan tambahan. SlioPress memungkinkan generasi atribut XFN untuk menunjukkan bagaimana Anda berhubungan dengan para penulis/pemilik situs yang Anda hubungkan."
 
 #: admin/theme-editor.php:40 admin/themes.php:90
 msgid "<a href=\"http://codex.wordpress.org/Using_Themes\" target=\"_blank\">Documentation on Using Themes</a>"
@@ -5413,16 +5413,16 @@ msgid "You can Upload a theme manually if you have already downloaded its ZIP ar
 msgstr "Anda dapat mengunggah tema secara manual jika Anda sudah mengunduh arsip ZIP-nya ke komputer Anda (pastikan ini adalah dari sumber yang terpercaya dan asli). Anda juga dapat melakukannya dengan cara yang lama dan menyalin folder tema yang telah diunduh melalui FTP ke direktori <code>content/themes</code> Anda."
 
 #: admin/user-edit.php:39
-msgid "Your profile contains information about you (your &#8220;account&#8221;) as well as some personal options related to using WordPress."
-msgstr "Profil Anda berisi informasi tentang Anda (&#8220;akun&#8221; Anda) serta beberapa opsi personal yang berhubungan dengan penggunaan WordPress."
+msgid "Your profile contains information about you (your &#8220;account&#8221;) as well as some personal options related to using SlioPress."
+msgstr "Profil Anda berisi informasi tentang Anda (&#8220;akun&#8221; Anda) serta beberapa opsi personal yang berhubungan dengan penggunaan SlioPress."
 
 #: admin/edit-form-advanced.php:304
 msgid "Pages are similar to Posts in that they have a title, body text, and associated metadata, but they are different in that they are not part of the chronological blog stream, kind of like permanent posts. Pages are not categorized or tagged, but can have a hierarchy. You can nest Pages under other Pages by making one the &#8220;Parent&#8221; of the other, creating a group of Pages."
 msgstr "Halaman mirip dengan Tulisan dalam hal mereka memiliki judul, teks tubuh, dan metadata yang terkait, tetapi mereka berbeda dalam hal mereka bukan bagian dari kronologis aliran blog, seperti tulisan permanen. Halaman tidak dikategorikan atau di-tag, tetapi dapat memiliki hierarki. Anda dapat menyarangkan Halaman di bawah Halaman lain dengan membuat satu &#8220;Induk#8221; dari yang lain, menciptakan kelompok Halaman."
 
 #: admin/edit-form-advanced.php:368
-msgid "<strong>Send Trackbacks</strong> - Trackbacks are a way to notify legacy blog systems that you&#8217;ve linked to them. Enter the URL(s) you want to send trackbacks. If you link to other WordPress sites they&#8217;ll be notified automatically using pingbacks, and this field is unnecessary."
-msgstr "<strong>Kirim Lacak balik</strong> - Lacak balik adalah cara untuk memberitahu sistem blog bahwa Anda telah memasang tautan ke mereka. Masukkan URL(s) yang ingin Anda lacak balik. Jika Anda memasang taut ke situs WordPress lainnya mereka akan diberitahu secara otomatis menggunakan ping balik, dan ruas ini tidak perlu."
+msgid "<strong>Send Trackbacks</strong> - Trackbacks are a way to notify legacy blog systems that you&#8217;ve linked to them. Enter the URL(s) you want to send trackbacks. If you link to other SlioPress sites they&#8217;ll be notified automatically using pingbacks, and this field is unnecessary."
+msgstr "<strong>Kirim Lacak balik</strong> - Lacak balik adalah cara untuk memberitahu sistem blog bahwa Anda telah memasang tautan ke mereka. Masukkan URL(s) yang ingin Anda lacak balik. Jika Anda memasang taut ke situs SlioPress lainnya mereka akan diberitahu secara otomatis menggunakan ping balik, dan ruas ini tidak perlu."
 
 #: admin/user-new.php:174
 msgid "Contributors can write and manage their posts but not publish posts or upload media files."
@@ -5433,8 +5433,8 @@ msgid "Administrators have access to all the administration features."
 msgstr "Administrator memiliki akses ke semua fitur administrasi."
 
 #: admin/link-manager.php:47
-msgid "You can add links here to be displayed on your site, usually using <a href=\"%s\">Widgets</a>. By default, links to several sites in the WordPress community are included as examples."
-msgstr "Anda dapat menambahkan taut di sini untuk ditampilkan pada situs Anda, biasanya menggunakan <a href=\"%s\">Widget</a>. Secara bawaan, tautan ke beberapa situs komunitas WordPress disertakan sebagai contoh."
+msgid "You can add links here to be displayed on your site, usually using <a href=\"%s\">Widgets</a>. By default, links to several sites in the SlioPress community are included as examples."
+msgstr "Anda dapat menambahkan taut di sini untuk ditampilkan pada situs Anda, biasanya menggunakan <a href=\"%s\">Widget</a>. Secara bawaan, tautan ke beberapa situs komunitas SlioPress disertakan sebagai contoh."
 
 #: admin/link-manager.php:55
 msgid "If you delete a link, it will be removed permanently, as Links do not have a Trash function yet."
@@ -5508,8 +5508,8 @@ msgid "You must click the Save Changes button at the bottom of the screen for ne
 msgstr "Anda harus mengklik tombol Simpan Perubahan di bagian bawah layar agar pengaturan baru yang berlaku."
 
 #: admin/options-general.php:90
-msgid "The WordPress URL and the Site URL can be the same (example.com) or different; for example, having the WordPress core files (example.com/wordpress) in a subdirectory instead of the root directory."
-msgstr "URL WordPress dan URL Situs bisa sama (example.com) atau berbeda; misalnya, memiliki berkas inti WordPress (example.com/wordpress) di sebuah subdirektori sebagai pengganti direktori akar."
+msgid "The SlioPress URL and the Site URL can be the same (example.com) or different; for example, having the SlioPress core files (example.com/wordpress) in a subdirectory instead of the root directory."
+msgstr "URL SlioPress dan URL Situs bisa sama (example.com) atau berbeda; misalnya, memiliki berkas inti SlioPress (example.com/wordpress) di sebuah subdirektori sebagai pengganti direktori akar."
 
 #: admin/edit-link-form.php:59
 msgid "The boxes for link name, web address, and description have fixed positions, while the others may be repositioned using drag and drop. You can also hide boxes you don&#8217;t use in the Screen Options tab, or minimize boxes by clicking on the title bar of the box."
@@ -5528,12 +5528,12 @@ msgid "While your site is being updated, it will be in maintenance mode. As soon
 msgstr "Sementara situs Anda sedang diperbarui, ia akan berada dalam mode pemeliharaan. Segera setelah selesai diperbarui, situs Anda akan kembali normal."
 
 #: admin/update-core.php:148
-msgid "You have the latest version of WordPress."
-msgstr "Anda memiliki versi terbaru dari WordPress."
+msgid "You have the latest version of SlioPress."
+msgstr "Anda memiliki versi terbaru dari SlioPress."
 
 #: admin/update-core.php:170
-msgid "An updated version of WordPress is available."
-msgstr "Tersedia versi pembaruan dari WordPress."
+msgid "An updated version of SlioPress is available."
+msgstr "Tersedia versi pembaruan dari SlioPress."
 
 #: admin/includes/nav-menu.php:200
 msgid "Original: %s"
@@ -5589,8 +5589,8 @@ msgid "This screen lists links to plugins to import data from blogging/content m
 msgstr "Layar ini mendaftarkan taut ke plugin untuk mengimpor data dari platform blog/pengelolaan konten. Pilih platform yang ingin Anda impor, dan klik Instal Sekarang ketika Anda diminta pada jendela popup. Jika platform Anda tidak terdaftar, klik taut untuk mencari direktori plugin untuk plugin pengimpor lain untuk melihat apakah ada satu untuk platform Anda."
 
 #: admin/export.php:50
-msgid "Once generated, your WXR file can be imported by another WordPress site or by another blogging platform able to access this format."
-msgstr "Setelah diciptakan, berkas WXR Anda dapat diimpor oleh situs WordPress yang lain atau oleh platform blog yang dapat mengakses format ini."
+msgid "Once generated, your WXR file can be imported by another SlioPress site or by another blogging platform able to access this format."
+msgstr "Setelah diciptakan, berkas WXR Anda dapat diimpor oleh situs SlioPress yang lain atau oleh platform blog yang dapat mengakses format ini."
 
 #: admin/link-manager.php:49
 msgid "You can customize the display of this screen using the Screen Options tab and/or the dropdown filters above the links table."
@@ -5601,8 +5601,8 @@ msgid "Choose a plugin to edit from the menu in the upper right and click the Se
 msgstr "Pilih sebuah plugin untuk disunting dari menu di bagian kanan atas dan klik tombol Pilih. Klik sekali pada setiap nama berkas untuk memuatnya di penyunting, dan buat perubahan Anda. Jangan lupa menyimpan perubahan Anda (Perbarui Berkas) ketika Anda selesai."
 
 #: admin/plugins.php:372
-msgid "Most of the time, plugins play nicely with the core of WordPress and with other plugins. Sometimes, though, a plugin&#8217;s code will get in the way of another plugin, causing compatibility issues. If your site starts doing strange things, this may be the problem. Try deactivating all your plugins and re-activating them in various combinations until you isolate which one(s) caused the issue."
-msgstr "Seringkali, plugin bisa berfungsi baik dengan inti dari WordPress dan dengan plugin lainnya. Walaupun terkadang kode sebuah plugin dapat menggangu plugin lain, yang menyebabkan masalah kompatibilitas. Jika situs Anda mulai melakukan hal-hal yang aneh, mungkin inimasalahnya. Coba nonaktifkan semua plugin Anda dan aktifkan kembali mereka dalam berbagai kombinasi sampai Anda memisahkan mana yang menyebabkan masalah."
+msgid "Most of the time, plugins play nicely with the core of SlioPress and with other plugins. Sometimes, though, a plugin&#8217;s code will get in the way of another plugin, causing compatibility issues. If your site starts doing strange things, this may be the problem. Try deactivating all your plugins and re-activating them in various combinations until you isolate which one(s) caused the issue."
+msgstr "Seringkali, plugin bisa berfungsi baik dengan inti dari SlioPress dan dengan plugin lainnya. Walaupun terkadang kode sebuah plugin dapat menggangu plugin lain, yang menyebabkan masalah kompatibilitas. Jika situs Anda mulai melakukan hal-hal yang aneh, mungkin inimasalahnya. Coba nonaktifkan semua plugin Anda dan aktifkan kembali mereka dalam berbagai kombinasi sampai Anda memisahkan mana yang menyebabkan masalah."
 
 #: admin/widgets.php:61
 msgid "Enabling Accessibility Mode, via Screen Options, allows you to use Add and Edit buttons instead of using drag and drop."
@@ -5751,8 +5751,8 @@ msgstr "Instal pengimpor LiveJournal untuk mengimpor tulisan dari LiveJournal de
 #: admin/includes/class-upgrader-skins.php:341
 #: admin/includes/class-upgrader-skins.php:386
 #: admin/includes/class-upgrader-skins.php:685
-msgid "Return to WordPress Updates"
-msgstr "Kembali ke Pembaruan WordPress "
+msgid "Return to SlioPress Updates"
+msgstr "Kembali ke Pembaruan SlioPress "
 
 #: admin/edit-form-advanced.php:350
 msgid "<strong>Publish</strong> - You can set the terms of publishing your post in the Publish box. For Status, Visibility, and Publish (immediately), click on the Edit link to reveal more options. Visibility includes options for password-protecting a post or making it stay at the top of your blog indefinitely (sticky). Publish (immediately) allows you to set a future or past date and time, so you can schedule a post to be published in the future or backdate a post."
@@ -5831,8 +5831,8 @@ msgid "Start Date"
 msgstr "Tanggal Mulai"
 
 #: admin/includes/import.php:201
-msgid "Install the WordPress importer to import posts, pages, comments, custom fields, categories, and tags from a WordPress export file."
-msgstr "Instal pengimpor WordPress untuk mengimpor tulisan, halaman, komentar, ruas tersuai, kategori, dan tag dari berkas ekspor WordPress."
+msgid "Install the SlioPress importer to import posts, pages, comments, custom fields, categories, and tags from a SlioPress export file."
+msgstr "Instal pengimpor SlioPress untuk mengimpor tulisan, halaman, komentar, ruas tersuai, kategori, dan tag dari berkas ekspor SlioPress."
 
 #: admin/includes/import.php:189
 msgid "Install the RSS importer to import posts from an RSS feed."
@@ -5966,7 +5966,7 @@ msgid "Create Menu"
 msgstr "Buat Menu"
 
 #: admin/includes/dashboard.php:955
-msgid "WordPress Blog"
+msgid "SlioPress Blog"
 msgstr "Blog Wordpress"
 
 #: admin/user-edit.php:336 admin/user-edit.php:338
@@ -5986,8 +5986,8 @@ msgid "You are not allowed to create posts or drafts on this site."
 msgstr "Anda tidak diizinkan untuk membuat tulisan atau konsep di situs ini."
 
 #: admin/includes/meta-boxes.php:550
-msgid "Trackbacks are a way to notify legacy blog systems that you&#8217;ve linked to them. If you link other WordPress sites they&#8217;ll be notified automatically using <a href=\"http://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments\" target=\"_blank\">pingbacks</a>, no other action necessary."
-msgstr "Lacak balik merupakan sebuah cara untuk memberitahu sistem blog Anda bahwa Anda telah memasang tautan ke mereka. Jika Anda memasang taut ke situs WordPress lainnya mereka akan diberitahu secara otomatis menggunakan <a href=\"http://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments\" target=\"_blank\">ping balik</a>, tidak diperlukan tindakan lain."
+msgid "Trackbacks are a way to notify legacy blog systems that you&#8217;ve linked to them. If you link other SlioPress sites they&#8217;ll be notified automatically using <a href=\"http://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments\" target=\"_blank\">pingbacks</a>, no other action necessary."
+msgstr "Lacak balik merupakan sebuah cara untuk memberitahu sistem blog Anda bahwa Anda telah memasang tautan ke mereka. Jika Anda memasang taut ke situs SlioPress lainnya mereka akan diberitahu secara otomatis menggunakan <a href=\"http://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments\" target=\"_blank\">ping balik</a>, tidak diperlukan tindakan lain."
 
 #: admin/includes/post.php:662
 msgid "You are not allowed to create pages on this site."
@@ -5998,7 +5998,7 @@ msgid "My Site"
 msgstr "Situs Saya"
 
 #: admin/includes/upgrade.php:297
-msgid "New WordPress Site"
+msgid "New SlioPress Site"
 msgstr "Situs Wordpress yang Baru"
 
 #: admin/includes/plugin.php:421
@@ -6061,8 +6061,8 @@ msgid "You do not have sufficient permissions to install plugins on this site."
 msgstr "Anda tidak memiliki hak akses yang cukup untuk menginstal plugin di situs ini."
 
 #: admin/import.php:59
-msgid "If you have posts or comments in another system, WordPress can import those into this site. To get started, choose a system to import from below:"
-msgstr "Jika Anda memiliki tulisan atau komentar di sistem lain, WordPress dapat mengimpornya ke dalam situs ini. Untuk memulainya, pilih sebuah sistem untuk diimpor di bawah ini:"
+msgid "If you have posts or comments in another system, SlioPress can import those into this site. To get started, choose a system to import from below:"
+msgstr "Jika Anda memiliki tulisan atau komentar di sistem lain, SlioPress dapat mengimpornya ke dalam situs ini. Untuk memulainya, pilih sebuah sistem untuk diimpor di bawah ini:"
 
 #: admin/export.php:13
 msgid "You do not have sufficient permissions to export the content of this site."
@@ -6361,8 +6361,8 @@ msgid "The miscellaneous options group has been removed. Use another settings gr
 msgstr "Kelompok aneka pilihan telah dihapus. Gunakan pengaturan kelompok lain."
 
 #: admin/options-general.php:137
-msgid "Enter the address here if you want your site homepage <a href=\"http://codex.wordpress.org/Giving_WordPress_Its_Own_Directory\">to be different from the directory</a> you installed WordPress."
-msgstr "Masukkan alamat di sini jika Anda ingin halaman depan situs Anda <a href=\"http://codex.wordpress.org/Giving_WordPress_Its_Own_Directory\">berbeda dari direktori</a> Anda menginstal WordPress."
+msgid "Enter the address here if you want your site homepage <a href=\"http://codex.wordpress.org/Giving_SlioPress_Its_Own_Directory\">to be different from the directory</a> you installed SlioPress."
+msgstr "Masukkan alamat di sini jika Anda ingin halaman depan situs Anda <a href=\"http://codex.wordpress.org/Giving_SlioPress_Its_Own_Directory\">berbeda dari direktori</a> Anda menginstal SlioPress."
 
 #: admin/includes/nav-menu.php:182
 msgid "The description will be displayed in the menu if the current theme supports it."
@@ -6454,12 +6454,12 @@ msgstr "Pengguna telah ada. Kata sandi diwariskan."
 
 #: admin/includes/class-upgrader.php:2671
 #: admin/includes/update-core.php:1172 admin/update-core.php:430
-msgid "WordPress updated successfully"
-msgstr "WordPress telah berhasil diperbarui"
+msgid "SlioPress updated successfully"
+msgstr "SlioPress telah berhasil diperbarui"
 
 #: admin/update-core.php:390
-msgid "Update WordPress"
-msgstr "Perbarui WordPress"
+msgid "Update SlioPress"
+msgstr "Perbarui SlioPress"
 
 #: admin/plugins.php:116 admin/update-core.php:225
 #: admin/update-core.php:286 admin/update-core.php:589
@@ -6468,19 +6468,19 @@ msgid "Update Plugins"
 msgstr "Perbarui Plugin"
 
 #: admin/update-core.php:65 admin/upgrade.php:76
-msgid "You cannot update because <a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires MySQL version %2$s or higher. You are running version %3$s."
+msgid "You cannot update because <a href=\"http://codex.wordpress.org/Version_%1$s\">SlioPress %1$s</a> requires MySQL version %2$s or higher. You are running version %3$s."
 msgstr "Anda tidak dapat memperbarui karena <a href=\"http://codex.wordpress.org/Version_%1$s\">Wordpress %1$s</a> membutuhkan MySQL versi %2$s atau lebih tinggi. Anda menjalankan versi %3$s."
 
 #: admin/update-core.php:63 admin/upgrade.php:74
-msgid "You cannot update because <a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires PHP version %2$s or higher. You are running version %3$s."
+msgid "You cannot update because <a href=\"http://codex.wordpress.org/Version_%1$s\">SlioPress %1$s</a> requires PHP version %2$s or higher. You are running version %3$s."
 msgstr "Anda tidak dapat memperbarui karena <a href=\"http://codex.wordpress.org/Version_%1$s\">Wordpress %1$s</a> memerlukan PHP versi %2$s atau lebih tinggi. Anda sedang menjalankan versi %3$s."
 
 #: admin/update-core.php:61 admin/upgrade.php:72
-msgid "You cannot update because <a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
+msgid "You cannot update because <a href=\"http://codex.wordpress.org/Version_%1$s\">SlioPress %1$s</a> requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
 msgstr "Anda tidak dapat memperbarui karena <a href=\"http://codex.wordpress.org/Version_%1$s\">Wordpress %1$s</a> memerlukan PHP versi %2$s atau lebih tinggi dan MySQL versi %3$s atau lebih tinggi. Anda sedang menjalankan PHP versi %4$s dan MySQL versi %5$s."
 
 #: admin/update-core.php:472 admin/update-core.php:511
-msgid "WordPress Updates"
+msgid "SlioPress Updates"
 msgstr "Pembaruan Wordpress "
 
 #: admin/includes/nav-menu.php:132 admin/includes/nav-menu.php:134
@@ -6602,24 +6602,24 @@ msgid "Advanced caching plugin."
 msgstr "Plugin caching tingkat lanjut."
 
 #: admin/install.php:172
-msgid "You cannot install because <a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires MySQL version %2$s or higher. You are running version %3$s."
-msgstr "Anda tidak dapat menginstal karena <a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress%1$s</a> memerlukan MySQL versi %2$s atau lebih tinggi. Anda sedang menjalankan versi %3$s."
+msgid "You cannot install because <a href=\"http://codex.wordpress.org/Version_%1$s\">SlioPress %1$s</a> requires MySQL version %2$s or higher. You are running version %3$s."
+msgstr "Anda tidak dapat menginstal karena <a href=\"http://codex.wordpress.org/Version_%1$s\">SlioPress%1$s</a> memerlukan MySQL versi %2$s atau lebih tinggi. Anda sedang menjalankan versi %3$s."
 
 #: admin/install.php:170
-msgid "You cannot install because <a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires PHP version %2$s or higher. You are running version %3$s."
-msgstr "Anda tidak dapat menginstal karena <a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress%1$s</a> memerlukan PHP versi %2$s atau lebih tinggi. Anda sedang menjalankan versi %3$s."
+msgid "You cannot install because <a href=\"http://codex.wordpress.org/Version_%1$s\">SlioPress %1$s</a> requires PHP version %2$s or higher. You are running version %3$s."
+msgstr "Anda tidak dapat menginstal karena <a href=\"http://codex.wordpress.org/Version_%1$s\">SlioPress%1$s</a> memerlukan PHP versi %2$s atau lebih tinggi. Anda sedang menjalankan versi %3$s."
 
 #: admin/includes/update.php:210
-msgid "<a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> is available! Please notify the site administrator."
-msgstr "<a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress%1$s</a> telah tersedia! Silakan beritahu administrator situs."
+msgid "<a href=\"http://codex.wordpress.org/Version_%1$s\">SlioPress %1$s</a> is available! Please notify the site administrator."
+msgstr "<a href=\"http://codex.wordpress.org/Version_%1$s\">SlioPress%1$s</a> telah tersedia! Silakan beritahu administrator situs."
 
 #: admin/includes/update.php:208
-msgid "<a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> is available! <a href=\"%2$s\">Please update now</a>."
-msgstr "<a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress%1$s</a> telah tersedia! <a href=\"%2$s\">Silakan perbarui sekarang</a>."
+msgid "<a href=\"http://codex.wordpress.org/Version_%1$s\">SlioPress %1$s</a> is available! <a href=\"%2$s\">Please update now</a>."
+msgstr "<a href=\"http://codex.wordpress.org/Version_%1$s\">SlioPress%1$s</a> telah tersedia! <a href=\"%2$s\">Silakan perbarui sekarang</a>."
 
 #: admin/install.php:168
-msgid "You cannot install because <a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
-msgstr "Anda tidak dapat menginstal karena <a href=\"http://codex.wordpress.org/Version_%1$s\">WordPress%1$s</a> memerlukan PHP versi %2$s atau lebih tinggi dan MySQL versi %3$s atau lebih tinggi. Anda sedang menjalankan PHP versi %4$s dan MySQL versi %5$s."
+msgid "You cannot install because <a href=\"http://codex.wordpress.org/Version_%1$s\">SlioPress %1$s</a> requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
+msgstr "Anda tidak dapat menginstal karena <a href=\"http://codex.wordpress.org/Version_%1$s\">SlioPress%1$s</a> memerlukan PHP versi %2$s atau lebih tinggi dan MySQL versi %3$s atau lebih tinggi. Anda sedang menjalankan PHP versi %4$s dan MySQL versi %5$s."
 
 #: admin/includes/class-ms-sites-list-table.php:287
 msgid "You are about to activate the site %s"
@@ -6799,8 +6799,8 @@ msgid "Version: %s"
 msgstr "Versi: %s"
 
 #: admin/includes/theme.php:61
-msgid "Unable to locate WordPress theme directory."
-msgstr "Tidak dapat menemukan direktori tema WordPress."
+msgid "Unable to locate SlioPress theme directory."
+msgstr "Tidak dapat menemukan direktori tema SlioPress."
 
 #: admin/includes/update.php:181
 msgid "You are using a development version (%1$s). Cool! Please <a href=\"%2$s\">stay updated</a>."
@@ -6821,8 +6821,8 @@ msgid "Uncategorized"
 msgstr "Tak Berkategori"
 
 #: admin/includes/upgrade.php:156
-msgid "Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!"
-msgstr "Selamat datang di WordPress. Ini adalah tulisan pertama Anda. Sunting atau hapus, kemudian mulai blogging!"
+msgid "Welcome to SlioPress. This is your first post. Edit or delete it, then start blogging!"
+msgstr "Selamat datang di SlioPress. Ini adalah tulisan pertama Anda. Sunting atau hapus, kemudian mulai blogging!"
 
 #: admin/includes/upgrade.php:165
 msgid "Hello world!"
@@ -6835,8 +6835,8 @@ msgid "hello-world"
 msgstr "halo-dunia"
 
 #: admin/includes/upgrade.php:179
-msgid "Mr WordPress"
-msgstr "Tuan WordPress"
+msgid "Mr SlioPress"
+msgstr "Tuan SlioPress"
 
 #: admin/includes/user.php:125 admin/includes/user.php:127
 msgid "<strong>ERROR</strong>: You entered your new password only once."
@@ -6867,8 +6867,8 @@ msgid "No matching users were found!"
 msgstr "Tidak ada pengguna yang cocok ditemukan!"
 
 #: admin/install.php:70
-msgid "WordPress &rsaquo; Installation"
-msgstr "Instalasi WordPress &rsaquo;"
+msgid "SlioPress &rsaquo; Installation"
+msgstr "Instalasi SlioPress &rsaquo;"
 
 #: admin/install.php:141
 msgid "Your E-mail"
@@ -6879,8 +6879,8 @@ msgid "Double-check your email address before continuing."
 msgstr "Periksa ulang alamat surel Anda sebelum melanjutkan."
 
 #: admin/install.php:150
-msgid "Install WordPress"
-msgstr "Instal WordPress"
+msgid "Install SlioPress"
+msgstr "Instal SlioPress"
 
 #: admin/install.php:218
 msgid "Information needed"
@@ -6891,8 +6891,8 @@ msgid "Success!"
 msgstr "Berhasil!"
 
 #: admin/install.php:274
-msgid "WordPress has been installed. Were you expecting more steps? Sorry to disappoint."
-msgstr "WordPress telah terinstal. Apakah Anda mengira masih ada langkah-langkah lagi? Maaf jika mengecewakan."
+msgid "SlioPress has been installed. Were you expecting more steps? Sorry to disappoint."
+msgstr "SlioPress telah terinstal. Apakah Anda mengira masih ada langkah-langkah lagi? Maaf jika mengecewakan."
 
 #: admin/link-add.php:15
 msgid "Add New Link"
@@ -6925,8 +6925,8 @@ msgid "Link not found."
 msgstr "Tautan tidak ditemukan."
 
 #: admin/maint/repair.php:19
-msgid "WordPress &rsaquo; Database Repair"
-msgstr "WordPress &rsaquo; Perbaikan Basis Data"
+msgid "SlioPress &rsaquo; Database Repair"
+msgstr "SlioPress &rsaquo; Perbaikan Basis Data"
 
 #: admin/maint/repair.php:117
 msgid "Repair Database"
@@ -7090,8 +7090,8 @@ msgid "Comment Blacklist"
 msgstr "Daftar Hitam Komentar"
 
 #: admin/options-discussion.php:162
-msgid "When a comment contains any of these words in its content, name, URL, e-mail, or IP, it will be marked as spam. One word or IP per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
-msgstr "Ketika sebuah komentar mengandung kata-kata ini dalam konten, nama, URL, e-mail, atau IP-nya, ia akan ditandai sebagai spam. Satu kata atau IP pe baris. Ini akan cocok di dalam kata, jadi &#8220;press&#8221; akan cocok dengan &#8220;WordPress&#8221;."
+msgid "When a comment contains any of these words in its content, name, URL, e-mail, or IP, it will be marked as spam. One word or IP per line. It will match inside words, so &#8220;press&#8221; will match &#8220;SlioPress&#8221;."
+msgstr "Ketika sebuah komentar mengandung kata-kata ini dalam konten, nama, URL, e-mail, atau IP-nya, ia akan ditandai sebagai spam. Satu kata atau IP pe baris. Ini akan cocok di dalam kata, jadi &#8220;press&#8221; akan cocok dengan &#8220;SlioPress&#8221;."
 
 #: admin/options-discussion.php:171
 msgid "Avatars"
@@ -7415,8 +7415,8 @@ msgid "Post via e-mail"
 msgstr "Mengirim tulisan via e-mail"
 
 #: admin/options-writing.php:131
-msgid "To post to WordPress by e-mail you must set up a secret e-mail account with POP3 access. Any mail received at this address will be posted, so it&#8217;s a good idea to keep this address very secret. Here are three random strings you could use: <kbd>%s</kbd>, <kbd>%s</kbd>, <kbd>%s</kbd>."
-msgstr "Untuk mengirim tulisan ke WordPress melalui e-mail Anda harus menata akun e-mail rahasia dengan akses POP. Segala surat yang diterima di alamat ini akan ditempelkan, jadi, jagalah kerahasiaan alamat ini. Berikut tiga sembarang string yang dapat Anda gunakan: <kbd>%s</kbd>, <kbd>%s</kbd>, <kbd>%s</kbd>."
+msgid "To post to SlioPress by e-mail you must set up a secret e-mail account with POP3 access. Any mail received at this address will be posted, so it&#8217;s a good idea to keep this address very secret. Here are three random strings you could use: <kbd>%s</kbd>, <kbd>%s</kbd>, <kbd>%s</kbd>."
+msgstr "Untuk mengirim tulisan ke SlioPress melalui e-mail Anda harus menata akun e-mail rahasia dengan akses POP. Segala surat yang diterima di alamat ini akan ditempelkan, jadi, jagalah kerahasiaan alamat ini. Berikut tiga sembarang string yang dapat Anda gunakan: <kbd>%s</kbd>, <kbd>%s</kbd>, <kbd>%s</kbd>."
 
 #: admin/options-writing.php:135
 msgid "Mail Server"
@@ -7439,8 +7439,8 @@ msgid "Update Services"
 msgstr "Perbarui Layanan"
 
 #: admin/options-writing.php:177
-msgid "When you publish a new post, WordPress automatically notifies the following site update services. For more about this, see <a href=\"http://codex.wordpress.org/Update_Services\">Update Services</a> on the Codex. Separate multiple service <abbr title=\"Universal Resource Locator\">URL</abbr>s with line breaks."
-msgstr "Ketika Anda mempublikasikan tulisan baru, WordPress secara otomatis memberitahu layanan update situs berikut. Untuk lebih lanjut mengenai ini, lihat <a href=\"http://codex.wordpress.org/Update_Services\">Update Services</a> pada Codex. Pisahkan <abbr title=\"Universal Resource Locator\">URL</abbr> beberapa layanan dengan ganti baris."
+msgid "When you publish a new post, SlioPress automatically notifies the following site update services. For more about this, see <a href=\"http://codex.wordpress.org/Update_Services\">Update Services</a> on the Codex. Separate multiple service <abbr title=\"Universal Resource Locator\">URL</abbr>s with line breaks."
+msgstr "Ketika Anda mempublikasikan tulisan baru, SlioPress secara otomatis memberitahu layanan update situs berikut. Untuk lebih lanjut mengenai ini, lihat <a href=\"http://codex.wordpress.org/Update_Services\">Update Services</a> pada Codex. Pisahkan <abbr title=\"Universal Resource Locator\">URL</abbr> beberapa layanan dengan ganti baris."
 
 #: admin/options.php:224
 msgid "All Settings"
@@ -7516,12 +7516,12 @@ msgid "No, Return me to the plugin list"
 msgstr "Tidak. Bawa saya kembali ke senarai plugin"
 
 #: admin/plugins.php:365
-msgid "Plugins extend and expand the functionality of WordPress. Once a plugin is installed, you may activate it or deactivate it here."
-msgstr "Plugin memperluas fungsionalitas dari WordPress. Setelah sebuah plugin terinstal, Anda bisa mengaktifkan atau menonaktifkannya di sini."
+msgid "Plugins extend and expand the functionality of SlioPress. Once a plugin is installed, you may activate it or deactivate it here."
+msgstr "Plugin memperluas fungsionalitas dari SlioPress. Setelah sebuah plugin terinstal, Anda bisa mengaktifkan atau menonaktifkannya di sini."
 
 #: admin/plugins.php:373
-msgid "If something goes wrong with a plugin and you can&#8217;t use WordPress, delete or rename that file in the <code>%s</code> directory and it will be automatically deactivated."
-msgstr "Jika ada yang salah dengan sebuah plugin dan Anda tidak dapat menggunakan WordPress, hapus atau ganti nama berkas tersebut dalam direktori <code>%s</code> dan ia akan secara otomatis dinonaktifkan."
+msgid "If something goes wrong with a plugin and you can&#8217;t use SlioPress, delete or rename that file in the <code>%s</code> directory and it will be automatically deactivated."
+msgstr "Jika ada yang salah dengan sebuah plugin dan Anda tidak dapat menggunakan SlioPress, hapus atau ganti nama berkas tersebut dalam direktori <code>%s</code> dan ia akan secara otomatis dinonaktifkan."
 
 #: admin/plugins.php:390
 msgid "The plugin <code>%s</code> has been <strong>deactivated</strong> due to an error: %s"
@@ -7716,16 +7716,16 @@ msgid "Download %s"
 msgstr "Unduh %s"
 
 #: admin/update-core.php:250
-msgid "Compatibility with WordPress %1$s: 100%% (according to its author)"
-msgstr "Kompatibilitas dengan WordPress %1$s: 100%% (menurut penulisnya)"
+msgid "Compatibility with SlioPress %1$s: 100%% (according to its author)"
+msgstr "Kompatibilitas dengan SlioPress %1$s: 100%% (menurut penulisnya)"
 
 #: admin/update-core.php:253 admin/update-core.php:261
-msgid "Compatibility with WordPress %1$s: %2$d%% (%3$d \"works\" votes out of %4$d total)"
-msgstr "Kompatibilitas dengan WordPress %1$s: %2$d%% (%3$d suara menyatakan \"bekerja\" dari total %4$d suara)"
+msgid "Compatibility with SlioPress %1$s: %2$d%% (%3$d \"works\" votes out of %4$d total)"
+msgstr "Kompatibilitas dengan SlioPress %1$s: %2$d%% (%3$d suara menyatakan \"bekerja\" dari total %4$d suara)"
 
 #: admin/update-core.php:255 admin/update-core.php:263
-msgid "Compatibility with WordPress %1$s: Unknown"
-msgstr "Kompatibilitas dengan WordPress %1$s: Tidak diketahui"
+msgid "Compatibility with SlioPress %1$s: Unknown"
+msgstr "Kompatibilitas dengan SlioPress %1$s: Tidak diketahui"
 
 #: admin/includes/class-upgrader.php:2669 admin/update-core.php:425
 msgid "Installation Failed"
@@ -7754,8 +7754,8 @@ msgid "Upload Theme"
 msgstr "Unggah Tema"
 
 #: admin/upgrade.php:67
-msgid "Your WordPress database is already up-to-date!"
-msgstr "Basis data WordPress Anda telah up-to-date!"
+msgid "Your SlioPress database is already up-to-date!"
+msgstr "Basis data SlioPress Anda telah up-to-date!"
 
 #: admin/upgrade.php:104
 msgid "%s queries"
@@ -8072,8 +8072,8 @@ msgid "Add New"
 msgstr "Tambah Baru"
 
 #: admin/maint/repair.php:103
-msgid "Some database problems could not be repaired. Please copy-and-paste the following list of errors to the <a href=\"%s\">WordPress support forums</a> to get additional assistance."
-msgstr "Beberapa masalah basis data tidak dapat diperbaiki. Silahkan salin-dan-tempel daftar kesalahan berikut ke <a href=\"%s\">forum dukungan WordPress</a> untuk mendapatkan bantuan tambahan."
+msgid "Some database problems could not be repaired. Please copy-and-paste the following list of errors to the <a href=\"%s\">SlioPress support forums</a> to get additional assistance."
+msgstr "Beberapa masalah basis data tidak dapat diperbaiki. Silahkan salin-dan-tempel daftar kesalahan berikut ke <a href=\"%s\">forum dukungan SlioPress</a> untuk mendapatkan bantuan tambahan."
 
 #: admin/includes/class-plugins-list-table.php:311
 #: admin/includes/class-plugins-list-table.php:428
@@ -8153,20 +8153,20 @@ msgid "<strong><em>Note that password</em></strong> carefully! It is a <em>rando
 msgstr "<strong><em>Catat kata sandi tersebut</em></strong> dengan baik! Itu adalah kata sandi <em>sembarang / acak</em> yang diciptakan hanya untuk Anda."
 
 #: admin/options-discussion.php:153
-msgid "When a comment contains any of these words in its content, name, URL, e-mail, or IP, it will be held in the <a href=\"edit-comments.php?comment_status=moderated\">moderation queue</a>. One word or IP per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
-msgstr "Ketika sebuah komentar mengandung salah satu dari kata-kata ini dalam konten, nama, URL, e-mail, atau IP-nya, komentar tersebut akan ditahan dalam <a href=\"edit-comments.php?comment_status=moderated\">antrian moderasi</a>. Satu kata atau IP per baris. Ini akan cocok dalam kata, jadi &#8220;press&#8221; akan cocok dengan &#8220;WordPress&#8221;."
+msgid "When a comment contains any of these words in its content, name, URL, e-mail, or IP, it will be held in the <a href=\"edit-comments.php?comment_status=moderated\">moderation queue</a>. One word or IP per line. It will match inside words, so &#8220;press&#8221; will match &#8220;SlioPress&#8221;."
+msgstr "Ketika sebuah komentar mengandung salah satu dari kata-kata ini dalam konten, nama, URL, e-mail, atau IP-nya, komentar tersebut akan ditahan dalam <a href=\"edit-comments.php?comment_status=moderated\">antrian moderasi</a>. Satu kata atau IP per baris. Ini akan cocok dalam kata, jadi &#8220;press&#8221; akan cocok dengan &#8220;SlioPress&#8221;."
 
 #: admin/includes/update-core.php:839
-msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
-msgstr "Pembaruan tidak dapat dipasang karena WordPress %1$s membutuhkan PHP versi %2$s atau lebih tinggi dan MySQL versi %3$s atau lebih tinggi. Anda menjalankan PHP versi %4$s dan MySQL versi %5$s."
+msgid "The update cannot be installed because SlioPress %1$s requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
+msgstr "Pembaruan tidak dapat dipasang karena SlioPress %1$s membutuhkan PHP versi %2$s atau lebih tinggi dan MySQL versi %3$s atau lebih tinggi. Anda menjalankan PHP versi %4$s dan MySQL versi %5$s."
 
 #: admin/includes/update-core.php:841
-msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher. You are running version %3$s."
-msgstr "Pembaruan tidak dapat dipasang karena WordPress %1$s membutuhkan PHP versi %2$s atau lebih tinggi. Anda menjalankan versi %3$s."
+msgid "The update cannot be installed because SlioPress %1$s requires PHP version %2$s or higher. You are running version %3$s."
+msgstr "Pembaruan tidak dapat dipasang karena SlioPress %1$s membutuhkan PHP versi %2$s atau lebih tinggi. Anda menjalankan versi %3$s."
 
 #: admin/includes/update-core.php:843
-msgid "The update cannot be installed because WordPress %1$s requires MySQL version %2$s or higher. You are running version %3$s."
-msgstr "Pembaruan tidak dapat dipasang karena WordPress %1$s membutuhkan MySQL versi %2$s atau lebih tinggi. Anda sedang menjalankan versi %3$s."
+msgid "The update cannot be installed because SlioPress %1$s requires MySQL version %2$s or higher. You are running version %3$s."
+msgstr "Pembaruan tidak dapat dipasang karena SlioPress %1$s membutuhkan MySQL versi %2$s atau lebih tinggi. Anda sedang menjalankan versi %3$s."
 
 #: admin/includes/update-core.php:797
 msgid "Verifying the unpacked files&#8230;"
@@ -8181,12 +8181,12 @@ msgid "Update to %s"
 msgstr "Perbarui ke %s"
 
 #: admin/includes/update.php:425
-msgid "An automated WordPress update has failed to complete - <a href=\"%s\">please attempt the update again now</a>."
-msgstr "Pembaruan otomatis WordPress gagal diselesaikan - <a href=\"%s\">silakan coba perbarui kembali sekarang</a>."
+msgid "An automated SlioPress update has failed to complete - <a href=\"%s\">please attempt the update again now</a>."
+msgstr "Pembaruan otomatis SlioPress gagal diselesaikan - <a href=\"%s\">silakan coba perbarui kembali sekarang</a>."
 
 #: admin/includes/update.php:427
-msgid "An automated WordPress update has failed to complete! Please notify the site administrator."
-msgstr "Pembaruan WordPress otomatis gagal diselesaikan! Harap beritahu administrator situs Anda."
+msgid "An automated SlioPress update has failed to complete! Please notify the site administrator."
+msgstr "Pembaruan SlioPress otomatis gagal diselesaikan! Harap beritahu administrator situs Anda."
 
 #: admin/plugin-editor.php:258
 msgid "Update File and Attempt to Reactivate"
@@ -8255,8 +8255,8 @@ msgstr[0] "Lampiran media dikembalikan dari tong sampah."
 msgstr[1] "%d lampiran media dikembalikan dari tong sampah."
 
 #: admin/options-writing.php:71
-msgid "WordPress should correct invalidly nested XHTML automatically"
-msgstr "WordPress seharusnya membetulkan XHTML yang peletakannya tidak sah secara otomatis"
+msgid "SlioPress should correct invalidly nested XHTML automatically"
+msgstr "SlioPress seharusnya membetulkan XHTML yang peletakannya tidak sah secara otomatis"
 
 #: admin/includes/update-core.php:1053
 msgid "Upgrading database&#8230;"
@@ -8656,12 +8656,12 @@ msgid "Export"
 msgstr "Ekspor"
 
 #: admin/export.php:150
-msgid "When you click the button below WordPress will create an XML file for you to save to your computer."
-msgstr "Ketika Anda mengklik tombol di bawah WordPress akan menciptakan sebuah berkas XML untuk Anda simpan di komputer Anda."
+msgid "When you click the button below SlioPress will create an XML file for you to save to your computer."
+msgstr "Ketika Anda mengklik tombol di bawah SlioPress akan menciptakan sebuah berkas XML untuk Anda simpan di komputer Anda."
 
 #: admin/export.php:151
-msgid "This format, which we call WordPress eXtended RSS or WXR, will contain your posts, pages, comments, custom fields, categories, and tags."
-msgstr "Format ini, yang kita sebut WordPress eXtended RSS atau WXR akan berisi tulisan, halaman, komentar ruas tersuai, kategori dan tag Anda."
+msgid "This format, which we call SlioPress eXtended RSS or WXR, will contain your posts, pages, comments, custom fields, categories, and tags."
+msgstr "Format ini, yang kita sebut SlioPress eXtended RSS atau WXR akan berisi tulisan, halaman, komentar ruas tersuai, kategori dan tag Anda."
 
 #: admin/export.php:240
 msgid "Download Export File"
@@ -8779,12 +8779,12 @@ msgid "Could not access filesystem."
 msgstr "Tidak dapat mengakses sistem berkas"
 
 #: admin/includes/class-upgrader.php:123
-msgid "Unable to locate WordPress Content directory (content)."
-msgstr "Tak dapat menemukan lokasi direktori Konten WordPress (content)."
+msgid "Unable to locate SlioPress Content directory (content)."
+msgstr "Tak dapat menemukan lokasi direktori Konten SlioPress (content)."
 
 #: admin/includes/class-upgrader.php:124 admin/includes/plugin.php:803
-msgid "Unable to locate WordPress Plugin directory."
-msgstr "Tidak dapat menemukan lokasi direktori Plugin WordPress."
+msgid "Unable to locate SlioPress Plugin directory."
+msgstr "Tidak dapat menemukan lokasi direktori Plugin SlioPress."
 
 #: admin/includes/class-upgrader.php:129
 msgid "Download failed."
@@ -8883,8 +8883,8 @@ msgid "Right Now"
 msgstr "Sekarang"
 
 #: admin/includes/dashboard.php:988
-msgid "Other WordPress News"
-msgstr "Berita WordPress lainnya"
+msgid "Other SlioPress News"
+msgstr "Berita SlioPress lainnya"
 
 #: admin/includes/dashboard.php:108
 msgid "View all"
@@ -9254,8 +9254,8 @@ msgstr "Unggah"
 #: admin/includes/media.php:440 admin/includes/template.php:1542
 #: admin/install.php:76 admin/maint/repair.php:25
 #: admin/setup-config.php:86 admin/upgrade.php:62
-msgid "WordPress"
-msgstr "WordPress"
+msgid "SlioPress"
+msgstr "SlioPress"
 
 #: admin/includes/media.php:1040 admin/includes/media.php:1193
 msgid "File URL"
@@ -9730,8 +9730,8 @@ msgid "Last Updated:"
 msgstr "Terakhir Diperbarui:"
 
 #: admin/includes/plugin-install.php:455
-msgid "Requires WordPress Version:"
-msgstr "Membutuhkan WordPress Versi:"
+msgid "Requires SlioPress Version:"
+msgstr "Membutuhkan SlioPress Versi:"
 
 #: admin/includes/plugin-install.php:455
 msgid "%s or higher"
@@ -9752,20 +9752,20 @@ msgstr[0] "%s kali"
 msgstr[1] "%s kali"
 
 #: admin/includes/plugin-install.php:461
-msgid "WordPress.org Plugin Page &#187;"
-msgstr "Halaman Plugin WordPress.org &#187;"
+msgid "SlioPress.org Plugin Page &#187;"
+msgstr "Halaman Plugin SlioPress.org &#187;"
 
 #: admin/includes/plugin-install.php:469
 msgid "Average Rating"
 msgstr "Penilaian Rata-Rata"
 
 #: admin/includes/plugin-install.php:519
-msgid "<strong>Warning:</strong> This plugin has <strong>not been tested</strong> with your current version of WordPress."
-msgstr "<strong>Peringatan:</strong> Plugin ini <strong>belum diuji</strong> dengan versi WordPress saat ini."
+msgid "<strong>Warning:</strong> This plugin has <strong>not been tested</strong> with your current version of SlioPress."
+msgstr "<strong>Peringatan:</strong> Plugin ini <strong>belum diuji</strong> dengan versi SlioPress saat ini."
 
 #: admin/includes/plugin-install.php:521
-msgid "<strong>Warning:</strong> This plugin has <strong>not been marked as compatible</strong> with your version of WordPress."
-msgstr "<strong>Peringatan:</strong> Plugin ini <strong>belum ditandai kompatibel</strong> dengan versi WordPress Anda."
+msgid "<strong>Warning:</strong> This plugin has <strong>not been marked as compatible</strong> with your version of SlioPress."
+msgstr "<strong>Peringatan:</strong> Plugin ini <strong>belum ditandai kompatibel</strong> dengan versi SlioPress Anda."
 
 #: admin/includes/plugin.php:916
 msgid "Plugin file does not exist."
@@ -10240,12 +10240,12 @@ msgid "Filesystem error."
 msgstr "Galat sistem berkas."
 
 #: admin/includes/class-upgrader.php:122
-msgid "Unable to locate WordPress Root directory."
-msgstr "Tidak dapat menemukan lokasi direktori Akar WordPress."
+msgid "Unable to locate SlioPress Root directory."
+msgstr "Tidak dapat menemukan lokasi direktori Akar SlioPress."
 
 #: admin/includes/class-upgrader.php:125
-msgid "Unable to locate WordPress Theme directory."
-msgstr "Tidak dapat menemukan lokasi direktori Tema WordPress."
+msgid "Unable to locate SlioPress Theme directory."
+msgstr "Tidak dapat menemukan lokasi direktori Tema SlioPress."
 
 #. translators: %s: directory name
 #: admin/includes/class-upgrader.php:127
@@ -10287,8 +10287,8 @@ msgid "The theme is at the latest version."
 msgstr "Tema ini merupakan versi terbaru."
 
 #: admin/includes/class-upgrader.php:1932
-msgid "WordPress is at the latest version."
-msgstr "WordPress sudah merupakan versi yang terbaru."
+msgid "SlioPress is at the latest version."
+msgstr "SlioPress sudah merupakan versi yang terbaru."
 
 #: admin/includes/class-upgrader-skins.php:543
 msgid "Return to Theme Installer"
@@ -10358,7 +10358,7 @@ msgstr "Y/m/d \\p\\a\\d\\a g:ia"
 
 #. translators: blog tagline
 #: admin/includes/schema.php:372
-msgid "Just another WordPress site"
+msgid "Just another SlioPress site"
 msgstr "Moto situs Anda bisa diletakkan di sini."
 
 #: admin/includes/media.php:2369 admin/includes/nav-menu.php:656

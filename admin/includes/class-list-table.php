@@ -5,7 +5,7 @@
  * @since 3.1.0
  * @access private
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage List_Table
  */
 class WP_List_Table {

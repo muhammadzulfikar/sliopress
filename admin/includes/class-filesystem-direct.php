@@ -1,16 +1,16 @@
 <?php
 /**
- * WordPress Direct Filesystem.
+ * SlioPress Direct Filesystem.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Filesystem
  */
 
 /**
- * WordPress Filesystem Class for direct PHP file and folder manipulation.
+ * SlioPress Filesystem Class for direct PHP file and folder manipulation.
  *
  * @since 2.5.0
- * @package WordPress
+ * @package SlioPress
  * @subpackage Filesystem
  * @uses WP_Filesystem_Base Extends class
  */

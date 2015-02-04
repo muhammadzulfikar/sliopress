@@ -4,7 +4,7 @@
  *
  * @since 3.0.0
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Multisite
  */
 
@@ -165,7 +165,7 @@ function get_network_by_path( $domain, $path, $segments = null ) {
 		 *
 		 * @since 3.9.0
 		 *
-		 * @param int|null $segments The number of path segments to consider. WordPress by default looks at
+		 * @param int|null $segments The number of path segments to consider. SlioPress by default looks at
 		 *                           one path segment. The function default of null only makes sense when you
 		 *                           know the requested path should match a network.
 		 * @param string   $domain   The requested domain.
@@ -296,7 +296,7 @@ function get_site_by_path( $domain, $path, $segments = null ) {
 	 *
 	 * @since 3.9.0
 	 *
-	 * @param int|null $segments The number of path segments to consider. WordPress by default looks at
+	 * @param int|null $segments The number of path segments to consider. SlioPress by default looks at
 	 *                           one path segment following the network path. The function default of
 	 *                           null only makes sense when you know the requested path should match a site.
 	 * @param string   $domain   The requested domain.
@@ -404,12 +404,12 @@ function ms_not_installed() {
 	$msg .= ' ' . __( 'If you are the owner of this network please check that MySQL is running properly and all tables are error free.' ) . '</p>';
 	$query = $wpdb->prepare( "SHOW TABLES LIKE %s", $wpdb->esc_like( $wpdb->site ) );
 	if ( ! $wpdb->get_var( $query ) ) {
-		$msg .= '<p>' . sprintf( __( '<strong>Database tables are missing.</strong> This means that MySQL is not running, WordPress was not installed properly, or someone deleted <code>%s</code>. You really should look at your database now.' ), $wpdb->site ) . '</p>';
+		$msg .= '<p>' . sprintf( __( '<strong>Database tables are missing.</strong> This means that MySQL is not running, SlioPress was not installed properly, or someone deleted <code>%s</code>. You really should look at your database now.' ), $wpdb->site ) . '</p>';
 	} else {
 		$msg .= '<p>' . sprintf( __( '<strong>Could not find site <code>%1$s</code>.</strong> Searched for table <code>%2$s</code> in database <code>%3$s</code>. Is that right?' ), rtrim( $domain . $path, '/' ), $wpdb->blogs, DB_NAME ) . '</p>';
 	}
 	$msg .= '<p><strong>' . __( 'What do I do now?' ) . '</strong> ';
-	$msg .= __( 'Read the <a target="_blank" href="http://codex.wordpress.org/Debugging_a_WordPress_Network">bug report</a> page. Some of the guidelines there may help you figure out what went wrong.' );
+	$msg .= __( 'Read the <a target="_blank" href="http://codex.wordpress.org/Debugging_a_SlioPress_Network">bug report</a> page. Some of the guidelines there may help you figure out what went wrong.' );
 	$msg .= ' ' . __( 'If you&#8217;re still stuck with this message, then check that your database contains the following tables:' ) . '</p><ul>';
 	foreach ( $wpdb->tables('global') as $t => $table ) {
 		if ( 'sitecategories' == $t )

@@ -1,10 +1,10 @@
 <?php
 /**
- * Deprecated functions from WordPress MU and the multisite feature. You shouldn't
+ * Deprecated functions from SlioPress MU and the multisite feature. You shouldn't
  * use these functions and look for the alternatives instead. The functions will be
  * removed in a later version.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Deprecated
  * @since 3.0.0
  */
@@ -15,7 +15,7 @@
 
 /**
  * Get the "dashboard blog", the blog where users without a blog edit their profile data.
- * Dashboard blog functionality was removed in WordPress 3.1, replaced by the user admin.
+ * Dashboard blog functionality was removed in SlioPress 3.1, replaced by the user admin.
  *
  * @since MU
  * @deprecated 3.1.0

@@ -4,7 +4,7 @@
  *
  * @link http://codex.wordpress.org/Function_Reference/WP_Cache
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Cache
  */
 
@@ -30,10 +30,10 @@ function wp_cache_add( $key, $data, $group = '', $expire = 0 ) {
 /**
  * Closes the cache.
  *
- * This function has ceased to do anything since WordPress 2.5. The
+ * This function has ceased to do anything since SlioPress 2.5. The
  * functionality was removed along with the rest of the persistent cache. This
  * does not mean that plugins can't implement this function when they need to
- * make sure that the cache is cleaned up after WordPress no longer needs it.
+ * make sure that the cache is cleaned up after SlioPress no longer needs it.
  *
  * @since 2.0.0
  *
@@ -135,7 +135,7 @@ function wp_cache_incr( $key, $offset = 1, $group = '' ) {
  * Sets up Object Cache Global and assigns it.
  *
  * @since 2.0.0
- * @global WP_Object_Cache $wp_object_cache WordPress Object Cache
+ * @global WP_Object_Cache $wp_object_cache SlioPress Object Cache
  */
 function wp_cache_init() {
 	$GLOBALS['wp_object_cache'] = new WP_Object_Cache();
@@ -244,9 +244,9 @@ function wp_cache_reset() {
 }
 
 /**
- * WordPress Object Cache
+ * SlioPress Object Cache
  *
- * The WordPress Object Cache is used to save on trips to the database. The
+ * The SlioPress Object Cache is used to save on trips to the database. The
  * Object Cache stores all of the cache data to memory and makes the cache
  * contents available by using a key, which is used to name and later retrieve
  * the cache contents.
@@ -255,7 +255,7 @@ function wp_cache_reset() {
  * in the content folder which is looked at in settings. If that file
  * exists, then this file will not be included.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Cache
  * @since 2.0.0
  */
@@ -596,7 +596,7 @@ class WP_Object_Cache {
 	 * The cache contents is grouped by the $group parameter followed by the
 	 * $key. This allows for duplicate ids in unique groups. Therefore, naming of
 	 * the group should be used with care and should follow normal function
-	 * naming guidelines outside of core WordPress usage.
+	 * naming guidelines outside of core SlioPress usage.
 	 *
 	 * The $expire parameter is not used, because the cache will automatically
 	 * expire for each time a page is accessed and PHP finishes. The method is

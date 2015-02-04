@@ -3,12 +3,12 @@
  * Confirms that the activation key that is sent in an email after a user signs
  * up for a new blog matches the key for that user and then displays confirmation.
  *
- * @package WordPress
+ * @package SlioPress
  */
 
 define( 'WP_INSTALLING', true );
 
-/** Sets up the WordPress Environment. */
+/** Sets up the SlioPress Environment. */
 require( dirname(__FILE__) . '/load.php' );
 
 require( dirname( __FILE__ ) . '/blog-header.php' );

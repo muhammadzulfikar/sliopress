@@ -2,7 +2,7 @@
 /**
  * Defines constants and global variables that can be overridden, generally in config.php.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Multisite
  * @since 3.0.0
  */

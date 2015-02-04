@@ -3,19 +3,19 @@
  * Bootstrap file for setting the ABSPATH constant
  * and loading the config.php file. The config.php
  * file will then load the settings.php file, which
- * will then set up the WordPress environment.
+ * will then set up the SlioPress environment.
  *
  * If the config.php file is not found then an error
  * will be displayed asking the visitor to set up the
  * config.php file.
  *
- * Will also search for config.php in WordPress' parent
- * directory to allow the WordPress directory to remain
+ * Will also search for config.php in SlioPress' parent
+ * directory to allow the SlioPress directory to remain
  * untouched.
  *
  * @internal This file must be parsable by PHP4.
  *
- * @package WordPress
+ * @package SlioPress
  */
 
 /** Define ABSPATH as this file's directory */
@@ -69,5 +69,5 @@ if ( file_exists( ABSPATH . 'config.php') ) {
 	$die .= '<p>' . __( "You can create a <code>config.php</code> file through a web interface, but this doesn't work for all server setups. The safest way is to manually create the file." ) . '</p>';
 	$die .= '<p><a href="' . $path . '" class="button button-large">' . __( "Create a Configuration File" ) . '</a>';
 
-	wp_die( $die, __( 'WordPress &rsaquo; Error' ) );
+	wp_die( $die, __( 'SlioPress &rsaquo; Error' ) );
 }

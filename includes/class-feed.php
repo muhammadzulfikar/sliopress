@@ -105,12 +105,12 @@ class WP_SimplePie_File extends SimplePie_File {
 }
 
 /**
- * WordPress SimplePie Sanitization Class
+ * SlioPress SimplePie Sanitization Class
  *
  * Extension of the SimplePie_Sanitize class to use KSES, because
  * we cannot universally count on DOMDocument being available
  *
- * @package WordPress
+ * @package SlioPress
  * @since 3.5.0
  */
 class WP_SimplePie_Sanitize_KSES extends SimplePie_Sanitize {

@@ -11,7 +11,7 @@ class WP_Importer {
 	public function __construct() {}
 
 	/**
-	 * Returns array with imported permalinks from WordPress database
+	 * Returns array with imported permalinks from SlioPress database
 	 *
 	 * @param string $bid
 	 * @return array
@@ -48,7 +48,7 @@ class WP_Importer {
 	}
 
 	/**
-	 * Return count of imported permalinks from WordPress database
+	 * Return count of imported permalinks from SlioPress database
 	 *
 	 * @param string $bid
 	 * @return int
@@ -74,7 +74,7 @@ class WP_Importer {
 	}
 
 	/**
-	 * Set array with imported comments from WordPress database
+	 * Set array with imported comments from SlioPress database
 	 *
 	 * @param string $bid
 	 * @return array

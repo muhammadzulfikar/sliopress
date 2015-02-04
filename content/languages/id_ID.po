@@ -10,7 +10,7 @@ msgstr ""
 "X-Generator: GlotPress/1.0-alpha-1000\n"
 "Project-Id-Version: Development\n"
 
-#. translators: 'rtl' or 'ltr'. This sets the text direction for WordPress.
+#. translators: 'rtl' or 'ltr'. This sets the text direction for SlioPress.
 #: includes/locale.php:189
 msgctxt "text direction"
 msgid "ltr"
@@ -391,8 +391,8 @@ msgid "Default"
 msgstr "Bawaan"
 
 #: login.php:850
-msgid "<strong>You have successfully updated WordPress!</strong> Please log back in to see what&#8217;s new."
-msgstr "<strong>Anda berhasil memperbarui WordPress!</strong> Silahkan masuk kembali untuk melihat apa saja yang baru."
+msgid "<strong>You have successfully updated SlioPress!</strong> Please log back in to see what&#8217;s new."
+msgstr "<strong>Anda berhasil memperbarui SlioPress!</strong> Silahkan masuk kembali untuk melihat apa saja yang baru."
 
 #: includes/media.php:2946
 msgid "Trash Selected"
@@ -600,8 +600,8 @@ msgstr "Widget adalah bagian-bagian independen dari konten yang bisa ditempatkan
 
 #: includes/update.php:119 includes/update.php:295
 #: includes/update.php:457
-msgid "(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)"
-msgstr "(WordPress tak bisa menetapkan sambungan aman ke WordPress.org. Silakan hubungi administrator sever Anda.)"
+msgid "(SlioPress could not establish a secure connection to SlioPress.org. Please contact your server administrator.)"
+msgstr "(SlioPress tak bisa menetapkan sambungan aman ke SlioPress.org. Silakan hubungi administrator sever Anda.)"
 
 #: includes/class-customize-widgets.php:1053
 msgid "Shift-click to edit this widget."
@@ -630,8 +630,8 @@ msgid "<strong>ERROR</strong>: Cookies are blocked due to unexpected output. For
 msgstr "<strong>GALAT</strong>: Cookies diblokir akibat keluaran yang tak terduga. Untuk bantuan, silakan baca <a href=\"%1$s\">dokumentasi ini</a> atau kunjungi <a href=\"%2$s\">forum dukungan</a>."
 
 #: login.php:783
-msgid "<strong>ERROR</strong>: Cookies are blocked or not supported by your browser. You must <a href=\"%s\">enable cookies</a> to use WordPress."
-msgstr "<strong>GALAT</strong>: Cookies diblokir atau tak didukung oleh peramban Anda. Anda harus <a href=\"%s\">mengaktifkan cookies</a> untuk menggunakan WordPress."
+msgid "<strong>ERROR</strong>: Cookies are blocked or not supported by your browser. You must <a href=\"%s\">enable cookies</a> to use SlioPress."
+msgstr "<strong>GALAT</strong>: Cookies diblokir atau tak didukung oleh peramban Anda. Anda harus <a href=\"%s\">mengaktifkan cookies</a> untuk menggunakan SlioPress."
 
 #: includes/js/tinymce/mce-help.php:120
 msgid "Add/remove code tag"
@@ -1224,7 +1224,7 @@ msgid ""
 "<li>Does the user <code>%2$s</code> have permission to use the <code>%1$s</code> database?</li>\n"
 "<li>On some systems the name of your database is prefixed with your username, so it would be like <code>username_%1$s</code>. Could that be the problem?</li>\n"
 "</ul>\n"
-"<p>If you don't know how to set up a database you should <strong>contact your host</strong>. If all else fails you may find help at the <a href=\"https://wordpress.org/support/\">WordPress Support Forums</a>.</p>"
+"<p>If you don't know how to set up a database you should <strong>contact your host</strong>. If all else fails you may find help at the <a href=\"https://wordpress.org/support/\">SlioPress Support Forums</a>.</p>"
 msgstr ""
 "<h1>Tak bisa memilih basis data</h1>\n"
 "<p>Kami bisa menyambungkan ke server basis data (artinya nama pengguna dan password Anda sudah benar) namun tak bisa menyeleksi basis data <code>%1$s</code>.</p>\n"
@@ -1233,7 +1233,7 @@ msgstr ""
 "<li>Apakah pengguna <code>%2$s</code> memiliki izin untuk menggunakan basis data <code>%1$s</code>?</li>\n"
 "<li>Pada beberapa sistem, nama basis data Anda memiliki prefiks yang menggunakan nama pengguna Anda, misalnya <code>namapengguna_%1$s</code>. Mungkinkah itu masalahnya?</li>\n"
 "</ul>\n"
-"<p>Jika anda tidak tahu bagaimana mengatur basis data, Anda harus <strong>menghubungi inang (host)</strong>. Jika semuanya gagal, Anda bisa mencari bantuan di <a href=\"https://wordpress.org/support/\">Forum Dukungan WordPress</a>.</p>"
+"<p>Jika anda tidak tahu bagaimana mengatur basis data, Anda harus <strong>menghubungi inang (host)</strong>. Jika semuanya gagal, Anda bisa mencari bantuan di <a href=\"https://wordpress.org/support/\">Forum Dukungan SlioPress</a>.</p>"
 
 #: includes/db.php:1158
 msgid "The query argument of %s must have a placeholder."
@@ -1249,7 +1249,7 @@ msgid ""
 "\t<li>Are you sure that you have typed the correct hostname?</li>\n"
 "\t<li>Are you sure that the database server is running?</li>\n"
 "</ul>\n"
-"<p>If you're unsure what these terms mean you should probably contact your host. If you still need help you can always visit the <a href='https://wordpress.org/support/'>WordPress Support Forums</a>.</p>\n"
+"<p>If you're unsure what these terms mean you should probably contact your host. If you still need help you can always visit the <a href='https://wordpress.org/support/'>SlioPress Support Forums</a>.</p>\n"
 msgstr ""
 "\n"
 "<h1>Galat menyambungkan basis data</h1>\n"
@@ -1259,7 +1259,7 @@ msgstr ""
 "→\t<li>Apakah Anda yakin sudah mengetikkan nama host yang benar?</li>\n"
 "→\t<li>Apakah Anda yakin bahwa server basis data sudah/masih menyala?</li>\n"
 "</ul>\n"
-"<p>Jika tidak yakin bahwa Anda memahami terma-terma di atas, Anda sebaiknya menghubungi inang (host) Anda. Jika Anda masih membutuhkan bantuan, silakan kunjungi <a href='https://wordpress.org/support/'>Forum Dukungan WordPress</a>.</p>\n"
+"<p>Jika tidak yakin bahwa Anda memahami terma-terma di atas, Anda sebaiknya menghubungi inang (host) Anda. Jika Anda masih membutuhkan bantuan, silakan kunjungi <a href='https://wordpress.org/support/'>Forum Dukungan SlioPress</a>.</p>\n"
 
 #: includes/user.php:2100
 msgid "Hint: The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! \" ? $ % ^ &amp; )."
@@ -1267,8 +1267,8 @@ msgstr "Petunjuk: password Anda setidaknya harus memiliki tujuh karakter. Agar l
 
 #: includes/update.php:119 includes/update.php:295
 #: includes/update.php:457
-msgid "An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href=\"https://wordpress.org/support/\">support forums</a>."
-msgstr "Terjadi galat tak terduga. Mungkin ada yang keliru dengan WordPress.org atau konfigurasi server ini. Jika Anda terus mengalami masalah ini, silakan coba <a href=\"https://wordpress.org/support/\">forum dukungan</a>."
+msgid "An unexpected error occurred. Something may be wrong with SlioPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href=\"https://wordpress.org/support/\">support forums</a>."
+msgstr "Terjadi galat tak terduga. Mungkin ada yang keliru dengan SlioPress.org atau konfigurasi server ini. Jika Anda terus mengalami masalah ini, silakan coba <a href=\"https://wordpress.org/support/\">forum dukungan</a>."
 
 #: includes/media-template.php:1184
 msgid "There are no associated subtitles."
@@ -1575,7 +1575,7 @@ msgid "Arbitrary text or HTML."
 msgstr "Sembarang teks atau HTML."
 
 #: includes/default-widgets.php:371
-msgid "Login, RSS, &amp; WordPress.org links."
+msgid "Login, RSS, &amp; SlioPress.org links."
 msgstr "Tautan log masuk, RSS, &amp; Wordpress.org."
 
 #: includes/default-widgets.php:226
@@ -1912,8 +1912,8 @@ msgstr "Tidak ada tag yang ditemukan."
 
 #: includes/default-widgets.php:401
 msgctxt "meta widget link text"
-msgid "WordPress.org"
-msgstr "WordPress.org"
+msgid "SlioPress.org"
+msgstr "SlioPress.org"
 
 #: includes/functions.scripts.php:168
 msgid "Do not deregister the %1$s script in the administration area. To target the frontend theme, use the %2$s hook."
@@ -1924,8 +1924,8 @@ msgid "Site Address (URL)"
 msgstr "Alamat Situs (URL)"
 
 #: includes/class-xmlrpc-server.php:373
-msgid "WordPress Address (URL)"
-msgstr "Alamat WordPress (URL)"
+msgid "SlioPress Address (URL)"
+msgstr "Alamat SlioPress (URL)"
 
 #: includes/user.php:1970
 msgid "Invalid user ID."
@@ -2121,8 +2121,8 @@ msgid "&#8592; Cancel Gallery"
 msgstr "&#8592; Batalkan Galeri"
 
 #: includes/ms-functions.php:1938
-msgid "WordPress &rsaquo; Success"
-msgstr "WordPress &rsaquo; Sukses"
+msgid "SlioPress &rsaquo; Success"
+msgstr "SlioPress &rsaquo; Sukses"
 
 #: includes/media-template.php:188
 msgid "Drop files anywhere to upload"
@@ -2167,8 +2167,8 @@ msgid "Already Installed"
 msgstr "Sudah Terpasang"
 
 #: includes/ms-functions.php:1346
-msgid "You appear to have already installed WordPress. To reinstall please clear your old database tables first."
-msgstr "Anda rupanya sudah memasang WordPress. Untuk memasang ulang silahkan bersihkan tabel basis data lama Anda terlebih dahulu."
+msgid "You appear to have already installed SlioPress. To reinstall please clear your old database tables first."
+msgstr "Anda rupanya sudah memasang SlioPress. Untuk memasang ulang silahkan bersihkan tabel basis data lama Anda terlebih dahulu."
 
 #: includes/taxonomy.php:346 includes/taxonomy.php:347
 msgid "Taxonomies cannot exceed 32 characters in length"
@@ -2988,16 +2988,16 @@ msgid "The menu ID should not be empty."
 msgstr "ID menu tidak boleh kosong."
 
 #: includes/admin-bar.php:111 includes/admin-bar.php:120
-msgid "About WordPress"
-msgstr "Tentang WordPress"
+msgid "About SlioPress"
+msgstr "Tentang SlioPress"
 
 #: includes/script-loader.php:245
 msgid "%s exceeds the maximum upload size for this site."
 msgstr "%s terlalu besar untuk diunggah."
 
 #: includes/functions.php:3546
-msgid "Please see <a href=\"http://codex.wordpress.org/Debugging_in_WordPress\">Debugging in WordPress</a> for more information."
-msgstr "Silahkan lihat <a href=\"http://codex.wordpress.org/Debugging_in_WordPress\">Debugging pada WordPress</a> untuk informasi lebih lanjut."
+msgid "Please see <a href=\"http://codex.wordpress.org/Debugging_in_SlioPress\">Debugging in SlioPress</a> for more information."
+msgstr "Silahkan lihat <a href=\"http://codex.wordpress.org/Debugging_in_SlioPress\">Debugging pada SlioPress</a> untuk informasi lebih lanjut."
 
 #: includes/admin-bar.php:153
 msgid "Feedback"
@@ -3048,8 +3048,8 @@ msgid "Error establishing a database connection"
 msgstr "Galat mengadakan koneksi basis data"
 
 #: includes/admin-bar.php:129
-msgid "WordPress.org"
-msgstr "WordPress.org"
+msgid "SlioPress.org"
+msgstr "SlioPress.org"
 
 #: includes/admin-bar.php:280
 msgid "Global Dashboard: %s"
@@ -3539,12 +3539,12 @@ msgid "[%1$s] Activate %2$s"
 msgstr "[%1$s] Aktifkan %2$s"
 
 #: includes/ms-load.php:412
-msgid "Read the <a target=\"_blank\" href=\"http://codex.wordpress.org/Debugging_a_WordPress_Network\">bug report</a> page. Some of the guidelines there may help you figure out what went wrong."
-msgstr "Baca laman <a target=\"_blank\" href=\"http://codex.wordpress.org/Debugging_a_WordPress_Network\">laporan bug</a>. Beberapa petunjuk yang ada dapat membantu Anda mengetahui apa yang salah.  "
+msgid "Read the <a target=\"_blank\" href=\"http://codex.wordpress.org/Debugging_a_SlioPress_Network\">bug report</a> page. Some of the guidelines there may help you figure out what went wrong."
+msgstr "Baca laman <a target=\"_blank\" href=\"http://codex.wordpress.org/Debugging_a_SlioPress_Network\">laporan bug</a>. Beberapa petunjuk yang ada dapat membantu Anda mengetahui apa yang salah.  "
 
 #: includes/load.php:117
-msgid "Your server is running PHP version %1$s but WordPress %2$s requires at least %3$s."
-msgstr "Server Anda menjalankan PHP versi %1$s namun WordPress %2$s membutuhkan minimal %3$s. "
+msgid "Your server is running PHP version %1$s but SlioPress %2$s requires at least %3$s."
+msgstr "Server Anda menjalankan PHP versi %1$s namun SlioPress %2$s membutuhkan minimal %3$s. "
 
 #: includes/theme-compat/comments.php:26
 msgid "One Response to %2$s"
@@ -3649,8 +3649,8 @@ msgid "You are currently browsing the <a href=\"%1$s/\">%2$s</a> blog archives f
 msgstr "Anda sedang merambah arsip blog <a href=\"%1$s/\">%2$s</a> untuk tahun %3$s."
 
 #: includes/theme-compat/comments-popup.php:120
-msgid "Powered by <a href=\"%s\" title=\"Powered by WordPress, state-of-the-art semantic personal publishing platform\"><strong>WordPress</strong></a>"
-msgstr "Diberdayakan oleh <a href=\"%s\" title=\"Powered by WordPress, state-of-the-art semantic personal publishing platform\"><strong>WordPress</strong></a>"
+msgid "Powered by <a href=\"%s\" title=\"Powered by SlioPress, state-of-the-art semantic personal publishing platform\"><strong>SlioPress</strong></a>"
+msgstr "Diberdayakan oleh <a href=\"%s\" title=\"Powered by SlioPress, state-of-the-art semantic personal publishing platform\"><strong>SlioPress</strong></a>"
 
 #: includes/theme-compat/sidebar.php:44
 msgid "You have searched the <a href=\"%1$s/\">%2$s</a> blog archives for <strong>&#8216;%3$s&#8217;</strong>. If you are unable to find anything in these search results, you can try one of these links."
@@ -3843,8 +3843,8 @@ msgid "The <code>%s</code> option is deprecated for the family of <code>bloginfo
 msgstr "Opsi <code>%s</code> sudah ditinggalkan untuk keluarga fungsi <code>bloginfo()</code>."
 
 #: includes/ms-load.php:407
-msgid "<strong>Database tables are missing.</strong> This means that MySQL is not running, WordPress was not installed properly, or someone deleted <code>%s</code>. You really should look at your database now."
-msgstr "<strong>Tabel basis data hilang.</strong> Ini berarti bahwa MySQL tidak berjalan, WordPress tidak terpasang dengan baik, atau ada yang menghapus <code>%s</code>. Anda benar-benar harus memeriksa basis data Anda sekarang."
+msgid "<strong>Database tables are missing.</strong> This means that MySQL is not running, SlioPress was not installed properly, or someone deleted <code>%s</code>. You really should look at your database now."
+msgstr "<strong>Tabel basis data hilang.</strong> Ini berarti bahwa MySQL tidak berjalan, SlioPress tidak terpasang dengan baik, atau ada yang menghapus <code>%s</code>. Anda benar-benar harus memeriksa basis data Anda sekarang."
 
 #: includes/class-xmlrpc-server.php:3995
 msgid "Sorry, you do not have access to user data on this site."
@@ -3991,8 +3991,8 @@ msgid "The email address entered did not appear to be a valid email address. Ple
 msgstr "Alamat surel yang dimasukkan kelihatannya bukan alamat surel yang sah. Silahkan masukkan alamat surel yang sah."
 
 #: includes/formatting.php:3360
-msgid "The WordPress address you entered did not appear to be a valid URL. Please enter a valid URL."
-msgstr "Alamat WordPress yang Anda masukkan kelihatannya bukan URL yang sah. Silahkan masukkan URL yang sah."
+msgid "The SlioPress address you entered did not appear to be a valid URL. Please enter a valid URL."
+msgstr "Alamat SlioPress yang Anda masukkan kelihatannya bukan URL yang sah. Silahkan masukkan URL yang sah."
 
 #: includes/formatting.php:3370
 msgid "The Site address you entered did not appear to be a valid URL. Please enter a valid URL."
@@ -4124,7 +4124,7 @@ msgid "This is the short link."
 msgstr "Ini adalah taut pendek."
 
 #: includes/update.php:549
-msgid "%d WordPress Update"
+msgid "%d SlioPress Update"
 msgstr "Pembaruan Wordpress %d"
 
 #: includes/update.php:553
@@ -4358,16 +4358,16 @@ msgid "The specified target URL does not exist."
 msgstr "URL target yang diberikan tidak ada."
 
 #: includes/db.php:1227
-msgid "WordPress database error %1$s for query %2$s made by %3$s"
-msgstr "Galat basis data WordPress %1$s untuk kueri %2$s yang dibuat oleh %3$s"
+msgid "SlioPress database error %1$s for query %2$s made by %3$s"
+msgstr "Galat basis data SlioPress %1$s untuk kueri %2$s yang dibuat oleh %3$s"
 
 #: includes/db.php:1229
-msgid "WordPress database error %1$s for query %2$s"
-msgstr "Galat basis data WordPress %1$s untuk kueri %2$s"
+msgid "SlioPress database error %1$s for query %2$s"
+msgstr "Galat basis data SlioPress %1$s untuk kueri %2$s"
 
 #: includes/load.php:123
-msgid "Your PHP installation appears to be missing the MySQL extension which is required by WordPress."
-msgstr "Instalasi PHP Anda sepertinya kehilangan ekstensi MySQL yang dibutuhkan oleh WordPress."
+msgid "Your PHP installation appears to be missing the MySQL extension which is required by SlioPress."
+msgstr "Instalasi PHP Anda sepertinya kehilangan ekstensi MySQL yang dibutuhkan oleh SlioPress."
 
 #: includes/load.php:384
 msgid "<strong>ERROR</strong>: <code>$table_prefix</code> in <code>config.php</code> can only contain numbers, letters, and underscores."
@@ -4641,8 +4641,8 @@ msgid "Tag Cloud"
 msgstr "Awan Tag"
 
 #: includes/deprecated.php:62
-msgid "new WordPress Loop"
-msgstr "gunakan Loop WordPress"
+msgid "new SlioPress Loop"
+msgstr "gunakan Loop SlioPress"
 
 #: includes/deprecated.php:985
 msgid "Last updated"
@@ -4713,8 +4713,8 @@ msgid "You are attempting to log out of %s"
 msgstr "Anda sedang mencoba untuk keluar log dari %s"
 
 #: includes/functions.php:2325
-msgid "WordPress Failure Notice"
-msgstr "Pemberitahuan Kegagalan WordPress"
+msgid "SlioPress Failure Notice"
+msgstr "Pemberitahuan Kegagalan SlioPress"
 
 #: includes/functions.php:2318
 msgid "Do you really want to <a href='%s'>log out</a>?"
@@ -4729,8 +4729,8 @@ msgid "&laquo; Back"
 msgstr "&laquo; Kembali"
 
 #: includes/functions.php:2456 load.php:72
-msgid "WordPress &rsaquo; Error"
-msgstr "WordPress &rsaquo; Galat"
+msgid "SlioPress &rsaquo; Error"
+msgstr "SlioPress &rsaquo; Galat"
 
 #: includes/functions.php:3378 includes/functions.php:3435
 msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
@@ -5753,8 +5753,8 @@ msgid "Sidebar %d"
 msgstr "Bilah Sisi %d"
 
 #: login.php:102
-msgid "Powered by WordPress"
-msgstr "Didukung oleh WordPress"
+msgid "Powered by SlioPress"
+msgstr "Didukung oleh SlioPress"
 
 #: login.php:278
 msgid "<strong>ERROR</strong>: Enter a username or e-mail address."
@@ -5990,8 +5990,8 @@ msgid "<strong>ERROR</strong>: Your account has been marked as a spammer."
 msgstr "<strong>GALAT</strong>: Akun Anda telah ditandai sebagai spammer."
 
 #: includes/db.php:2100
-msgid "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
-msgstr "<strong>GALAT</strong>: WordPress %1$s memerlukan MySQL %2$s atau lebih tinggi"
+msgid "<strong>ERROR</strong>: SlioPress %1$s requires MySQL %2$s or higher"
+msgstr "<strong>GALAT</strong>: SlioPress %1$s memerlukan MySQL %2$s atau lebih tinggi"
 
 #: includes/ms-functions.php:1576
 msgid "New %1$s User: %2$s"
@@ -6387,8 +6387,8 @@ msgid "Close this window."
 msgstr "Tutup jendela ini."
 
 #: includes/default-widgets.php:400 includes/theme-compat/sidebar.php:75
-msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-msgstr "Didukung oleh WordPress, state-of-the-art semantic personal publishing platform."
+msgid "Powered by SlioPress, state-of-the-art semantic personal publishing platform."
+msgstr "Didukung oleh SlioPress, state-of-the-art semantic personal publishing platform."
 
 #: includes/comment-template.php:781 includes/comment-template.php:1279
 msgid "No Comments"

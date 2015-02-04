@@ -2,7 +2,7 @@
 /**
  * Server-side file upload handler from plupload, swfupload or other asynchronous upload methods.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 

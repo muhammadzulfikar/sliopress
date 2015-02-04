@@ -2,7 +2,7 @@
 /**
  * Option API
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Option
  */
 
@@ -123,7 +123,7 @@ function get_option( $option, $default = false ) {
 }
 
 /**
- * Protect WordPress special option from being modified.
+ * Protect SlioPress special option from being modified.
  *
  * Will die if $option is in protected list. Protected options are 'alloptions'
  * and 'notoptions' options.
@@ -338,7 +338,7 @@ function update_option( $option, $value ) {
  *
  * You can create options without values and then update the values later.
  * Existing options will not be updated and checks are performed to ensure that you
- * aren't adding a protected WordPress option. Care should be taken to not name
+ * aren't adding a protected SlioPress option. Care should be taken to not name
  * options the same as the ones which are protected.
  *
  * @since 1.0.0
@@ -346,7 +346,7 @@ function update_option( $option, $value ) {
  * @param string         $option      Name of option to add. Expected to not be SQL-escaped.
  * @param mixed          $value       Optional. Option value. Must be serializable if non-scalar. Expected to not be SQL-escaped.
  * @param string         $deprecated  Optional. Description. Not used anymore.
- * @param string|bool    $autoload    Optional. Default is enabled. Whether to load the option when WordPress starts up.
+ * @param string|bool    $autoload    Optional. Default is enabled. Whether to load the option when SlioPress starts up.
  * @return bool False if option was not added and true if option was added.
  */
 function add_option( $option, $value = '', $deprecated = '', $autoload = 'yes' ) {
@@ -432,7 +432,7 @@ function add_option( $option, $value = '', $deprecated = '', $autoload = 'yes' )
 }
 
 /**
- * Removes option by name. Prevents removal of protected WordPress options.
+ * Removes option by name. Prevents removal of protected SlioPress options.
  *
  * @since 1.2.0
  *

@@ -2,15 +2,15 @@
 /**
  * Multisite network settings administration panel.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Multisite
  * @since 3.0.0
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load SlioPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
-/** WordPress Translation Install API */
+/** SlioPress Translation Install API */
 require_once( ABSPATH . 'admin/includes/translation-install.php' );
 
 if ( ! is_multisite() )

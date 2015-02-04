@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress API for media display.
+ * SlioPress API for media display.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Media
  */
 
@@ -288,7 +288,7 @@ function set_post_thumbnail_size( $width = 0, $height = 0, $crop = false ) {
  *
  * The filter 'get_image_tag_class' allows for changing the class name for the
  * image without having to use regular expressions on the HTML content. The
- * parameters are: what WordPress will use for the class, the Attachment ID,
+ * parameters are: what SlioPress will use for the class, the Attachment ID,
  * image align value, and the size the image should be.
  *
  * The second filter 'get_image_tag' has the HTML content, which can then be
@@ -888,7 +888,7 @@ add_shortcode('gallery', 'gallery_shortcode');
  * The Gallery shortcode.
  *
  * This implements the functionality of the Gallery Shortcode for displaying
- * WordPress images on a post.
+ * SlioPress images on a post.
  *
  * @since 2.5.0
  *
@@ -1160,7 +1160,7 @@ add_action( 'wp_playlist_scripts', 'wp_playlist_scripts' );
  * The playlist shortcode.
  *
  * This implements the functionality of the playlist shortcode for displaying
- * a collection of WordPress audio or video files in a post.
+ * a collection of SlioPress audio or video files in a post.
  *
  * @since 3.9.0
  *
@@ -1477,7 +1477,7 @@ function wp_get_attachment_id3_keys( $attachment, $context = 'display' ) {
  * The Audio shortcode.
  *
  * This implements the functionality of the Audio Shortcode for displaying
- * WordPress mp3s in a post.
+ * SlioPress mp3s in a post.
  *
  * @since 3.6.0
  *
@@ -1669,7 +1669,7 @@ function wp_get_video_extensions() {
  * The Video shortcode.
  *
  * This implements the functionality of the Video Shortcode for displaying
- * WordPress mp4s in a post.
+ * SlioPress mp4s in a post.
  *
  * @since 3.6.0
  *
@@ -3281,7 +3281,7 @@ function wp_maybe_generate_attachment_metadata( $attachment ) {
  *
  * @since 4.0.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @param string $url The URL to resolve.
  * @return int The found post ID.

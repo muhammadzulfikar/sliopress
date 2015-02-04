@@ -1,16 +1,16 @@
 <?php
 /**
- * WordPress CRON API
+ * SlioPress CRON API
  *
- * @package WordPress
+ * @package SlioPress
  */
 
 /**
  * Schedules a hook to run only once.
  *
- * Schedules a hook which will be executed once by the WordPress actions core at
+ * Schedules a hook which will be executed once by the SlioPress actions core at
  * a time which you specify. The action will fire off when someone visits your
- * WordPress site, if the schedule time has passed.
+ * SlioPress site, if the schedule time has passed.
  *
  * @since 2.1.0
  * @link http://codex.wordpress.org/Function_Reference/wp_schedule_single_event
@@ -51,9 +51,9 @@ function wp_schedule_single_event( $timestamp, $hook, $args = array()) {
 /**
  * Schedule a periodic event.
  *
- * Schedules a hook which will be executed by the WordPress actions core on a
+ * Schedules a hook which will be executed by the SlioPress actions core on a
  * specific interval, specified by you. The action will trigger when someone
- * visits your WordPress site, if the scheduled time has passed.
+ * visits your SlioPress site, if the scheduled time has passed.
  *
  * Valid values for the recurrence are hourly, daily and twicedaily. These can
  * be extended using the cron_schedules filter in wp_get_schedules().

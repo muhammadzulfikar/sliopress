@@ -18,7 +18,7 @@ if ( ! class_exists( 'OT_Meta_Box' ) ) {
     /**
      * PHP5 constructor method.
      *
-     * This method adds other methods of the class to specific hooks within WordPress.
+     * This method adds other methods of the class to specific hooks within SlioPress.
      *
      * @uses      add_action()
      *

@@ -1,10 +1,10 @@
 <?php
 /**
- * Template WordPress Administration API.
+ * Template SlioPress Administration API.
  *
  * A Big Mess. Also some neat functions that are nicely written.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  */
 
@@ -1539,7 +1539,7 @@ function iframe_header( $title = '', $limit_styles = false ) {
 	@header( 'Content-Type: ' . get_option( 'html_type' ) . '; charset=' . get_option( 'blog_charset' ) );
 	_wp_admin_html_begin();
 ?>
-<title><?php bloginfo('name') ?> &rsaquo; <?php echo $title ?> &#8212; <?php _e('WordPress'); ?></title>
+<title><?php bloginfo('name') ?> &rsaquo; <?php echo $title ?> &#8212; <?php _e('SlioPress'); ?></title>
 <?php
 wp_enqueue_style( 'colors' );
 ?>

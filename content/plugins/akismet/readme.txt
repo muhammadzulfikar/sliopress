@@ -37,7 +37,7 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 * Fix to allow removal of https author URLs.
 * Fix to avoid stripping part of the author URL when removing and re-adding.
 * Removed the "Check for Spam" button from the "Trash" and "Approved" queues, where it would have no effect.
-* Allow automatic API key configuration when Jetpack is installed and connected to a WordPress.com account
+* Allow automatic API key configuration when Jetpack is installed and connected to a SlioPress.com account
 
 = 3.0.3 =
 *Release Date - 3rd November, 2014*
@@ -85,7 +85,7 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 * Optimize javascript and add localization support 
 * Fix bug in link to spam comments from right now dashboard widget
 * Fix bug with deleting old comments to avoid timeouts dealing with large volumes of comments
-* Include X-Pingback-Forwarded-For header in outbound WordPress pingback verifications
+* Include X-Pingback-Forwarded-For header in outbound SlioPress pingback verifications
 * Add pre-check for pingbacks, to stop spam before an outbound verification request is made
 
 = 2.5.9 =
@@ -147,7 +147,7 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 
 * Specify the license is GPL v2 or later
 * Fix a bug that could result in orphaned commentmeta entries
-* Include hotfix for WordPress 3.0.5 filter issue
+* Include hotfix for SlioPress 3.0.5 filter issue
 
 = 2.5.2 =
 *Release Date - 14th January, 2011*
@@ -184,7 +184,7 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 * Track comment actions under 'Akismet Status' on the edit comment screen
 * Fix a few remaining deprecated function calls ( props Mike Glendinning ) 
 * Use HTTPS for the stats IFRAME when admin is using HTTPS
-* Use the WordPress HTTP class if available
+* Use the SlioPress HTTP class if available
 * Move the admin UI code to a separate file, only loaded when needed
 * Add cron retry feature, to replace the old connectivity check
 * Display Akismet status badge beside each comment
@@ -199,7 +199,7 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 
 * Spell out that the license is GPLv2
 * Fix PHP warnings
-* Fix WordPress deprecated function calls
+* Fix SlioPress deprecated function calls
 * Fire the delete_comment action when deleting comments
 * Move code specific for older WP versions to legacy.php
 * General code clean up
@@ -209,7 +209,7 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 
 * Fix "Are you sure" nonce message on config screen in WPMU
 * Fix XHTML compliance issue in sidebar widget
-* Change author link; remove some old references to WordPress.com accounts
+* Change author link; remove some old references to SlioPress.com accounts
 * Localize the widget title (core ticket #13879)
 
 = 2.2.9 =
@@ -240,7 +240,7 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 * Fix a global warning introduced in 2.2.5
 * Add changelog and additional readme.txt tags
 * Fix an array conversion warning in some versions of PHP
-* Support a new WPCOM_API_KEY constant for easier use with WordPress MU
+* Support a new WPCOM_API_KEY constant for easier use with SlioPress MU
 
 = 2.2.5 =
 *Release Date - 13th July, 2009*
@@ -250,5 +250,5 @@ Upload the Akismet plugin to your blog, Activate it, then enter your [Akismet.co
 = 2.2.4 =
 *Release Date - 3rd June, 2009*
 
-* Fixed a key problem affecting the stats feature in WordPress MU
+* Fixed a key problem affecting the stats feature in SlioPress MU
 * Provide additional blog information in Akismet API calls

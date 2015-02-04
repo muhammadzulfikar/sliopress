@@ -4,7 +4,7 @@
  *
  * A UI container for controls, managed by the WP_Customize_Manager.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Customize
  * @since 3.4.0
  */
@@ -316,7 +316,7 @@ class WP_Customize_Section {
 /**
  * Customizer section representing widget area (sidebar).
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Customize
  *
  * @since 4.1.0

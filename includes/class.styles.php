@@ -2,7 +2,7 @@
 /**
  * BackPress Styles enqueue.
  *
- * These classes were refactored from the WordPress WP_Scripts and WordPress
+ * These classes were refactored from the SlioPress WP_Scripts and SlioPress
  * script enqueue API.
  *
  * @package BackPress

@@ -1,13 +1,13 @@
 <?php
 /**
- * WordPress Query API
+ * SlioPress Query API
  *
- * The query API attempts to get which part of WordPress the user is on. It
+ * The query API attempts to get which part of SlioPress the user is on. It
  * also provides functionality for getting URL query information.
  *
  * @link http://codex.wordpress.org/The_Loop More information on The Loop.
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Query
  */
 
@@ -78,8 +78,8 @@ function set_query_var($var, $value) {
 /**
  * Set up The Loop with query parameters.
  *
- * This will override the current WordPress Loop and shouldn't be used more than
- * once. This must not be used within the WordPress Loop.
+ * This will override the current SlioPress Loop and shouldn't be used more than
+ * once. This must not be used within the SlioPress Loop.
  *
  * @since 1.5.0
  * @uses $wp_query
@@ -735,7 +735,7 @@ function is_main_query() {
  */
 
 /**
- * Whether current WordPress query has results to loop over.
+ * Whether current SlioPress query has results to loop over.
  *
  * @see WP_Query::have_posts()
  * @since 1.5.0
@@ -828,7 +828,7 @@ function the_comment() {
  */
 
 /**
- * The WordPress Query class.
+ * The SlioPress Query class.
  *
  * @link http://codex.wordpress.org/Function_Reference/WP_Query Codex page.
  *
@@ -1303,7 +1303,7 @@ class WP_Query {
 	/**
 	 * Resets query flags to false.
 	 *
-	 * The query flags are what page info WordPress was able to figure out.
+	 * The query flags are what page info SlioPress was able to figure out.
 	 *
 	 * @since 2.0.0
 	 * @access private
@@ -2211,7 +2211,7 @@ class WP_Query {
 	 * @since 4.0.0
 	 * @access protected
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb SlioPress database abstraction object.
 	 *
 	 * @param string $orderby Alias for the field to order by.
 	 * @return string|bool Table-prefixed value to used in the ORDER clause. False otherwise.
@@ -3822,7 +3822,7 @@ class WP_Query {
 	}
 
 	/**
-	 * Sets up the WordPress query by parsing query string.
+	 * Sets up the SlioPress query by parsing query string.
 	 *
 	 * @since 1.5.0
 	 * @access public
@@ -3933,7 +3933,7 @@ class WP_Query {
 	/**
 	 * Constructor.
 	 *
-	 * Sets up the WordPress query, if parameter is not empty.
+	 * Sets up the SlioPress query, if parameter is not empty.
 	 *
 	 * @since 1.5.0
 	 * @access public
@@ -4629,7 +4629,7 @@ class WP_Query {
  * @since 2.1.0
  *
  * @uses $wp_query
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb SlioPress database abstraction object.
  *
  * @return null If no link is found, null is returned.
  */

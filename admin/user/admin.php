@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress User Administration Bootstrap
+ * SlioPress User Administration Bootstrap
  *
- * @package WordPress
+ * @package SlioPress
  * @subpackage Administration
  * @since 3.1.0
  */

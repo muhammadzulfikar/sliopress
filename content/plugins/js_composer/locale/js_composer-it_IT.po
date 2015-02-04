@@ -220,7 +220,7 @@ msgid "Cancel"
 msgstr "Cancella"
 
 #: composer/lib/layouts.php:254 composer/./lib/layouts.php:254
-msgid "Visual Composer for WordPress"
+msgid "Visual Composer for SlioPress"
 msgstr "Compositore Visivo per Wordpress"
 
 #: composer/lib/layouts.php:259 composer/./lib/layouts.php:259
@@ -928,13 +928,13 @@ msgstr "Impostazioni WPBakery Compositore Visuale"
 #: composer/settings/settings.php:609 composer/./settings/settings.php:609
 msgid ""
 "<strong>Deprecated:</strong> To override class names that are applied to "
-"Visual Composer content elements you should use WordPress add_filter"
+"Visual Composer content elements you should use SlioPress add_filter"
 "('vc_shortcodes_css_class') function. <a class='vc_show_example'>See "
 "Example</a>."
 msgstr ""
 "<strong>Deprecato:</strong> Per ignorare i nomi delle classi che vengono "
 "applicati a elementi di contenuto del Compositore Visuale si dovrebbe usare "
-"la funzione WordPress add_filter('vc_shortcodes_css_class'). <a "
+"la funzione SlioPress add_filter('vc_shortcodes_css_class'). <a "
 "class='vc_show_example'>Guarda Esempio</a>."
 
 #: composer/settings/settings.php:617 composer/./settings/settings.php:617
@@ -2453,8 +2453,8 @@ msgstr "Cerca"
 #: config/map.php:1719 config/map.php:1750 config/map.php:1784
 #: config/map.php:1824 config/map.php:1865 config/map.php:1894
 #: config/map.php:1922
-msgid "WordPress Widgets"
-msgstr "Widgets WordPress"
+msgid "SlioPress Widgets"
+msgstr "Widgets SlioPress"
 
 #: config/map.php:1554 config/map.php:1576 config/map.php:1598
 #: config/map.php:1626 config/map.php:1648 config/map.php:1691

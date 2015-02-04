@@ -363,7 +363,7 @@ if ( ! function_exists( 'ot_type_export_settings_file' ) ) {
         /* description */
         echo '<div class="description">';
           
-          echo '<p>' . sprintf( __( 'Export your Settings into a fully functional %s file. If you want to add your own custom %s text domain to the file, enter it into the text field before exporting. For more information on how to use this file read the documentation on %s. Remember, you should always check the file for errors before including it in your theme.', 'option-tree' ), '<code>theme-options.php</code>', '<a href="http://codex.wordpress.org/I18n_for_WordPress_Developers" target="_blank">I18n</a>', '<a href="' . get_admin_url( $blog_id, 'admin.php?page=ot-documentation#section_theme_mode' ) . '">' . __( 'Theme Mode', 'option-tree' ) . '</a>' ) . '</p>';
+          echo '<p>' . sprintf( __( 'Export your Settings into a fully functional %s file. If you want to add your own custom %s text domain to the file, enter it into the text field before exporting. For more information on how to use this file read the documentation on %s. Remember, you should always check the file for errors before including it in your theme.', 'option-tree' ), '<code>theme-options.php</code>', '<a href="http://codex.wordpress.org/I18n_for_SlioPress_Developers" target="_blank">I18n</a>', '<a href="' . get_admin_url( $blog_id, 'admin.php?page=ot-documentation#section_theme_mode' ) . '">' . __( 'Theme Mode', 'option-tree' ) . '</a>' ) . '</p>';
           
         echo '</div>';
           
@@ -402,7 +402,7 @@ if ( ! function_exists( 'ot_type_export_settings' ) ) {
       /* description */
       echo '<div class="description">';
         
-        echo '<p>' . __( 'Export your Settings by highlighting this text and doing a copy/paste into a blank .txt file. Then save the file for importing into another install of WordPress later. Alternatively, you could just paste it into the <code>OptionTree->Settings->Import</code> <strong>Settings</strong> textarea on another web site.', 'option-tree' ) . '</p>';
+        echo '<p>' . __( 'Export your Settings by highlighting this text and doing a copy/paste into a blank .txt file. Then save the file for importing into another install of SlioPress later. Alternatively, you could just paste it into the <code>OptionTree->Settings->Import</code> <strong>Settings</strong> textarea on another web site.', 'option-tree' ) . '</p>';
         
       echo '</div>';
         
@@ -438,7 +438,7 @@ if ( ! function_exists( 'ot_type_export_data' ) ) {
       /* description */
       echo '<div class="description">';
         
-        echo '<p>' . __( 'Export your Theme Options data by highlighting this text and doing a copy/paste into a blank .txt file. Then save the file for importing into another install of WordPress later. Alternatively, you could just paste it into the <code>OptionTree->Settings->Import</code> <strong>Theme Options</strong> textarea on another web site.', 'option-tree' ) . '</p>';
+        echo '<p>' . __( 'Export your Theme Options data by highlighting this text and doing a copy/paste into a blank .txt file. Then save the file for importing into another install of SlioPress later. Alternatively, you could just paste it into the <code>OptionTree->Settings->Import</code> <strong>Theme Options</strong> textarea on another web site.', 'option-tree' ) . '</p>';
         
       echo '</div>';
       
@@ -474,7 +474,7 @@ if ( ! function_exists( 'ot_type_export_layouts' ) ) {
       /* description */
       echo '<div class="description">';
         
-        echo '<p>' . __( 'Export your Layouts by highlighting this text and doing a copy/paste into a blank .txt file. Then save the file for importing into another install of WordPress later. Alternatively, you could just paste it into the <code>OptionTree->Settings->Import</code> <strong>Layouts</strong> textarea on another web site.', 'option-tree' ) . '</p>';
+        echo '<p>' . __( 'Export your Layouts by highlighting this text and doing a copy/paste into a blank .txt file. Then save the file for importing into another install of SlioPress later. Alternatively, you could just paste it into the <code>OptionTree->Settings->Import</code> <strong>Layouts</strong> textarea on another web site.', 'option-tree' ) . '</p>';
         
         
       echo '</div>';

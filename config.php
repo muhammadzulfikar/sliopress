@@ -1,9 +1,9 @@
 <?php
 /**
- * Konfigurasi dasar WordPress.
+ * Konfigurasi dasar SlioPress.
  *
  * Berkas ini berisi konfigurasi-konfigurasi berikut: Pengaturan MySQL, Awalan Tabel,
- * Kunci Rahasia, Bahasa WordPress, dan ABSPATH. Anda dapat menemukan informasi lebih
+ * Kunci Rahasia, Bahasa SlioPress, dan ABSPATH. Anda dapat menemukan informasi lebih
  * lanjut dengan mengunjungi Halaman Codex {@link http://codex.wordpress.org/Editing_config.php
  * Menyunting config.php}. Anda dapat memperoleh pengaturan MySQL dari web host Anda.
  *
@@ -11,11 +11,11 @@
  * Anda tidak perlu menggunakan situs web, Anda dapat langsung menyalin berkas ini ke
  * "config.php" dan mengisi nilai-nilainya.
  *
- * @package WordPress
+ * @package SlioPress
  */
 
 // ** Pengaturan MySQL - Anda dapat memperoleh informasi ini dari web host Anda ** //
-/** Nama basis data untuk WordPress */
+/** Nama basis data untuk SlioPress */
 define('DB_NAME', 'wordpress');
 
 /** Nama pengguna basis data MySQL */
@@ -37,24 +37,24 @@ define('DB_COLLATE', '');
  * Kunci Otentifikasi Unik dan Garam.
  *
  * Ubah baris berikut menjadi frase unik!
- * Anda dapat menciptakan frase-frase ini menggunakan {@link https://api.wordpress.org/secret-key/1.1/salt/ Layanan kunci-rahasia WordPress.org}
+ * Anda dapat menciptakan frase-frase ini menggunakan {@link https://api.wordpress.org/secret-key/1.1/salt/ Layanan kunci-rahasia SlioPress.org}
  * Anda dapat mengubah baris-baris berikut kapanpun untuk mencabut validasi seluruh cookies. Hal ini akan memaksa seluruh pengguna untuk masuk log ulang.
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'EHw-f G63dC3KsF:X]|PZ#Pn.n5v`:Yv;xu0[z*0(;&hBRmX#DpoxxwUaW>6_d{S');
-define('SECURE_AUTH_KEY',  '>5I^hfug>bhZ,|riBR:7IunEi7aT~Sy;z>`)wuKz!XY<)HZh49=$QbGM$*Kht4Z]');
-define('LOGGED_IN_KEY',    'P#!<mS/;;f|!(10Y=R;VtS>s|&l<I)x|xAUj:e[c1:K_=GiYhDYUUB(~hm9Tz B{');
-define('NONCE_KEY',        '0MUn5~ID[fJqL[m,zc^hXupMb.N@Rjjp3x90afSZWMauoH~w*dPDiNuN4k{R0m,f');
-define('AUTH_SALT',        'W9tT9zPp%Tur. [#&HP:tad=-AX-71x>474D6GYu6[wtP/~G=hf|PIf2KMcd |o5');
-define('SECURE_AUTH_SALT', '|8F%vb=V$Sb:Jv&;]u-*VGXaux$ENKC!N!WS{,]2T3Uy/Rgmisj=:Q9qh=t|M9jt');
-define('LOGGED_IN_SALT',   '%g{S~esDh ~}#V^_fUMCwW(7)G(KVxzmph};e!r<]gsXFx^f#HE:ibzogN3BI=X&');
-define('NONCE_SALT',       ':,9nE 8sW|1$iiT@^IE+>>x52R(*EN&[ca8Ph{ ;v,>F$;tT+|FPh8U8Q5u_np+0');
+define('AUTH_KEY',         'x?P:;O[u:1z,_Y-3i]juTSVMccg!;`G4%73q+`Hf9Ix6}+iF[= $NV})CvIH^_oA');
+define('SECURE_AUTH_KEY',  'y}m-^j9%<P/ 4-F-+u!dS3e7{loUP6@j%H>M||;lA{1+<JFTEK6#Lv}RBvGww-JH');
+define('LOGGED_IN_KEY',    'Sqp6N!D3YoCq~x/L.DuQ^>IV7AAQ~jXLdb}c]TRgVF#IC8Qn5.3@|FFF_ospNQxB');
+define('NONCE_KEY',        '+@YVlqH+:O.iU(b&vZ,|;OM0ryzh+I>8.r,~2->U?^v0wF>TRI=@}5Ud0b8Q|~{D');
+define('AUTH_SALT',        'Jv_IjdZ+Fc=: |7 oCKHZ4.AT)S*p)wL>!x%6Xty><1+xO03l|vWc~7T;#,hgJkw');
+define('SECURE_AUTH_SALT', '+S3A@OJ8:j8I+{P.P;!ymI5,;Kdj:(:jAUS&52-eq@_.q<fa=iprWyY({$uMi2C&');
+define('LOGGED_IN_SALT',   'x0-12!fF6l_f|09oTSWx1{F+ ML<|J2IHx<3 ,bBYG$=)cYJSp+X|!0[lb;-uAM8');
+define('NONCE_SALT',       '2~*W;VLrQ/KMBO=P%nbBiea>0(BimmVp.0FsN)X42Pd?Ea9s(-9-RK:xzXAaRYEp');
 
 /**#@-*/
 
 /**
- * Awalan Tabel Basis Data WordPress.
+ * Awalan Tabel Basis Data SlioPress.
  *
  * Anda dapat memiliki beberapa instalasi di dalam satu basis data jika Anda memberikan awalan unik
  * kepada masing-masing tabel. Harap hanya masukkan angka, huruf, dan garis bawah!
@@ -62,7 +62,7 @@ define('NONCE_SALT',       ':,9nE 8sW|1$iiT@^IE+>>x52R(*EN&[ca8Ph{ ;v,>F$;tT+|FP
 $table_prefix  = 'tb_';
 
 /**
- * Untuk pengembang: Moda pengawakutuan WordPress.
+ * Untuk pengembang: Moda pengawakutuan SlioPress.
  *
  * Ubah ini menjadi "true" untuk mengaktifkan tampilan peringatan selama pengembangan.
  * Sangat disarankan agar pengembang plugin dan tema menggunakan WP_DEBUG
@@ -72,9 +72,9 @@ define('WP_DEBUG', false);
 
 /* Cukup, berhenti menyunting! Selamat ngeblog. */
 
-/** Lokasi absolut direktori WordPress. */
+/** Lokasi absolut direktori SlioPress. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
-/** Menentukan variabel-variabel WordPress berkas-berkas yang disertakan. */
+/** Menentukan variabel-variabel SlioPress berkas-berkas yang disertakan. */
 require_once(ABSPATH . 'settings.php');
